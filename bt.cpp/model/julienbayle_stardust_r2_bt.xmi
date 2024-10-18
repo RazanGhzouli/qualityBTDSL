@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<btcpp:Root
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:btcpp="http://www.example.org/btcpp"
+    main_tree_to_execute="BehaviorTree">
+  <root ID="BehaviorTree">
+    <node xsi:type="btcpp:SequenceNode">
+      <child
+          xsi:type="btcpp:SimpleConditionNode"
+          uID="RobotPret"/>
+      <child
+          xsi:type="btcpp:SubTree"
+          uID="TiretteAndStop"/>
+      <child
+          xsi:type="btcpp:SubTree"
+          uID="MinuterieAndstartAndStopWhenTimeout">
+        <child
+            xsi:type="btcpp:ForceSuccessNode">
+          <child
+              xsi:type="btcpp:FallbackNode">
+            <child
+                xsi:type="btcpp:BlackboardCheckString"
+                status="FAILURE"
+                value_A="tirette_presente_last_tick"
+                value_B="true">
+              <child
+                  xsi:type="btcpp:SequenceNode">
+                <child
+                    xsi:type="btcpp:InverterNode">
+                  <child
+                      xsi:type="btcpp:SimpleConditionNode"
+                      uID="TiretteLaserPresente"/>
+                </child>
+                <child
+                    xsi:type="btcpp:SimpleActionNode"
+                    uID="LancerLaMinuterie"/>
+                <child
+                    xsi:type="btcpp:SetBlackboardNode"
+                    value="1"
+                    output_key="palets_depart"/>
+              </child>
+            </child>
+            <child
+                xsi:type="btcpp:SequenceNode">
+              <child
+                  xsi:type="btcpp:InverterNode">
+                <child
+                    xsi:type="btcpp:SimpleConditionNode"
+                    uID="MinuterieNonEcoulee"/>
+              </child>
+              <child
+                  xsi:type="btcpp:SetBlackboardNode"
+                  output_key="palets_depart"/>
+              <child
+                  xsi:type="btcpp:SetBlackboardNode"
+                  output_key="palet_pente"/>
+              <child
+                  xsi:type="btcpp:SetBlackboardNode"
+                  output_key="palet_chaos"/>
+              <child
+                  xsi:type="btcpp:SimpleActionNode"
+                  uID="Arreter le robot"/>
+            </child>
+          </child>
+        </child>
+      </child>
+      <child
+          xsi:type="btcpp:SubTree"
+          uID="Trier les palets"/>
+      <child
+          xsi:type="btcpp:SubTree"
+          uID="Palets zone chaos"/>
+      <child
+          xsi:type="btcpp:SubTree"
+          uID="Yeux"/>
+    </node>
+  </root>
+</btcpp:Root>

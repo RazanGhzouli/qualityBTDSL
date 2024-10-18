@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated btcpp -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="btcpp.presentation.BtcppModelWizardID"
+            name="%_UI_BtcppModelWizard_label"
+            class="btcpp.presentation.BtcppModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BtcppModelFile.gif">
+         <description>%_UI_BtcppModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated btcpp -->
+      <editor
+            id="btcpp.presentation.BtcppEditorID"
+            name="%_UI_BtcppEditor_label"
+            icon="icons/full/obj16/BtcppModelFile.gif"
+            extensions="btcpp"
+            class="btcpp.presentation.BtcppEditor"
+            contributorClass="btcpp.presentation.BtcppActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
