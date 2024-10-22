@@ -58,13 +58,13 @@ public interface BtcppFactory extends EFactory {
 	SetBlackboardNode createSetBlackboardNode();
 
 	/**
-	 * Returns a new object of class '<em>Fallback Node</em>'.
+	 * Returns a new object of class '<em>Selector Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Fallback Node</em>'.
+	 * @return a new object of class '<em>Selector Node</em>'.
 	 * @generated
 	 */
-	FallbackNode createFallbackNode();
+	SelectorNode createSelectorNode();
 
 	/**
 	 * Returns a new object of class '<em>If Then Else Node</em>'.
@@ -76,13 +76,13 @@ public interface BtcppFactory extends EFactory {
 	IfThenElseNode createIfThenElseNode();
 
 	/**
-	 * Returns a new object of class '<em>Mnual Node</em>'.
+	 * Returns a new object of class '<em>Manual Selector Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Mnual Node</em>'.
+	 * @return a new object of class '<em>Manual Selector Node</em>'.
 	 * @generated
 	 */
-	MnualNode createMnualNode();
+	ManualSelectorNode createManualSelectorNode();
 
 	/**
 	 * Returns a new object of class '<em>Parallel Node</em>'.
@@ -94,13 +94,13 @@ public interface BtcppFactory extends EFactory {
 	ParallelNode createParallelNode();
 
 	/**
-	 * Returns a new object of class '<em>Sequence Star Node</em>'.
+	 * Returns a new object of class '<em>Sequence With Memory</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sequence Star Node</em>'.
+	 * @return a new object of class '<em>Sequence With Memory</em>'.
 	 * @generated
 	 */
-	SequenceStarNode createSequenceStarNode();
+	SequenceWithMemory createSequenceWithMemory();
 
 	/**
 	 * Returns a new object of class '<em>Switch Node</em>'.
@@ -112,13 +112,13 @@ public interface BtcppFactory extends EFactory {
 	SwitchNode createSwitchNode();
 
 	/**
-	 * Returns a new object of class '<em>Reactive Fallback</em>'.
+	 * Returns a new object of class '<em>Reactive Selector</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Reactive Fallback</em>'.
+	 * @return a new object of class '<em>Reactive Selector</em>'.
 	 * @generated
 	 */
-	ReactiveFallback createReactiveFallback();
+	ReactiveSelector createReactiveSelector();
 
 	/**
 	 * Returns a new object of class '<em>While Do Else Node</em>'.
@@ -148,15 +148,6 @@ public interface BtcppFactory extends EFactory {
 	SequenceNode createSequenceNode();
 
 	/**
-	 * Returns a new object of class '<em>Subtree Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Subtree Node</em>'.
-	 * @generated
-	 */
-	SubtreeNode createSubtreeNode();
-
-	/**
 	 * Returns a new object of class '<em>Timeout Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -173,15 +164,6 @@ public interface BtcppFactory extends EFactory {
 	 * @generated
 	 */
 	KeepRunningUntilFailureNode createKeepRunningUntilFailureNode();
-
-	/**
-	 * Returns a new object of class '<em>Timer Queue Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Timer Queue Node</em>'.
-	 * @generated
-	 */
-	TimerQueueNode createTimerQueueNode();
 
 	/**
 	 * Returns a new object of class '<em>Inverter Node</em>'.
@@ -229,22 +211,22 @@ public interface BtcppFactory extends EFactory {
 	SubTree createSubTree();
 
 	/**
-	 * Returns a new object of class '<em>Simple Action Node</em>'.
+	 * Returns a new object of class '<em>Script Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Simple Action Node</em>'.
+	 * @return a new object of class '<em>Script Node</em>'.
 	 * @generated
 	 */
-	SimpleActionNode createSimpleActionNode();
+	ScriptNode createScriptNode();
 
 	/**
-	 * Returns a new object of class '<em>Simple Condition Node</em>'.
+	 * Returns a new object of class '<em>Script Condition Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Simple Condition Node</em>'.
+	 * @return a new object of class '<em>Script Condition Node</em>'.
 	 * @generated
 	 */
-	SimpleConditionNode createSimpleConditionNode();
+	ScriptConditionNode createScriptConditionNode();
 
 	/**
 	 * Returns a new object of class '<em>Retry Node</em>'.
@@ -265,33 +247,6 @@ public interface BtcppFactory extends EFactory {
 	Root createRoot();
 
 	/**
-	 * Returns a new object of class '<em>Blackboard Check Int</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Blackboard Check Int</em>'.
-	 * @generated
-	 */
-	BlackboardCheckInt createBlackboardCheckInt();
-
-	/**
-	 * Returns a new object of class '<em>Blackboard Check Double</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Blackboard Check Double</em>'.
-	 * @generated
-	 */
-	BlackboardCheckDouble createBlackboardCheckDouble();
-
-	/**
-	 * Returns a new object of class '<em>Blackboard Check String</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Blackboard Check String</em>'.
-	 * @generated
-	 */
-	BlackboardCheckString createBlackboardCheckString();
-
-	/**
 	 * Returns a new object of class '<em>Parameter</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -299,6 +254,204 @@ public interface BtcppFactory extends EFactory {
 	 * @generated
 	 */
 	Parameter createParameter();
+
+	/**
+	 * Returns a new object of class '<em>Quality Requirement</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Quality Requirement</em>'.
+	 * @generated
+	 */
+	QualityRequirement createQualityRequirement();
+
+	/**
+	 * Returns a new object of class '<em>Quality</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Quality</em>'.
+	 * @generated
+	 */
+	Quality createQuality();
+
+	/**
+	 * Returns a new object of class '<em>Selector With Memory</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Selector With Memory</em>'.
+	 * @generated
+	 */
+	SelectorWithMemory createSelectorWithMemory();
+
+	/**
+	 * Returns a new object of class '<em>Parallel All Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Parallel All Node</em>'.
+	 * @generated
+	 */
+	ParallelAllNode createParallelAllNode();
+
+	/**
+	 * Returns a new object of class '<em>Delay Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Delay Node</em>'.
+	 * @generated
+	 */
+	DelayNode createDelayNode();
+
+	/**
+	 * Returns a new object of class '<em>Precondition Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Precondition Node</em>'.
+	 * @generated
+	 */
+	PreconditionNode createPreconditionNode();
+
+	/**
+	 * Returns a new object of class '<em>Entry Updated Decorator Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Entry Updated Decorator Node</em>'.
+	 * @generated
+	 */
+	EntryUpdatedDecoratorNode createEntryUpdatedDecoratorNode();
+
+	/**
+	 * Returns a new object of class '<em>Run Once Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Run Once Node</em>'.
+	 * @generated
+	 */
+	RunOnceNode createRunOnceNode();
+
+	/**
+	 * Returns a new object of class '<em>Loop Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Loop Node</em>'.
+	 * @generated
+	 */
+	LoopNode createLoopNode();
+
+	/**
+	 * Returns a new object of class '<em>Consume Queue Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Consume Queue Node</em>'.
+	 * @generated
+	 */
+	ConsumeQueueNode createConsumeQueueNode();
+
+	/**
+	 * Returns a new object of class '<em>Count Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Count Node</em>'.
+	 * @generated
+	 */
+	CountNode createCountNode();
+
+	/**
+	 * Returns a new object of class '<em>Eternal Guard Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Eternal Guard Node</em>'.
+	 * @generated
+	 */
+	EternalGuardNode createEternalGuardNode();
+
+	/**
+	 * Returns a new object of class '<em>Status To Blackboard Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Status To Blackboard Node</em>'.
+	 * @generated
+	 */
+	StatusToBlackboardNode createStatusToBlackboardNode();
+
+	/**
+	 * Returns a new object of class '<em>Failure Is Running Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Failure Is Running Node</em>'.
+	 * @generated
+	 */
+	FailureIsRunningNode createFailureIsRunningNode();
+
+	/**
+	 * Returns a new object of class '<em>Failure Is Success Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Failure Is Success Node</em>'.
+	 * @generated
+	 */
+	FailureIsSuccessNode createFailureIsSuccessNode();
+
+	/**
+	 * Returns a new object of class '<em>Running Is Failure Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Running Is Failure Node</em>'.
+	 * @generated
+	 */
+	RunningIsFailureNode createRunningIsFailureNode();
+
+	/**
+	 * Returns a new object of class '<em>Running Is Success Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Running Is Success Node</em>'.
+	 * @generated
+	 */
+	RunningIsSuccessNode createRunningIsSuccessNode();
+
+	/**
+	 * Returns a new object of class '<em>Success Is Failure Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Success Is Failure Node</em>'.
+	 * @generated
+	 */
+	SuccessIsFailureNode createSuccessIsFailureNode();
+
+	/**
+	 * Returns a new object of class '<em>Success Is Running Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Success Is Running Node</em>'.
+	 * @generated
+	 */
+	SuccessIsRunningNode createSuccessIsRunningNode();
+
+	/**
+	 * Returns a new object of class '<em>Test Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Test Node</em>'.
+	 * @generated
+	 */
+	TestNode createTestNode();
+
+	/**
+	 * Returns a new object of class '<em>Entry Updated Action Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Entry Updated Action Node</em>'.
+	 * @generated
+	 */
+	EntryUpdatedActionNode createEntryUpdatedActionNode();
+
+	/**
+	 * Returns a new object of class '<em>Unset Blackboard Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Unset Blackboard Node</em>'.
+	 * @generated
+	 */
+	UnsetBlackboardNode createUnsetBlackboardNode();
 
 	/**
 	 * Returns the package supported by this factory.

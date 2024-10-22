@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class SetBlackboardNodeImpl extends ActionNodeBaseImpl implements SetBlackboardNode {
+public class SetBlackboardNodeImpl extends SyncActionNodeImpl implements SetBlackboardNode {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->

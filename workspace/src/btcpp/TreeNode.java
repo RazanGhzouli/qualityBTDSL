@@ -23,6 +23,8 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *   <li>{@link btcpp.TreeNode#getAnyAttribute <em>Any Attribute</em>}</li>
  *   <li>{@link btcpp.TreeNode#getNodeStatus <em>Node Status</em>}</li>
  *   <li>{@link btcpp.TreeNode#getParameters <em>Parameters</em>}</li>
+ *   <li>{@link btcpp.TreeNode#getSatisfices <em>Satisfices</em>}</li>
+ *   <li>{@link btcpp.TreeNode#getSatisfies <em>Satisfies</em>}</li>
  * </ul>
  *
  * @see btcpp.BtcppPackage#getTreeNode()
@@ -147,5 +149,29 @@ public interface TreeNode extends EObject {
 	 * @generated
 	 */
 	EList<Parameter> getParameters();
+
+	/**
+	 * Returns the value of the '<em><b>Satisfices</b></em>' reference list.
+	 * The list contents are of type {@link btcpp.Quality}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Satisfices</em>' reference list.
+	 * @see btcpp.BtcppPackage#getTreeNode_Satisfices()
+	 * @model
+	 * @generated
+	 */
+	EList<Quality> getSatisfices();
+
+	/**
+	 * Returns the value of the '<em><b>Satisfies</b></em>' reference list.
+	 * The list contents are of type {@link btcpp.QualityRequirement}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Satisfies</em>' reference list.
+	 * @see btcpp.BtcppPackage#getTreeNode_Satisfies()
+	 * @model
+	 * @generated
+	 */
+	EList<QualityRequirement> getSatisfies();
 
 } // TreeNode

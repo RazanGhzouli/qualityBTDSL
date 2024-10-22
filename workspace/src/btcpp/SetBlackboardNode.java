@@ -20,7 +20,7 @@ package btcpp;
  * @model
  * @generated
  */
-public interface SetBlackboardNode extends ActionNodeBase {
+public interface SetBlackboardNode extends SyncActionNode {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->

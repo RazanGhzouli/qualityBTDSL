@@ -14,7 +14,6 @@
       <genEnumLiterals ecoreEnumLiteral="btcpp.ecore#//NodeType/SUBTREE"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="btcpp.ecore#//NodeStatus">
-      <genEnumLiterals ecoreEnumLiteral="btcpp.ecore#//NodeStatus/IDLE"/>
       <genEnumLiterals ecoreEnumLiteral="btcpp.ecore#//NodeStatus/RUNNING"/>
       <genEnumLiterals ecoreEnumLiteral="btcpp.ecore#//NodeStatus/SUCCESS"/>
       <genEnumLiterals ecoreEnumLiteral="btcpp.ecore#//NodeStatus/FAILURE"/>
@@ -30,6 +29,8 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute btcpp.ecore#//TreeNode/AnyAttribute"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//TreeNode/NodeStatus"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference btcpp.ecore#//TreeNode/parameters"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference btcpp.ecore#//TreeNode/satisfices"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference btcpp.ecore#//TreeNode/satisfies"/>
     </genClasses>
     <genClasses image="false" ecoreClass="btcpp.ecore#//ControlNode">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference btcpp.ecore#//ControlNode/child"/>
@@ -43,32 +44,25 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//SetBlackboardNode/value"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//SetBlackboardNode/output_key"/>
     </genClasses>
-    <genClasses ecoreClass="btcpp.ecore#//FallbackNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//SelectorNode"/>
     <genClasses ecoreClass="btcpp.ecore#//IfThenElseNode"/>
-    <genClasses ecoreClass="btcpp.ecore#//MnualNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//ManualSelectorNode"/>
     <genClasses ecoreClass="btcpp.ecore#//ParallelNode"/>
-    <genClasses ecoreClass="btcpp.ecore#//SequenceStarNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//SequenceWithMemory"/>
     <genClasses ecoreClass="btcpp.ecore#//SwitchNode"/>
-    <genClasses ecoreClass="btcpp.ecore#//ReactiveFallback"/>
+    <genClasses ecoreClass="btcpp.ecore#//ReactiveSelector"/>
     <genClasses ecoreClass="btcpp.ecore#//WhileDoElseNode"/>
     <genClasses ecoreClass="btcpp.ecore#//ReactiveSequence"/>
     <genClasses ecoreClass="btcpp.ecore#//SequenceNode"/>
-    <genClasses ecoreClass="btcpp.ecore#//SubtreeNode"/>
     <genClasses ecoreClass="btcpp.ecore#//TimeoutNode">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//TimeoutNode/msec"/>
     </genClasses>
     <genClasses ecoreClass="btcpp.ecore#//KeepRunningUntilFailureNode"/>
-    <genClasses ecoreClass="btcpp.ecore#//TimerQueueNode"/>
     <genClasses ecoreClass="btcpp.ecore#//InverterNode"/>
     <genClasses ecoreClass="btcpp.ecore#//ForceSuccessNode"/>
     <genClasses ecoreClass="btcpp.ecore#//ForceFailureNode"/>
     <genClasses ecoreClass="btcpp.ecore#//RepeatNode">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//RepeatNode/num_cycles"/>
-    </genClasses>
-    <genClasses image="false" ecoreClass="btcpp.ecore#//BlackboardPrecondition">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//BlackboardPrecondition/return_on_mismatch"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//BlackboardPrecondition/value_A"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//BlackboardPrecondition/value_B"/>
     </genClasses>
     <genClasses image="false" ecoreClass="btcpp.ecore#//ConditionNode"/>
     <genClasses ecoreClass="btcpp.ecore#//SubTree">
@@ -76,8 +70,8 @@
     </genClasses>
     <genClasses image="false" ecoreClass="btcpp.ecore#//LeafNode"/>
     <genClasses image="false" ecoreClass="btcpp.ecore#//ActionNodeBase"/>
-    <genClasses ecoreClass="btcpp.ecore#//SimpleActionNode"/>
-    <genClasses ecoreClass="btcpp.ecore#//SimpleConditionNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//ScriptNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//ScriptConditionNode"/>
     <genClasses ecoreClass="btcpp.ecore#//RetryNode">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//RetryNode/num_attempts"/>
     </genClasses>
@@ -85,12 +79,39 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference btcpp.ecore#//Root/behaviortrees"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//Root/main_tree_to_execute"/>
     </genClasses>
-    <genClasses ecoreClass="btcpp.ecore#//BlackboardCheckInt"/>
-    <genClasses ecoreClass="btcpp.ecore#//BlackboardCheckDouble"/>
-    <genClasses ecoreClass="btcpp.ecore#//BlackboardCheckString"/>
     <genClasses ecoreClass="btcpp.ecore#//Parameter">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//Parameter/key"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//Parameter/value"/>
     </genClasses>
+    <genClasses ecoreClass="btcpp.ecore#//QualityRequirement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//QualityRequirement/ID"/>
+    </genClasses>
+    <genClasses ecoreClass="btcpp.ecore#//Quality">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//Quality/ID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference btcpp.ecore#//Quality/qualityreq"/>
+    </genClasses>
+    <genClasses ecoreClass="btcpp.ecore#//SelectorWithMemory"/>
+    <genClasses ecoreClass="btcpp.ecore#//ParallelAllNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//DelayNode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//DelayNode/delay_msec"/>
+    </genClasses>
+    <genClasses ecoreClass="btcpp.ecore#//PreconditionNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//EntryUpdatedDecoratorNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//RunOnceNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//LoopNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//ConsumeQueueNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//CountNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//EternalGuardNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//StatusToBlackboardNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//FailureIsRunningNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//FailureIsSuccessNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//RunningIsFailureNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//RunningIsSuccessNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//SuccessIsFailureNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//SuccessIsRunningNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//TestNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//EntryUpdatedActionNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//UnsetBlackboardNode"/>
+    <genClasses ecoreClass="btcpp.ecore#//SyncActionNode"/>
   </genPackages>
 </genmodel:GenModel>

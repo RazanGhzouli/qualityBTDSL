@@ -13,5 +13,5 @@ package btcpp;
  * @model
  * @generated
  */
-public interface AlwaysFailureNode extends ActionNodeBase {
+public interface AlwaysFailureNode extends SyncActionNode {
 } // AlwaysFailureNode

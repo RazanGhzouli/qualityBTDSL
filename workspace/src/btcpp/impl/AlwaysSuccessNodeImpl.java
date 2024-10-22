@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class AlwaysSuccessNodeImpl extends ActionNodeBaseImpl implements AlwaysSuccessNode {
+public class AlwaysSuccessNodeImpl extends SyncActionNodeImpl implements AlwaysSuccessNode {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

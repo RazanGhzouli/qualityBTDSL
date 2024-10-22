@@ -61,33 +61,50 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 			case BtcppPackage.ALWAYS_FAILURE_NODE: return createAlwaysFailureNode();
 			case BtcppPackage.ALWAYS_SUCCESS_NODE: return createAlwaysSuccessNode();
 			case BtcppPackage.SET_BLACKBOARD_NODE: return createSetBlackboardNode();
-			case BtcppPackage.FALLBACK_NODE: return createFallbackNode();
+			case BtcppPackage.SELECTOR_NODE: return createSelectorNode();
 			case BtcppPackage.IF_THEN_ELSE_NODE: return createIfThenElseNode();
-			case BtcppPackage.MNUAL_NODE: return createMnualNode();
+			case BtcppPackage.MANUAL_SELECTOR_NODE: return createManualSelectorNode();
 			case BtcppPackage.PARALLEL_NODE: return createParallelNode();
-			case BtcppPackage.SEQUENCE_STAR_NODE: return createSequenceStarNode();
+			case BtcppPackage.SEQUENCE_WITH_MEMORY: return createSequenceWithMemory();
 			case BtcppPackage.SWITCH_NODE: return createSwitchNode();
-			case BtcppPackage.REACTIVE_FALLBACK: return createReactiveFallback();
+			case BtcppPackage.REACTIVE_SELECTOR: return createReactiveSelector();
 			case BtcppPackage.WHILE_DO_ELSE_NODE: return createWhileDoElseNode();
 			case BtcppPackage.REACTIVE_SEQUENCE: return createReactiveSequence();
 			case BtcppPackage.SEQUENCE_NODE: return createSequenceNode();
-			case BtcppPackage.SUBTREE_NODE: return createSubtreeNode();
 			case BtcppPackage.TIMEOUT_NODE: return createTimeoutNode();
 			case BtcppPackage.KEEP_RUNNING_UNTIL_FAILURE_NODE: return createKeepRunningUntilFailureNode();
-			case BtcppPackage.TIMER_QUEUE_NODE: return createTimerQueueNode();
 			case BtcppPackage.INVERTER_NODE: return createInverterNode();
 			case BtcppPackage.FORCE_SUCCESS_NODE: return createForceSuccessNode();
 			case BtcppPackage.FORCE_FAILURE_NODE: return createForceFailureNode();
 			case BtcppPackage.REPEAT_NODE: return createRepeatNode();
 			case BtcppPackage.SUB_TREE: return createSubTree();
-			case BtcppPackage.SIMPLE_ACTION_NODE: return createSimpleActionNode();
-			case BtcppPackage.SIMPLE_CONDITION_NODE: return createSimpleConditionNode();
+			case BtcppPackage.SCRIPT_NODE: return createScriptNode();
+			case BtcppPackage.SCRIPT_CONDITION_NODE: return createScriptConditionNode();
 			case BtcppPackage.RETRY_NODE: return createRetryNode();
 			case BtcppPackage.ROOT: return createRoot();
-			case BtcppPackage.BLACKBOARD_CHECK_INT: return createBlackboardCheckInt();
-			case BtcppPackage.BLACKBOARD_CHECK_DOUBLE: return createBlackboardCheckDouble();
-			case BtcppPackage.BLACKBOARD_CHECK_STRING: return createBlackboardCheckString();
 			case BtcppPackage.PARAMETER: return createParameter();
+			case BtcppPackage.QUALITY_REQUIREMENT: return createQualityRequirement();
+			case BtcppPackage.QUALITY: return createQuality();
+			case BtcppPackage.SELECTOR_WITH_MEMORY: return createSelectorWithMemory();
+			case BtcppPackage.PARALLEL_ALL_NODE: return createParallelAllNode();
+			case BtcppPackage.DELAY_NODE: return createDelayNode();
+			case BtcppPackage.PRECONDITION_NODE: return createPreconditionNode();
+			case BtcppPackage.ENTRY_UPDATED_DECORATOR_NODE: return createEntryUpdatedDecoratorNode();
+			case BtcppPackage.RUN_ONCE_NODE: return createRunOnceNode();
+			case BtcppPackage.LOOP_NODE: return createLoopNode();
+			case BtcppPackage.CONSUME_QUEUE_NODE: return createConsumeQueueNode();
+			case BtcppPackage.COUNT_NODE: return createCountNode();
+			case BtcppPackage.ETERNAL_GUARD_NODE: return createEternalGuardNode();
+			case BtcppPackage.STATUS_TO_BLACKBOARD_NODE: return createStatusToBlackboardNode();
+			case BtcppPackage.FAILURE_IS_RUNNING_NODE: return createFailureIsRunningNode();
+			case BtcppPackage.FAILURE_IS_SUCCESS_NODE: return createFailureIsSuccessNode();
+			case BtcppPackage.RUNNING_IS_FAILURE_NODE: return createRunningIsFailureNode();
+			case BtcppPackage.RUNNING_IS_SUCCESS_NODE: return createRunningIsSuccessNode();
+			case BtcppPackage.SUCCESS_IS_FAILURE_NODE: return createSuccessIsFailureNode();
+			case BtcppPackage.SUCCESS_IS_RUNNING_NODE: return createSuccessIsRunningNode();
+			case BtcppPackage.TEST_NODE: return createTestNode();
+			case BtcppPackage.ENTRY_UPDATED_ACTION_NODE: return createEntryUpdatedActionNode();
+			case BtcppPackage.UNSET_BLACKBOARD_NODE: return createUnsetBlackboardNode();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -172,9 +189,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FallbackNode createFallbackNode() {
-		FallbackNodeImpl fallbackNode = new FallbackNodeImpl();
-		return fallbackNode;
+	public SelectorNode createSelectorNode() {
+		SelectorNodeImpl selectorNode = new SelectorNodeImpl();
+		return selectorNode;
 	}
 
 	/**
@@ -192,9 +209,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MnualNode createMnualNode() {
-		MnualNodeImpl mnualNode = new MnualNodeImpl();
-		return mnualNode;
+	public ManualSelectorNode createManualSelectorNode() {
+		ManualSelectorNodeImpl manualSelectorNode = new ManualSelectorNodeImpl();
+		return manualSelectorNode;
 	}
 
 	/**
@@ -212,9 +229,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SequenceStarNode createSequenceStarNode() {
-		SequenceStarNodeImpl sequenceStarNode = new SequenceStarNodeImpl();
-		return sequenceStarNode;
+	public SequenceWithMemory createSequenceWithMemory() {
+		SequenceWithMemoryImpl sequenceWithMemory = new SequenceWithMemoryImpl();
+		return sequenceWithMemory;
 	}
 
 	/**
@@ -232,9 +249,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReactiveFallback createReactiveFallback() {
-		ReactiveFallbackImpl reactiveFallback = new ReactiveFallbackImpl();
-		return reactiveFallback;
+	public ReactiveSelector createReactiveSelector() {
+		ReactiveSelectorImpl reactiveSelector = new ReactiveSelectorImpl();
+		return reactiveSelector;
 	}
 
 	/**
@@ -272,16 +289,6 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SubtreeNode createSubtreeNode() {
-		SubtreeNodeImpl subtreeNode = new SubtreeNodeImpl();
-		return subtreeNode;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public TimeoutNode createTimeoutNode() {
 		TimeoutNodeImpl timeoutNode = new TimeoutNodeImpl();
 		return timeoutNode;
@@ -295,16 +302,6 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	public KeepRunningUntilFailureNode createKeepRunningUntilFailureNode() {
 		KeepRunningUntilFailureNodeImpl keepRunningUntilFailureNode = new KeepRunningUntilFailureNodeImpl();
 		return keepRunningUntilFailureNode;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public TimerQueueNode createTimerQueueNode() {
-		TimerQueueNodeImpl timerQueueNode = new TimerQueueNodeImpl();
-		return timerQueueNode;
 	}
 
 	/**
@@ -362,9 +359,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SimpleActionNode createSimpleActionNode() {
-		SimpleActionNodeImpl simpleActionNode = new SimpleActionNodeImpl();
-		return simpleActionNode;
+	public ScriptNode createScriptNode() {
+		ScriptNodeImpl scriptNode = new ScriptNodeImpl();
+		return scriptNode;
 	}
 
 	/**
@@ -372,9 +369,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SimpleConditionNode createSimpleConditionNode() {
-		SimpleConditionNodeImpl simpleConditionNode = new SimpleConditionNodeImpl();
-		return simpleConditionNode;
+	public ScriptConditionNode createScriptConditionNode() {
+		ScriptConditionNodeImpl scriptConditionNode = new ScriptConditionNodeImpl();
+		return scriptConditionNode;
 	}
 
 	/**
@@ -402,39 +399,229 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BlackboardCheckInt createBlackboardCheckInt() {
-		BlackboardCheckIntImpl blackboardCheckInt = new BlackboardCheckIntImpl();
-		return blackboardCheckInt;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public BlackboardCheckDouble createBlackboardCheckDouble() {
-		BlackboardCheckDoubleImpl blackboardCheckDouble = new BlackboardCheckDoubleImpl();
-		return blackboardCheckDouble;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public BlackboardCheckString createBlackboardCheckString() {
-		BlackboardCheckStringImpl blackboardCheckString = new BlackboardCheckStringImpl();
-		return blackboardCheckString;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Parameter createParameter() {
 		ParameterImpl parameter = new ParameterImpl();
 		return parameter;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public QualityRequirement createQualityRequirement() {
+		QualityRequirementImpl qualityRequirement = new QualityRequirementImpl();
+		return qualityRequirement;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Quality createQuality() {
+		QualityImpl quality = new QualityImpl();
+		return quality;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SelectorWithMemory createSelectorWithMemory() {
+		SelectorWithMemoryImpl selectorWithMemory = new SelectorWithMemoryImpl();
+		return selectorWithMemory;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ParallelAllNode createParallelAllNode() {
+		ParallelAllNodeImpl parallelAllNode = new ParallelAllNodeImpl();
+		return parallelAllNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DelayNode createDelayNode() {
+		DelayNodeImpl delayNode = new DelayNodeImpl();
+		return delayNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PreconditionNode createPreconditionNode() {
+		PreconditionNodeImpl preconditionNode = new PreconditionNodeImpl();
+		return preconditionNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EntryUpdatedDecoratorNode createEntryUpdatedDecoratorNode() {
+		EntryUpdatedDecoratorNodeImpl entryUpdatedDecoratorNode = new EntryUpdatedDecoratorNodeImpl();
+		return entryUpdatedDecoratorNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RunOnceNode createRunOnceNode() {
+		RunOnceNodeImpl runOnceNode = new RunOnceNodeImpl();
+		return runOnceNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LoopNode createLoopNode() {
+		LoopNodeImpl loopNode = new LoopNodeImpl();
+		return loopNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConsumeQueueNode createConsumeQueueNode() {
+		ConsumeQueueNodeImpl consumeQueueNode = new ConsumeQueueNodeImpl();
+		return consumeQueueNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CountNode createCountNode() {
+		CountNodeImpl countNode = new CountNodeImpl();
+		return countNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EternalGuardNode createEternalGuardNode() {
+		EternalGuardNodeImpl eternalGuardNode = new EternalGuardNodeImpl();
+		return eternalGuardNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StatusToBlackboardNode createStatusToBlackboardNode() {
+		StatusToBlackboardNodeImpl statusToBlackboardNode = new StatusToBlackboardNodeImpl();
+		return statusToBlackboardNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FailureIsRunningNode createFailureIsRunningNode() {
+		FailureIsRunningNodeImpl failureIsRunningNode = new FailureIsRunningNodeImpl();
+		return failureIsRunningNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FailureIsSuccessNode createFailureIsSuccessNode() {
+		FailureIsSuccessNodeImpl failureIsSuccessNode = new FailureIsSuccessNodeImpl();
+		return failureIsSuccessNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RunningIsFailureNode createRunningIsFailureNode() {
+		RunningIsFailureNodeImpl runningIsFailureNode = new RunningIsFailureNodeImpl();
+		return runningIsFailureNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RunningIsSuccessNode createRunningIsSuccessNode() {
+		RunningIsSuccessNodeImpl runningIsSuccessNode = new RunningIsSuccessNodeImpl();
+		return runningIsSuccessNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SuccessIsFailureNode createSuccessIsFailureNode() {
+		SuccessIsFailureNodeImpl successIsFailureNode = new SuccessIsFailureNodeImpl();
+		return successIsFailureNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SuccessIsRunningNode createSuccessIsRunningNode() {
+		SuccessIsRunningNodeImpl successIsRunningNode = new SuccessIsRunningNodeImpl();
+		return successIsRunningNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TestNode createTestNode() {
+		TestNodeImpl testNode = new TestNodeImpl();
+		return testNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EntryUpdatedActionNode createEntryUpdatedActionNode() {
+		EntryUpdatedActionNodeImpl entryUpdatedActionNode = new EntryUpdatedActionNodeImpl();
+		return entryUpdatedActionNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UnsetBlackboardNode createUnsetBlackboardNode() {
+		UnsetBlackboardNodeImpl unsetBlackboardNode = new UnsetBlackboardNodeImpl();
+		return unsetBlackboardNode;
 	}
 
 	/**

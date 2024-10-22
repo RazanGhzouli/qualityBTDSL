@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class AlwaysFailureNodeImpl extends ActionNodeBaseImpl implements AlwaysFailureNode {
+public class AlwaysFailureNodeImpl extends SyncActionNodeImpl implements AlwaysFailureNode {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

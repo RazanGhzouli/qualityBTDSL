@@ -19,16 +19,6 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum NodeStatus implements Enumerator {
 	/**
-	 * The '<em><b>IDLE</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #IDLE_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	IDLE(0, "IDLE", "IDLE"),
-
-	/**
 	 * The '<em><b>RUNNING</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -57,17 +47,6 @@ public enum NodeStatus implements Enumerator {
 	 * @ordered
 	 */
 	FAILURE(3, "FAILURE", "FAILURE");
-
-	/**
-	 * The '<em><b>IDLE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #IDLE
-	 * @model
-	 * @generated
-	 * @ordered
-	 */
-	public static final int IDLE_VALUE = 0;
 
 	/**
 	 * The '<em><b>RUNNING</b></em>' literal value.
@@ -110,7 +89,6 @@ public enum NodeStatus implements Enumerator {
 	 */
 	private static final NodeStatus[] VALUES_ARRAY =
 		new NodeStatus[] {
-			IDLE,
 			RUNNING,
 			SUCCESS,
 			FAILURE,
@@ -170,7 +148,6 @@ public enum NodeStatus implements Enumerator {
 	 */
 	public static NodeStatus get(int value) {
 		switch (value) {
-			case IDLE_VALUE: return IDLE;
 			case RUNNING_VALUE: return RUNNING;
 			case SUCCESS_VALUE: return SUCCESS;
 			case FAILURE_VALUE: return FAILURE;
