@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class TestNodeImpl extends SyncActionNodeImpl implements TestNode {
+public class TestNodeImpl extends StatefulActionNodeImpl implements TestNode {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

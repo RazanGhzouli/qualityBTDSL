@@ -122,11 +122,11 @@ public class BtcppSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case BtcppPackage.SELECTOR_NODE: {
-				SelectorNode selectorNode = (SelectorNode)theEObject;
-				T result = caseSelectorNode(selectorNode);
-				if (result == null) result = caseControlNode(selectorNode);
-				if (result == null) result = caseTreeNode(selectorNode);
+			case BtcppPackage.FALLBACK_NODE: {
+				FallbackNode fallbackNode = (FallbackNode)theEObject;
+				T result = caseFallbackNode(fallbackNode);
+				if (result == null) result = caseControlNode(fallbackNode);
+				if (result == null) result = caseTreeNode(fallbackNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -154,11 +154,11 @@ public class BtcppSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case BtcppPackage.SEQUENCE_WITH_MEMORY: {
-				SequenceWithMemory sequenceWithMemory = (SequenceWithMemory)theEObject;
-				T result = caseSequenceWithMemory(sequenceWithMemory);
-				if (result == null) result = caseControlNode(sequenceWithMemory);
-				if (result == null) result = caseTreeNode(sequenceWithMemory);
+			case BtcppPackage.SEQUENCE_WITH_MEMORY_NODE: {
+				SequenceWithMemoryNode sequenceWithMemoryNode = (SequenceWithMemoryNode)theEObject;
+				T result = caseSequenceWithMemoryNode(sequenceWithMemoryNode);
+				if (result == null) result = caseControlNode(sequenceWithMemoryNode);
+				if (result == null) result = caseTreeNode(sequenceWithMemoryNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -170,11 +170,11 @@ public class BtcppSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case BtcppPackage.REACTIVE_SELECTOR: {
-				ReactiveSelector reactiveSelector = (ReactiveSelector)theEObject;
-				T result = caseReactiveSelector(reactiveSelector);
-				if (result == null) result = caseControlNode(reactiveSelector);
-				if (result == null) result = caseTreeNode(reactiveSelector);
+			case BtcppPackage.REACTIVE_FALLBACK_NODE: {
+				ReactiveFallbackNode reactiveFallbackNode = (ReactiveFallbackNode)theEObject;
+				T result = caseReactiveFallbackNode(reactiveFallbackNode);
+				if (result == null) result = caseControlNode(reactiveFallbackNode);
+				if (result == null) result = caseTreeNode(reactiveFallbackNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -186,11 +186,11 @@ public class BtcppSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case BtcppPackage.REACTIVE_SEQUENCE: {
-				ReactiveSequence reactiveSequence = (ReactiveSequence)theEObject;
-				T result = caseReactiveSequence(reactiveSequence);
-				if (result == null) result = caseControlNode(reactiveSequence);
-				if (result == null) result = caseTreeNode(reactiveSequence);
+			case BtcppPackage.REACTIVE_SEQUENCE_NODE: {
+				ReactiveSequenceNode reactiveSequenceNode = (ReactiveSequenceNode)theEObject;
+				T result = caseReactiveSequenceNode(reactiveSequenceNode);
+				if (result == null) result = caseControlNode(reactiveSequenceNode);
+				if (result == null) result = caseTreeNode(reactiveSequenceNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -331,14 +331,6 @@ public class BtcppSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case BtcppPackage.SELECTOR_WITH_MEMORY: {
-				SelectorWithMemory selectorWithMemory = (SelectorWithMemory)theEObject;
-				T result = caseSelectorWithMemory(selectorWithMemory);
-				if (result == null) result = caseControlNode(selectorWithMemory);
-				if (result == null) result = caseTreeNode(selectorWithMemory);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case BtcppPackage.PARALLEL_ALL_NODE: {
 				ParallelAllNode parallelAllNode = (ParallelAllNode)theEObject;
 				T result = caseParallelAllNode(parallelAllNode);
@@ -395,82 +387,11 @@ public class BtcppSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case BtcppPackage.COUNT_NODE: {
-				CountNode countNode = (CountNode)theEObject;
-				T result = caseCountNode(countNode);
-				if (result == null) result = caseDecoratorNode(countNode);
-				if (result == null) result = caseTreeNode(countNode);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case BtcppPackage.ETERNAL_GUARD_NODE: {
-				EternalGuardNode eternalGuardNode = (EternalGuardNode)theEObject;
-				T result = caseEternalGuardNode(eternalGuardNode);
-				if (result == null) result = caseDecoratorNode(eternalGuardNode);
-				if (result == null) result = caseTreeNode(eternalGuardNode);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case BtcppPackage.STATUS_TO_BLACKBOARD_NODE: {
-				StatusToBlackboardNode statusToBlackboardNode = (StatusToBlackboardNode)theEObject;
-				T result = caseStatusToBlackboardNode(statusToBlackboardNode);
-				if (result == null) result = caseDecoratorNode(statusToBlackboardNode);
-				if (result == null) result = caseTreeNode(statusToBlackboardNode);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case BtcppPackage.FAILURE_IS_RUNNING_NODE: {
-				FailureIsRunningNode failureIsRunningNode = (FailureIsRunningNode)theEObject;
-				T result = caseFailureIsRunningNode(failureIsRunningNode);
-				if (result == null) result = caseDecoratorNode(failureIsRunningNode);
-				if (result == null) result = caseTreeNode(failureIsRunningNode);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case BtcppPackage.FAILURE_IS_SUCCESS_NODE: {
-				FailureIsSuccessNode failureIsSuccessNode = (FailureIsSuccessNode)theEObject;
-				T result = caseFailureIsSuccessNode(failureIsSuccessNode);
-				if (result == null) result = caseDecoratorNode(failureIsSuccessNode);
-				if (result == null) result = caseTreeNode(failureIsSuccessNode);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case BtcppPackage.RUNNING_IS_FAILURE_NODE: {
-				RunningIsFailureNode runningIsFailureNode = (RunningIsFailureNode)theEObject;
-				T result = caseRunningIsFailureNode(runningIsFailureNode);
-				if (result == null) result = caseDecoratorNode(runningIsFailureNode);
-				if (result == null) result = caseTreeNode(runningIsFailureNode);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case BtcppPackage.RUNNING_IS_SUCCESS_NODE: {
-				RunningIsSuccessNode runningIsSuccessNode = (RunningIsSuccessNode)theEObject;
-				T result = caseRunningIsSuccessNode(runningIsSuccessNode);
-				if (result == null) result = caseDecoratorNode(runningIsSuccessNode);
-				if (result == null) result = caseTreeNode(runningIsSuccessNode);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case BtcppPackage.SUCCESS_IS_FAILURE_NODE: {
-				SuccessIsFailureNode successIsFailureNode = (SuccessIsFailureNode)theEObject;
-				T result = caseSuccessIsFailureNode(successIsFailureNode);
-				if (result == null) result = caseDecoratorNode(successIsFailureNode);
-				if (result == null) result = caseTreeNode(successIsFailureNode);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case BtcppPackage.SUCCESS_IS_RUNNING_NODE: {
-				SuccessIsRunningNode successIsRunningNode = (SuccessIsRunningNode)theEObject;
-				T result = caseSuccessIsRunningNode(successIsRunningNode);
-				if (result == null) result = caseDecoratorNode(successIsRunningNode);
-				if (result == null) result = caseTreeNode(successIsRunningNode);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case BtcppPackage.TEST_NODE: {
 				TestNode testNode = (TestNode)theEObject;
 				T result = caseTestNode(testNode);
-				if (result == null) result = caseSyncActionNode(testNode);
+				if (result == null) result = caseStatefulActionNode(testNode);
+				if (result == null) result = caseAsynchActionNode(testNode);
 				if (result == null) result = caseActionNodeBase(testNode);
 				if (result == null) result = caseLeafNode(testNode);
 				if (result == null) result = caseTreeNode(testNode);
@@ -503,6 +424,65 @@ public class BtcppSwitch<T> extends Switch<T> {
 				if (result == null) result = caseActionNodeBase(syncActionNode);
 				if (result == null) result = caseLeafNode(syncActionNode);
 				if (result == null) result = caseTreeNode(syncActionNode);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BtcppPackage.THREADED_ACTION_NODE: {
+				ThreadedActionNode threadedActionNode = (ThreadedActionNode)theEObject;
+				T result = caseThreadedActionNode(threadedActionNode);
+				if (result == null) result = caseActionNodeBase(threadedActionNode);
+				if (result == null) result = caseLeafNode(threadedActionNode);
+				if (result == null) result = caseTreeNode(threadedActionNode);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BtcppPackage.STATEFUL_ACTION_NODE: {
+				StatefulActionNode statefulActionNode = (StatefulActionNode)theEObject;
+				T result = caseStatefulActionNode(statefulActionNode);
+				if (result == null) result = caseAsynchActionNode(statefulActionNode);
+				if (result == null) result = caseActionNodeBase(statefulActionNode);
+				if (result == null) result = caseLeafNode(statefulActionNode);
+				if (result == null) result = caseTreeNode(statefulActionNode);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BtcppPackage.CORO_ACTION_NODE: {
+				CoroActionNode coroActionNode = (CoroActionNode)theEObject;
+				T result = caseCoroActionNode(coroActionNode);
+				if (result == null) result = caseAsynchActionNode(coroActionNode);
+				if (result == null) result = caseActionNodeBase(coroActionNode);
+				if (result == null) result = caseLeafNode(coroActionNode);
+				if (result == null) result = caseTreeNode(coroActionNode);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BtcppPackage.ASYNCH_ACTION_NODE: {
+				AsynchActionNode asynchActionNode = (AsynchActionNode)theEObject;
+				T result = caseAsynchActionNode(asynchActionNode);
+				if (result == null) result = caseActionNodeBase(asynchActionNode);
+				if (result == null) result = caseLeafNode(asynchActionNode);
+				if (result == null) result = caseTreeNode(asynchActionNode);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BtcppPackage.SLEEP_NODE: {
+				SleepNode sleepNode = (SleepNode)theEObject;
+				T result = caseSleepNode(sleepNode);
+				if (result == null) result = caseStatefulActionNode(sleepNode);
+				if (result == null) result = caseAsynchActionNode(sleepNode);
+				if (result == null) result = caseActionNodeBase(sleepNode);
+				if (result == null) result = caseLeafNode(sleepNode);
+				if (result == null) result = caseTreeNode(sleepNode);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BtcppPackage.POP_FROM_QUEUE_NODE: {
+				PopFromQueueNode popFromQueueNode = (PopFromQueueNode)theEObject;
+				T result = casePopFromQueueNode(popFromQueueNode);
+				if (result == null) result = caseSyncActionNode(popFromQueueNode);
+				if (result == null) result = caseActionNodeBase(popFromQueueNode);
+				if (result == null) result = caseLeafNode(popFromQueueNode);
+				if (result == null) result = caseTreeNode(popFromQueueNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -616,17 +596,17 @@ public class BtcppSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Selector Node</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Fallback Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Selector Node</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Fallback Node</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSelectorNode(SelectorNode object) {
+	public T caseFallbackNode(FallbackNode object) {
 		return null;
 	}
 
@@ -676,17 +656,17 @@ public class BtcppSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sequence With Memory</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Sequence With Memory Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sequence With Memory</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Sequence With Memory Node</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSequenceWithMemory(SequenceWithMemory object) {
+	public T caseSequenceWithMemoryNode(SequenceWithMemoryNode object) {
 		return null;
 	}
 
@@ -706,17 +686,17 @@ public class BtcppSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Reactive Selector</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Reactive Fallback Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Reactive Selector</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Reactive Fallback Node</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseReactiveSelector(ReactiveSelector object) {
+	public T caseReactiveFallbackNode(ReactiveFallbackNode object) {
 		return null;
 	}
 
@@ -736,17 +716,17 @@ public class BtcppSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Reactive Sequence</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Reactive Sequence Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Reactive Sequence</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Reactive Sequence Node</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseReactiveSequence(ReactiveSequence object) {
+	public T caseReactiveSequenceNode(ReactiveSequenceNode object) {
 		return null;
 	}
 
@@ -1021,21 +1001,6 @@ public class BtcppSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Selector With Memory</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Selector With Memory</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSelectorWithMemory(SelectorWithMemory object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Parallel All Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1141,141 +1106,6 @@ public class BtcppSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Count Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Count Node</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCountNode(CountNode object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Eternal Guard Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Eternal Guard Node</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseEternalGuardNode(EternalGuardNode object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Status To Blackboard Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Status To Blackboard Node</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseStatusToBlackboardNode(StatusToBlackboardNode object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Failure Is Running Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Failure Is Running Node</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFailureIsRunningNode(FailureIsRunningNode object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Failure Is Success Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Failure Is Success Node</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFailureIsSuccessNode(FailureIsSuccessNode object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Running Is Failure Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Running Is Failure Node</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseRunningIsFailureNode(RunningIsFailureNode object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Running Is Success Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Running Is Success Node</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseRunningIsSuccessNode(RunningIsSuccessNode object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Success Is Failure Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Success Is Failure Node</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSuccessIsFailureNode(SuccessIsFailureNode object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Success Is Running Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Success Is Running Node</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSuccessIsRunningNode(SuccessIsRunningNode object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Test Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1332,6 +1162,96 @@ public class BtcppSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSyncActionNode(SyncActionNode object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Threaded Action Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Threaded Action Node</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseThreadedActionNode(ThreadedActionNode object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Stateful Action Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Stateful Action Node</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStatefulActionNode(StatefulActionNode object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Coro Action Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Coro Action Node</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCoroActionNode(CoroActionNode object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Asynch Action Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Asynch Action Node</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAsynchActionNode(AsynchActionNode object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sleep Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sleep Node</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSleepNode(SleepNode object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Pop From Queue Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Pop From Queue Node</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePopFromQueueNode(PopFromQueueNode object) {
 		return null;
 	}
 

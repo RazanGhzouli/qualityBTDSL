@@ -96,8 +96,8 @@ public class BtcppAdapterFactory extends AdapterFactoryImpl {
 				return createSetBlackboardNodeAdapter();
 			}
 			@Override
-			public Adapter caseSelectorNode(SelectorNode object) {
-				return createSelectorNodeAdapter();
+			public Adapter caseFallbackNode(FallbackNode object) {
+				return createFallbackNodeAdapter();
 			}
 			@Override
 			public Adapter caseIfThenElseNode(IfThenElseNode object) {
@@ -112,24 +112,24 @@ public class BtcppAdapterFactory extends AdapterFactoryImpl {
 				return createParallelNodeAdapter();
 			}
 			@Override
-			public Adapter caseSequenceWithMemory(SequenceWithMemory object) {
-				return createSequenceWithMemoryAdapter();
+			public Adapter caseSequenceWithMemoryNode(SequenceWithMemoryNode object) {
+				return createSequenceWithMemoryNodeAdapter();
 			}
 			@Override
 			public Adapter caseSwitchNode(SwitchNode object) {
 				return createSwitchNodeAdapter();
 			}
 			@Override
-			public Adapter caseReactiveSelector(ReactiveSelector object) {
-				return createReactiveSelectorAdapter();
+			public Adapter caseReactiveFallbackNode(ReactiveFallbackNode object) {
+				return createReactiveFallbackNodeAdapter();
 			}
 			@Override
 			public Adapter caseWhileDoElseNode(WhileDoElseNode object) {
 				return createWhileDoElseNodeAdapter();
 			}
 			@Override
-			public Adapter caseReactiveSequence(ReactiveSequence object) {
-				return createReactiveSequenceAdapter();
+			public Adapter caseReactiveSequenceNode(ReactiveSequenceNode object) {
+				return createReactiveSequenceNodeAdapter();
 			}
 			@Override
 			public Adapter caseSequenceNode(SequenceNode object) {
@@ -204,10 +204,6 @@ public class BtcppAdapterFactory extends AdapterFactoryImpl {
 				return createQualityAdapter();
 			}
 			@Override
-			public Adapter caseSelectorWithMemory(SelectorWithMemory object) {
-				return createSelectorWithMemoryAdapter();
-			}
-			@Override
 			public Adapter caseParallelAllNode(ParallelAllNode object) {
 				return createParallelAllNodeAdapter();
 			}
@@ -236,42 +232,6 @@ public class BtcppAdapterFactory extends AdapterFactoryImpl {
 				return createConsumeQueueNodeAdapter();
 			}
 			@Override
-			public Adapter caseCountNode(CountNode object) {
-				return createCountNodeAdapter();
-			}
-			@Override
-			public Adapter caseEternalGuardNode(EternalGuardNode object) {
-				return createEternalGuardNodeAdapter();
-			}
-			@Override
-			public Adapter caseStatusToBlackboardNode(StatusToBlackboardNode object) {
-				return createStatusToBlackboardNodeAdapter();
-			}
-			@Override
-			public Adapter caseFailureIsRunningNode(FailureIsRunningNode object) {
-				return createFailureIsRunningNodeAdapter();
-			}
-			@Override
-			public Adapter caseFailureIsSuccessNode(FailureIsSuccessNode object) {
-				return createFailureIsSuccessNodeAdapter();
-			}
-			@Override
-			public Adapter caseRunningIsFailureNode(RunningIsFailureNode object) {
-				return createRunningIsFailureNodeAdapter();
-			}
-			@Override
-			public Adapter caseRunningIsSuccessNode(RunningIsSuccessNode object) {
-				return createRunningIsSuccessNodeAdapter();
-			}
-			@Override
-			public Adapter caseSuccessIsFailureNode(SuccessIsFailureNode object) {
-				return createSuccessIsFailureNodeAdapter();
-			}
-			@Override
-			public Adapter caseSuccessIsRunningNode(SuccessIsRunningNode object) {
-				return createSuccessIsRunningNodeAdapter();
-			}
-			@Override
 			public Adapter caseTestNode(TestNode object) {
 				return createTestNodeAdapter();
 			}
@@ -286,6 +246,30 @@ public class BtcppAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseSyncActionNode(SyncActionNode object) {
 				return createSyncActionNodeAdapter();
+			}
+			@Override
+			public Adapter caseThreadedActionNode(ThreadedActionNode object) {
+				return createThreadedActionNodeAdapter();
+			}
+			@Override
+			public Adapter caseStatefulActionNode(StatefulActionNode object) {
+				return createStatefulActionNodeAdapter();
+			}
+			@Override
+			public Adapter caseCoroActionNode(CoroActionNode object) {
+				return createCoroActionNodeAdapter();
+			}
+			@Override
+			public Adapter caseAsynchActionNode(AsynchActionNode object) {
+				return createAsynchActionNodeAdapter();
+			}
+			@Override
+			public Adapter caseSleepNode(SleepNode object) {
+				return createSleepNodeAdapter();
+			}
+			@Override
+			public Adapter casePopFromQueueNode(PopFromQueueNode object) {
+				return createPopFromQueueNodeAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -406,16 +390,16 @@ public class BtcppAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.SelectorNode <em>Selector Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link btcpp.FallbackNode <em>Fallback Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see btcpp.SelectorNode
+	 * @see btcpp.FallbackNode
 	 * @generated
 	 */
-	public Adapter createSelectorNodeAdapter() {
+	public Adapter createFallbackNodeAdapter() {
 		return null;
 	}
 
@@ -462,16 +446,16 @@ public class BtcppAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.SequenceWithMemory <em>Sequence With Memory</em>}'.
+	 * Creates a new adapter for an object of class '{@link btcpp.SequenceWithMemoryNode <em>Sequence With Memory Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see btcpp.SequenceWithMemory
+	 * @see btcpp.SequenceWithMemoryNode
 	 * @generated
 	 */
-	public Adapter createSequenceWithMemoryAdapter() {
+	public Adapter createSequenceWithMemoryNodeAdapter() {
 		return null;
 	}
 
@@ -490,16 +474,16 @@ public class BtcppAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.ReactiveSelector <em>Reactive Selector</em>}'.
+	 * Creates a new adapter for an object of class '{@link btcpp.ReactiveFallbackNode <em>Reactive Fallback Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see btcpp.ReactiveSelector
+	 * @see btcpp.ReactiveFallbackNode
 	 * @generated
 	 */
-	public Adapter createReactiveSelectorAdapter() {
+	public Adapter createReactiveFallbackNodeAdapter() {
 		return null;
 	}
 
@@ -518,16 +502,16 @@ public class BtcppAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.ReactiveSequence <em>Reactive Sequence</em>}'.
+	 * Creates a new adapter for an object of class '{@link btcpp.ReactiveSequenceNode <em>Reactive Sequence Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see btcpp.ReactiveSequence
+	 * @see btcpp.ReactiveSequenceNode
 	 * @generated
 	 */
-	public Adapter createReactiveSequenceAdapter() {
+	public Adapter createReactiveSequenceNodeAdapter() {
 		return null;
 	}
 
@@ -784,20 +768,6 @@ public class BtcppAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.SelectorWithMemory <em>Selector With Memory</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see btcpp.SelectorWithMemory
-	 * @generated
-	 */
-	public Adapter createSelectorWithMemoryAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link btcpp.ParallelAllNode <em>Parallel All Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -896,132 +866,6 @@ public class BtcppAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.CountNode <em>Count Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see btcpp.CountNode
-	 * @generated
-	 */
-	public Adapter createCountNodeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.EternalGuardNode <em>Eternal Guard Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see btcpp.EternalGuardNode
-	 * @generated
-	 */
-	public Adapter createEternalGuardNodeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.StatusToBlackboardNode <em>Status To Blackboard Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see btcpp.StatusToBlackboardNode
-	 * @generated
-	 */
-	public Adapter createStatusToBlackboardNodeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.FailureIsRunningNode <em>Failure Is Running Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see btcpp.FailureIsRunningNode
-	 * @generated
-	 */
-	public Adapter createFailureIsRunningNodeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.FailureIsSuccessNode <em>Failure Is Success Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see btcpp.FailureIsSuccessNode
-	 * @generated
-	 */
-	public Adapter createFailureIsSuccessNodeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.RunningIsFailureNode <em>Running Is Failure Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see btcpp.RunningIsFailureNode
-	 * @generated
-	 */
-	public Adapter createRunningIsFailureNodeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.RunningIsSuccessNode <em>Running Is Success Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see btcpp.RunningIsSuccessNode
-	 * @generated
-	 */
-	public Adapter createRunningIsSuccessNodeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.SuccessIsFailureNode <em>Success Is Failure Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see btcpp.SuccessIsFailureNode
-	 * @generated
-	 */
-	public Adapter createSuccessIsFailureNodeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link btcpp.SuccessIsRunningNode <em>Success Is Running Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see btcpp.SuccessIsRunningNode
-	 * @generated
-	 */
-	public Adapter createSuccessIsRunningNodeAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link btcpp.TestNode <em>Test Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -1074,6 +918,90 @@ public class BtcppAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSyncActionNodeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link btcpp.ThreadedActionNode <em>Threaded Action Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see btcpp.ThreadedActionNode
+	 * @generated
+	 */
+	public Adapter createThreadedActionNodeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link btcpp.StatefulActionNode <em>Stateful Action Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see btcpp.StatefulActionNode
+	 * @generated
+	 */
+	public Adapter createStatefulActionNodeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link btcpp.CoroActionNode <em>Coro Action Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see btcpp.CoroActionNode
+	 * @generated
+	 */
+	public Adapter createCoroActionNodeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link btcpp.AsynchActionNode <em>Asynch Action Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see btcpp.AsynchActionNode
+	 * @generated
+	 */
+	public Adapter createAsynchActionNodeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link btcpp.SleepNode <em>Sleep Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see btcpp.SleepNode
+	 * @generated
+	 */
+	public Adapter createSleepNodeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link btcpp.PopFromQueueNode <em>Pop From Queue Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see btcpp.PopFromQueueNode
+	 * @generated
+	 */
+	public Adapter createPopFromQueueNodeAdapter() {
 		return null;
 	}
 

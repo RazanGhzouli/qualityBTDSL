@@ -3,8 +3,6 @@
 package btcpp.impl;
 
 import btcpp.BtcppPackage;
-import btcpp.NodeStatus;
-import btcpp.NodeType;
 import btcpp.Parameter;
 import btcpp.Quality;
 import btcpp.QualityRequirement;
@@ -37,11 +35,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link btcpp.impl.TreeNodeImpl#getUID <em>UID</em>}</li>
+ *   <li>{@link btcpp.impl.TreeNodeImpl#getID <em>ID</em>}</li>
  *   <li>{@link btcpp.impl.TreeNodeImpl#getName <em>Name</em>}</li>
- *   <li>{@link btcpp.impl.TreeNodeImpl#getNodeType <em>Node Type</em>}</li>
  *   <li>{@link btcpp.impl.TreeNodeImpl#getAnyAttribute <em>Any Attribute</em>}</li>
- *   <li>{@link btcpp.impl.TreeNodeImpl#getNodeStatus <em>Node Status</em>}</li>
  *   <li>{@link btcpp.impl.TreeNodeImpl#getParameters <em>Parameters</em>}</li>
  *   <li>{@link btcpp.impl.TreeNodeImpl#getSatisfices <em>Satisfices</em>}</li>
  *   <li>{@link btcpp.impl.TreeNodeImpl#getSatisfies <em>Satisfies</em>}</li>
@@ -51,24 +47,24 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implements TreeNode {
 	/**
-	 * The default value of the '{@link #getUID() <em>UID</em>}' attribute.
+	 * The default value of the '{@link #getID() <em>ID</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getUID()
+	 * @see #getID()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String UID_EDEFAULT = null;
+	protected static final String ID_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getUID() <em>UID</em>}' attribute.
+	 * The cached value of the '{@link #getID() <em>ID</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getUID()
+	 * @see #getID()
 	 * @generated
 	 * @ordered
 	 */
-	protected String uID = UID_EDEFAULT;
+	protected String id = ID_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -91,26 +87,6 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getNodeType() <em>Node Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getNodeType()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final NodeType NODE_TYPE_EDEFAULT = NodeType.UNDEFINED;
-
-	/**
-	 * The cached value of the '{@link #getNodeType() <em>Node Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getNodeType()
-	 * @generated
-	 * @ordered
-	 */
-	protected NodeType nodeType = NODE_TYPE_EDEFAULT;
-
-	/**
 	 * The cached value of the '{@link #getAnyAttribute() <em>Any Attribute</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -119,26 +95,6 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 	 * @ordered
 	 */
 	protected FeatureMap anyAttribute;
-
-	/**
-	 * The default value of the '{@link #getNodeStatus() <em>Node Status</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getNodeStatus()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final NodeStatus NODE_STATUS_EDEFAULT = NodeStatus.RUNNING;
-
-	/**
-	 * The cached value of the '{@link #getNodeStatus() <em>Node Status</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getNodeStatus()
-	 * @generated
-	 * @ordered
-	 */
-	protected NodeStatus nodeStatus = NODE_STATUS_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getParameters() <em>Parameters</em>}' containment reference list.
@@ -194,8 +150,8 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getUID() {
-		return uID;
+	public String getID() {
+		return id;
 	}
 
 	/**
@@ -203,11 +159,11 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUID(String newUID) {
-		String oldUID = uID;
-		uID = newUID;
+	public void setID(String newID) {
+		String oldID = id;
+		id = newID;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, BtcppPackage.TREE_NODE__UID, oldUID, uID));
+			eNotify(new ENotificationImpl(this, Notification.SET, BtcppPackage.TREE_NODE__ID, oldID, id));
 	}
 
 	/**
@@ -236,53 +192,11 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NodeType getNodeType() {
-		return nodeType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setNodeType(NodeType newNodeType) {
-		NodeType oldNodeType = nodeType;
-		nodeType = newNodeType == null ? NODE_TYPE_EDEFAULT : newNodeType;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, BtcppPackage.TREE_NODE__NODE_TYPE, oldNodeType, nodeType));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public FeatureMap getAnyAttribute() {
 		if (anyAttribute == null) {
 			anyAttribute = new BasicFeatureMap(this, BtcppPackage.TREE_NODE__ANY_ATTRIBUTE);
 		}
 		return anyAttribute;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NodeStatus getNodeStatus() {
-		return nodeStatus;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setNodeStatus(NodeStatus newNodeStatus) {
-		NodeStatus oldNodeStatus = nodeStatus;
-		nodeStatus = newNodeStatus == null ? NODE_STATUS_EDEFAULT : newNodeStatus;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, BtcppPackage.TREE_NODE__NODE_STATUS, oldNodeStatus, nodeStatus));
 	}
 
 	/**
@@ -345,17 +259,13 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case BtcppPackage.TREE_NODE__UID:
-				return getUID();
+			case BtcppPackage.TREE_NODE__ID:
+				return getID();
 			case BtcppPackage.TREE_NODE__NAME:
 				return getName();
-			case BtcppPackage.TREE_NODE__NODE_TYPE:
-				return getNodeType();
 			case BtcppPackage.TREE_NODE__ANY_ATTRIBUTE:
 				if (coreType) return getAnyAttribute();
 				return ((FeatureMap.Internal)getAnyAttribute()).getWrapper();
-			case BtcppPackage.TREE_NODE__NODE_STATUS:
-				return getNodeStatus();
 			case BtcppPackage.TREE_NODE__PARAMETERS:
 				return getParameters();
 			case BtcppPackage.TREE_NODE__SATISFICES:
@@ -375,20 +285,14 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case BtcppPackage.TREE_NODE__UID:
-				setUID((String)newValue);
+			case BtcppPackage.TREE_NODE__ID:
+				setID((String)newValue);
 				return;
 			case BtcppPackage.TREE_NODE__NAME:
 				setName((String)newValue);
 				return;
-			case BtcppPackage.TREE_NODE__NODE_TYPE:
-				setNodeType((NodeType)newValue);
-				return;
 			case BtcppPackage.TREE_NODE__ANY_ATTRIBUTE:
 				((FeatureMap.Internal)getAnyAttribute()).set(newValue);
-				return;
-			case BtcppPackage.TREE_NODE__NODE_STATUS:
-				setNodeStatus((NodeStatus)newValue);
 				return;
 			case BtcppPackage.TREE_NODE__PARAMETERS:
 				getParameters().clear();
@@ -414,20 +318,14 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case BtcppPackage.TREE_NODE__UID:
-				setUID(UID_EDEFAULT);
+			case BtcppPackage.TREE_NODE__ID:
+				setID(ID_EDEFAULT);
 				return;
 			case BtcppPackage.TREE_NODE__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case BtcppPackage.TREE_NODE__NODE_TYPE:
-				setNodeType(NODE_TYPE_EDEFAULT);
-				return;
 			case BtcppPackage.TREE_NODE__ANY_ATTRIBUTE:
 				getAnyAttribute().clear();
-				return;
-			case BtcppPackage.TREE_NODE__NODE_STATUS:
-				setNodeStatus(NODE_STATUS_EDEFAULT);
 				return;
 			case BtcppPackage.TREE_NODE__PARAMETERS:
 				getParameters().clear();
@@ -450,16 +348,12 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case BtcppPackage.TREE_NODE__UID:
-				return UID_EDEFAULT == null ? uID != null : !UID_EDEFAULT.equals(uID);
+			case BtcppPackage.TREE_NODE__ID:
+				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
 			case BtcppPackage.TREE_NODE__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case BtcppPackage.TREE_NODE__NODE_TYPE:
-				return nodeType != NODE_TYPE_EDEFAULT;
 			case BtcppPackage.TREE_NODE__ANY_ATTRIBUTE:
 				return anyAttribute != null && !anyAttribute.isEmpty();
-			case BtcppPackage.TREE_NODE__NODE_STATUS:
-				return nodeStatus != NODE_STATUS_EDEFAULT;
 			case BtcppPackage.TREE_NODE__PARAMETERS:
 				return parameters != null && !parameters.isEmpty();
 			case BtcppPackage.TREE_NODE__SATISFICES:
@@ -480,16 +374,12 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (uID: ");
-		result.append(uID);
+		result.append(" (ID: ");
+		result.append(id);
 		result.append(", name: ");
 		result.append(name);
-		result.append(", NodeType: ");
-		result.append(nodeType);
 		result.append(", AnyAttribute: ");
 		result.append(anyAttribute);
-		result.append(", NodeStatus: ");
-		result.append(nodeStatus);
 		result.append(')');
 		return result.toString();
 	}

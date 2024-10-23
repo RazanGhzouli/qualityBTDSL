@@ -13,5 +13,5 @@ package btcpp;
  * @model
  * @generated
  */
-public interface TestNode extends SyncActionNode {
+public interface TestNode extends StatefulActionNode {
 } // TestNode

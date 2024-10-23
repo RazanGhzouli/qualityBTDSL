@@ -5,7 +5,6 @@ package btcpp.impl;
 import btcpp.*;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -61,15 +60,15 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 			case BtcppPackage.ALWAYS_FAILURE_NODE: return createAlwaysFailureNode();
 			case BtcppPackage.ALWAYS_SUCCESS_NODE: return createAlwaysSuccessNode();
 			case BtcppPackage.SET_BLACKBOARD_NODE: return createSetBlackboardNode();
-			case BtcppPackage.SELECTOR_NODE: return createSelectorNode();
+			case BtcppPackage.FALLBACK_NODE: return createFallbackNode();
 			case BtcppPackage.IF_THEN_ELSE_NODE: return createIfThenElseNode();
 			case BtcppPackage.MANUAL_SELECTOR_NODE: return createManualSelectorNode();
 			case BtcppPackage.PARALLEL_NODE: return createParallelNode();
-			case BtcppPackage.SEQUENCE_WITH_MEMORY: return createSequenceWithMemory();
+			case BtcppPackage.SEQUENCE_WITH_MEMORY_NODE: return createSequenceWithMemoryNode();
 			case BtcppPackage.SWITCH_NODE: return createSwitchNode();
-			case BtcppPackage.REACTIVE_SELECTOR: return createReactiveSelector();
+			case BtcppPackage.REACTIVE_FALLBACK_NODE: return createReactiveFallbackNode();
 			case BtcppPackage.WHILE_DO_ELSE_NODE: return createWhileDoElseNode();
-			case BtcppPackage.REACTIVE_SEQUENCE: return createReactiveSequence();
+			case BtcppPackage.REACTIVE_SEQUENCE_NODE: return createReactiveSequenceNode();
 			case BtcppPackage.SEQUENCE_NODE: return createSequenceNode();
 			case BtcppPackage.TIMEOUT_NODE: return createTimeoutNode();
 			case BtcppPackage.KEEP_RUNNING_UNTIL_FAILURE_NODE: return createKeepRunningUntilFailureNode();
@@ -85,7 +84,6 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 			case BtcppPackage.PARAMETER: return createParameter();
 			case BtcppPackage.QUALITY_REQUIREMENT: return createQualityRequirement();
 			case BtcppPackage.QUALITY: return createQuality();
-			case BtcppPackage.SELECTOR_WITH_MEMORY: return createSelectorWithMemory();
 			case BtcppPackage.PARALLEL_ALL_NODE: return createParallelAllNode();
 			case BtcppPackage.DELAY_NODE: return createDelayNode();
 			case BtcppPackage.PRECONDITION_NODE: return createPreconditionNode();
@@ -93,54 +91,15 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 			case BtcppPackage.RUN_ONCE_NODE: return createRunOnceNode();
 			case BtcppPackage.LOOP_NODE: return createLoopNode();
 			case BtcppPackage.CONSUME_QUEUE_NODE: return createConsumeQueueNode();
-			case BtcppPackage.COUNT_NODE: return createCountNode();
-			case BtcppPackage.ETERNAL_GUARD_NODE: return createEternalGuardNode();
-			case BtcppPackage.STATUS_TO_BLACKBOARD_NODE: return createStatusToBlackboardNode();
-			case BtcppPackage.FAILURE_IS_RUNNING_NODE: return createFailureIsRunningNode();
-			case BtcppPackage.FAILURE_IS_SUCCESS_NODE: return createFailureIsSuccessNode();
-			case BtcppPackage.RUNNING_IS_FAILURE_NODE: return createRunningIsFailureNode();
-			case BtcppPackage.RUNNING_IS_SUCCESS_NODE: return createRunningIsSuccessNode();
-			case BtcppPackage.SUCCESS_IS_FAILURE_NODE: return createSuccessIsFailureNode();
-			case BtcppPackage.SUCCESS_IS_RUNNING_NODE: return createSuccessIsRunningNode();
 			case BtcppPackage.TEST_NODE: return createTestNode();
 			case BtcppPackage.ENTRY_UPDATED_ACTION_NODE: return createEntryUpdatedActionNode();
 			case BtcppPackage.UNSET_BLACKBOARD_NODE: return createUnsetBlackboardNode();
+			case BtcppPackage.THREADED_ACTION_NODE: return createThreadedActionNode();
+			case BtcppPackage.CORO_ACTION_NODE: return createCoroActionNode();
+			case BtcppPackage.SLEEP_NODE: return createSleepNode();
+			case BtcppPackage.POP_FROM_QUEUE_NODE: return createPopFromQueueNode();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object createFromString(EDataType eDataType, String initialValue) {
-		switch (eDataType.getClassifierID()) {
-			case BtcppPackage.NODE_TYPE:
-				return createNodeTypeFromString(eDataType, initialValue);
-			case BtcppPackage.NODE_STATUS:
-				return createNodeStatusFromString(eDataType, initialValue);
-			default:
-				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
-		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String convertToString(EDataType eDataType, Object instanceValue) {
-		switch (eDataType.getClassifierID()) {
-			case BtcppPackage.NODE_TYPE:
-				return convertNodeTypeToString(eDataType, instanceValue);
-			case BtcppPackage.NODE_STATUS:
-				return convertNodeStatusToString(eDataType, instanceValue);
-			default:
-				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
 	}
 
@@ -189,9 +148,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SelectorNode createSelectorNode() {
-		SelectorNodeImpl selectorNode = new SelectorNodeImpl();
-		return selectorNode;
+	public FallbackNode createFallbackNode() {
+		FallbackNodeImpl fallbackNode = new FallbackNodeImpl();
+		return fallbackNode;
 	}
 
 	/**
@@ -229,9 +188,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SequenceWithMemory createSequenceWithMemory() {
-		SequenceWithMemoryImpl sequenceWithMemory = new SequenceWithMemoryImpl();
-		return sequenceWithMemory;
+	public SequenceWithMemoryNode createSequenceWithMemoryNode() {
+		SequenceWithMemoryNodeImpl sequenceWithMemoryNode = new SequenceWithMemoryNodeImpl();
+		return sequenceWithMemoryNode;
 	}
 
 	/**
@@ -249,9 +208,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReactiveSelector createReactiveSelector() {
-		ReactiveSelectorImpl reactiveSelector = new ReactiveSelectorImpl();
-		return reactiveSelector;
+	public ReactiveFallbackNode createReactiveFallbackNode() {
+		ReactiveFallbackNodeImpl reactiveFallbackNode = new ReactiveFallbackNodeImpl();
+		return reactiveFallbackNode;
 	}
 
 	/**
@@ -269,9 +228,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReactiveSequence createReactiveSequence() {
-		ReactiveSequenceImpl reactiveSequence = new ReactiveSequenceImpl();
-		return reactiveSequence;
+	public ReactiveSequenceNode createReactiveSequenceNode() {
+		ReactiveSequenceNodeImpl reactiveSequenceNode = new ReactiveSequenceNodeImpl();
+		return reactiveSequenceNode;
 	}
 
 	/**
@@ -429,16 +388,6 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SelectorWithMemory createSelectorWithMemory() {
-		SelectorWithMemoryImpl selectorWithMemory = new SelectorWithMemoryImpl();
-		return selectorWithMemory;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public ParallelAllNode createParallelAllNode() {
 		ParallelAllNodeImpl parallelAllNode = new ParallelAllNodeImpl();
 		return parallelAllNode;
@@ -509,96 +458,6 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CountNode createCountNode() {
-		CountNodeImpl countNode = new CountNodeImpl();
-		return countNode;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EternalGuardNode createEternalGuardNode() {
-		EternalGuardNodeImpl eternalGuardNode = new EternalGuardNodeImpl();
-		return eternalGuardNode;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public StatusToBlackboardNode createStatusToBlackboardNode() {
-		StatusToBlackboardNodeImpl statusToBlackboardNode = new StatusToBlackboardNodeImpl();
-		return statusToBlackboardNode;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FailureIsRunningNode createFailureIsRunningNode() {
-		FailureIsRunningNodeImpl failureIsRunningNode = new FailureIsRunningNodeImpl();
-		return failureIsRunningNode;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FailureIsSuccessNode createFailureIsSuccessNode() {
-		FailureIsSuccessNodeImpl failureIsSuccessNode = new FailureIsSuccessNodeImpl();
-		return failureIsSuccessNode;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public RunningIsFailureNode createRunningIsFailureNode() {
-		RunningIsFailureNodeImpl runningIsFailureNode = new RunningIsFailureNodeImpl();
-		return runningIsFailureNode;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public RunningIsSuccessNode createRunningIsSuccessNode() {
-		RunningIsSuccessNodeImpl runningIsSuccessNode = new RunningIsSuccessNodeImpl();
-		return runningIsSuccessNode;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SuccessIsFailureNode createSuccessIsFailureNode() {
-		SuccessIsFailureNodeImpl successIsFailureNode = new SuccessIsFailureNodeImpl();
-		return successIsFailureNode;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SuccessIsRunningNode createSuccessIsRunningNode() {
-		SuccessIsRunningNodeImpl successIsRunningNode = new SuccessIsRunningNodeImpl();
-		return successIsRunningNode;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public TestNode createTestNode() {
 		TestNodeImpl testNode = new TestNodeImpl();
 		return testNode;
@@ -629,10 +488,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NodeType createNodeTypeFromString(EDataType eDataType, String initialValue) {
-		NodeType result = NodeType.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
+	public ThreadedActionNode createThreadedActionNode() {
+		ThreadedActionNodeImpl threadedActionNode = new ThreadedActionNodeImpl();
+		return threadedActionNode;
 	}
 
 	/**
@@ -640,8 +498,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertNodeTypeToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
+	public CoroActionNode createCoroActionNode() {
+		CoroActionNodeImpl coroActionNode = new CoroActionNodeImpl();
+		return coroActionNode;
 	}
 
 	/**
@@ -649,10 +508,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NodeStatus createNodeStatusFromString(EDataType eDataType, String initialValue) {
-		NodeStatus result = NodeStatus.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
+	public SleepNode createSleepNode() {
+		SleepNodeImpl sleepNode = new SleepNodeImpl();
+		return sleepNode;
 	}
 
 	/**
@@ -660,8 +518,9 @@ public class BtcppFactoryImpl extends EFactoryImpl implements BtcppFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertNodeStatusToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
+	public PopFromQueueNode createPopFromQueueNode() {
+		PopFromQueueNodeImpl popFromQueueNode = new PopFromQueueNodeImpl();
+		return popFromQueueNode;
 	}
 
 	/**

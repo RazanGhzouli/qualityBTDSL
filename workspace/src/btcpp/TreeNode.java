@@ -17,11 +17,9 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link btcpp.TreeNode#getUID <em>UID</em>}</li>
+ *   <li>{@link btcpp.TreeNode#getID <em>ID</em>}</li>
  *   <li>{@link btcpp.TreeNode#getName <em>Name</em>}</li>
- *   <li>{@link btcpp.TreeNode#getNodeType <em>Node Type</em>}</li>
  *   <li>{@link btcpp.TreeNode#getAnyAttribute <em>Any Attribute</em>}</li>
- *   <li>{@link btcpp.TreeNode#getNodeStatus <em>Node Status</em>}</li>
  *   <li>{@link btcpp.TreeNode#getParameters <em>Parameters</em>}</li>
  *   <li>{@link btcpp.TreeNode#getSatisfices <em>Satisfices</em>}</li>
  *   <li>{@link btcpp.TreeNode#getSatisfies <em>Satisfies</em>}</li>
@@ -33,26 +31,26 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  */
 public interface TreeNode extends EObject {
 	/**
-	 * Returns the value of the '<em><b>UID</b></em>' attribute.
+	 * Returns the value of the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>UID</em>' attribute.
-	 * @see #setUID(String)
-	 * @see btcpp.BtcppPackage#getTreeNode_UID()
+	 * @return the value of the '<em>ID</em>' attribute.
+	 * @see #setID(String)
+	 * @see btcpp.BtcppPackage#getTreeNode_ID()
 	 * @model unique="false"
 	 * @generated
 	 */
-	String getUID();
+	String getID();
 
 	/**
-	 * Sets the value of the '{@link btcpp.TreeNode#getUID <em>UID</em>}' attribute.
+	 * Sets the value of the '{@link btcpp.TreeNode#getID <em>ID</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>UID</em>' attribute.
-	 * @see #getUID()
+	 * @param value the new value of the '<em>ID</em>' attribute.
+	 * @see #getID()
 	 * @generated
 	 */
-	void setUID(String value);
+	void setID(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -77,31 +75,6 @@ public interface TreeNode extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Node Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link btcpp.NodeType}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Node Type</em>' attribute.
-	 * @see btcpp.NodeType
-	 * @see #setNodeType(NodeType)
-	 * @see btcpp.BtcppPackage#getTreeNode_NodeType()
-	 * @model unique="false"
-	 * @generated
-	 */
-	NodeType getNodeType();
-
-	/**
-	 * Sets the value of the '{@link btcpp.TreeNode#getNodeType <em>Node Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Node Type</em>' attribute.
-	 * @see btcpp.NodeType
-	 * @see #getNodeType()
-	 * @generated
-	 */
-	void setNodeType(NodeType value);
-
-	/**
 	 * Returns the value of the '<em><b>Any Attribute</b></em>' attribute list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
 	 * <!-- begin-user-doc -->
@@ -112,31 +85,6 @@ public interface TreeNode extends EObject {
 	 * @generated
 	 */
 	FeatureMap getAnyAttribute();
-
-	/**
-	 * Returns the value of the '<em><b>Node Status</b></em>' attribute.
-	 * The literals are from the enumeration {@link btcpp.NodeStatus}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Node Status</em>' attribute.
-	 * @see btcpp.NodeStatus
-	 * @see #setNodeStatus(NodeStatus)
-	 * @see btcpp.BtcppPackage#getTreeNode_NodeStatus()
-	 * @model unique="false"
-	 * @generated
-	 */
-	NodeStatus getNodeStatus();
-
-	/**
-	 * Sets the value of the '{@link btcpp.TreeNode#getNodeStatus <em>Node Status</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Node Status</em>' attribute.
-	 * @see btcpp.NodeStatus
-	 * @see #getNodeStatus()
-	 * @generated
-	 */
-	void setNodeStatus(NodeStatus value);
 
 	/**
 	 * Returns the value of the '<em><b>Parameters</b></em>' containment reference list.

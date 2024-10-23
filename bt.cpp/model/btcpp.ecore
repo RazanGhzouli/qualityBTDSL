@@ -7,28 +7,11 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" unique="false" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="NodeType">
-    <eLiterals name="UNDEFINED"/>
-    <eLiterals name="ACTION" value="1"/>
-    <eLiterals name="CONDITION" value="2"/>
-    <eLiterals name="CONTROL" value="3"/>
-    <eLiterals name="DECORATOR" value="4"/>
-    <eLiterals name="SUBTREE" value="5"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="NodeStatus">
-    <eLiterals name="RUNNING" value="1"/>
-    <eLiterals name="SUCCESS" value="2"/>
-    <eLiterals name="FAILURE" value="3"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TreeNode" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uID" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="NodeType" unique="false"
-        eType="#//NodeType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="AnyAttribute" unique="false"
         upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="NodeStatus" unique="false"
-        eType="#//NodeStatus"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
         eType="#//Parameter" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="satisfices" upperBound="-1"
@@ -52,15 +35,15 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="output_key" unique="false"
         lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SelectorNode" eSuperTypes="#//ControlNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FallbackNode" eSuperTypes="#//ControlNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="IfThenElseNode" eSuperTypes="#//ControlNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="ManualSelectorNode" eSuperTypes="#//ControlNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="ParallelNode" eSuperTypes="#//ControlNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="SequenceWithMemory" eSuperTypes="#//ControlNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SequenceWithMemoryNode" eSuperTypes="#//ControlNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="SwitchNode" eSuperTypes="#//ControlNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ReactiveSelector" eSuperTypes="#//ControlNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ReactiveFallbackNode" eSuperTypes="#//ControlNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="WhileDoElseNode" eSuperTypes="#//ControlNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ReactiveSequence" eSuperTypes="#//ControlNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ReactiveSequenceNode" eSuperTypes="#//ControlNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="SequenceNode" eSuperTypes="#//ControlNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="TimeoutNode" eSuperTypes="#//DecoratorNode">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="msec" unique="false" lowerBound="1"
@@ -101,13 +84,13 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="QualityRequirement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Quality">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="qualityreq" upperBound="-1"
         eType="#//QualityRequirement" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SelectorWithMemory" eSuperTypes="#//ControlNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="ParallelAllNode" eSuperTypes="#//ControlNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="DelayNode" eSuperTypes="#//DecoratorNode">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="delay_msec" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -117,17 +100,15 @@
   <eClassifiers xsi:type="ecore:EClass" name="RunOnceNode" eSuperTypes="#//DecoratorNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="LoopNode" eSuperTypes="#//DecoratorNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="ConsumeQueueNode" eSuperTypes="#//DecoratorNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="CountNode" eSuperTypes="#//DecoratorNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EternalGuardNode" eSuperTypes="#//DecoratorNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="StatusToBlackboardNode" eSuperTypes="#//DecoratorNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="FailureIsRunningNode" eSuperTypes="#//DecoratorNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="FailureIsSuccessNode" eSuperTypes="#//DecoratorNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RunningIsFailureNode" eSuperTypes="#//DecoratorNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RunningIsSuccessNode" eSuperTypes="#//DecoratorNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="SuccessIsFailureNode" eSuperTypes="#//DecoratorNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="SuccessIsRunningNode" eSuperTypes="#//DecoratorNode"/>
-  <eClassifiers xsi:type="ecore:EClass" name="TestNode" eSuperTypes="#//SyncActionNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TestNode" eSuperTypes="#//StatefulActionNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="EntryUpdatedActionNode" eSuperTypes="#//SyncActionNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="UnsetBlackboardNode" eSuperTypes="#//SyncActionNode"/>
   <eClassifiers xsi:type="ecore:EClass" name="SyncActionNode" abstract="true" eSuperTypes="#//ActionNodeBase"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ThreadedActionNode" eSuperTypes="#//ActionNodeBase"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StatefulActionNode" abstract="true"
+      eSuperTypes="#//AsynchActionNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CoroActionNode" eSuperTypes="#//AsynchActionNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AsynchActionNode" abstract="true" eSuperTypes="#//ActionNodeBase"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SleepNode" eSuperTypes="#//StatefulActionNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PopFromQueueNode" eSuperTypes="#//SyncActionNode"/>
 </ecore:EPackage>

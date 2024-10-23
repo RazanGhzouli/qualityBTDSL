@@ -5,20 +5,19 @@ package btcpp.impl;
 import btcpp.ActionNodeBase;
 import btcpp.AlwaysFailureNode;
 import btcpp.AlwaysSuccessNode;
+import btcpp.AsynchActionNode;
 import btcpp.BehaviorTree;
 import btcpp.BtcppFactory;
 import btcpp.BtcppPackage;
 import btcpp.ConditionNode;
 import btcpp.ConsumeQueueNode;
 import btcpp.ControlNode;
-import btcpp.CountNode;
+import btcpp.CoroActionNode;
 import btcpp.DecoratorNode;
 import btcpp.DelayNode;
 import btcpp.EntryUpdatedActionNode;
 import btcpp.EntryUpdatedDecoratorNode;
-import btcpp.EternalGuardNode;
-import btcpp.FailureIsRunningNode;
-import btcpp.FailureIsSuccessNode;
+import btcpp.FallbackNode;
 import btcpp.ForceFailureNode;
 import btcpp.ForceSuccessNode;
 import btcpp.IfThenElseNode;
@@ -27,36 +26,31 @@ import btcpp.KeepRunningUntilFailureNode;
 import btcpp.LeafNode;
 import btcpp.LoopNode;
 import btcpp.ManualSelectorNode;
-import btcpp.NodeStatus;
-import btcpp.NodeType;
 import btcpp.ParallelAllNode;
 import btcpp.ParallelNode;
 import btcpp.Parameter;
+import btcpp.PopFromQueueNode;
 import btcpp.PreconditionNode;
 import btcpp.Quality;
 import btcpp.QualityRequirement;
-import btcpp.ReactiveSelector;
-import btcpp.ReactiveSequence;
+import btcpp.ReactiveFallbackNode;
+import btcpp.ReactiveSequenceNode;
 import btcpp.RepeatNode;
 import btcpp.RetryNode;
 import btcpp.Root;
 import btcpp.RunOnceNode;
-import btcpp.RunningIsFailureNode;
-import btcpp.RunningIsSuccessNode;
 import btcpp.ScriptConditionNode;
 import btcpp.ScriptNode;
-import btcpp.SelectorNode;
-import btcpp.SelectorWithMemory;
 import btcpp.SequenceNode;
-import btcpp.SequenceWithMemory;
+import btcpp.SequenceWithMemoryNode;
 import btcpp.SetBlackboardNode;
-import btcpp.StatusToBlackboardNode;
+import btcpp.SleepNode;
+import btcpp.StatefulActionNode;
 import btcpp.SubTree;
-import btcpp.SuccessIsFailureNode;
-import btcpp.SuccessIsRunningNode;
 import btcpp.SwitchNode;
 import btcpp.SyncActionNode;
 import btcpp.TestNode;
+import btcpp.ThreadedActionNode;
 import btcpp.TimeoutNode;
 import btcpp.TreeNode;
 import btcpp.UnsetBlackboardNode;
@@ -64,7 +58,6 @@ import btcpp.WhileDoElseNode;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -131,7 +124,7 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass selectorNodeEClass = null;
+	private EClass fallbackNodeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -159,7 +152,7 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass sequenceWithMemoryEClass = null;
+	private EClass sequenceWithMemoryNodeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,7 +166,7 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass reactiveSelectorEClass = null;
+	private EClass reactiveFallbackNodeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -187,7 +180,7 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass reactiveSequenceEClass = null;
+	private EClass reactiveSequenceNodeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -320,13 +313,6 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass selectorWithMemoryEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass parallelAllNodeEClass = null;
 
 	/**
@@ -376,69 +362,6 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass countNodeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass eternalGuardNodeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass statusToBlackboardNodeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass failureIsRunningNodeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass failureIsSuccessNodeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass runningIsFailureNodeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass runningIsSuccessNodeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass successIsFailureNodeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass successIsRunningNodeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass testNodeEClass = null;
 
 	/**
@@ -467,14 +390,42 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum nodeTypeEEnum = null;
+	private EClass threadedActionNodeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum nodeStatusEEnum = null;
+	private EClass statefulActionNodeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass coroActionNodeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass asynchActionNodeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sleepNodeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass popFromQueueNodeEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -577,7 +528,7 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTreeNode_UID() {
+	public EAttribute getTreeNode_ID() {
 		return (EAttribute)treeNodeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -595,7 +546,7 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTreeNode_NodeType() {
+	public EAttribute getTreeNode_AnyAttribute() {
 		return (EAttribute)treeNodeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -604,26 +555,8 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTreeNode_AnyAttribute() {
-		return (EAttribute)treeNodeEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getTreeNode_NodeStatus() {
-		return (EAttribute)treeNodeEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getTreeNode_Parameters() {
-		return (EReference)treeNodeEClass.getEStructuralFeatures().get(5);
+		return (EReference)treeNodeEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -632,7 +565,7 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * @generated
 	 */
 	public EReference getTreeNode_Satisfices() {
-		return (EReference)treeNodeEClass.getEStructuralFeatures().get(6);
+		return (EReference)treeNodeEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -641,7 +574,7 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * @generated
 	 */
 	public EReference getTreeNode_Satisfies() {
-		return (EReference)treeNodeEClass.getEStructuralFeatures().get(7);
+		return (EReference)treeNodeEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -730,8 +663,8 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getSelectorNode() {
-		return selectorNodeEClass;
+	public EClass getFallbackNode() {
+		return fallbackNodeEClass;
 	}
 
 	/**
@@ -766,8 +699,8 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getSequenceWithMemory() {
-		return sequenceWithMemoryEClass;
+	public EClass getSequenceWithMemoryNode() {
+		return sequenceWithMemoryNodeEClass;
 	}
 
 	/**
@@ -784,8 +717,8 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getReactiveSelector() {
-		return reactiveSelectorEClass;
+	public EClass getReactiveFallbackNode() {
+		return reactiveFallbackNodeEClass;
 	}
 
 	/**
@@ -802,8 +735,8 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getReactiveSequence() {
-		return reactiveSequenceEClass;
+	public EClass getReactiveSequenceNode() {
+		return reactiveSequenceNodeEClass;
 	}
 
 	/**
@@ -1045,6 +978,15 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getQualityRequirement_Description() {
+		return (EAttribute)qualityRequirementEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getQuality() {
 		return qualityEClass;
 	}
@@ -1065,15 +1007,6 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 */
 	public EReference getQuality_Qualityreq() {
 		return (EReference)qualityEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getSelectorWithMemory() {
-		return selectorWithMemoryEClass;
 	}
 
 	/**
@@ -1153,87 +1086,6 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCountNode() {
-		return countNodeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getEternalGuardNode() {
-		return eternalGuardNodeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getStatusToBlackboardNode() {
-		return statusToBlackboardNodeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getFailureIsRunningNode() {
-		return failureIsRunningNodeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getFailureIsSuccessNode() {
-		return failureIsSuccessNodeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getRunningIsFailureNode() {
-		return runningIsFailureNodeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getRunningIsSuccessNode() {
-		return runningIsSuccessNodeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getSuccessIsFailureNode() {
-		return successIsFailureNodeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getSuccessIsRunningNode() {
-		return successIsRunningNodeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getTestNode() {
 		return testNodeEClass;
 	}
@@ -1270,8 +1122,8 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getNodeType() {
-		return nodeTypeEEnum;
+	public EClass getThreadedActionNode() {
+		return threadedActionNodeEClass;
 	}
 
 	/**
@@ -1279,8 +1131,44 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getNodeStatus() {
-		return nodeStatusEEnum;
+	public EClass getStatefulActionNode() {
+		return statefulActionNodeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCoroActionNode() {
+		return coroActionNodeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAsynchActionNode() {
+		return asynchActionNodeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSleepNode() {
+		return sleepNodeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPopFromQueueNode() {
+		return popFromQueueNodeEClass;
 	}
 
 	/**
@@ -1316,11 +1204,9 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 		createEAttribute(behaviorTreeEClass, BEHAVIOR_TREE__ID);
 
 		treeNodeEClass = createEClass(TREE_NODE);
-		createEAttribute(treeNodeEClass, TREE_NODE__UID);
+		createEAttribute(treeNodeEClass, TREE_NODE__ID);
 		createEAttribute(treeNodeEClass, TREE_NODE__NAME);
-		createEAttribute(treeNodeEClass, TREE_NODE__NODE_TYPE);
 		createEAttribute(treeNodeEClass, TREE_NODE__ANY_ATTRIBUTE);
-		createEAttribute(treeNodeEClass, TREE_NODE__NODE_STATUS);
 		createEReference(treeNodeEClass, TREE_NODE__PARAMETERS);
 		createEReference(treeNodeEClass, TREE_NODE__SATISFICES);
 		createEReference(treeNodeEClass, TREE_NODE__SATISFIES);
@@ -1339,7 +1225,7 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 		createEAttribute(setBlackboardNodeEClass, SET_BLACKBOARD_NODE__VALUE);
 		createEAttribute(setBlackboardNodeEClass, SET_BLACKBOARD_NODE__OUTPUT_KEY);
 
-		selectorNodeEClass = createEClass(SELECTOR_NODE);
+		fallbackNodeEClass = createEClass(FALLBACK_NODE);
 
 		ifThenElseNodeEClass = createEClass(IF_THEN_ELSE_NODE);
 
@@ -1347,15 +1233,15 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 
 		parallelNodeEClass = createEClass(PARALLEL_NODE);
 
-		sequenceWithMemoryEClass = createEClass(SEQUENCE_WITH_MEMORY);
+		sequenceWithMemoryNodeEClass = createEClass(SEQUENCE_WITH_MEMORY_NODE);
 
 		switchNodeEClass = createEClass(SWITCH_NODE);
 
-		reactiveSelectorEClass = createEClass(REACTIVE_SELECTOR);
+		reactiveFallbackNodeEClass = createEClass(REACTIVE_FALLBACK_NODE);
 
 		whileDoElseNodeEClass = createEClass(WHILE_DO_ELSE_NODE);
 
-		reactiveSequenceEClass = createEClass(REACTIVE_SEQUENCE);
+		reactiveSequenceNodeEClass = createEClass(REACTIVE_SEQUENCE_NODE);
 
 		sequenceNodeEClass = createEClass(SEQUENCE_NODE);
 
@@ -1399,12 +1285,11 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 
 		qualityRequirementEClass = createEClass(QUALITY_REQUIREMENT);
 		createEAttribute(qualityRequirementEClass, QUALITY_REQUIREMENT__ID);
+		createEAttribute(qualityRequirementEClass, QUALITY_REQUIREMENT__DESCRIPTION);
 
 		qualityEClass = createEClass(QUALITY);
 		createEAttribute(qualityEClass, QUALITY__ID);
 		createEReference(qualityEClass, QUALITY__QUALITYREQ);
-
-		selectorWithMemoryEClass = createEClass(SELECTOR_WITH_MEMORY);
 
 		parallelAllNodeEClass = createEClass(PARALLEL_ALL_NODE);
 
@@ -1421,24 +1306,6 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 
 		consumeQueueNodeEClass = createEClass(CONSUME_QUEUE_NODE);
 
-		countNodeEClass = createEClass(COUNT_NODE);
-
-		eternalGuardNodeEClass = createEClass(ETERNAL_GUARD_NODE);
-
-		statusToBlackboardNodeEClass = createEClass(STATUS_TO_BLACKBOARD_NODE);
-
-		failureIsRunningNodeEClass = createEClass(FAILURE_IS_RUNNING_NODE);
-
-		failureIsSuccessNodeEClass = createEClass(FAILURE_IS_SUCCESS_NODE);
-
-		runningIsFailureNodeEClass = createEClass(RUNNING_IS_FAILURE_NODE);
-
-		runningIsSuccessNodeEClass = createEClass(RUNNING_IS_SUCCESS_NODE);
-
-		successIsFailureNodeEClass = createEClass(SUCCESS_IS_FAILURE_NODE);
-
-		successIsRunningNodeEClass = createEClass(SUCCESS_IS_RUNNING_NODE);
-
 		testNodeEClass = createEClass(TEST_NODE);
 
 		entryUpdatedActionNodeEClass = createEClass(ENTRY_UPDATED_ACTION_NODE);
@@ -1447,9 +1314,17 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 
 		syncActionNodeEClass = createEClass(SYNC_ACTION_NODE);
 
-		// Create enums
-		nodeTypeEEnum = createEEnum(NODE_TYPE);
-		nodeStatusEEnum = createEEnum(NODE_STATUS);
+		threadedActionNodeEClass = createEClass(THREADED_ACTION_NODE);
+
+		statefulActionNodeEClass = createEClass(STATEFUL_ACTION_NODE);
+
+		coroActionNodeEClass = createEClass(CORO_ACTION_NODE);
+
+		asynchActionNodeEClass = createEClass(ASYNCH_ACTION_NODE);
+
+		sleepNodeEClass = createEClass(SLEEP_NODE);
+
+		popFromQueueNodeEClass = createEClass(POP_FROM_QUEUE_NODE);
 	}
 
 	/**
@@ -1485,15 +1360,15 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 		alwaysFailureNodeEClass.getESuperTypes().add(this.getSyncActionNode());
 		alwaysSuccessNodeEClass.getESuperTypes().add(this.getSyncActionNode());
 		setBlackboardNodeEClass.getESuperTypes().add(this.getSyncActionNode());
-		selectorNodeEClass.getESuperTypes().add(this.getControlNode());
+		fallbackNodeEClass.getESuperTypes().add(this.getControlNode());
 		ifThenElseNodeEClass.getESuperTypes().add(this.getControlNode());
 		manualSelectorNodeEClass.getESuperTypes().add(this.getControlNode());
 		parallelNodeEClass.getESuperTypes().add(this.getControlNode());
-		sequenceWithMemoryEClass.getESuperTypes().add(this.getControlNode());
+		sequenceWithMemoryNodeEClass.getESuperTypes().add(this.getControlNode());
 		switchNodeEClass.getESuperTypes().add(this.getControlNode());
-		reactiveSelectorEClass.getESuperTypes().add(this.getControlNode());
+		reactiveFallbackNodeEClass.getESuperTypes().add(this.getControlNode());
 		whileDoElseNodeEClass.getESuperTypes().add(this.getControlNode());
-		reactiveSequenceEClass.getESuperTypes().add(this.getControlNode());
+		reactiveSequenceNodeEClass.getESuperTypes().add(this.getControlNode());
 		sequenceNodeEClass.getESuperTypes().add(this.getControlNode());
 		timeoutNodeEClass.getESuperTypes().add(this.getDecoratorNode());
 		keepRunningUntilFailureNodeEClass.getESuperTypes().add(this.getDecoratorNode());
@@ -1508,7 +1383,6 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 		scriptNodeEClass.getESuperTypes().add(this.getSyncActionNode());
 		scriptConditionNodeEClass.getESuperTypes().add(this.getConditionNode());
 		retryNodeEClass.getESuperTypes().add(this.getDecoratorNode());
-		selectorWithMemoryEClass.getESuperTypes().add(this.getControlNode());
 		parallelAllNodeEClass.getESuperTypes().add(this.getControlNode());
 		delayNodeEClass.getESuperTypes().add(this.getDecoratorNode());
 		preconditionNodeEClass.getESuperTypes().add(this.getDecoratorNode());
@@ -1516,19 +1390,16 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 		runOnceNodeEClass.getESuperTypes().add(this.getDecoratorNode());
 		loopNodeEClass.getESuperTypes().add(this.getDecoratorNode());
 		consumeQueueNodeEClass.getESuperTypes().add(this.getDecoratorNode());
-		countNodeEClass.getESuperTypes().add(this.getDecoratorNode());
-		eternalGuardNodeEClass.getESuperTypes().add(this.getDecoratorNode());
-		statusToBlackboardNodeEClass.getESuperTypes().add(this.getDecoratorNode());
-		failureIsRunningNodeEClass.getESuperTypes().add(this.getDecoratorNode());
-		failureIsSuccessNodeEClass.getESuperTypes().add(this.getDecoratorNode());
-		runningIsFailureNodeEClass.getESuperTypes().add(this.getDecoratorNode());
-		runningIsSuccessNodeEClass.getESuperTypes().add(this.getDecoratorNode());
-		successIsFailureNodeEClass.getESuperTypes().add(this.getDecoratorNode());
-		successIsRunningNodeEClass.getESuperTypes().add(this.getDecoratorNode());
-		testNodeEClass.getESuperTypes().add(this.getSyncActionNode());
+		testNodeEClass.getESuperTypes().add(this.getStatefulActionNode());
 		entryUpdatedActionNodeEClass.getESuperTypes().add(this.getSyncActionNode());
 		unsetBlackboardNodeEClass.getESuperTypes().add(this.getSyncActionNode());
 		syncActionNodeEClass.getESuperTypes().add(this.getActionNodeBase());
+		threadedActionNodeEClass.getESuperTypes().add(this.getActionNodeBase());
+		statefulActionNodeEClass.getESuperTypes().add(this.getAsynchActionNode());
+		coroActionNodeEClass.getESuperTypes().add(this.getAsynchActionNode());
+		asynchActionNodeEClass.getESuperTypes().add(this.getActionNodeBase());
+		sleepNodeEClass.getESuperTypes().add(this.getStatefulActionNode());
+		popFromQueueNodeEClass.getESuperTypes().add(this.getSyncActionNode());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(behaviorTreeEClass, BehaviorTree.class, "BehaviorTree", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1536,11 +1407,9 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 		initEAttribute(getBehaviorTree_ID(), ecorePackage.getEString(), "ID", null, 1, 1, BehaviorTree.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(treeNodeEClass, TreeNode.class, "TreeNode", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getTreeNode_UID(), ecorePackage.getEString(), "uID", null, 0, 1, TreeNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTreeNode_ID(), ecorePackage.getEString(), "ID", null, 0, 1, TreeNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTreeNode_Name(), ecorePackage.getEString(), "name", null, 0, 1, TreeNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getTreeNode_NodeType(), this.getNodeType(), "NodeType", null, 0, 1, TreeNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTreeNode_AnyAttribute(), ecorePackage.getEFeatureMapEntry(), "AnyAttribute", null, 0, -1, TreeNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getTreeNode_NodeStatus(), this.getNodeStatus(), "NodeStatus", null, 0, 1, TreeNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTreeNode_Parameters(), this.getParameter(), null, "parameters", null, 0, -1, TreeNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTreeNode_Satisfices(), this.getQuality(), null, "satisfices", null, 0, -1, TreeNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTreeNode_Satisfies(), this.getQualityRequirement(), null, "satisfies", null, 0, -1, TreeNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1559,7 +1428,7 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 		initEAttribute(getSetBlackboardNode_Value(), ecorePackage.getEString(), "value", null, 1, 1, SetBlackboardNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSetBlackboardNode_Output_key(), ecorePackage.getEString(), "output_key", null, 1, 1, SetBlackboardNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(selectorNodeEClass, SelectorNode.class, "SelectorNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(fallbackNodeEClass, FallbackNode.class, "FallbackNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(ifThenElseNodeEClass, IfThenElseNode.class, "IfThenElseNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1567,15 +1436,15 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 
 		initEClass(parallelNodeEClass, ParallelNode.class, "ParallelNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(sequenceWithMemoryEClass, SequenceWithMemory.class, "SequenceWithMemory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(sequenceWithMemoryNodeEClass, SequenceWithMemoryNode.class, "SequenceWithMemoryNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(switchNodeEClass, SwitchNode.class, "SwitchNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(reactiveSelectorEClass, ReactiveSelector.class, "ReactiveSelector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(reactiveFallbackNodeEClass, ReactiveFallbackNode.class, "ReactiveFallbackNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(whileDoElseNodeEClass, WhileDoElseNode.class, "WhileDoElseNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(reactiveSequenceEClass, ReactiveSequence.class, "ReactiveSequence", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(reactiveSequenceNodeEClass, ReactiveSequenceNode.class, "ReactiveSequenceNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(sequenceNodeEClass, SequenceNode.class, "SequenceNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1619,12 +1488,11 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 
 		initEClass(qualityRequirementEClass, QualityRequirement.class, "QualityRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getQualityRequirement_ID(), ecorePackage.getEString(), "ID", null, 0, 1, QualityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQualityRequirement_Description(), ecorePackage.getEString(), "description", null, 0, 1, QualityRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(qualityEClass, Quality.class, "Quality", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getQuality_ID(), ecorePackage.getEString(), "ID", null, 0, 1, Quality.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getQuality_Qualityreq(), this.getQualityRequirement(), null, "qualityreq", null, 0, -1, Quality.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(selectorWithMemoryEClass, SelectorWithMemory.class, "SelectorWithMemory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(parallelAllNodeEClass, ParallelAllNode.class, "ParallelAllNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1641,24 +1509,6 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 
 		initEClass(consumeQueueNodeEClass, ConsumeQueueNode.class, "ConsumeQueueNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(countNodeEClass, CountNode.class, "CountNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(eternalGuardNodeEClass, EternalGuardNode.class, "EternalGuardNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(statusToBlackboardNodeEClass, StatusToBlackboardNode.class, "StatusToBlackboardNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(failureIsRunningNodeEClass, FailureIsRunningNode.class, "FailureIsRunningNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(failureIsSuccessNodeEClass, FailureIsSuccessNode.class, "FailureIsSuccessNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(runningIsFailureNodeEClass, RunningIsFailureNode.class, "RunningIsFailureNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(runningIsSuccessNodeEClass, RunningIsSuccessNode.class, "RunningIsSuccessNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(successIsFailureNodeEClass, SuccessIsFailureNode.class, "SuccessIsFailureNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(successIsRunningNodeEClass, SuccessIsRunningNode.class, "SuccessIsRunningNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
 		initEClass(testNodeEClass, TestNode.class, "TestNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(entryUpdatedActionNodeEClass, EntryUpdatedActionNode.class, "EntryUpdatedActionNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1667,19 +1517,17 @@ public class BtcppPackageImpl extends EPackageImpl implements BtcppPackage {
 
 		initEClass(syncActionNodeEClass, SyncActionNode.class, "SyncActionNode", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		// Initialize enums and add enum literals
-		initEEnum(nodeTypeEEnum, NodeType.class, "NodeType");
-		addEEnumLiteral(nodeTypeEEnum, NodeType.UNDEFINED);
-		addEEnumLiteral(nodeTypeEEnum, NodeType.ACTION);
-		addEEnumLiteral(nodeTypeEEnum, NodeType.CONDITION);
-		addEEnumLiteral(nodeTypeEEnum, NodeType.CONTROL);
-		addEEnumLiteral(nodeTypeEEnum, NodeType.DECORATOR);
-		addEEnumLiteral(nodeTypeEEnum, NodeType.SUBTREE);
+		initEClass(threadedActionNodeEClass, ThreadedActionNode.class, "ThreadedActionNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEEnum(nodeStatusEEnum, NodeStatus.class, "NodeStatus");
-		addEEnumLiteral(nodeStatusEEnum, NodeStatus.RUNNING);
-		addEEnumLiteral(nodeStatusEEnum, NodeStatus.SUCCESS);
-		addEEnumLiteral(nodeStatusEEnum, NodeStatus.FAILURE);
+		initEClass(statefulActionNodeEClass, StatefulActionNode.class, "StatefulActionNode", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(coroActionNodeEClass, CoroActionNode.class, "CoroActionNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(asynchActionNodeEClass, AsynchActionNode.class, "AsynchActionNode", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(sleepNodeEClass, SleepNode.class, "SleepNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(popFromQueueNodeEClass, PopFromQueueNode.class, "PopFromQueueNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

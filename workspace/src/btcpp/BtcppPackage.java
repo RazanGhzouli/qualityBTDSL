@@ -4,7 +4,6 @@ package btcpp;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -114,13 +113,13 @@ public interface BtcppPackage extends EPackage {
 	int TREE_NODE = 1;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TREE_NODE__UID = 0;
+	int TREE_NODE__ID = 0;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -132,31 +131,13 @@ public interface BtcppPackage extends EPackage {
 	int TREE_NODE__NAME = 1;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_NODE__NODE_TYPE = 2;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TREE_NODE__ANY_ATTRIBUTE = 3;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_NODE__NODE_STATUS = 4;
+	int TREE_NODE__ANY_ATTRIBUTE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -165,7 +146,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TREE_NODE__PARAMETERS = 5;
+	int TREE_NODE__PARAMETERS = 3;
 
 	/**
 	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
@@ -174,7 +155,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TREE_NODE__SATISFICES = 6;
+	int TREE_NODE__SATISFICES = 4;
 
 	/**
 	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
@@ -183,7 +164,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TREE_NODE__SATISFIES = 7;
+	int TREE_NODE__SATISFIES = 5;
 
 	/**
 	 * The number of structural features of the '<em>Tree Node</em>' class.
@@ -192,7 +173,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TREE_NODE_FEATURE_COUNT = 8;
+	int TREE_NODE_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>Tree Node</em>' class.
@@ -214,13 +195,13 @@ public interface BtcppPackage extends EPackage {
 	int CONTROL_NODE = 2;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROL_NODE__UID = TREE_NODE__UID;
+	int CONTROL_NODE__ID = TREE_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -232,15 +213,6 @@ public interface BtcppPackage extends EPackage {
 	int CONTROL_NODE__NAME = TREE_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONTROL_NODE__NODE_TYPE = TREE_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -248,15 +220,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONTROL_NODE__ANY_ATTRIBUTE = TREE_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONTROL_NODE__NODE_STATUS = TREE_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -323,13 +286,13 @@ public interface BtcppPackage extends EPackage {
 	int DECORATOR_NODE = 3;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DECORATOR_NODE__UID = TREE_NODE__UID;
+	int DECORATOR_NODE__ID = TREE_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -341,15 +304,6 @@ public interface BtcppPackage extends EPackage {
 	int DECORATOR_NODE__NAME = TREE_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DECORATOR_NODE__NODE_TYPE = TREE_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -357,15 +311,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int DECORATOR_NODE__ANY_ATTRIBUTE = TREE_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DECORATOR_NODE__NODE_STATUS = TREE_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -432,13 +377,13 @@ public interface BtcppPackage extends EPackage {
 	int LEAF_NODE = 25;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LEAF_NODE__UID = TREE_NODE__UID;
+	int LEAF_NODE__ID = TREE_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -450,15 +395,6 @@ public interface BtcppPackage extends EPackage {
 	int LEAF_NODE__NAME = TREE_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LEAF_NODE__NODE_TYPE = TREE_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -466,15 +402,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int LEAF_NODE__ANY_ATTRIBUTE = TREE_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LEAF_NODE__NODE_STATUS = TREE_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -532,13 +459,13 @@ public interface BtcppPackage extends EPackage {
 	int ACTION_NODE_BASE = 26;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACTION_NODE_BASE__UID = LEAF_NODE__UID;
+	int ACTION_NODE_BASE__ID = LEAF_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -550,15 +477,6 @@ public interface BtcppPackage extends EPackage {
 	int ACTION_NODE_BASE__NAME = LEAF_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_NODE_BASE__NODE_TYPE = LEAF_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -566,15 +484,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int ACTION_NODE_BASE__ANY_ATTRIBUTE = LEAF_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_NODE_BASE__NODE_STATUS = LEAF_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -629,16 +538,16 @@ public interface BtcppPackage extends EPackage {
 	 * @see btcpp.impl.BtcppPackageImpl#getSyncActionNode()
 	 * @generated
 	 */
-	int SYNC_ACTION_NODE = 54;
+	int SYNC_ACTION_NODE = 44;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SYNC_ACTION_NODE__UID = ACTION_NODE_BASE__UID;
+	int SYNC_ACTION_NODE__ID = ACTION_NODE_BASE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -650,15 +559,6 @@ public interface BtcppPackage extends EPackage {
 	int SYNC_ACTION_NODE__NAME = ACTION_NODE_BASE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYNC_ACTION_NODE__NODE_TYPE = ACTION_NODE_BASE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -666,15 +566,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int SYNC_ACTION_NODE__ANY_ATTRIBUTE = ACTION_NODE_BASE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYNC_ACTION_NODE__NODE_STATUS = ACTION_NODE_BASE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -732,13 +623,13 @@ public interface BtcppPackage extends EPackage {
 	int ALWAYS_FAILURE_NODE = 4;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ALWAYS_FAILURE_NODE__UID = SYNC_ACTION_NODE__UID;
+	int ALWAYS_FAILURE_NODE__ID = SYNC_ACTION_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -750,15 +641,6 @@ public interface BtcppPackage extends EPackage {
 	int ALWAYS_FAILURE_NODE__NAME = SYNC_ACTION_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ALWAYS_FAILURE_NODE__NODE_TYPE = SYNC_ACTION_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -766,15 +648,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int ALWAYS_FAILURE_NODE__ANY_ATTRIBUTE = SYNC_ACTION_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ALWAYS_FAILURE_NODE__NODE_STATUS = SYNC_ACTION_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -832,13 +705,13 @@ public interface BtcppPackage extends EPackage {
 	int ALWAYS_SUCCESS_NODE = 5;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ALWAYS_SUCCESS_NODE__UID = SYNC_ACTION_NODE__UID;
+	int ALWAYS_SUCCESS_NODE__ID = SYNC_ACTION_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -850,15 +723,6 @@ public interface BtcppPackage extends EPackage {
 	int ALWAYS_SUCCESS_NODE__NAME = SYNC_ACTION_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ALWAYS_SUCCESS_NODE__NODE_TYPE = SYNC_ACTION_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -866,15 +730,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int ALWAYS_SUCCESS_NODE__ANY_ATTRIBUTE = SYNC_ACTION_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ALWAYS_SUCCESS_NODE__NODE_STATUS = SYNC_ACTION_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -932,13 +787,13 @@ public interface BtcppPackage extends EPackage {
 	int SET_BLACKBOARD_NODE = 6;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SET_BLACKBOARD_NODE__UID = SYNC_ACTION_NODE__UID;
+	int SET_BLACKBOARD_NODE__ID = SYNC_ACTION_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -950,15 +805,6 @@ public interface BtcppPackage extends EPackage {
 	int SET_BLACKBOARD_NODE__NAME = SYNC_ACTION_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_BLACKBOARD_NODE__NODE_TYPE = SYNC_ACTION_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -966,15 +812,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int SET_BLACKBOARD_NODE__ANY_ATTRIBUTE = SYNC_ACTION_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_BLACKBOARD_NODE__NODE_STATUS = SYNC_ACTION_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -1040,23 +877,23 @@ public interface BtcppPackage extends EPackage {
 	int SET_BLACKBOARD_NODE_OPERATION_COUNT = SYNC_ACTION_NODE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link btcpp.impl.SelectorNodeImpl <em>Selector Node</em>}' class.
+	 * The meta object id for the '{@link btcpp.impl.FallbackNodeImpl <em>Fallback Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.SelectorNodeImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getSelectorNode()
+	 * @see btcpp.impl.FallbackNodeImpl
+	 * @see btcpp.impl.BtcppPackageImpl#getFallbackNode()
 	 * @generated
 	 */
-	int SELECTOR_NODE = 7;
+	int FALLBACK_NODE = 7;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SELECTOR_NODE__UID = CONTROL_NODE__UID;
+	int FALLBACK_NODE__ID = CONTROL_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1065,16 +902,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECTOR_NODE__NAME = CONTROL_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTOR_NODE__NODE_TYPE = CONTROL_NODE__NODE_TYPE;
+	int FALLBACK_NODE__NAME = CONTROL_NODE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
@@ -1083,16 +911,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECTOR_NODE__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTOR_NODE__NODE_STATUS = CONTROL_NODE__NODE_STATUS;
+	int FALLBACK_NODE__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -1101,7 +920,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECTOR_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
+	int FALLBACK_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
 	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
@@ -1110,7 +929,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECTOR_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
+	int FALLBACK_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
 	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
@@ -1119,7 +938,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECTOR_NODE__SATISFIES = CONTROL_NODE__SATISFIES;
+	int FALLBACK_NODE__SATISFIES = CONTROL_NODE__SATISFIES;
 
 	/**
 	 * The feature id for the '<em><b>Child</b></em>' containment reference list.
@@ -1128,25 +947,25 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SELECTOR_NODE__CHILD = CONTROL_NODE__CHILD;
+	int FALLBACK_NODE__CHILD = CONTROL_NODE__CHILD;
 
 	/**
-	 * The number of structural features of the '<em>Selector Node</em>' class.
+	 * The number of structural features of the '<em>Fallback Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SELECTOR_NODE_FEATURE_COUNT = CONTROL_NODE_FEATURE_COUNT + 0;
+	int FALLBACK_NODE_FEATURE_COUNT = CONTROL_NODE_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Selector Node</em>' class.
+	 * The number of operations of the '<em>Fallback Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SELECTOR_NODE_OPERATION_COUNT = CONTROL_NODE_OPERATION_COUNT + 0;
+	int FALLBACK_NODE_OPERATION_COUNT = CONTROL_NODE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link btcpp.impl.IfThenElseNodeImpl <em>If Then Else Node</em>}' class.
@@ -1159,13 +978,13 @@ public interface BtcppPackage extends EPackage {
 	int IF_THEN_ELSE_NODE = 8;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IF_THEN_ELSE_NODE__UID = CONTROL_NODE__UID;
+	int IF_THEN_ELSE_NODE__ID = CONTROL_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1177,15 +996,6 @@ public interface BtcppPackage extends EPackage {
 	int IF_THEN_ELSE_NODE__NAME = CONTROL_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IF_THEN_ELSE_NODE__NODE_TYPE = CONTROL_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1193,15 +1003,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int IF_THEN_ELSE_NODE__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IF_THEN_ELSE_NODE__NODE_STATUS = CONTROL_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -1268,13 +1069,13 @@ public interface BtcppPackage extends EPackage {
 	int MANUAL_SELECTOR_NODE = 9;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MANUAL_SELECTOR_NODE__UID = CONTROL_NODE__UID;
+	int MANUAL_SELECTOR_NODE__ID = CONTROL_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1286,15 +1087,6 @@ public interface BtcppPackage extends EPackage {
 	int MANUAL_SELECTOR_NODE__NAME = CONTROL_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MANUAL_SELECTOR_NODE__NODE_TYPE = CONTROL_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1302,15 +1094,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int MANUAL_SELECTOR_NODE__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MANUAL_SELECTOR_NODE__NODE_STATUS = CONTROL_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -1377,13 +1160,13 @@ public interface BtcppPackage extends EPackage {
 	int PARALLEL_NODE = 10;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_NODE__UID = CONTROL_NODE__UID;
+	int PARALLEL_NODE__ID = CONTROL_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1395,15 +1178,6 @@ public interface BtcppPackage extends EPackage {
 	int PARALLEL_NODE__NAME = CONTROL_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARALLEL_NODE__NODE_TYPE = CONTROL_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1411,15 +1185,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int PARALLEL_NODE__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARALLEL_NODE__NODE_STATUS = CONTROL_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -1476,23 +1241,23 @@ public interface BtcppPackage extends EPackage {
 	int PARALLEL_NODE_OPERATION_COUNT = CONTROL_NODE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link btcpp.impl.SequenceWithMemoryImpl <em>Sequence With Memory</em>}' class.
+	 * The meta object id for the '{@link btcpp.impl.SequenceWithMemoryNodeImpl <em>Sequence With Memory Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.SequenceWithMemoryImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getSequenceWithMemory()
+	 * @see btcpp.impl.SequenceWithMemoryNodeImpl
+	 * @see btcpp.impl.BtcppPackageImpl#getSequenceWithMemoryNode()
 	 * @generated
 	 */
-	int SEQUENCE_WITH_MEMORY = 11;
+	int SEQUENCE_WITH_MEMORY_NODE = 11;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_WITH_MEMORY__UID = CONTROL_NODE__UID;
+	int SEQUENCE_WITH_MEMORY_NODE__ID = CONTROL_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1501,16 +1266,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_WITH_MEMORY__NAME = CONTROL_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_WITH_MEMORY__NODE_TYPE = CONTROL_NODE__NODE_TYPE;
+	int SEQUENCE_WITH_MEMORY_NODE__NAME = CONTROL_NODE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
@@ -1519,16 +1275,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_WITH_MEMORY__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_WITH_MEMORY__NODE_STATUS = CONTROL_NODE__NODE_STATUS;
+	int SEQUENCE_WITH_MEMORY_NODE__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -1537,7 +1284,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_WITH_MEMORY__PARAMETERS = CONTROL_NODE__PARAMETERS;
+	int SEQUENCE_WITH_MEMORY_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
 	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
@@ -1546,7 +1293,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_WITH_MEMORY__SATISFICES = CONTROL_NODE__SATISFICES;
+	int SEQUENCE_WITH_MEMORY_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
 	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
@@ -1555,7 +1302,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_WITH_MEMORY__SATISFIES = CONTROL_NODE__SATISFIES;
+	int SEQUENCE_WITH_MEMORY_NODE__SATISFIES = CONTROL_NODE__SATISFIES;
 
 	/**
 	 * The feature id for the '<em><b>Child</b></em>' containment reference list.
@@ -1564,25 +1311,25 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_WITH_MEMORY__CHILD = CONTROL_NODE__CHILD;
+	int SEQUENCE_WITH_MEMORY_NODE__CHILD = CONTROL_NODE__CHILD;
 
 	/**
-	 * The number of structural features of the '<em>Sequence With Memory</em>' class.
+	 * The number of structural features of the '<em>Sequence With Memory Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_WITH_MEMORY_FEATURE_COUNT = CONTROL_NODE_FEATURE_COUNT + 0;
+	int SEQUENCE_WITH_MEMORY_NODE_FEATURE_COUNT = CONTROL_NODE_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Sequence With Memory</em>' class.
+	 * The number of operations of the '<em>Sequence With Memory Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_WITH_MEMORY_OPERATION_COUNT = CONTROL_NODE_OPERATION_COUNT + 0;
+	int SEQUENCE_WITH_MEMORY_NODE_OPERATION_COUNT = CONTROL_NODE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link btcpp.impl.SwitchNodeImpl <em>Switch Node</em>}' class.
@@ -1595,13 +1342,13 @@ public interface BtcppPackage extends EPackage {
 	int SWITCH_NODE = 12;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH_NODE__UID = CONTROL_NODE__UID;
+	int SWITCH_NODE__ID = CONTROL_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1613,15 +1360,6 @@ public interface BtcppPackage extends EPackage {
 	int SWITCH_NODE__NAME = CONTROL_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SWITCH_NODE__NODE_TYPE = CONTROL_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1629,15 +1367,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int SWITCH_NODE__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SWITCH_NODE__NODE_STATUS = CONTROL_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -1694,23 +1423,23 @@ public interface BtcppPackage extends EPackage {
 	int SWITCH_NODE_OPERATION_COUNT = CONTROL_NODE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link btcpp.impl.ReactiveSelectorImpl <em>Reactive Selector</em>}' class.
+	 * The meta object id for the '{@link btcpp.impl.ReactiveFallbackNodeImpl <em>Reactive Fallback Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.ReactiveSelectorImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getReactiveSelector()
+	 * @see btcpp.impl.ReactiveFallbackNodeImpl
+	 * @see btcpp.impl.BtcppPackageImpl#getReactiveFallbackNode()
 	 * @generated
 	 */
-	int REACTIVE_SELECTOR = 13;
+	int REACTIVE_FALLBACK_NODE = 13;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SELECTOR__UID = CONTROL_NODE__UID;
+	int REACTIVE_FALLBACK_NODE__ID = CONTROL_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1719,16 +1448,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SELECTOR__NAME = CONTROL_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REACTIVE_SELECTOR__NODE_TYPE = CONTROL_NODE__NODE_TYPE;
+	int REACTIVE_FALLBACK_NODE__NAME = CONTROL_NODE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
@@ -1737,16 +1457,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SELECTOR__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REACTIVE_SELECTOR__NODE_STATUS = CONTROL_NODE__NODE_STATUS;
+	int REACTIVE_FALLBACK_NODE__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -1755,7 +1466,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SELECTOR__PARAMETERS = CONTROL_NODE__PARAMETERS;
+	int REACTIVE_FALLBACK_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
 	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
@@ -1764,7 +1475,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SELECTOR__SATISFICES = CONTROL_NODE__SATISFICES;
+	int REACTIVE_FALLBACK_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
 	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
@@ -1773,7 +1484,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SELECTOR__SATISFIES = CONTROL_NODE__SATISFIES;
+	int REACTIVE_FALLBACK_NODE__SATISFIES = CONTROL_NODE__SATISFIES;
 
 	/**
 	 * The feature id for the '<em><b>Child</b></em>' containment reference list.
@@ -1782,25 +1493,25 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SELECTOR__CHILD = CONTROL_NODE__CHILD;
+	int REACTIVE_FALLBACK_NODE__CHILD = CONTROL_NODE__CHILD;
 
 	/**
-	 * The number of structural features of the '<em>Reactive Selector</em>' class.
+	 * The number of structural features of the '<em>Reactive Fallback Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SELECTOR_FEATURE_COUNT = CONTROL_NODE_FEATURE_COUNT + 0;
+	int REACTIVE_FALLBACK_NODE_FEATURE_COUNT = CONTROL_NODE_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Reactive Selector</em>' class.
+	 * The number of operations of the '<em>Reactive Fallback Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SELECTOR_OPERATION_COUNT = CONTROL_NODE_OPERATION_COUNT + 0;
+	int REACTIVE_FALLBACK_NODE_OPERATION_COUNT = CONTROL_NODE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link btcpp.impl.WhileDoElseNodeImpl <em>While Do Else Node</em>}' class.
@@ -1813,13 +1524,13 @@ public interface BtcppPackage extends EPackage {
 	int WHILE_DO_ELSE_NODE = 14;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WHILE_DO_ELSE_NODE__UID = CONTROL_NODE__UID;
+	int WHILE_DO_ELSE_NODE__ID = CONTROL_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1831,15 +1542,6 @@ public interface BtcppPackage extends EPackage {
 	int WHILE_DO_ELSE_NODE__NAME = CONTROL_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WHILE_DO_ELSE_NODE__NODE_TYPE = CONTROL_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1847,15 +1549,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int WHILE_DO_ELSE_NODE__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WHILE_DO_ELSE_NODE__NODE_STATUS = CONTROL_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -1912,23 +1605,23 @@ public interface BtcppPackage extends EPackage {
 	int WHILE_DO_ELSE_NODE_OPERATION_COUNT = CONTROL_NODE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link btcpp.impl.ReactiveSequenceImpl <em>Reactive Sequence</em>}' class.
+	 * The meta object id for the '{@link btcpp.impl.ReactiveSequenceNodeImpl <em>Reactive Sequence Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.ReactiveSequenceImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getReactiveSequence()
+	 * @see btcpp.impl.ReactiveSequenceNodeImpl
+	 * @see btcpp.impl.BtcppPackageImpl#getReactiveSequenceNode()
 	 * @generated
 	 */
-	int REACTIVE_SEQUENCE = 15;
+	int REACTIVE_SEQUENCE_NODE = 15;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SEQUENCE__UID = CONTROL_NODE__UID;
+	int REACTIVE_SEQUENCE_NODE__ID = CONTROL_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1937,16 +1630,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SEQUENCE__NAME = CONTROL_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REACTIVE_SEQUENCE__NODE_TYPE = CONTROL_NODE__NODE_TYPE;
+	int REACTIVE_SEQUENCE_NODE__NAME = CONTROL_NODE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
@@ -1955,16 +1639,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SEQUENCE__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REACTIVE_SEQUENCE__NODE_STATUS = CONTROL_NODE__NODE_STATUS;
+	int REACTIVE_SEQUENCE_NODE__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -1973,7 +1648,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SEQUENCE__PARAMETERS = CONTROL_NODE__PARAMETERS;
+	int REACTIVE_SEQUENCE_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
 	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
@@ -1982,7 +1657,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SEQUENCE__SATISFICES = CONTROL_NODE__SATISFICES;
+	int REACTIVE_SEQUENCE_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
 	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
@@ -1991,7 +1666,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SEQUENCE__SATISFIES = CONTROL_NODE__SATISFIES;
+	int REACTIVE_SEQUENCE_NODE__SATISFIES = CONTROL_NODE__SATISFIES;
 
 	/**
 	 * The feature id for the '<em><b>Child</b></em>' containment reference list.
@@ -2000,25 +1675,25 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SEQUENCE__CHILD = CONTROL_NODE__CHILD;
+	int REACTIVE_SEQUENCE_NODE__CHILD = CONTROL_NODE__CHILD;
 
 	/**
-	 * The number of structural features of the '<em>Reactive Sequence</em>' class.
+	 * The number of structural features of the '<em>Reactive Sequence Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SEQUENCE_FEATURE_COUNT = CONTROL_NODE_FEATURE_COUNT + 0;
+	int REACTIVE_SEQUENCE_NODE_FEATURE_COUNT = CONTROL_NODE_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Reactive Sequence</em>' class.
+	 * The number of operations of the '<em>Reactive Sequence Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REACTIVE_SEQUENCE_OPERATION_COUNT = CONTROL_NODE_OPERATION_COUNT + 0;
+	int REACTIVE_SEQUENCE_NODE_OPERATION_COUNT = CONTROL_NODE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link btcpp.impl.SequenceNodeImpl <em>Sequence Node</em>}' class.
@@ -2031,13 +1706,13 @@ public interface BtcppPackage extends EPackage {
 	int SEQUENCE_NODE = 16;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_NODE__UID = CONTROL_NODE__UID;
+	int SEQUENCE_NODE__ID = CONTROL_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2049,15 +1724,6 @@ public interface BtcppPackage extends EPackage {
 	int SEQUENCE_NODE__NAME = CONTROL_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_NODE__NODE_TYPE = CONTROL_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2065,15 +1731,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int SEQUENCE_NODE__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_NODE__NODE_STATUS = CONTROL_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -2140,13 +1797,13 @@ public interface BtcppPackage extends EPackage {
 	int TIMEOUT_NODE = 17;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TIMEOUT_NODE__UID = DECORATOR_NODE__UID;
+	int TIMEOUT_NODE__ID = DECORATOR_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2158,15 +1815,6 @@ public interface BtcppPackage extends EPackage {
 	int TIMEOUT_NODE__NAME = DECORATOR_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TIMEOUT_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2174,15 +1822,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int TIMEOUT_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TIMEOUT_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -2258,13 +1897,13 @@ public interface BtcppPackage extends EPackage {
 	int KEEP_RUNNING_UNTIL_FAILURE_NODE = 18;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int KEEP_RUNNING_UNTIL_FAILURE_NODE__UID = DECORATOR_NODE__UID;
+	int KEEP_RUNNING_UNTIL_FAILURE_NODE__ID = DECORATOR_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2276,15 +1915,6 @@ public interface BtcppPackage extends EPackage {
 	int KEEP_RUNNING_UNTIL_FAILURE_NODE__NAME = DECORATOR_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int KEEP_RUNNING_UNTIL_FAILURE_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2292,15 +1922,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int KEEP_RUNNING_UNTIL_FAILURE_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int KEEP_RUNNING_UNTIL_FAILURE_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -2367,13 +1988,13 @@ public interface BtcppPackage extends EPackage {
 	int INVERTER_NODE = 19;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER_NODE__UID = DECORATOR_NODE__UID;
+	int INVERTER_NODE__ID = DECORATOR_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2385,15 +2006,6 @@ public interface BtcppPackage extends EPackage {
 	int INVERTER_NODE__NAME = DECORATOR_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INVERTER_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2401,15 +2013,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int INVERTER_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INVERTER_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -2476,13 +2079,13 @@ public interface BtcppPackage extends EPackage {
 	int FORCE_SUCCESS_NODE = 20;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FORCE_SUCCESS_NODE__UID = DECORATOR_NODE__UID;
+	int FORCE_SUCCESS_NODE__ID = DECORATOR_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2494,15 +2097,6 @@ public interface BtcppPackage extends EPackage {
 	int FORCE_SUCCESS_NODE__NAME = DECORATOR_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORCE_SUCCESS_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2510,15 +2104,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int FORCE_SUCCESS_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORCE_SUCCESS_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -2585,13 +2170,13 @@ public interface BtcppPackage extends EPackage {
 	int FORCE_FAILURE_NODE = 21;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FORCE_FAILURE_NODE__UID = DECORATOR_NODE__UID;
+	int FORCE_FAILURE_NODE__ID = DECORATOR_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2603,15 +2188,6 @@ public interface BtcppPackage extends EPackage {
 	int FORCE_FAILURE_NODE__NAME = DECORATOR_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORCE_FAILURE_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2619,15 +2195,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int FORCE_FAILURE_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORCE_FAILURE_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -2694,13 +2261,13 @@ public interface BtcppPackage extends EPackage {
 	int REPEAT_NODE = 22;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REPEAT_NODE__UID = DECORATOR_NODE__UID;
+	int REPEAT_NODE__ID = DECORATOR_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2712,15 +2279,6 @@ public interface BtcppPackage extends EPackage {
 	int REPEAT_NODE__NAME = DECORATOR_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REPEAT_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2728,15 +2286,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int REPEAT_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REPEAT_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -2812,13 +2361,13 @@ public interface BtcppPackage extends EPackage {
 	int CONDITION_NODE = 23;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITION_NODE__UID = LEAF_NODE__UID;
+	int CONDITION_NODE__ID = LEAF_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2830,15 +2379,6 @@ public interface BtcppPackage extends EPackage {
 	int CONDITION_NODE__NAME = LEAF_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITION_NODE__NODE_TYPE = LEAF_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2846,15 +2386,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONDITION_NODE__ANY_ATTRIBUTE = LEAF_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITION_NODE__NODE_STATUS = LEAF_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -2912,13 +2443,13 @@ public interface BtcppPackage extends EPackage {
 	int SUB_TREE = 24;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUB_TREE__UID = TREE_NODE__UID;
+	int SUB_TREE__ID = TREE_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2930,15 +2461,6 @@ public interface BtcppPackage extends EPackage {
 	int SUB_TREE__NAME = TREE_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUB_TREE__NODE_TYPE = TREE_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2946,15 +2468,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int SUB_TREE__ANY_ATTRIBUTE = TREE_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUB_TREE__NODE_STATUS = TREE_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -3021,13 +2534,13 @@ public interface BtcppPackage extends EPackage {
 	int SCRIPT_NODE = 27;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SCRIPT_NODE__UID = SYNC_ACTION_NODE__UID;
+	int SCRIPT_NODE__ID = SYNC_ACTION_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3039,15 +2552,6 @@ public interface BtcppPackage extends EPackage {
 	int SCRIPT_NODE__NAME = SYNC_ACTION_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCRIPT_NODE__NODE_TYPE = SYNC_ACTION_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3055,15 +2559,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int SCRIPT_NODE__ANY_ATTRIBUTE = SYNC_ACTION_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCRIPT_NODE__NODE_STATUS = SYNC_ACTION_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -3121,13 +2616,13 @@ public interface BtcppPackage extends EPackage {
 	int SCRIPT_CONDITION_NODE = 28;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SCRIPT_CONDITION_NODE__UID = CONDITION_NODE__UID;
+	int SCRIPT_CONDITION_NODE__ID = CONDITION_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3139,15 +2634,6 @@ public interface BtcppPackage extends EPackage {
 	int SCRIPT_CONDITION_NODE__NAME = CONDITION_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCRIPT_CONDITION_NODE__NODE_TYPE = CONDITION_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3155,15 +2641,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int SCRIPT_CONDITION_NODE__ANY_ATTRIBUTE = CONDITION_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCRIPT_CONDITION_NODE__NODE_STATUS = CONDITION_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -3221,13 +2698,13 @@ public interface BtcppPackage extends EPackage {
 	int RETRY_NODE = 29;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RETRY_NODE__UID = DECORATOR_NODE__UID;
+	int RETRY_NODE__ID = DECORATOR_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3239,15 +2716,6 @@ public interface BtcppPackage extends EPackage {
 	int RETRY_NODE__NAME = DECORATOR_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RETRY_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3255,15 +2723,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int RETRY_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RETRY_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -3440,13 +2899,22 @@ public interface BtcppPackage extends EPackage {
 	int QUALITY_REQUIREMENT__ID = 0;
 
 	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUALITY_REQUIREMENT__DESCRIPTION = 1;
+
+	/**
 	 * The number of structural features of the '<em>Quality Requirement</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int QUALITY_REQUIREMENT_FEATURE_COUNT = 1;
+	int QUALITY_REQUIREMENT_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Quality Requirement</em>' class.
@@ -3504,115 +2972,6 @@ public interface BtcppPackage extends EPackage {
 	int QUALITY_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link btcpp.impl.SelectorWithMemoryImpl <em>Selector With Memory</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.SelectorWithMemoryImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getSelectorWithMemory()
-	 * @generated
-	 */
-	int SELECTOR_WITH_MEMORY = 34;
-
-	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTOR_WITH_MEMORY__UID = CONTROL_NODE__UID;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTOR_WITH_MEMORY__NAME = CONTROL_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTOR_WITH_MEMORY__NODE_TYPE = CONTROL_NODE__NODE_TYPE;
-
-	/**
-	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTOR_WITH_MEMORY__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTOR_WITH_MEMORY__NODE_STATUS = CONTROL_NODE__NODE_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTOR_WITH_MEMORY__PARAMETERS = CONTROL_NODE__PARAMETERS;
-
-	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTOR_WITH_MEMORY__SATISFICES = CONTROL_NODE__SATISFICES;
-
-	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTOR_WITH_MEMORY__SATISFIES = CONTROL_NODE__SATISFIES;
-
-	/**
-	 * The feature id for the '<em><b>Child</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTOR_WITH_MEMORY__CHILD = CONTROL_NODE__CHILD;
-
-	/**
-	 * The number of structural features of the '<em>Selector With Memory</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTOR_WITH_MEMORY_FEATURE_COUNT = CONTROL_NODE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Selector With Memory</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SELECTOR_WITH_MEMORY_OPERATION_COUNT = CONTROL_NODE_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link btcpp.impl.ParallelAllNodeImpl <em>Parallel All Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3620,16 +2979,16 @@ public interface BtcppPackage extends EPackage {
 	 * @see btcpp.impl.BtcppPackageImpl#getParallelAllNode()
 	 * @generated
 	 */
-	int PARALLEL_ALL_NODE = 35;
+	int PARALLEL_ALL_NODE = 34;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARALLEL_ALL_NODE__UID = CONTROL_NODE__UID;
+	int PARALLEL_ALL_NODE__ID = CONTROL_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3641,15 +3000,6 @@ public interface BtcppPackage extends EPackage {
 	int PARALLEL_ALL_NODE__NAME = CONTROL_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARALLEL_ALL_NODE__NODE_TYPE = CONTROL_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3657,15 +3007,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int PARALLEL_ALL_NODE__ANY_ATTRIBUTE = CONTROL_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARALLEL_ALL_NODE__NODE_STATUS = CONTROL_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -3729,16 +3070,16 @@ public interface BtcppPackage extends EPackage {
 	 * @see btcpp.impl.BtcppPackageImpl#getDelayNode()
 	 * @generated
 	 */
-	int DELAY_NODE = 36;
+	int DELAY_NODE = 35;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DELAY_NODE__UID = DECORATOR_NODE__UID;
+	int DELAY_NODE__ID = DECORATOR_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3750,15 +3091,6 @@ public interface BtcppPackage extends EPackage {
 	int DELAY_NODE__NAME = DECORATOR_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DELAY_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3766,15 +3098,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int DELAY_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DELAY_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -3847,16 +3170,16 @@ public interface BtcppPackage extends EPackage {
 	 * @see btcpp.impl.BtcppPackageImpl#getPreconditionNode()
 	 * @generated
 	 */
-	int PRECONDITION_NODE = 37;
+	int PRECONDITION_NODE = 36;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRECONDITION_NODE__UID = DECORATOR_NODE__UID;
+	int PRECONDITION_NODE__ID = DECORATOR_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3868,15 +3191,6 @@ public interface BtcppPackage extends EPackage {
 	int PRECONDITION_NODE__NAME = DECORATOR_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRECONDITION_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3884,15 +3198,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int PRECONDITION_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRECONDITION_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -3956,16 +3261,16 @@ public interface BtcppPackage extends EPackage {
 	 * @see btcpp.impl.BtcppPackageImpl#getEntryUpdatedDecoratorNode()
 	 * @generated
 	 */
-	int ENTRY_UPDATED_DECORATOR_NODE = 38;
+	int ENTRY_UPDATED_DECORATOR_NODE = 37;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ENTRY_UPDATED_DECORATOR_NODE__UID = DECORATOR_NODE__UID;
+	int ENTRY_UPDATED_DECORATOR_NODE__ID = DECORATOR_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3977,15 +3282,6 @@ public interface BtcppPackage extends EPackage {
 	int ENTRY_UPDATED_DECORATOR_NODE__NAME = DECORATOR_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ENTRY_UPDATED_DECORATOR_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3993,15 +3289,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int ENTRY_UPDATED_DECORATOR_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ENTRY_UPDATED_DECORATOR_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -4065,16 +3352,16 @@ public interface BtcppPackage extends EPackage {
 	 * @see btcpp.impl.BtcppPackageImpl#getRunOnceNode()
 	 * @generated
 	 */
-	int RUN_ONCE_NODE = 39;
+	int RUN_ONCE_NODE = 38;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RUN_ONCE_NODE__UID = DECORATOR_NODE__UID;
+	int RUN_ONCE_NODE__ID = DECORATOR_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -4086,15 +3373,6 @@ public interface BtcppPackage extends EPackage {
 	int RUN_ONCE_NODE__NAME = DECORATOR_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUN_ONCE_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4102,15 +3380,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int RUN_ONCE_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUN_ONCE_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -4174,16 +3443,16 @@ public interface BtcppPackage extends EPackage {
 	 * @see btcpp.impl.BtcppPackageImpl#getLoopNode()
 	 * @generated
 	 */
-	int LOOP_NODE = 40;
+	int LOOP_NODE = 39;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LOOP_NODE__UID = DECORATOR_NODE__UID;
+	int LOOP_NODE__ID = DECORATOR_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -4195,15 +3464,6 @@ public interface BtcppPackage extends EPackage {
 	int LOOP_NODE__NAME = DECORATOR_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOOP_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4211,15 +3471,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int LOOP_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOOP_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -4283,16 +3534,16 @@ public interface BtcppPackage extends EPackage {
 	 * @see btcpp.impl.BtcppPackageImpl#getConsumeQueueNode()
 	 * @generated
 	 */
-	int CONSUME_QUEUE_NODE = 41;
+	int CONSUME_QUEUE_NODE = 40;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONSUME_QUEUE_NODE__UID = DECORATOR_NODE__UID;
+	int CONSUME_QUEUE_NODE__ID = DECORATOR_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -4304,15 +3555,6 @@ public interface BtcppPackage extends EPackage {
 	int CONSUME_QUEUE_NODE__NAME = DECORATOR_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSUME_QUEUE_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4320,15 +3562,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONSUME_QUEUE_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSUME_QUEUE_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -4385,132 +3618,23 @@ public interface BtcppPackage extends EPackage {
 	int CONSUME_QUEUE_NODE_OPERATION_COUNT = DECORATOR_NODE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link btcpp.impl.CountNodeImpl <em>Count Node</em>}' class.
+	 * The meta object id for the '{@link btcpp.impl.AsynchActionNodeImpl <em>Asynch Action Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.CountNodeImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getCountNode()
+	 * @see btcpp.impl.AsynchActionNodeImpl
+	 * @see btcpp.impl.BtcppPackageImpl#getAsynchActionNode()
 	 * @generated
 	 */
-	int COUNT_NODE = 42;
+	int ASYNCH_ACTION_NODE = 48;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COUNT_NODE__UID = DECORATOR_NODE__UID;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNT_NODE__NAME = DECORATOR_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNT_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
-	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNT_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNT_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNT_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
-
-	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNT_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
-
-	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNT_NODE__SATISFIES = DECORATOR_NODE__SATISFIES;
-
-	/**
-	 * The feature id for the '<em><b>Child</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNT_NODE__CHILD = DECORATOR_NODE__CHILD;
-
-	/**
-	 * The number of structural features of the '<em>Count Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNT_NODE_FEATURE_COUNT = DECORATOR_NODE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Count Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNT_NODE_OPERATION_COUNT = DECORATOR_NODE_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link btcpp.impl.EternalGuardNodeImpl <em>Eternal Guard Node</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.EternalGuardNodeImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getEternalGuardNode()
-	 * @generated
-	 */
-	int ETERNAL_GUARD_NODE = 43;
-
-	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ETERNAL_GUARD_NODE__UID = DECORATOR_NODE__UID;
+	int ASYNCH_ACTION_NODE__ID = ACTION_NODE_BASE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -4519,16 +3643,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ETERNAL_GUARD_NODE__NAME = DECORATOR_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ETERNAL_GUARD_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
+	int ASYNCH_ACTION_NODE__NAME = ACTION_NODE_BASE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
@@ -4537,16 +3652,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ETERNAL_GUARD_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ETERNAL_GUARD_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
+	int ASYNCH_ACTION_NODE__ANY_ATTRIBUTE = ACTION_NODE_BASE__ANY_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -4555,7 +3661,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ETERNAL_GUARD_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
+	int ASYNCH_ACTION_NODE__PARAMETERS = ACTION_NODE_BASE__PARAMETERS;
 
 	/**
 	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
@@ -4564,7 +3670,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ETERNAL_GUARD_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
+	int ASYNCH_ACTION_NODE__SATISFICES = ACTION_NODE_BASE__SATISFICES;
 
 	/**
 	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
@@ -4573,53 +3679,44 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ETERNAL_GUARD_NODE__SATISFIES = DECORATOR_NODE__SATISFIES;
+	int ASYNCH_ACTION_NODE__SATISFIES = ACTION_NODE_BASE__SATISFIES;
 
 	/**
-	 * The feature id for the '<em><b>Child</b></em>' containment reference.
+	 * The number of structural features of the '<em>Asynch Action Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ETERNAL_GUARD_NODE__CHILD = DECORATOR_NODE__CHILD;
+	int ASYNCH_ACTION_NODE_FEATURE_COUNT = ACTION_NODE_BASE_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Eternal Guard Node</em>' class.
+	 * The number of operations of the '<em>Asynch Action Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ETERNAL_GUARD_NODE_FEATURE_COUNT = DECORATOR_NODE_FEATURE_COUNT + 0;
+	int ASYNCH_ACTION_NODE_OPERATION_COUNT = ACTION_NODE_BASE_OPERATION_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Eternal Guard Node</em>' class.
+	 * The meta object id for the '{@link btcpp.impl.StatefulActionNodeImpl <em>Stateful Action Node</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see btcpp.impl.StatefulActionNodeImpl
+	 * @see btcpp.impl.BtcppPackageImpl#getStatefulActionNode()
+	 * @generated
+	 */
+	int STATEFUL_ACTION_NODE = 46;
+
+	/**
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ETERNAL_GUARD_NODE_OPERATION_COUNT = DECORATOR_NODE_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link btcpp.impl.StatusToBlackboardNodeImpl <em>Status To Blackboard Node</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.StatusToBlackboardNodeImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getStatusToBlackboardNode()
-	 * @generated
-	 */
-	int STATUS_TO_BLACKBOARD_NODE = 44;
-
-	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATUS_TO_BLACKBOARD_NODE__UID = DECORATOR_NODE__UID;
+	int STATEFUL_ACTION_NODE__ID = ASYNCH_ACTION_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -4628,16 +3725,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TO_BLACKBOARD_NODE__NAME = DECORATOR_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATUS_TO_BLACKBOARD_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
+	int STATEFUL_ACTION_NODE__NAME = ASYNCH_ACTION_NODE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
@@ -4646,16 +3734,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TO_BLACKBOARD_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATUS_TO_BLACKBOARD_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
+	int STATEFUL_ACTION_NODE__ANY_ATTRIBUTE = ASYNCH_ACTION_NODE__ANY_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -4664,7 +3743,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TO_BLACKBOARD_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
+	int STATEFUL_ACTION_NODE__PARAMETERS = ASYNCH_ACTION_NODE__PARAMETERS;
 
 	/**
 	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
@@ -4673,7 +3752,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TO_BLACKBOARD_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
+	int STATEFUL_ACTION_NODE__SATISFICES = ASYNCH_ACTION_NODE__SATISFICES;
 
 	/**
 	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
@@ -4682,688 +3761,25 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TO_BLACKBOARD_NODE__SATISFIES = DECORATOR_NODE__SATISFIES;
+	int STATEFUL_ACTION_NODE__SATISFIES = ASYNCH_ACTION_NODE__SATISFIES;
 
 	/**
-	 * The feature id for the '<em><b>Child</b></em>' containment reference.
+	 * The number of structural features of the '<em>Stateful Action Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TO_BLACKBOARD_NODE__CHILD = DECORATOR_NODE__CHILD;
+	int STATEFUL_ACTION_NODE_FEATURE_COUNT = ASYNCH_ACTION_NODE_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Status To Blackboard Node</em>' class.
+	 * The number of operations of the '<em>Stateful Action Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TO_BLACKBOARD_NODE_FEATURE_COUNT = DECORATOR_NODE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Status To Blackboard Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATUS_TO_BLACKBOARD_NODE_OPERATION_COUNT = DECORATOR_NODE_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link btcpp.impl.FailureIsRunningNodeImpl <em>Failure Is Running Node</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.FailureIsRunningNodeImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getFailureIsRunningNode()
-	 * @generated
-	 */
-	int FAILURE_IS_RUNNING_NODE = 45;
-
-	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_RUNNING_NODE__UID = DECORATOR_NODE__UID;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_RUNNING_NODE__NAME = DECORATOR_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_RUNNING_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
-	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_RUNNING_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_RUNNING_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_RUNNING_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
-
-	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_RUNNING_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
-
-	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_RUNNING_NODE__SATISFIES = DECORATOR_NODE__SATISFIES;
-
-	/**
-	 * The feature id for the '<em><b>Child</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_RUNNING_NODE__CHILD = DECORATOR_NODE__CHILD;
-
-	/**
-	 * The number of structural features of the '<em>Failure Is Running Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_RUNNING_NODE_FEATURE_COUNT = DECORATOR_NODE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Failure Is Running Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_RUNNING_NODE_OPERATION_COUNT = DECORATOR_NODE_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link btcpp.impl.FailureIsSuccessNodeImpl <em>Failure Is Success Node</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.FailureIsSuccessNodeImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getFailureIsSuccessNode()
-	 * @generated
-	 */
-	int FAILURE_IS_SUCCESS_NODE = 46;
-
-	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_SUCCESS_NODE__UID = DECORATOR_NODE__UID;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_SUCCESS_NODE__NAME = DECORATOR_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_SUCCESS_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
-	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_SUCCESS_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_SUCCESS_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_SUCCESS_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
-
-	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_SUCCESS_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
-
-	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_SUCCESS_NODE__SATISFIES = DECORATOR_NODE__SATISFIES;
-
-	/**
-	 * The feature id for the '<em><b>Child</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_SUCCESS_NODE__CHILD = DECORATOR_NODE__CHILD;
-
-	/**
-	 * The number of structural features of the '<em>Failure Is Success Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_SUCCESS_NODE_FEATURE_COUNT = DECORATOR_NODE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Failure Is Success Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FAILURE_IS_SUCCESS_NODE_OPERATION_COUNT = DECORATOR_NODE_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link btcpp.impl.RunningIsFailureNodeImpl <em>Running Is Failure Node</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.RunningIsFailureNodeImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getRunningIsFailureNode()
-	 * @generated
-	 */
-	int RUNNING_IS_FAILURE_NODE = 47;
-
-	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_FAILURE_NODE__UID = DECORATOR_NODE__UID;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_FAILURE_NODE__NAME = DECORATOR_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_FAILURE_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
-	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_FAILURE_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_FAILURE_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_FAILURE_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
-
-	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_FAILURE_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
-
-	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_FAILURE_NODE__SATISFIES = DECORATOR_NODE__SATISFIES;
-
-	/**
-	 * The feature id for the '<em><b>Child</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_FAILURE_NODE__CHILD = DECORATOR_NODE__CHILD;
-
-	/**
-	 * The number of structural features of the '<em>Running Is Failure Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_FAILURE_NODE_FEATURE_COUNT = DECORATOR_NODE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Running Is Failure Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_FAILURE_NODE_OPERATION_COUNT = DECORATOR_NODE_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link btcpp.impl.RunningIsSuccessNodeImpl <em>Running Is Success Node</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.RunningIsSuccessNodeImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getRunningIsSuccessNode()
-	 * @generated
-	 */
-	int RUNNING_IS_SUCCESS_NODE = 48;
-
-	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_SUCCESS_NODE__UID = DECORATOR_NODE__UID;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_SUCCESS_NODE__NAME = DECORATOR_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_SUCCESS_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
-	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_SUCCESS_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_SUCCESS_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_SUCCESS_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
-
-	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_SUCCESS_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
-
-	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_SUCCESS_NODE__SATISFIES = DECORATOR_NODE__SATISFIES;
-
-	/**
-	 * The feature id for the '<em><b>Child</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_SUCCESS_NODE__CHILD = DECORATOR_NODE__CHILD;
-
-	/**
-	 * The number of structural features of the '<em>Running Is Success Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_SUCCESS_NODE_FEATURE_COUNT = DECORATOR_NODE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Running Is Success Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RUNNING_IS_SUCCESS_NODE_OPERATION_COUNT = DECORATOR_NODE_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link btcpp.impl.SuccessIsFailureNodeImpl <em>Success Is Failure Node</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.SuccessIsFailureNodeImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getSuccessIsFailureNode()
-	 * @generated
-	 */
-	int SUCCESS_IS_FAILURE_NODE = 49;
-
-	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_FAILURE_NODE__UID = DECORATOR_NODE__UID;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_FAILURE_NODE__NAME = DECORATOR_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_FAILURE_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
-	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_FAILURE_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_FAILURE_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_FAILURE_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
-
-	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_FAILURE_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
-
-	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_FAILURE_NODE__SATISFIES = DECORATOR_NODE__SATISFIES;
-
-	/**
-	 * The feature id for the '<em><b>Child</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_FAILURE_NODE__CHILD = DECORATOR_NODE__CHILD;
-
-	/**
-	 * The number of structural features of the '<em>Success Is Failure Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_FAILURE_NODE_FEATURE_COUNT = DECORATOR_NODE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Success Is Failure Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_FAILURE_NODE_OPERATION_COUNT = DECORATOR_NODE_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link btcpp.impl.SuccessIsRunningNodeImpl <em>Success Is Running Node</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see btcpp.impl.SuccessIsRunningNodeImpl
-	 * @see btcpp.impl.BtcppPackageImpl#getSuccessIsRunningNode()
-	 * @generated
-	 */
-	int SUCCESS_IS_RUNNING_NODE = 50;
-
-	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_RUNNING_NODE__UID = DECORATOR_NODE__UID;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_RUNNING_NODE__NAME = DECORATOR_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_RUNNING_NODE__NODE_TYPE = DECORATOR_NODE__NODE_TYPE;
-
-	/**
-	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_RUNNING_NODE__ANY_ATTRIBUTE = DECORATOR_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_RUNNING_NODE__NODE_STATUS = DECORATOR_NODE__NODE_STATUS;
-
-	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_RUNNING_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
-
-	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_RUNNING_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
-
-	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_RUNNING_NODE__SATISFIES = DECORATOR_NODE__SATISFIES;
-
-	/**
-	 * The feature id for the '<em><b>Child</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_RUNNING_NODE__CHILD = DECORATOR_NODE__CHILD;
-
-	/**
-	 * The number of structural features of the '<em>Success Is Running Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_RUNNING_NODE_FEATURE_COUNT = DECORATOR_NODE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Success Is Running Node</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUCCESS_IS_RUNNING_NODE_OPERATION_COUNT = DECORATOR_NODE_OPERATION_COUNT + 0;
+	int STATEFUL_ACTION_NODE_OPERATION_COUNT = ASYNCH_ACTION_NODE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link btcpp.impl.TestNodeImpl <em>Test Node</em>}' class.
@@ -5373,16 +3789,16 @@ public interface BtcppPackage extends EPackage {
 	 * @see btcpp.impl.BtcppPackageImpl#getTestNode()
 	 * @generated
 	 */
-	int TEST_NODE = 51;
+	int TEST_NODE = 41;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_NODE__UID = SYNC_ACTION_NODE__UID;
+	int TEST_NODE__ID = STATEFUL_ACTION_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -5391,16 +3807,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_NODE__NAME = SYNC_ACTION_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TEST_NODE__NODE_TYPE = SYNC_ACTION_NODE__NODE_TYPE;
+	int TEST_NODE__NAME = STATEFUL_ACTION_NODE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
@@ -5409,16 +3816,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_NODE__ANY_ATTRIBUTE = SYNC_ACTION_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TEST_NODE__NODE_STATUS = SYNC_ACTION_NODE__NODE_STATUS;
+	int TEST_NODE__ANY_ATTRIBUTE = STATEFUL_ACTION_NODE__ANY_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -5427,7 +3825,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_NODE__PARAMETERS = SYNC_ACTION_NODE__PARAMETERS;
+	int TEST_NODE__PARAMETERS = STATEFUL_ACTION_NODE__PARAMETERS;
 
 	/**
 	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
@@ -5436,7 +3834,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_NODE__SATISFICES = SYNC_ACTION_NODE__SATISFICES;
+	int TEST_NODE__SATISFICES = STATEFUL_ACTION_NODE__SATISFICES;
 
 	/**
 	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
@@ -5445,7 +3843,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_NODE__SATISFIES = SYNC_ACTION_NODE__SATISFIES;
+	int TEST_NODE__SATISFIES = STATEFUL_ACTION_NODE__SATISFIES;
 
 	/**
 	 * The number of structural features of the '<em>Test Node</em>' class.
@@ -5454,7 +3852,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_NODE_FEATURE_COUNT = SYNC_ACTION_NODE_FEATURE_COUNT + 0;
+	int TEST_NODE_FEATURE_COUNT = STATEFUL_ACTION_NODE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Test Node</em>' class.
@@ -5463,7 +3861,7 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_NODE_OPERATION_COUNT = SYNC_ACTION_NODE_OPERATION_COUNT + 0;
+	int TEST_NODE_OPERATION_COUNT = STATEFUL_ACTION_NODE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link btcpp.impl.EntryUpdatedActionNodeImpl <em>Entry Updated Action Node</em>}' class.
@@ -5473,16 +3871,16 @@ public interface BtcppPackage extends EPackage {
 	 * @see btcpp.impl.BtcppPackageImpl#getEntryUpdatedActionNode()
 	 * @generated
 	 */
-	int ENTRY_UPDATED_ACTION_NODE = 52;
+	int ENTRY_UPDATED_ACTION_NODE = 42;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ENTRY_UPDATED_ACTION_NODE__UID = SYNC_ACTION_NODE__UID;
+	int ENTRY_UPDATED_ACTION_NODE__ID = SYNC_ACTION_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -5494,15 +3892,6 @@ public interface BtcppPackage extends EPackage {
 	int ENTRY_UPDATED_ACTION_NODE__NAME = SYNC_ACTION_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ENTRY_UPDATED_ACTION_NODE__NODE_TYPE = SYNC_ACTION_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5510,15 +3899,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int ENTRY_UPDATED_ACTION_NODE__ANY_ATTRIBUTE = SYNC_ACTION_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ENTRY_UPDATED_ACTION_NODE__NODE_STATUS = SYNC_ACTION_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -5573,16 +3953,16 @@ public interface BtcppPackage extends EPackage {
 	 * @see btcpp.impl.BtcppPackageImpl#getUnsetBlackboardNode()
 	 * @generated
 	 */
-	int UNSET_BLACKBOARD_NODE = 53;
+	int UNSET_BLACKBOARD_NODE = 43;
 
 	/**
-	 * The feature id for the '<em><b>UID</b></em>' attribute.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UNSET_BLACKBOARD_NODE__UID = SYNC_ACTION_NODE__UID;
+	int UNSET_BLACKBOARD_NODE__ID = SYNC_ACTION_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -5594,15 +3974,6 @@ public interface BtcppPackage extends EPackage {
 	int UNSET_BLACKBOARD_NODE__NAME = SYNC_ACTION_NODE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Node Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UNSET_BLACKBOARD_NODE__NODE_TYPE = SYNC_ACTION_NODE__NODE_TYPE;
-
-	/**
 	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5610,15 +3981,6 @@ public interface BtcppPackage extends EPackage {
 	 * @ordered
 	 */
 	int UNSET_BLACKBOARD_NODE__ANY_ATTRIBUTE = SYNC_ACTION_NODE__ANY_ATTRIBUTE;
-
-	/**
-	 * The feature id for the '<em><b>Node Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UNSET_BLACKBOARD_NODE__NODE_STATUS = SYNC_ACTION_NODE__NODE_STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
@@ -5666,24 +4028,332 @@ public interface BtcppPackage extends EPackage {
 	int UNSET_BLACKBOARD_NODE_OPERATION_COUNT = SYNC_ACTION_NODE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link btcpp.NodeType <em>Node Type</em>}' enum.
+	 * The meta object id for the '{@link btcpp.impl.ThreadedActionNodeImpl <em>Threaded Action Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see btcpp.NodeType
-	 * @see btcpp.impl.BtcppPackageImpl#getNodeType()
+	 * @see btcpp.impl.ThreadedActionNodeImpl
+	 * @see btcpp.impl.BtcppPackageImpl#getThreadedActionNode()
 	 * @generated
 	 */
-	int NODE_TYPE = 55;
+	int THREADED_ACTION_NODE = 45;
 
 	/**
-	 * The meta object id for the '{@link btcpp.NodeStatus <em>Node Status</em>}' enum.
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see btcpp.NodeStatus
-	 * @see btcpp.impl.BtcppPackageImpl#getNodeStatus()
+	 * @generated
+	 * @ordered
+	 */
+	int THREADED_ACTION_NODE__ID = ACTION_NODE_BASE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREADED_ACTION_NODE__NAME = ACTION_NODE_BASE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREADED_ACTION_NODE__ANY_ATTRIBUTE = ACTION_NODE_BASE__ANY_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREADED_ACTION_NODE__PARAMETERS = ACTION_NODE_BASE__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREADED_ACTION_NODE__SATISFICES = ACTION_NODE_BASE__SATISFICES;
+
+	/**
+	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREADED_ACTION_NODE__SATISFIES = ACTION_NODE_BASE__SATISFIES;
+
+	/**
+	 * The number of structural features of the '<em>Threaded Action Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREADED_ACTION_NODE_FEATURE_COUNT = ACTION_NODE_BASE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Threaded Action Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREADED_ACTION_NODE_OPERATION_COUNT = ACTION_NODE_BASE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link btcpp.impl.CoroActionNodeImpl <em>Coro Action Node</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see btcpp.impl.CoroActionNodeImpl
+	 * @see btcpp.impl.BtcppPackageImpl#getCoroActionNode()
 	 * @generated
 	 */
-	int NODE_STATUS = 56;
+	int CORO_ACTION_NODE = 47;
+
+	/**
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORO_ACTION_NODE__ID = ASYNCH_ACTION_NODE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORO_ACTION_NODE__NAME = ASYNCH_ACTION_NODE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORO_ACTION_NODE__ANY_ATTRIBUTE = ASYNCH_ACTION_NODE__ANY_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORO_ACTION_NODE__PARAMETERS = ASYNCH_ACTION_NODE__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORO_ACTION_NODE__SATISFICES = ASYNCH_ACTION_NODE__SATISFICES;
+
+	/**
+	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORO_ACTION_NODE__SATISFIES = ASYNCH_ACTION_NODE__SATISFIES;
+
+	/**
+	 * The number of structural features of the '<em>Coro Action Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORO_ACTION_NODE_FEATURE_COUNT = ASYNCH_ACTION_NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Coro Action Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORO_ACTION_NODE_OPERATION_COUNT = ASYNCH_ACTION_NODE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link btcpp.impl.SleepNodeImpl <em>Sleep Node</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see btcpp.impl.SleepNodeImpl
+	 * @see btcpp.impl.BtcppPackageImpl#getSleepNode()
+	 * @generated
+	 */
+	int SLEEP_NODE = 49;
+
+	/**
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SLEEP_NODE__ID = STATEFUL_ACTION_NODE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SLEEP_NODE__NAME = STATEFUL_ACTION_NODE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SLEEP_NODE__ANY_ATTRIBUTE = STATEFUL_ACTION_NODE__ANY_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SLEEP_NODE__PARAMETERS = STATEFUL_ACTION_NODE__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SLEEP_NODE__SATISFICES = STATEFUL_ACTION_NODE__SATISFICES;
+
+	/**
+	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SLEEP_NODE__SATISFIES = STATEFUL_ACTION_NODE__SATISFIES;
+
+	/**
+	 * The number of structural features of the '<em>Sleep Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SLEEP_NODE_FEATURE_COUNT = STATEFUL_ACTION_NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Sleep Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SLEEP_NODE_OPERATION_COUNT = STATEFUL_ACTION_NODE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link btcpp.impl.PopFromQueueNodeImpl <em>Pop From Queue Node</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see btcpp.impl.PopFromQueueNodeImpl
+	 * @see btcpp.impl.BtcppPackageImpl#getPopFromQueueNode()
+	 * @generated
+	 */
+	int POP_FROM_QUEUE_NODE = 50;
+
+	/**
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POP_FROM_QUEUE_NODE__ID = SYNC_ACTION_NODE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POP_FROM_QUEUE_NODE__NAME = SYNC_ACTION_NODE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POP_FROM_QUEUE_NODE__ANY_ATTRIBUTE = SYNC_ACTION_NODE__ANY_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POP_FROM_QUEUE_NODE__PARAMETERS = SYNC_ACTION_NODE__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POP_FROM_QUEUE_NODE__SATISFICES = SYNC_ACTION_NODE__SATISFICES;
+
+	/**
+	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POP_FROM_QUEUE_NODE__SATISFIES = SYNC_ACTION_NODE__SATISFIES;
+
+	/**
+	 * The number of structural features of the '<em>Pop From Queue Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POP_FROM_QUEUE_NODE_FEATURE_COUNT = SYNC_ACTION_NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Pop From Queue Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POP_FROM_QUEUE_NODE_OPERATION_COUNT = SYNC_ACTION_NODE_OPERATION_COUNT + 0;
 
 
 	/**
@@ -5729,15 +4399,15 @@ public interface BtcppPackage extends EPackage {
 	EClass getTreeNode();
 
 	/**
-	 * Returns the meta object for the attribute '{@link btcpp.TreeNode#getUID <em>UID</em>}'.
+	 * Returns the meta object for the attribute '{@link btcpp.TreeNode#getID <em>ID</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>UID</em>'.
-	 * @see btcpp.TreeNode#getUID()
+	 * @return the meta object for the attribute '<em>ID</em>'.
+	 * @see btcpp.TreeNode#getID()
 	 * @see #getTreeNode()
 	 * @generated
 	 */
-	EAttribute getTreeNode_UID();
+	EAttribute getTreeNode_ID();
 
 	/**
 	 * Returns the meta object for the attribute '{@link btcpp.TreeNode#getName <em>Name</em>}'.
@@ -5751,17 +4421,6 @@ public interface BtcppPackage extends EPackage {
 	EAttribute getTreeNode_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link btcpp.TreeNode#getNodeType <em>Node Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Node Type</em>'.
-	 * @see btcpp.TreeNode#getNodeType()
-	 * @see #getTreeNode()
-	 * @generated
-	 */
-	EAttribute getTreeNode_NodeType();
-
-	/**
 	 * Returns the meta object for the attribute list '{@link btcpp.TreeNode#getAnyAttribute <em>Any Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5771,17 +4430,6 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getTreeNode_AnyAttribute();
-
-	/**
-	 * Returns the meta object for the attribute '{@link btcpp.TreeNode#getNodeStatus <em>Node Status</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Node Status</em>'.
-	 * @see btcpp.TreeNode#getNodeStatus()
-	 * @see #getTreeNode()
-	 * @generated
-	 */
-	EAttribute getTreeNode_NodeStatus();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link btcpp.TreeNode#getParameters <em>Parameters</em>}'.
@@ -5911,14 +4559,14 @@ public interface BtcppPackage extends EPackage {
 	EAttribute getSetBlackboardNode_Output_key();
 
 	/**
-	 * Returns the meta object for class '{@link btcpp.SelectorNode <em>Selector Node</em>}'.
+	 * Returns the meta object for class '{@link btcpp.FallbackNode <em>Fallback Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Selector Node</em>'.
-	 * @see btcpp.SelectorNode
+	 * @return the meta object for class '<em>Fallback Node</em>'.
+	 * @see btcpp.FallbackNode
 	 * @generated
 	 */
-	EClass getSelectorNode();
+	EClass getFallbackNode();
 
 	/**
 	 * Returns the meta object for class '{@link btcpp.IfThenElseNode <em>If Then Else Node</em>}'.
@@ -5951,14 +4599,14 @@ public interface BtcppPackage extends EPackage {
 	EClass getParallelNode();
 
 	/**
-	 * Returns the meta object for class '{@link btcpp.SequenceWithMemory <em>Sequence With Memory</em>}'.
+	 * Returns the meta object for class '{@link btcpp.SequenceWithMemoryNode <em>Sequence With Memory Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Sequence With Memory</em>'.
-	 * @see btcpp.SequenceWithMemory
+	 * @return the meta object for class '<em>Sequence With Memory Node</em>'.
+	 * @see btcpp.SequenceWithMemoryNode
 	 * @generated
 	 */
-	EClass getSequenceWithMemory();
+	EClass getSequenceWithMemoryNode();
 
 	/**
 	 * Returns the meta object for class '{@link btcpp.SwitchNode <em>Switch Node</em>}'.
@@ -5971,14 +4619,14 @@ public interface BtcppPackage extends EPackage {
 	EClass getSwitchNode();
 
 	/**
-	 * Returns the meta object for class '{@link btcpp.ReactiveSelector <em>Reactive Selector</em>}'.
+	 * Returns the meta object for class '{@link btcpp.ReactiveFallbackNode <em>Reactive Fallback Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Reactive Selector</em>'.
-	 * @see btcpp.ReactiveSelector
+	 * @return the meta object for class '<em>Reactive Fallback Node</em>'.
+	 * @see btcpp.ReactiveFallbackNode
 	 * @generated
 	 */
-	EClass getReactiveSelector();
+	EClass getReactiveFallbackNode();
 
 	/**
 	 * Returns the meta object for class '{@link btcpp.WhileDoElseNode <em>While Do Else Node</em>}'.
@@ -5991,14 +4639,14 @@ public interface BtcppPackage extends EPackage {
 	EClass getWhileDoElseNode();
 
 	/**
-	 * Returns the meta object for class '{@link btcpp.ReactiveSequence <em>Reactive Sequence</em>}'.
+	 * Returns the meta object for class '{@link btcpp.ReactiveSequenceNode <em>Reactive Sequence Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Reactive Sequence</em>'.
-	 * @see btcpp.ReactiveSequence
+	 * @return the meta object for class '<em>Reactive Sequence Node</em>'.
+	 * @see btcpp.ReactiveSequenceNode
 	 * @generated
 	 */
-	EClass getReactiveSequence();
+	EClass getReactiveSequenceNode();
 
 	/**
 	 * Returns the meta object for class '{@link btcpp.SequenceNode <em>Sequence Node</em>}'.
@@ -6270,6 +4918,17 @@ public interface BtcppPackage extends EPackage {
 	EAttribute getQualityRequirement_ID();
 
 	/**
+	 * Returns the meta object for the attribute '{@link btcpp.QualityRequirement#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see btcpp.QualityRequirement#getDescription()
+	 * @see #getQualityRequirement()
+	 * @generated
+	 */
+	EAttribute getQualityRequirement_Description();
+
+	/**
 	 * Returns the meta object for class '{@link btcpp.Quality <em>Quality</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6300,16 +4959,6 @@ public interface BtcppPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getQuality_Qualityreq();
-
-	/**
-	 * Returns the meta object for class '{@link btcpp.SelectorWithMemory <em>Selector With Memory</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Selector With Memory</em>'.
-	 * @see btcpp.SelectorWithMemory
-	 * @generated
-	 */
-	EClass getSelectorWithMemory();
 
 	/**
 	 * Returns the meta object for class '{@link btcpp.ParallelAllNode <em>Parallel All Node</em>}'.
@@ -6393,96 +5042,6 @@ public interface BtcppPackage extends EPackage {
 	EClass getConsumeQueueNode();
 
 	/**
-	 * Returns the meta object for class '{@link btcpp.CountNode <em>Count Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Count Node</em>'.
-	 * @see btcpp.CountNode
-	 * @generated
-	 */
-	EClass getCountNode();
-
-	/**
-	 * Returns the meta object for class '{@link btcpp.EternalGuardNode <em>Eternal Guard Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Eternal Guard Node</em>'.
-	 * @see btcpp.EternalGuardNode
-	 * @generated
-	 */
-	EClass getEternalGuardNode();
-
-	/**
-	 * Returns the meta object for class '{@link btcpp.StatusToBlackboardNode <em>Status To Blackboard Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Status To Blackboard Node</em>'.
-	 * @see btcpp.StatusToBlackboardNode
-	 * @generated
-	 */
-	EClass getStatusToBlackboardNode();
-
-	/**
-	 * Returns the meta object for class '{@link btcpp.FailureIsRunningNode <em>Failure Is Running Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Failure Is Running Node</em>'.
-	 * @see btcpp.FailureIsRunningNode
-	 * @generated
-	 */
-	EClass getFailureIsRunningNode();
-
-	/**
-	 * Returns the meta object for class '{@link btcpp.FailureIsSuccessNode <em>Failure Is Success Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Failure Is Success Node</em>'.
-	 * @see btcpp.FailureIsSuccessNode
-	 * @generated
-	 */
-	EClass getFailureIsSuccessNode();
-
-	/**
-	 * Returns the meta object for class '{@link btcpp.RunningIsFailureNode <em>Running Is Failure Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Running Is Failure Node</em>'.
-	 * @see btcpp.RunningIsFailureNode
-	 * @generated
-	 */
-	EClass getRunningIsFailureNode();
-
-	/**
-	 * Returns the meta object for class '{@link btcpp.RunningIsSuccessNode <em>Running Is Success Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Running Is Success Node</em>'.
-	 * @see btcpp.RunningIsSuccessNode
-	 * @generated
-	 */
-	EClass getRunningIsSuccessNode();
-
-	/**
-	 * Returns the meta object for class '{@link btcpp.SuccessIsFailureNode <em>Success Is Failure Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Success Is Failure Node</em>'.
-	 * @see btcpp.SuccessIsFailureNode
-	 * @generated
-	 */
-	EClass getSuccessIsFailureNode();
-
-	/**
-	 * Returns the meta object for class '{@link btcpp.SuccessIsRunningNode <em>Success Is Running Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Success Is Running Node</em>'.
-	 * @see btcpp.SuccessIsRunningNode
-	 * @generated
-	 */
-	EClass getSuccessIsRunningNode();
-
-	/**
 	 * Returns the meta object for class '{@link btcpp.TestNode <em>Test Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6523,24 +5082,64 @@ public interface BtcppPackage extends EPackage {
 	EClass getSyncActionNode();
 
 	/**
-	 * Returns the meta object for enum '{@link btcpp.NodeType <em>Node Type</em>}'.
+	 * Returns the meta object for class '{@link btcpp.ThreadedActionNode <em>Threaded Action Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Node Type</em>'.
-	 * @see btcpp.NodeType
+	 * @return the meta object for class '<em>Threaded Action Node</em>'.
+	 * @see btcpp.ThreadedActionNode
 	 * @generated
 	 */
-	EEnum getNodeType();
+	EClass getThreadedActionNode();
 
 	/**
-	 * Returns the meta object for enum '{@link btcpp.NodeStatus <em>Node Status</em>}'.
+	 * Returns the meta object for class '{@link btcpp.StatefulActionNode <em>Stateful Action Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Node Status</em>'.
-	 * @see btcpp.NodeStatus
+	 * @return the meta object for class '<em>Stateful Action Node</em>'.
+	 * @see btcpp.StatefulActionNode
 	 * @generated
 	 */
-	EEnum getNodeStatus();
+	EClass getStatefulActionNode();
+
+	/**
+	 * Returns the meta object for class '{@link btcpp.CoroActionNode <em>Coro Action Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Coro Action Node</em>'.
+	 * @see btcpp.CoroActionNode
+	 * @generated
+	 */
+	EClass getCoroActionNode();
+
+	/**
+	 * Returns the meta object for class '{@link btcpp.AsynchActionNode <em>Asynch Action Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Asynch Action Node</em>'.
+	 * @see btcpp.AsynchActionNode
+	 * @generated
+	 */
+	EClass getAsynchActionNode();
+
+	/**
+	 * Returns the meta object for class '{@link btcpp.SleepNode <em>Sleep Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sleep Node</em>'.
+	 * @see btcpp.SleepNode
+	 * @generated
+	 */
+	EClass getSleepNode();
+
+	/**
+	 * Returns the meta object for class '{@link btcpp.PopFromQueueNode <em>Pop From Queue Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Pop From Queue Node</em>'.
+	 * @see btcpp.PopFromQueueNode
+	 * @generated
+	 */
+	EClass getPopFromQueueNode();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -6602,12 +5201,12 @@ public interface BtcppPackage extends EPackage {
 		EClass TREE_NODE = eINSTANCE.getTreeNode();
 
 		/**
-		 * The meta object literal for the '<em><b>UID</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>ID</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute TREE_NODE__UID = eINSTANCE.getTreeNode_UID();
+		EAttribute TREE_NODE__ID = eINSTANCE.getTreeNode_ID();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -6618,28 +5217,12 @@ public interface BtcppPackage extends EPackage {
 		EAttribute TREE_NODE__NAME = eINSTANCE.getTreeNode_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Node Type</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute TREE_NODE__NODE_TYPE = eINSTANCE.getTreeNode_NodeType();
-
-		/**
 		 * The meta object literal for the '<em><b>Any Attribute</b></em>' attribute list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute TREE_NODE__ANY_ATTRIBUTE = eINSTANCE.getTreeNode_AnyAttribute();
-
-		/**
-		 * The meta object literal for the '<em><b>Node Status</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute TREE_NODE__NODE_STATUS = eINSTANCE.getTreeNode_NodeStatus();
 
 		/**
 		 * The meta object literal for the '<em><b>Parameters</b></em>' containment reference list feature.
@@ -6748,14 +5331,14 @@ public interface BtcppPackage extends EPackage {
 		EAttribute SET_BLACKBOARD_NODE__OUTPUT_KEY = eINSTANCE.getSetBlackboardNode_Output_key();
 
 		/**
-		 * The meta object literal for the '{@link btcpp.impl.SelectorNodeImpl <em>Selector Node</em>}' class.
+		 * The meta object literal for the '{@link btcpp.impl.FallbackNodeImpl <em>Fallback Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.SelectorNodeImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getSelectorNode()
+		 * @see btcpp.impl.FallbackNodeImpl
+		 * @see btcpp.impl.BtcppPackageImpl#getFallbackNode()
 		 * @generated
 		 */
-		EClass SELECTOR_NODE = eINSTANCE.getSelectorNode();
+		EClass FALLBACK_NODE = eINSTANCE.getFallbackNode();
 
 		/**
 		 * The meta object literal for the '{@link btcpp.impl.IfThenElseNodeImpl <em>If Then Else Node</em>}' class.
@@ -6788,14 +5371,14 @@ public interface BtcppPackage extends EPackage {
 		EClass PARALLEL_NODE = eINSTANCE.getParallelNode();
 
 		/**
-		 * The meta object literal for the '{@link btcpp.impl.SequenceWithMemoryImpl <em>Sequence With Memory</em>}' class.
+		 * The meta object literal for the '{@link btcpp.impl.SequenceWithMemoryNodeImpl <em>Sequence With Memory Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.SequenceWithMemoryImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getSequenceWithMemory()
+		 * @see btcpp.impl.SequenceWithMemoryNodeImpl
+		 * @see btcpp.impl.BtcppPackageImpl#getSequenceWithMemoryNode()
 		 * @generated
 		 */
-		EClass SEQUENCE_WITH_MEMORY = eINSTANCE.getSequenceWithMemory();
+		EClass SEQUENCE_WITH_MEMORY_NODE = eINSTANCE.getSequenceWithMemoryNode();
 
 		/**
 		 * The meta object literal for the '{@link btcpp.impl.SwitchNodeImpl <em>Switch Node</em>}' class.
@@ -6808,14 +5391,14 @@ public interface BtcppPackage extends EPackage {
 		EClass SWITCH_NODE = eINSTANCE.getSwitchNode();
 
 		/**
-		 * The meta object literal for the '{@link btcpp.impl.ReactiveSelectorImpl <em>Reactive Selector</em>}' class.
+		 * The meta object literal for the '{@link btcpp.impl.ReactiveFallbackNodeImpl <em>Reactive Fallback Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.ReactiveSelectorImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getReactiveSelector()
+		 * @see btcpp.impl.ReactiveFallbackNodeImpl
+		 * @see btcpp.impl.BtcppPackageImpl#getReactiveFallbackNode()
 		 * @generated
 		 */
-		EClass REACTIVE_SELECTOR = eINSTANCE.getReactiveSelector();
+		EClass REACTIVE_FALLBACK_NODE = eINSTANCE.getReactiveFallbackNode();
 
 		/**
 		 * The meta object literal for the '{@link btcpp.impl.WhileDoElseNodeImpl <em>While Do Else Node</em>}' class.
@@ -6828,14 +5411,14 @@ public interface BtcppPackage extends EPackage {
 		EClass WHILE_DO_ELSE_NODE = eINSTANCE.getWhileDoElseNode();
 
 		/**
-		 * The meta object literal for the '{@link btcpp.impl.ReactiveSequenceImpl <em>Reactive Sequence</em>}' class.
+		 * The meta object literal for the '{@link btcpp.impl.ReactiveSequenceNodeImpl <em>Reactive Sequence Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.ReactiveSequenceImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getReactiveSequence()
+		 * @see btcpp.impl.ReactiveSequenceNodeImpl
+		 * @see btcpp.impl.BtcppPackageImpl#getReactiveSequenceNode()
 		 * @generated
 		 */
-		EClass REACTIVE_SEQUENCE = eINSTANCE.getReactiveSequence();
+		EClass REACTIVE_SEQUENCE_NODE = eINSTANCE.getReactiveSequenceNode();
 
 		/**
 		 * The meta object literal for the '{@link btcpp.impl.SequenceNodeImpl <em>Sequence Node</em>}' class.
@@ -7080,6 +5663,14 @@ public interface BtcppPackage extends EPackage {
 		EAttribute QUALITY_REQUIREMENT__ID = eINSTANCE.getQualityRequirement_ID();
 
 		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUALITY_REQUIREMENT__DESCRIPTION = eINSTANCE.getQualityRequirement_Description();
+
+		/**
 		 * The meta object literal for the '{@link btcpp.impl.QualityImpl <em>Quality</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7104,16 +5695,6 @@ public interface BtcppPackage extends EPackage {
 		 * @generated
 		 */
 		EReference QUALITY__QUALITYREQ = eINSTANCE.getQuality_Qualityreq();
-
-		/**
-		 * The meta object literal for the '{@link btcpp.impl.SelectorWithMemoryImpl <em>Selector With Memory</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.SelectorWithMemoryImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getSelectorWithMemory()
-		 * @generated
-		 */
-		EClass SELECTOR_WITH_MEMORY = eINSTANCE.getSelectorWithMemory();
 
 		/**
 		 * The meta object literal for the '{@link btcpp.impl.ParallelAllNodeImpl <em>Parallel All Node</em>}' class.
@@ -7194,96 +5775,6 @@ public interface BtcppPackage extends EPackage {
 		EClass CONSUME_QUEUE_NODE = eINSTANCE.getConsumeQueueNode();
 
 		/**
-		 * The meta object literal for the '{@link btcpp.impl.CountNodeImpl <em>Count Node</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.CountNodeImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getCountNode()
-		 * @generated
-		 */
-		EClass COUNT_NODE = eINSTANCE.getCountNode();
-
-		/**
-		 * The meta object literal for the '{@link btcpp.impl.EternalGuardNodeImpl <em>Eternal Guard Node</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.EternalGuardNodeImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getEternalGuardNode()
-		 * @generated
-		 */
-		EClass ETERNAL_GUARD_NODE = eINSTANCE.getEternalGuardNode();
-
-		/**
-		 * The meta object literal for the '{@link btcpp.impl.StatusToBlackboardNodeImpl <em>Status To Blackboard Node</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.StatusToBlackboardNodeImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getStatusToBlackboardNode()
-		 * @generated
-		 */
-		EClass STATUS_TO_BLACKBOARD_NODE = eINSTANCE.getStatusToBlackboardNode();
-
-		/**
-		 * The meta object literal for the '{@link btcpp.impl.FailureIsRunningNodeImpl <em>Failure Is Running Node</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.FailureIsRunningNodeImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getFailureIsRunningNode()
-		 * @generated
-		 */
-		EClass FAILURE_IS_RUNNING_NODE = eINSTANCE.getFailureIsRunningNode();
-
-		/**
-		 * The meta object literal for the '{@link btcpp.impl.FailureIsSuccessNodeImpl <em>Failure Is Success Node</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.FailureIsSuccessNodeImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getFailureIsSuccessNode()
-		 * @generated
-		 */
-		EClass FAILURE_IS_SUCCESS_NODE = eINSTANCE.getFailureIsSuccessNode();
-
-		/**
-		 * The meta object literal for the '{@link btcpp.impl.RunningIsFailureNodeImpl <em>Running Is Failure Node</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.RunningIsFailureNodeImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getRunningIsFailureNode()
-		 * @generated
-		 */
-		EClass RUNNING_IS_FAILURE_NODE = eINSTANCE.getRunningIsFailureNode();
-
-		/**
-		 * The meta object literal for the '{@link btcpp.impl.RunningIsSuccessNodeImpl <em>Running Is Success Node</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.RunningIsSuccessNodeImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getRunningIsSuccessNode()
-		 * @generated
-		 */
-		EClass RUNNING_IS_SUCCESS_NODE = eINSTANCE.getRunningIsSuccessNode();
-
-		/**
-		 * The meta object literal for the '{@link btcpp.impl.SuccessIsFailureNodeImpl <em>Success Is Failure Node</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.SuccessIsFailureNodeImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getSuccessIsFailureNode()
-		 * @generated
-		 */
-		EClass SUCCESS_IS_FAILURE_NODE = eINSTANCE.getSuccessIsFailureNode();
-
-		/**
-		 * The meta object literal for the '{@link btcpp.impl.SuccessIsRunningNodeImpl <em>Success Is Running Node</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see btcpp.impl.SuccessIsRunningNodeImpl
-		 * @see btcpp.impl.BtcppPackageImpl#getSuccessIsRunningNode()
-		 * @generated
-		 */
-		EClass SUCCESS_IS_RUNNING_NODE = eINSTANCE.getSuccessIsRunningNode();
-
-		/**
 		 * The meta object literal for the '{@link btcpp.impl.TestNodeImpl <em>Test Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7324,24 +5815,64 @@ public interface BtcppPackage extends EPackage {
 		EClass SYNC_ACTION_NODE = eINSTANCE.getSyncActionNode();
 
 		/**
-		 * The meta object literal for the '{@link btcpp.NodeType <em>Node Type</em>}' enum.
+		 * The meta object literal for the '{@link btcpp.impl.ThreadedActionNodeImpl <em>Threaded Action Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see btcpp.NodeType
-		 * @see btcpp.impl.BtcppPackageImpl#getNodeType()
+		 * @see btcpp.impl.ThreadedActionNodeImpl
+		 * @see btcpp.impl.BtcppPackageImpl#getThreadedActionNode()
 		 * @generated
 		 */
-		EEnum NODE_TYPE = eINSTANCE.getNodeType();
+		EClass THREADED_ACTION_NODE = eINSTANCE.getThreadedActionNode();
 
 		/**
-		 * The meta object literal for the '{@link btcpp.NodeStatus <em>Node Status</em>}' enum.
+		 * The meta object literal for the '{@link btcpp.impl.StatefulActionNodeImpl <em>Stateful Action Node</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see btcpp.NodeStatus
-		 * @see btcpp.impl.BtcppPackageImpl#getNodeStatus()
+		 * @see btcpp.impl.StatefulActionNodeImpl
+		 * @see btcpp.impl.BtcppPackageImpl#getStatefulActionNode()
 		 * @generated
 		 */
-		EEnum NODE_STATUS = eINSTANCE.getNodeStatus();
+		EClass STATEFUL_ACTION_NODE = eINSTANCE.getStatefulActionNode();
+
+		/**
+		 * The meta object literal for the '{@link btcpp.impl.CoroActionNodeImpl <em>Coro Action Node</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see btcpp.impl.CoroActionNodeImpl
+		 * @see btcpp.impl.BtcppPackageImpl#getCoroActionNode()
+		 * @generated
+		 */
+		EClass CORO_ACTION_NODE = eINSTANCE.getCoroActionNode();
+
+		/**
+		 * The meta object literal for the '{@link btcpp.impl.AsynchActionNodeImpl <em>Asynch Action Node</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see btcpp.impl.AsynchActionNodeImpl
+		 * @see btcpp.impl.BtcppPackageImpl#getAsynchActionNode()
+		 * @generated
+		 */
+		EClass ASYNCH_ACTION_NODE = eINSTANCE.getAsynchActionNode();
+
+		/**
+		 * The meta object literal for the '{@link btcpp.impl.SleepNodeImpl <em>Sleep Node</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see btcpp.impl.SleepNodeImpl
+		 * @see btcpp.impl.BtcppPackageImpl#getSleepNode()
+		 * @generated
+		 */
+		EClass SLEEP_NODE = eINSTANCE.getSleepNode();
+
+		/**
+		 * The meta object literal for the '{@link btcpp.impl.PopFromQueueNodeImpl <em>Pop From Queue Node</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see btcpp.impl.PopFromQueueNodeImpl
+		 * @see btcpp.impl.BtcppPackageImpl#getPopFromQueueNode()
+		 * @generated
+		 */
+		EClass POP_FROM_QUEUE_NODE = eINSTANCE.getPopFromQueueNode();
 
 	}
 
