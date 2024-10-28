@@ -67,7 +67,7 @@ public interface BtcppPackage extends EPackage {
 	int BEHAVIOR_TREE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Node</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Node</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4367,10 +4367,10 @@ public interface BtcppPackage extends EPackage {
 	EClass getBehaviorTree();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link btcpp.BehaviorTree#getNode <em>Node</em>}'.
+	 * Returns the meta object for the containment reference '{@link btcpp.BehaviorTree#getNode <em>Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Node</em>'.
+	 * @return the meta object for the containment reference '<em>Node</em>'.
 	 * @see btcpp.BehaviorTree#getNode()
 	 * @see #getBehaviorTree()
 	 * @generated
@@ -5175,7 +5175,7 @@ public interface BtcppPackage extends EPackage {
 		EClass BEHAVIOR_TREE = eINSTANCE.getBehaviorTree();
 
 		/**
-		 * The meta object literal for the '<em><b>Node</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Node</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

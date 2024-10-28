@@ -367,20 +367,18 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 		private final RuleCall cBEGINTerminalRuleCall_4 = (RuleCall)cGroup.eContents().get(4);
 		private final Assignment cNodeAssignment_5 = (Assignment)cGroup.eContents().get(5);
 		private final RuleCall cNodeTreeNodeParserRuleCall_5_0 = (RuleCall)cNodeAssignment_5.eContents().get(0);
-		private final Assignment cNodeAssignment_6 = (Assignment)cGroup.eContents().get(6);
-		private final RuleCall cNodeTreeNodeParserRuleCall_6_0 = (RuleCall)cNodeAssignment_6.eContents().get(0);
-		private final RuleCall cENDTerminalRuleCall_7 = (RuleCall)cGroup.eContents().get(7);
+		private final RuleCall cENDTerminalRuleCall_6 = (RuleCall)cGroup.eContents().get(6);
 		
 		//BehaviorTree returns BehaviorTree:
 		//    'BehaviorTree'
 		//        'ID' '=' ID=EString
-		//        BEGIN node+=TreeNode ( node+=TreeNode)* END
+		//        BEGIN node=TreeNode  END
 		//;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'BehaviorTree'
 		//    'ID' '=' ID=EString
-		//    BEGIN node+=TreeNode ( node+=TreeNode)* END
+		//    BEGIN node=TreeNode  END
 		public Group getGroup() { return cGroup; }
 		
 		//'BehaviorTree'
@@ -401,20 +399,14 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 		//BEGIN
 		public RuleCall getBEGINTerminalRuleCall_4() { return cBEGINTerminalRuleCall_4; }
 		
-		//node+=TreeNode
+		//node=TreeNode
 		public Assignment getNodeAssignment_5() { return cNodeAssignment_5; }
 		
 		//TreeNode
 		public RuleCall getNodeTreeNodeParserRuleCall_5_0() { return cNodeTreeNodeParserRuleCall_5_0; }
 		
-		//( node+=TreeNode)*
-		public Assignment getNodeAssignment_6() { return cNodeAssignment_6; }
-		
-		//TreeNode
-		public RuleCall getNodeTreeNodeParserRuleCall_6_0() { return cNodeTreeNodeParserRuleCall_6_0; }
-		
 		//END
-		public RuleCall getENDTerminalRuleCall_7() { return cENDTerminalRuleCall_7; }
+		public RuleCall getENDTerminalRuleCall_6() { return cENDTerminalRuleCall_6; }
 	}
 	public class EStringElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.btcpp.QualityBtCpp.EString");
@@ -4106,7 +4098,7 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 		//    'SubTree'
 		//        ("("
 		//        &
-		//        ('ID' "=" ID=EString)? &
+		//        ('ID' "=" ID=EString) &
 		//        ("name" "=" name=EString)? &
 		//        ('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		//        ('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -4121,7 +4113,7 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 		//'SubTree'
 		//    ("("
 		//    &
-		//    ('ID' "=" ID=EString)? &
+		//    ('ID' "=" ID=EString) &
 		//    ("name" "=" name=EString)? &
 		//    ('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		//    ('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -4139,7 +4131,7 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 		
 		//    ("("
 		//    &
-		//    ('ID' "=" ID=EString)? &
+		//    ('ID' "=" ID=EString) &
 		//    ("name" "=" name=EString)? &
 		//    ('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		//    ('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -4151,7 +4143,7 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 		//"("
 		public Keyword getLeftParenthesisKeyword_2_0() { return cLeftParenthesisKeyword_2_0; }
 		
-		//('ID' "=" ID=EString)?
+		//('ID' "=" ID=EString)
 		public Group getGroup_2_1() { return cGroup_2_1; }
 		
 		//'ID'
@@ -8656,7 +8648,7 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 	//BehaviorTree returns BehaviorTree:
 	//    'BehaviorTree'
 	//        'ID' '=' ID=EString
-	//        BEGIN node+=TreeNode ( node+=TreeNode)* END
+	//        BEGIN node=TreeNode  END
 	//;
 	public BehaviorTreeElements getBehaviorTreeAccess() {
 		return pBehaviorTree;
@@ -9057,7 +9049,7 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 	//    'SubTree'
 	//        ("("
 	//        &
-	//        ('ID' "=" ID=EString)? &
+	//        ('ID' "=" ID=EString) &
 	//        ("name" "=" name=EString)? &
 	//        ('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 	//        ('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &

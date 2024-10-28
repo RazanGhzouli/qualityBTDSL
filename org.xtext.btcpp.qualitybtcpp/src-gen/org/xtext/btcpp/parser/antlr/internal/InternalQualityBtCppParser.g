@@ -767,7 +767,7 @@ ruleBehaviorTree returns [EObject current=null]
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getBehaviorTreeRule());
 					}
-					add(
+					set(
 						$current,
 						"node",
 						lv_node_5_0,
@@ -776,28 +776,9 @@ ruleBehaviorTree returns [EObject current=null]
 				}
 			)
 		)
-		(
-			(
-				{
-					newCompositeNode(grammarAccess.getBehaviorTreeAccess().getNodeTreeNodeParserRuleCall_6_0());
-				}
-				lv_node_6_0=ruleTreeNode
-				{
-					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getBehaviorTreeRule());
-					}
-					add(
-						$current,
-						"node",
-						lv_node_6_0,
-						"org.xtext.btcpp.QualityBtCpp.TreeNode");
-					afterParserOrEnumRuleCall();
-				}
-			)
-		)*
-		this_END_7=RULE_END
+		this_END_6=RULE_END
 		{
-			newLeafNode(this_END_7, grammarAccess.getBehaviorTreeAccess().getENDTerminalRuleCall_7());
+			newLeafNode(this_END_6, grammarAccess.getBehaviorTreeAccess().getENDTerminalRuleCall_6());
 		}
 	)
 ;

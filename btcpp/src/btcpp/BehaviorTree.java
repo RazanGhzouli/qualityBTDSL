@@ -2,8 +2,6 @@
  */
 package btcpp;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -25,16 +23,26 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface BehaviorTree extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Node</b></em>' containment reference list.
-	 * The list contents are of type {@link btcpp.TreeNode}.
+	 * Returns the value of the '<em><b>Node</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Node</em>' containment reference list.
+	 * @return the value of the '<em>Node</em>' containment reference.
+	 * @see #setNode(TreeNode)
 	 * @see btcpp.BtcppPackage#getBehaviorTree_Node()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	EList<TreeNode> getNode();
+	TreeNode getNode();
+
+	/**
+	 * Sets the value of the '{@link btcpp.BehaviorTree#getNode <em>Node</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Node</em>' containment reference.
+	 * @see #getNode()
+	 * @generated
+	 */
+	void setNode(TreeNode value);
 
 	/**
 	 * Returns the value of the '<em><b>ID</b></em>' attribute.

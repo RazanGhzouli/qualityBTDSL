@@ -2095,7 +2095,6 @@ rule__BehaviorTree__Group__6
 	}
 :
 	rule__BehaviorTree__Group__6__Impl
-	rule__BehaviorTree__Group__7
 ;
 finally {
 	restoreStackSize(stackSize);
@@ -2107,35 +2106,9 @@ rule__BehaviorTree__Group__6__Impl
 	}
 :
 (
-	{ before(grammarAccess.getBehaviorTreeAccess().getNodeAssignment_6()); }
-	(rule__BehaviorTree__NodeAssignment_6)*
-	{ after(grammarAccess.getBehaviorTreeAccess().getNodeAssignment_6()); }
-)
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__BehaviorTree__Group__7
-	@init {
-		int stackSize = keepStackSize();
-	}
-:
-	rule__BehaviorTree__Group__7__Impl
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__BehaviorTree__Group__7__Impl
-	@init {
-		int stackSize = keepStackSize();
-	}
-:
-(
-	{ before(grammarAccess.getBehaviorTreeAccess().getENDTerminalRuleCall_7()); }
+	{ before(grammarAccess.getBehaviorTreeAccess().getENDTerminalRuleCall_6()); }
 	RULE_END
-	{ after(grammarAccess.getBehaviorTreeAccess().getENDTerminalRuleCall_7()); }
+	{ after(grammarAccess.getBehaviorTreeAccess().getENDTerminalRuleCall_6()); }
 )
 ;
 finally {
@@ -37224,21 +37197,6 @@ rule__BehaviorTree__NodeAssignment_5
 		{ before(grammarAccess.getBehaviorTreeAccess().getNodeTreeNodeParserRuleCall_5_0()); }
 		ruleTreeNode
 		{ after(grammarAccess.getBehaviorTreeAccess().getNodeTreeNodeParserRuleCall_5_0()); }
-	)
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__BehaviorTree__NodeAssignment_6
-	@init {
-		int stackSize = keepStackSize();
-	}
-:
-	(
-		{ before(grammarAccess.getBehaviorTreeAccess().getNodeTreeNodeParserRuleCall_6_0()); }
-		ruleTreeNode
-		{ after(grammarAccess.getBehaviorTreeAccess().getNodeTreeNodeParserRuleCall_6_0()); }
 	)
 ;
 finally {

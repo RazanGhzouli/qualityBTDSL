@@ -3,10 +3,30 @@
  */
 package org.xtext.btcpp.generator
 
-import org.eclipse.emf.ecore.resource.Resource
+import org.eclipse.emf.ecore.resource.Resource 
 import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
+import org.eclipse.emf.common.util.EList
+
+import btcpp.SetBlackboardNode
+import btcpp.RepeatNode
+import btcpp.TimeoutNode
+import btcpp.RetryNode
+import btcpp.DelayNode
+import btcpp.ControlNode
+import btcpp.DecoratorNode
+import btcpp.LeafNode
+import btcpp.Root
+import btcpp.SubTree
+import btcpp.TreeNode
+
+import java.io.StringReader
+import javax.xml.parsers.DocumentBuilderFactory
+import org.w3c.dom.bootstrap.DOMImplementationRegistry
+import org.w3c.dom.ls.DOMImplementationLS
+import org.xml.sax.InputSource
+
 
 /**
  * Generates code from your model files on save.
@@ -16,10 +36,190 @@ import org.eclipse.xtext.generator.IGeneratorContext
 class QualityBtCppGenerator extends AbstractGenerator {
 
 	override void doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext context) {
-//		fsa.generateFile('greetings.txt', 'People to greet: ' + 
-//			resource.allContents
-//				.filter(Greeting)
-//				.map[name]
-//				.join(', '))
+		
+		val template = 
+		'''«FOR root : resource.allContents.filter(Root).toIterable»
+			<root main_tree_to_execute="«root.getMain_tree_to_execute()»">
+			«FOR bt : root.getBehaviortrees()»
+				<BehaviorTree ID="«bt.getID()»"> «"\n"» «recursiveWriteNode(bt.getNode())»
+				</BehaviorTree>
+		   «ENDFOR»
+			</root>
+		   «ENDFOR»
+		'''
+		
+		fsa.generateFile('~tmp.txt', template)
 	}
+	override void afterGenerate(Resource input, IFileSystemAccess2 fsa, IGeneratorContext context) {
+		/* Run Statistical Analysis */
+		
+		/* Pretty print the XML */
+		val xml = fsa.readTextFile("~tmp.txt")
+		fsa.deleteFile("~tmp.txt")
+		var filename = input.getURI().toString().split("/").lastOrNull()
+		var name = filename.toString().split("\\.").head()
+		fsa.generateFile(name+".xml", prettyPrintXML(xml as String))
+		
+	}
+		
+		def static String prettyPrintXML(String xml) {
+	        val src = new InputSource(new StringReader(xml));
+            val document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(src).getDocumentElement();
+            val registry = DOMImplementationRegistry.newInstance();
+            val impl = registry.getDOMImplementation("LS") as DOMImplementationLS;
+            val writer = impl.createLSSerializer();
+            writer.getDomConfig().setParameter("format-pretty-print", Boolean.TRUE); // Set this to true if the output needs to be beautified.
+		
+		return writer.writeToString(document)
+	}
+	
+	def static String writeParameters(TreeNode node){
+		val s = new StringBuilder("")
+		for (param : node.getParameters()){
+			s.append(" "+param.key+"=\""+param.value+"\"")
+		}
+		return s.toString()
+	}
+	
+	def static String writeQuality(TreeNode node){
+		val s = new StringBuilder("")
+		for (quality : node.getSatisfices()){
+			s.append(" "+quality.ID)
+		}
+		return s.toString()
+	}
+	
+	
+	def static String writeType(TreeNode node){
+		val s = new StringBuilder("")
+		val classname = node.getClass().getSimpleName()
+		// Workaround to remove Node and Impl from the class names
+		val cn1 = classname.replace("Node","")
+		val cn2 = cn1.replace("Impl","")
+		val cn3 = cn2.replace("Simple","")
+		s.append(cn3)
+		return s.toString()
+	}
+	
+	def static String writeNode(TreeNode node){
+		val s = new StringBuilder("")
+		
+		if (node instanceof ControlNode){
+			s.append(writeControlNode(node))
+		} else if (node instanceof DecoratorNode){
+			s.append(writeDecoratorNode(node))
+		} else if (node instanceof LeafNode){
+			s.append(writeLeafNode(node))
+		} else if (node instanceof SubTree){
+			s.append(writeSubTreeNode(node))
+		}
+		return s.toString()
+	}
+
+	def static String recursiveWriteNode(EList<TreeNode> nodesList){
+		val s = new StringBuilder("")
+		for(node : nodesList){
+			s.append(writeNode(node))
+		}
+		return s.toString()
+	}
+	
+	def static String recursiveWriteNode(TreeNode node) {
+		val s = new StringBuilder("")
+		s.append(writeNode(node))
+		return s.toString()
+	}
+	
+	
+	def static String writeControlNode(ControlNode node){
+		val s  = new StringBuilder("")
+		s.append("<"+writeType(node))
+		if(node.getID() !== null){
+			s.append(" ID=\""+node.getID()+"\"")
+		}
+		if(node.getName() !== null){
+			s.append(" name=\""+node.getName()+"\"")
+		}
+		if(node.getSatisfices !== null){
+			s.append(" _description=\""+writeQuality(node)+"\"")
+		}
+		s.append(writeParameters(node))
+		s.append(">\n")
+		s.append(recursiveWriteNode(node.getChild()))
+		s.append("</"+writeType(node)+">\n")
+		return s.toString()
+	}
+	
+	def static String writeDecoratorNode(DecoratorNode node){
+		val s  = new StringBuilder("")
+		s.append("<"+writeType(node))
+		if(node.getID() !== null){
+			s.append(" ID=\""+node.getID()+"\"")
+		}
+		if(node.getName() !== null){
+			s.append(" name=\""+node.getName()+"\"")
+		}
+		if(node.getSatisfices !== null){
+			s.append(" _description=\""+writeQuality(node)+"\"")
+		}
+		if (node instanceof RepeatNode){
+			s.append(" num_cycles=\""+node.getNum_cycles()+"\"")
+		}
+		if (node instanceof TimeoutNode){
+			s.append(" msec=\""+node.getMsec()+"\"")
+		}
+		if (node instanceof RetryNode){
+			s.append(" num_attempts=\""+node.getNum_attempts()+"\"")
+		}
+		if (node instanceof DelayNode){
+			s.append(" delay_msec=\""+node.getDelay_msec()+"\"")
+		}
+		s.append(">\n")
+		
+		s.append(recursiveWriteNode(node.getChild()))
+		s.append("</"+writeType(node)+">\n")
+		//System.out.println(s.toString())
+		return s.toString()
+	}
+	
+	def static String writeLeafNode(LeafNode node){
+		val s  = new StringBuilder("")
+		s.append("<")
+		s.append(writeType(node))
+		if(node.getID() !== null){
+			s.append(" ID=\""+node.getID()+"\"")
+		}
+		if(node.getName() !== null){
+			s.append(" name=\""+node.getName()+"\"")
+		}
+		if(node.getSatisfices !== null){
+			s.append(" _description=\""+writeQuality(node)+"\"")
+		}
+		if (node instanceof SetBlackboardNode) {
+			s.append(" value=\""+node.getValue()+"\"")
+			s.append(" output_key=\""+node.getOutput_key()+"\"")
+		}
+		s.append(writeParameters(node))
+		s.append("/>\n")
+		return s.toString()
+	}
+	
+	def static String writeSubTreeNode(SubTree node){
+		val s  = new StringBuilder("")
+		s.append("<")
+		s.append(writeType(node))
+		s.append(" ID=\""+node.getID()+"\"")
+		if(node.getName() !== null){
+			s.append(" name=\""+node.getName()+"\"")
+		}
+		if(node.getSatisfices !== null){
+			s.append(" _description=\""+writeQuality(node)+"\"")
+		}
+		s.append(writeParameters(node))
+		s.append("/>\n")
+		return s.toString()
+	}
+	
+	
+	
 }

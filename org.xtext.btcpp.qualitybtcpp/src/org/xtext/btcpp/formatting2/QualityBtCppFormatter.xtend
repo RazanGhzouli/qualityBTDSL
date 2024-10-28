@@ -22,10 +22,12 @@ class QualityBtCppFormatter extends AbstractFormatter2 {
 	}
 
 	def dispatch void format(BehaviorTree behaviorTree, extension IFormattableDocument document) {
-		// TODO: format HiddenRegions around keywords, attributes, cross references, etc. 
-		for (treeNode : behaviorTree.node) {
-			treeNode.format
-		}
+		// TODO: format HiddenRegions around keywords, attributes, cross references, etc.
+		behaviorTree.node.format 
+//changed it after changing the cardinality of BehaviorTree from [1..*] --> [1..1]
+//		for (treeNode : behaviorTree.node) {
+//			treeNode.format
+//		}
 	}
 	
 	// TODO: implement for Quality, AlwaysFailureNode, AlwaysSuccessNode, SetBlackboardNode, FallbackNode, IfThenElseNode, ManualSelectorNode, ParallelNode, SequenceWithMemoryNode, SwitchNode, ReactiveFallbackNode, WhileDoElseNode, ReactiveSequenceNode, SequenceNode, TimeoutNode, KeepRunningUntilFailureNode, InverterNode, ForceSuccessNode, ForceFailureNode, RepeatNode, SubTree, ScriptNode, ScriptConditionNode, RetryNode, ParallelAllNode, DelayNode, PreconditionNode, EntryUpdatedDecoratorNode, RunOnceNode, LoopNode, ConsumeQueueNode, TestNode, EntryUpdatedActionNode, UnsetBlackboardNode, ThreadedActionNode, CoroActionNode, SleepNode, PopFromQueueNode

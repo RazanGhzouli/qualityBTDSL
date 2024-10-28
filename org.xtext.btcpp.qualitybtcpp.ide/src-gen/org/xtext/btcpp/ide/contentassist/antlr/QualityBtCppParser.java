@@ -394,7 +394,6 @@ public class QualityBtCppParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getRootAccess().getBehaviortreesAssignment_4(), "rule__Root__BehaviortreesAssignment_4");
 			builder.put(grammarAccess.getBehaviorTreeAccess().getIDAssignment_3(), "rule__BehaviorTree__IDAssignment_3");
 			builder.put(grammarAccess.getBehaviorTreeAccess().getNodeAssignment_5(), "rule__BehaviorTree__NodeAssignment_5");
-			builder.put(grammarAccess.getBehaviorTreeAccess().getNodeAssignment_6(), "rule__BehaviorTree__NodeAssignment_6");
 			builder.put(grammarAccess.getParameterAccess().getKeyAssignment_0(), "rule__Parameter__KeyAssignment_0");
 			builder.put(grammarAccess.getParameterAccess().getValueAssignment_2(), "rule__Parameter__ValueAssignment_2");
 			builder.put(grammarAccess.getQualityAccess().getIDAssignment_3(), "rule__Quality__IDAssignment_3");

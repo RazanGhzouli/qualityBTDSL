@@ -255,11 +255,20 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 *     BehaviorTree returns BehaviorTree
 	 *
 	 * Constraint:
-	 *     (ID=EString node+=TreeNode node+=TreeNode*)
+	 *     (ID=EString node=TreeNode)
 	 * </pre>
 	 */
 	protected void sequence_BehaviorTree(ISerializationContext context, BehaviorTree semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, BtcppPackage.Literals.BEHAVIOR_TREE__ID) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, BtcppPackage.Literals.BEHAVIOR_TREE__ID));
+			if (transientValues.isValueTransient(semanticObject, BtcppPackage.Literals.BEHAVIOR_TREE__NODE) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, BtcppPackage.Literals.BEHAVIOR_TREE__NODE));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getBehaviorTreeAccess().getIDEStringParserRuleCall_3_0(), semanticObject.getID());
+		feeder.accept(grammarAccess.getBehaviorTreeAccess().getNodeTreeNodeParserRuleCall_5_0(), semanticObject.getNode());
+		feeder.finish();
 	}
 	
 	

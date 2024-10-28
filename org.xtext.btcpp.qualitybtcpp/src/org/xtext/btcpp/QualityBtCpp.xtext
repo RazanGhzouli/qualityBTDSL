@@ -47,7 +47,7 @@ BehaviorTree returns BehaviorTree:
 	'BehaviorTree'
 	
 		'ID' '=' ID=EString
-		BEGIN node+=TreeNode ( node+=TreeNode)* END
+		BEGIN node=TreeNode  END
 ;
 
 
@@ -303,7 +303,7 @@ SubTree returns SubTree:
 	'SubTree'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+		('ID' "=" ID=EString) &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &

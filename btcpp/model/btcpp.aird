@@ -9,7 +9,7 @@
     <semanticResources>../.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_gnFK4Js7EeqZZ8REvkqbig">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_gsG00Js7EeqZZ8REvkqbig" name="btcpp" repPath="#_gpIZUJs7EeqZZ8REvkqbig" changeId="1730112966706">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_gsG00Js7EeqZZ8REvkqbig" name="btcpp" repPath="#_gpIZUJs7EeqZZ8REvkqbig" changeId="1730125378560">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="btcpp.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -1922,7 +1922,7 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_DaFEQOPAEeqGFrzqs-SNvw" name="[1..*] node" sourceNode="_MFrToJtMEeqZZ8REvkqbig" targetNode="_Yc6OsJtPEeqZZ8REvkqbig">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_DaFEQOPAEeqGFrzqs-SNvw" name="[1..1] node" sourceNode="_MFrToJtMEeqZZ8REvkqbig" targetNode="_Yc6OsJtPEeqZZ8REvkqbig">
       <target xmi:type="ecore:EReference" href="btcpp.ecore#//BehaviorTree/node"/>
       <semanticElements xmi:type="ecore:EReference" href="btcpp.ecore#//BehaviorTree/node"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_DaFrUOPAEeqGFrzqs-SNvw" description="_2VNxoJ20Eeqo1IiDok2wMw" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
