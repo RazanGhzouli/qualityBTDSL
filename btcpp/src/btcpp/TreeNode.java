@@ -99,25 +99,25 @@ public interface TreeNode extends EObject {
 	EList<Parameter> getParameters();
 
 	/**
-	 * Returns the value of the '<em><b>Satisfices</b></em>' reference list.
+	 * Returns the value of the '<em><b>Satisfices</b></em>' containment reference list.
 	 * The list contents are of type {@link btcpp.Quality}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Satisfices</em>' reference list.
+	 * @return the value of the '<em>Satisfices</em>' containment reference list.
 	 * @see btcpp.BtcppPackage#getTreeNode_Satisfices()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Quality> getSatisfices();
 
 	/**
-	 * Returns the value of the '<em><b>Satisfies</b></em>' reference list.
+	 * Returns the value of the '<em><b>Satisfies</b></em>' containment reference list.
 	 * The list contents are of type {@link btcpp.QualityRequirement}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Satisfies</em>' reference list.
+	 * @return the value of the '<em>Satisfies</em>' containment reference list.
 	 * @see btcpp.BtcppPackage#getTreeNode_Satisfies()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<QualityRequirement> getSatisfies();

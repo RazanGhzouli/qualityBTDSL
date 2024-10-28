@@ -65,8 +65,6 @@ public class TreeNodeItemProvider
 
 			addIDPropertyDescriptor(object);
 			addNamePropertyDescriptor(object);
-			addSatisficesPropertyDescriptor(object);
-			addSatisfiesPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -116,50 +114,6 @@ public class TreeNodeItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Satisfices feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addSatisficesPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_TreeNode_satisfices_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_TreeNode_satisfices_feature", "_UI_TreeNode_type"),
-				 BtcppPackage.Literals.TREE_NODE__SATISFICES,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Satisfies feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addSatisfiesPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_TreeNode_satisfies_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_TreeNode_satisfies_feature", "_UI_TreeNode_type"),
-				 BtcppPackage.Literals.TREE_NODE__SATISFIES,
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
-	}
-
-	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -173,6 +127,8 @@ public class TreeNodeItemProvider
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(BtcppPackage.Literals.TREE_NODE__ANY_ATTRIBUTE);
 			childrenFeatures.add(BtcppPackage.Literals.TREE_NODE__PARAMETERS);
+			childrenFeatures.add(BtcppPackage.Literals.TREE_NODE__SATISFICES);
+			childrenFeatures.add(BtcppPackage.Literals.TREE_NODE__SATISFIES);
 		}
 		return childrenFeatures;
 	}
@@ -223,6 +179,8 @@ public class TreeNodeItemProvider
 				return;
 			case BtcppPackage.TREE_NODE__ANY_ATTRIBUTE:
 			case BtcppPackage.TREE_NODE__PARAMETERS:
+			case BtcppPackage.TREE_NODE__SATISFICES:
+			case BtcppPackage.TREE_NODE__SATISFIES:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -244,6 +202,16 @@ public class TreeNodeItemProvider
 			(createChildParameter
 				(BtcppPackage.Literals.TREE_NODE__PARAMETERS,
 				 BtcppFactory.eINSTANCE.createParameter()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(BtcppPackage.Literals.TREE_NODE__SATISFICES,
+				 BtcppFactory.eINSTANCE.createQuality()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(BtcppPackage.Literals.TREE_NODE__SATISFIES,
+				 BtcppFactory.eINSTANCE.createQualityRequirement()));
 	}
 
 	/**

@@ -149,7 +149,7 @@ public interface BtcppPackage extends EPackage {
 	int TREE_NODE__PARAMETERS = 3;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -158,7 +158,7 @@ public interface BtcppPackage extends EPackage {
 	int TREE_NODE__SATISFICES = 4;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -231,7 +231,7 @@ public interface BtcppPackage extends EPackage {
 	int CONTROL_NODE__PARAMETERS = TREE_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -240,7 +240,7 @@ public interface BtcppPackage extends EPackage {
 	int CONTROL_NODE__SATISFICES = TREE_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -322,7 +322,7 @@ public interface BtcppPackage extends EPackage {
 	int DECORATOR_NODE__PARAMETERS = TREE_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -331,7 +331,7 @@ public interface BtcppPackage extends EPackage {
 	int DECORATOR_NODE__SATISFICES = TREE_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -413,7 +413,7 @@ public interface BtcppPackage extends EPackage {
 	int LEAF_NODE__PARAMETERS = TREE_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -422,7 +422,7 @@ public interface BtcppPackage extends EPackage {
 	int LEAF_NODE__SATISFICES = TREE_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -495,7 +495,7 @@ public interface BtcppPackage extends EPackage {
 	int ACTION_NODE_BASE__PARAMETERS = LEAF_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -504,7 +504,7 @@ public interface BtcppPackage extends EPackage {
 	int ACTION_NODE_BASE__SATISFICES = LEAF_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -577,7 +577,7 @@ public interface BtcppPackage extends EPackage {
 	int SYNC_ACTION_NODE__PARAMETERS = ACTION_NODE_BASE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -586,7 +586,7 @@ public interface BtcppPackage extends EPackage {
 	int SYNC_ACTION_NODE__SATISFICES = ACTION_NODE_BASE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -659,7 +659,7 @@ public interface BtcppPackage extends EPackage {
 	int ALWAYS_FAILURE_NODE__PARAMETERS = SYNC_ACTION_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -668,7 +668,7 @@ public interface BtcppPackage extends EPackage {
 	int ALWAYS_FAILURE_NODE__SATISFICES = SYNC_ACTION_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -741,7 +741,7 @@ public interface BtcppPackage extends EPackage {
 	int ALWAYS_SUCCESS_NODE__PARAMETERS = SYNC_ACTION_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -750,7 +750,7 @@ public interface BtcppPackage extends EPackage {
 	int ALWAYS_SUCCESS_NODE__SATISFICES = SYNC_ACTION_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -823,7 +823,7 @@ public interface BtcppPackage extends EPackage {
 	int SET_BLACKBOARD_NODE__PARAMETERS = SYNC_ACTION_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -832,7 +832,7 @@ public interface BtcppPackage extends EPackage {
 	int SET_BLACKBOARD_NODE__SATISFICES = SYNC_ACTION_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -923,7 +923,7 @@ public interface BtcppPackage extends EPackage {
 	int FALLBACK_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -932,7 +932,7 @@ public interface BtcppPackage extends EPackage {
 	int FALLBACK_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1014,7 +1014,7 @@ public interface BtcppPackage extends EPackage {
 	int IF_THEN_ELSE_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1023,7 +1023,7 @@ public interface BtcppPackage extends EPackage {
 	int IF_THEN_ELSE_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1105,7 +1105,7 @@ public interface BtcppPackage extends EPackage {
 	int MANUAL_SELECTOR_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1114,7 +1114,7 @@ public interface BtcppPackage extends EPackage {
 	int MANUAL_SELECTOR_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1196,7 +1196,7 @@ public interface BtcppPackage extends EPackage {
 	int PARALLEL_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1205,7 +1205,7 @@ public interface BtcppPackage extends EPackage {
 	int PARALLEL_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1287,7 +1287,7 @@ public interface BtcppPackage extends EPackage {
 	int SEQUENCE_WITH_MEMORY_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1296,7 +1296,7 @@ public interface BtcppPackage extends EPackage {
 	int SEQUENCE_WITH_MEMORY_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1378,7 +1378,7 @@ public interface BtcppPackage extends EPackage {
 	int SWITCH_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1387,7 +1387,7 @@ public interface BtcppPackage extends EPackage {
 	int SWITCH_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1469,7 +1469,7 @@ public interface BtcppPackage extends EPackage {
 	int REACTIVE_FALLBACK_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1478,7 +1478,7 @@ public interface BtcppPackage extends EPackage {
 	int REACTIVE_FALLBACK_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1560,7 +1560,7 @@ public interface BtcppPackage extends EPackage {
 	int WHILE_DO_ELSE_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1569,7 +1569,7 @@ public interface BtcppPackage extends EPackage {
 	int WHILE_DO_ELSE_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1651,7 +1651,7 @@ public interface BtcppPackage extends EPackage {
 	int REACTIVE_SEQUENCE_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1660,7 +1660,7 @@ public interface BtcppPackage extends EPackage {
 	int REACTIVE_SEQUENCE_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1742,7 +1742,7 @@ public interface BtcppPackage extends EPackage {
 	int SEQUENCE_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1751,7 +1751,7 @@ public interface BtcppPackage extends EPackage {
 	int SEQUENCE_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1833,7 +1833,7 @@ public interface BtcppPackage extends EPackage {
 	int TIMEOUT_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1842,7 +1842,7 @@ public interface BtcppPackage extends EPackage {
 	int TIMEOUT_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1933,7 +1933,7 @@ public interface BtcppPackage extends EPackage {
 	int KEEP_RUNNING_UNTIL_FAILURE_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1942,7 +1942,7 @@ public interface BtcppPackage extends EPackage {
 	int KEEP_RUNNING_UNTIL_FAILURE_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2024,7 +2024,7 @@ public interface BtcppPackage extends EPackage {
 	int INVERTER_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2033,7 +2033,7 @@ public interface BtcppPackage extends EPackage {
 	int INVERTER_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2115,7 +2115,7 @@ public interface BtcppPackage extends EPackage {
 	int FORCE_SUCCESS_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2124,7 +2124,7 @@ public interface BtcppPackage extends EPackage {
 	int FORCE_SUCCESS_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2206,7 +2206,7 @@ public interface BtcppPackage extends EPackage {
 	int FORCE_FAILURE_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2215,7 +2215,7 @@ public interface BtcppPackage extends EPackage {
 	int FORCE_FAILURE_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2297,7 +2297,7 @@ public interface BtcppPackage extends EPackage {
 	int REPEAT_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2306,7 +2306,7 @@ public interface BtcppPackage extends EPackage {
 	int REPEAT_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2397,7 +2397,7 @@ public interface BtcppPackage extends EPackage {
 	int CONDITION_NODE__PARAMETERS = LEAF_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2406,7 +2406,7 @@ public interface BtcppPackage extends EPackage {
 	int CONDITION_NODE__SATISFICES = LEAF_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2479,7 +2479,7 @@ public interface BtcppPackage extends EPackage {
 	int SUB_TREE__PARAMETERS = TREE_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2488,7 +2488,7 @@ public interface BtcppPackage extends EPackage {
 	int SUB_TREE__SATISFICES = TREE_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2570,7 +2570,7 @@ public interface BtcppPackage extends EPackage {
 	int SCRIPT_NODE__PARAMETERS = SYNC_ACTION_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2579,7 +2579,7 @@ public interface BtcppPackage extends EPackage {
 	int SCRIPT_NODE__SATISFICES = SYNC_ACTION_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2652,7 +2652,7 @@ public interface BtcppPackage extends EPackage {
 	int SCRIPT_CONDITION_NODE__PARAMETERS = CONDITION_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2661,7 +2661,7 @@ public interface BtcppPackage extends EPackage {
 	int SCRIPT_CONDITION_NODE__SATISFICES = CONDITION_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2734,7 +2734,7 @@ public interface BtcppPackage extends EPackage {
 	int RETRY_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2743,7 +2743,7 @@ public interface BtcppPackage extends EPackage {
 	int RETRY_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3018,7 +3018,7 @@ public interface BtcppPackage extends EPackage {
 	int PARALLEL_ALL_NODE__PARAMETERS = CONTROL_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3027,7 +3027,7 @@ public interface BtcppPackage extends EPackage {
 	int PARALLEL_ALL_NODE__SATISFICES = CONTROL_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3109,7 +3109,7 @@ public interface BtcppPackage extends EPackage {
 	int DELAY_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3118,7 +3118,7 @@ public interface BtcppPackage extends EPackage {
 	int DELAY_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3209,7 +3209,7 @@ public interface BtcppPackage extends EPackage {
 	int PRECONDITION_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3218,7 +3218,7 @@ public interface BtcppPackage extends EPackage {
 	int PRECONDITION_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3300,7 +3300,7 @@ public interface BtcppPackage extends EPackage {
 	int ENTRY_UPDATED_DECORATOR_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3309,7 +3309,7 @@ public interface BtcppPackage extends EPackage {
 	int ENTRY_UPDATED_DECORATOR_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3391,7 +3391,7 @@ public interface BtcppPackage extends EPackage {
 	int RUN_ONCE_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3400,7 +3400,7 @@ public interface BtcppPackage extends EPackage {
 	int RUN_ONCE_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3482,7 +3482,7 @@ public interface BtcppPackage extends EPackage {
 	int LOOP_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3491,7 +3491,7 @@ public interface BtcppPackage extends EPackage {
 	int LOOP_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3573,7 +3573,7 @@ public interface BtcppPackage extends EPackage {
 	int CONSUME_QUEUE_NODE__PARAMETERS = DECORATOR_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3582,7 +3582,7 @@ public interface BtcppPackage extends EPackage {
 	int CONSUME_QUEUE_NODE__SATISFICES = DECORATOR_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3664,7 +3664,7 @@ public interface BtcppPackage extends EPackage {
 	int ASYNCH_ACTION_NODE__PARAMETERS = ACTION_NODE_BASE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3673,7 +3673,7 @@ public interface BtcppPackage extends EPackage {
 	int ASYNCH_ACTION_NODE__SATISFICES = ACTION_NODE_BASE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3746,7 +3746,7 @@ public interface BtcppPackage extends EPackage {
 	int STATEFUL_ACTION_NODE__PARAMETERS = ASYNCH_ACTION_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3755,7 +3755,7 @@ public interface BtcppPackage extends EPackage {
 	int STATEFUL_ACTION_NODE__SATISFICES = ASYNCH_ACTION_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3828,7 +3828,7 @@ public interface BtcppPackage extends EPackage {
 	int TEST_NODE__PARAMETERS = STATEFUL_ACTION_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3837,7 +3837,7 @@ public interface BtcppPackage extends EPackage {
 	int TEST_NODE__SATISFICES = STATEFUL_ACTION_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3910,7 +3910,7 @@ public interface BtcppPackage extends EPackage {
 	int ENTRY_UPDATED_ACTION_NODE__PARAMETERS = SYNC_ACTION_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3919,7 +3919,7 @@ public interface BtcppPackage extends EPackage {
 	int ENTRY_UPDATED_ACTION_NODE__SATISFICES = SYNC_ACTION_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3992,7 +3992,7 @@ public interface BtcppPackage extends EPackage {
 	int UNSET_BLACKBOARD_NODE__PARAMETERS = SYNC_ACTION_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4001,7 +4001,7 @@ public interface BtcppPackage extends EPackage {
 	int UNSET_BLACKBOARD_NODE__SATISFICES = SYNC_ACTION_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4074,7 +4074,7 @@ public interface BtcppPackage extends EPackage {
 	int THREADED_ACTION_NODE__PARAMETERS = ACTION_NODE_BASE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4083,7 +4083,7 @@ public interface BtcppPackage extends EPackage {
 	int THREADED_ACTION_NODE__SATISFICES = ACTION_NODE_BASE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4156,7 +4156,7 @@ public interface BtcppPackage extends EPackage {
 	int CORO_ACTION_NODE__PARAMETERS = ASYNCH_ACTION_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4165,7 +4165,7 @@ public interface BtcppPackage extends EPackage {
 	int CORO_ACTION_NODE__SATISFICES = ASYNCH_ACTION_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4238,7 +4238,7 @@ public interface BtcppPackage extends EPackage {
 	int SLEEP_NODE__PARAMETERS = STATEFUL_ACTION_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4247,7 +4247,7 @@ public interface BtcppPackage extends EPackage {
 	int SLEEP_NODE__SATISFICES = STATEFUL_ACTION_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4320,7 +4320,7 @@ public interface BtcppPackage extends EPackage {
 	int POP_FROM_QUEUE_NODE__PARAMETERS = SYNC_ACTION_NODE__PARAMETERS;
 
 	/**
-	 * The feature id for the '<em><b>Satisfices</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4329,7 +4329,7 @@ public interface BtcppPackage extends EPackage {
 	int POP_FROM_QUEUE_NODE__SATISFICES = SYNC_ACTION_NODE__SATISFICES;
 
 	/**
-	 * The feature id for the '<em><b>Satisfies</b></em>' reference list.
+	 * The feature id for the '<em><b>Satisfies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4443,10 +4443,10 @@ public interface BtcppPackage extends EPackage {
 	EReference getTreeNode_Parameters();
 
 	/**
-	 * Returns the meta object for the reference list '{@link btcpp.TreeNode#getSatisfices <em>Satisfices</em>}'.
+	 * Returns the meta object for the containment reference list '{@link btcpp.TreeNode#getSatisfices <em>Satisfices</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Satisfices</em>'.
+	 * @return the meta object for the containment reference list '<em>Satisfices</em>'.
 	 * @see btcpp.TreeNode#getSatisfices()
 	 * @see #getTreeNode()
 	 * @generated
@@ -4454,10 +4454,10 @@ public interface BtcppPackage extends EPackage {
 	EReference getTreeNode_Satisfices();
 
 	/**
-	 * Returns the meta object for the reference list '{@link btcpp.TreeNode#getSatisfies <em>Satisfies</em>}'.
+	 * Returns the meta object for the containment reference list '{@link btcpp.TreeNode#getSatisfies <em>Satisfies</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Satisfies</em>'.
+	 * @return the meta object for the containment reference list '<em>Satisfies</em>'.
 	 * @see btcpp.TreeNode#getSatisfies()
 	 * @see #getTreeNode()
 	 * @generated
@@ -5233,7 +5233,7 @@ public interface BtcppPackage extends EPackage {
 		EReference TREE_NODE__PARAMETERS = eINSTANCE.getTreeNode_Parameters();
 
 		/**
-		 * The meta object literal for the '<em><b>Satisfices</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Satisfices</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -5241,7 +5241,7 @@ public interface BtcppPackage extends EPackage {
 		EReference TREE_NODE__SATISFICES = eINSTANCE.getTreeNode_Satisfices();
 
 		/**
-		 * The meta object literal for the '<em><b>Satisfies</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Satisfies</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

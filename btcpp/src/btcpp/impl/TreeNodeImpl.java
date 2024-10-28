@@ -23,7 +23,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.BasicFeatureMap;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -107,7 +106,7 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 	protected EList<Parameter> parameters;
 
 	/**
-	 * The cached value of the '{@link #getSatisfices() <em>Satisfices</em>}' reference list.
+	 * The cached value of the '{@link #getSatisfices() <em>Satisfices</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getSatisfices()
@@ -117,7 +116,7 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 	protected EList<Quality> satisfices;
 
 	/**
-	 * The cached value of the '{@link #getSatisfies() <em>Satisfies</em>}' reference list.
+	 * The cached value of the '{@link #getSatisfies() <em>Satisfies</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getSatisfies()
@@ -225,7 +224,7 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public EList<Quality> getSatisfices() {
 		if (satisfices == null) {
-			satisfices = new EObjectResolvingEList<Quality>(Quality.class, this, BtcppPackage.TREE_NODE__SATISFICES);
+			satisfices = new EObjectContainmentEList<Quality>(Quality.class, this, BtcppPackage.TREE_NODE__SATISFICES);
 		}
 		return satisfices;
 	}
@@ -238,7 +237,7 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public EList<QualityRequirement> getSatisfies() {
 		if (satisfies == null) {
-			satisfies = new EObjectResolvingEList<QualityRequirement>(QualityRequirement.class, this, BtcppPackage.TREE_NODE__SATISFIES);
+			satisfies = new EObjectContainmentEList<QualityRequirement>(QualityRequirement.class, this, BtcppPackage.TREE_NODE__SATISFIES);
 		}
 		return satisfies;
 	}
@@ -255,6 +254,10 @@ public abstract class TreeNodeImpl extends MinimalEObjectImpl.Container implemen
 				return ((InternalEList<?>)getAnyAttribute()).basicRemove(otherEnd, msgs);
 			case BtcppPackage.TREE_NODE__PARAMETERS:
 				return ((InternalEList<?>)getParameters()).basicRemove(otherEnd, msgs);
+			case BtcppPackage.TREE_NODE__SATISFICES:
+				return ((InternalEList<?>)getSatisfices()).basicRemove(otherEnd, msgs);
+			case BtcppPackage.TREE_NODE__SATISFIES:
+				return ((InternalEList<?>)getSatisfies()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}

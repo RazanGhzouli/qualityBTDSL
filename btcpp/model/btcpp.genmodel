@@ -3,7 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/btcpp/src" modelPluginID="btcpp" modelName="Btcpp"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
     complianceLevel="21.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
-  <foreignModel>model/btcpp.ecore</foreignModel>
+  <foreignModel>btcpp.ecore</foreignModel>
   <genPackages prefix="Btcpp" disposableProviderFactory="true" ecorePackage="btcpp.ecore#/">
     <genClasses ecoreClass="btcpp.ecore#//BehaviorTree">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference btcpp.ecore#//BehaviorTree/node"/>
@@ -14,8 +14,8 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute btcpp.ecore#//TreeNode/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute btcpp.ecore#//TreeNode/AnyAttribute"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference btcpp.ecore#//TreeNode/parameters"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference btcpp.ecore#//TreeNode/satisfices"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference btcpp.ecore#//TreeNode/satisfies"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference btcpp.ecore#//TreeNode/satisfices"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference btcpp.ecore#//TreeNode/satisfies"/>
     </genClasses>
     <genClasses image="false" ecoreClass="btcpp.ecore#//ControlNode">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference btcpp.ecore#//ControlNode/child"/>
