@@ -985,8 +985,8 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (ID=EString | name=EString | value=EString | output_key=EString)? 
-	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfices+=Quality satisfices+=Quality*)? 
+	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
 	 *     )+
 	 * </pre>

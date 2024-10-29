@@ -29692,7 +29692,7 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleSetBlackboardNode"
-    // InternalQualityBtCppParser.g:11481:1: ruleSetBlackboardNode returns [EObject current=null] : ( () otherlv_1= SetBlackboard ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) ) )? ) ;
+    // InternalQualityBtCppParser.g:11481:1: ruleSetBlackboardNode returns [EObject current=null] : ( () otherlv_1= SetBlackboard ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) ) )? ) ;
     public final EObject ruleSetBlackboardNode() throws RecognitionException {
         EObject current = null;
 
@@ -29703,10 +29703,10 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
         Token otherlv_7=null;
         Token otherlv_8=null;
         Token otherlv_10=null;
-        Token otherlv_11=null;
-        Token otherlv_13=null;
+        Token otherlv_12=null;
         Token otherlv_14=null;
-        Token otherlv_16=null;
+        Token otherlv_15=null;
+        Token otherlv_17=null;
         Token otherlv_18=null;
         Token otherlv_20=null;
         Token otherlv_22=null;
@@ -29717,17 +29717,17 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
 
         AntlrDatatypeRuleToken lv_name_9_0 = null;
 
-        AntlrDatatypeRuleToken lv_value_12_0 = null;
+        EObject lv_satisfices_11_0 = null;
 
-        AntlrDatatypeRuleToken lv_output_key_15_0 = null;
+        EObject lv_satisfices_13_0 = null;
 
-        EObject lv_parameters_17_0 = null;
+        AntlrDatatypeRuleToken lv_value_16_0 = null;
 
-        EObject lv_parameters_19_0 = null;
+        AntlrDatatypeRuleToken lv_output_key_19_0 = null;
 
-        EObject lv_satisfices_21_0 = null;
+        EObject lv_parameters_21_0 = null;
 
-        EObject lv_satisfices_23_0 = null;
+        EObject lv_parameters_23_0 = null;
 
         EObject lv_satisfies_25_0 = null;
 
@@ -29738,11 +29738,11 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalQualityBtCppParser.g:11487:2: ( ( () otherlv_1= SetBlackboard ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) ) )? ) )
-            // InternalQualityBtCppParser.g:11488:2: ( () otherlv_1= SetBlackboard ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) ) )? )
+            // InternalQualityBtCppParser.g:11487:2: ( ( () otherlv_1= SetBlackboard ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) ) )? ) )
+            // InternalQualityBtCppParser.g:11488:2: ( () otherlv_1= SetBlackboard ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) ) )? )
             {
-            // InternalQualityBtCppParser.g:11488:2: ( () otherlv_1= SetBlackboard ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) ) )? )
-            // InternalQualityBtCppParser.g:11489:3: () otherlv_1= SetBlackboard ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) ) )?
+            // InternalQualityBtCppParser.g:11488:2: ( () otherlv_1= SetBlackboard ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) ) )? )
+            // InternalQualityBtCppParser.g:11489:3: () otherlv_1= SetBlackboard ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) ) )?
             {
             // InternalQualityBtCppParser.g:11489:3: ()
             // InternalQualityBtCppParser.g:11490:4: 
@@ -29759,7 +29759,7 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_1, grammarAccess.getSetBlackboardNodeAccess().getSetBlackboardKeyword_1());
             		
-            // InternalQualityBtCppParser.g:11500:3: ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) ) )?
+            // InternalQualityBtCppParser.g:11500:3: ( ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) ) )?
             int alt175=2;
             int LA175_0 = input.LA(1);
 
@@ -29768,18 +29768,18 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
             }
             switch (alt175) {
                 case 1 :
-                    // InternalQualityBtCppParser.g:11501:4: ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) )
+                    // InternalQualityBtCppParser.g:11501:4: ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) )
                     {
-                    // InternalQualityBtCppParser.g:11501:4: ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) )
-                    // InternalQualityBtCppParser.g:11502:5: ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?)
+                    // InternalQualityBtCppParser.g:11501:4: ( ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?) )
+                    // InternalQualityBtCppParser.g:11502:5: ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?)
                     {
                      
                     				  getUnorderedGroupHelper().enter(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2());
                     				
-                    // InternalQualityBtCppParser.g:11505:5: ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?)
-                    // InternalQualityBtCppParser.g:11506:6: ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?
+                    // InternalQualityBtCppParser.g:11505:5: ( ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?)
+                    // InternalQualityBtCppParser.g:11506:6: ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+ {...}?
                     {
-                    // InternalQualityBtCppParser.g:11506:6: ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+
+                    // InternalQualityBtCppParser.g:11506:6: ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+
                     int cnt174=0;
                     loop174:
                     do {
@@ -29995,206 +29995,44 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
                     	    }
                     	    break;
                     	case 4 :
-                    	    // InternalQualityBtCppParser.g:11598:4: ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) )
+                    	    // InternalQualityBtCppParser.g:11598:4: ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) )
                     	    {
-                    	    // InternalQualityBtCppParser.g:11598:4: ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) )
-                    	    // InternalQualityBtCppParser.g:11599:5: {...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) )
+                    	    // InternalQualityBtCppParser.g:11598:4: ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) )
+                    	    // InternalQualityBtCppParser.g:11599:5: {...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) )
                     	    {
                     	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 3) ) {
                     	        throw new FailedPredicateException(input, "ruleSetBlackboardNode", "getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 3)");
                     	    }
-                    	    // InternalQualityBtCppParser.g:11599:114: ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) )
-                    	    // InternalQualityBtCppParser.g:11600:6: ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) )
+                    	    // InternalQualityBtCppParser.g:11599:114: ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) )
+                    	    // InternalQualityBtCppParser.g:11600:6: ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) )
                     	    {
 
                     	    						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 3);
                     	    					
-                    	    // InternalQualityBtCppParser.g:11603:9: ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) )
-                    	    // InternalQualityBtCppParser.g:11603:10: {...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) )
+                    	    // InternalQualityBtCppParser.g:11603:9: ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) )
+                    	    // InternalQualityBtCppParser.g:11603:10: {...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* )
                     	    {
                     	    if ( !((true)) ) {
                     	        throw new FailedPredicateException(input, "ruleSetBlackboardNode", "true");
                     	    }
-                    	    // InternalQualityBtCppParser.g:11603:19: (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) )
-                    	    // InternalQualityBtCppParser.g:11603:20: otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) )
+                    	    // InternalQualityBtCppParser.g:11603:19: (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* )
+                    	    // InternalQualityBtCppParser.g:11603:20: otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )*
                     	    {
-                    	    otherlv_10=(Token)match(input,Value,FOLLOW_8); 
+                    	    otherlv_10=(Token)match(input,Satisfices,FOLLOW_17); 
 
-                    	    									newLeafNode(otherlv_10, grammarAccess.getSetBlackboardNodeAccess().getValueKeyword_2_3_0());
+                    	    									newLeafNode(otherlv_10, grammarAccess.getSetBlackboardNodeAccess().getSatisficesKeyword_2_3_0());
                     	    								
-                    	    otherlv_11=(Token)match(input,EqualsSign,FOLLOW_3); 
-
-                    	    									newLeafNode(otherlv_11, grammarAccess.getSetBlackboardNodeAccess().getEqualsSignKeyword_2_3_1());
-                    	    								
-                    	    // InternalQualityBtCppParser.g:11611:9: ( (lv_value_12_0= ruleEString ) )
-                    	    // InternalQualityBtCppParser.g:11612:10: (lv_value_12_0= ruleEString )
+                    	    // InternalQualityBtCppParser.g:11607:9: ( (lv_satisfices_11_0= ruleQuality ) )
+                    	    // InternalQualityBtCppParser.g:11608:10: (lv_satisfices_11_0= ruleQuality )
                     	    {
-                    	    // InternalQualityBtCppParser.g:11612:10: (lv_value_12_0= ruleEString )
-                    	    // InternalQualityBtCppParser.g:11613:11: lv_value_12_0= ruleEString
+                    	    // InternalQualityBtCppParser.g:11608:10: (lv_satisfices_11_0= ruleQuality )
+                    	    // InternalQualityBtCppParser.g:11609:11: lv_satisfices_11_0= ruleQuality
                     	    {
 
-                    	    											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getValueEStringParserRuleCall_2_3_2_0());
-                    	    										
-                    	    pushFollow(FOLLOW_31);
-                    	    lv_value_12_0=ruleEString();
-
-                    	    state._fsp--;
-
-
-                    	    											if (current==null) {
-                    	    												current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
-                    	    											}
-                    	    											set(
-                    	    												current,
-                    	    												"value",
-                    	    												lv_value_12_0,
-                    	    												"org.xtext.btcpp.QualityBtCpp.EString");
-                    	    											afterParserOrEnumRuleCall();
-                    	    										
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-
-                    	     
-                    	    						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2());
-                    	    					
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-                    	case 5 :
-                    	    // InternalQualityBtCppParser.g:11636:4: ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) )
-                    	    {
-                    	    // InternalQualityBtCppParser.g:11636:4: ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) )
-                    	    // InternalQualityBtCppParser.g:11637:5: {...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) )
-                    	    {
-                    	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 4) ) {
-                    	        throw new FailedPredicateException(input, "ruleSetBlackboardNode", "getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 4)");
-                    	    }
-                    	    // InternalQualityBtCppParser.g:11637:114: ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) )
-                    	    // InternalQualityBtCppParser.g:11638:6: ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) )
-                    	    {
-
-                    	    						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 4);
-                    	    					
-                    	    // InternalQualityBtCppParser.g:11641:9: ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) )
-                    	    // InternalQualityBtCppParser.g:11641:10: {...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) )
-                    	    {
-                    	    if ( !((true)) ) {
-                    	        throw new FailedPredicateException(input, "ruleSetBlackboardNode", "true");
-                    	    }
-                    	    // InternalQualityBtCppParser.g:11641:19: (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) )
-                    	    // InternalQualityBtCppParser.g:11641:20: otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) )
-                    	    {
-                    	    otherlv_13=(Token)match(input,Output_key,FOLLOW_8); 
-
-                    	    									newLeafNode(otherlv_13, grammarAccess.getSetBlackboardNodeAccess().getOutput_keyKeyword_2_4_0());
-                    	    								
-                    	    otherlv_14=(Token)match(input,EqualsSign,FOLLOW_3); 
-
-                    	    									newLeafNode(otherlv_14, grammarAccess.getSetBlackboardNodeAccess().getEqualsSignKeyword_2_4_1());
-                    	    								
-                    	    // InternalQualityBtCppParser.g:11649:9: ( (lv_output_key_15_0= ruleEString ) )
-                    	    // InternalQualityBtCppParser.g:11650:10: (lv_output_key_15_0= ruleEString )
-                    	    {
-                    	    // InternalQualityBtCppParser.g:11650:10: (lv_output_key_15_0= ruleEString )
-                    	    // InternalQualityBtCppParser.g:11651:11: lv_output_key_15_0= ruleEString
-                    	    {
-
-                    	    											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getOutput_keyEStringParserRuleCall_2_4_2_0());
-                    	    										
-                    	    pushFollow(FOLLOW_31);
-                    	    lv_output_key_15_0=ruleEString();
-
-                    	    state._fsp--;
-
-
-                    	    											if (current==null) {
-                    	    												current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
-                    	    											}
-                    	    											set(
-                    	    												current,
-                    	    												"output_key",
-                    	    												lv_output_key_15_0,
-                    	    												"org.xtext.btcpp.QualityBtCpp.EString");
-                    	    											afterParserOrEnumRuleCall();
-                    	    										
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-
-                    	     
-                    	    						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2());
-                    	    					
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-                    	case 6 :
-                    	    // InternalQualityBtCppParser.g:11674:4: ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) )
-                    	    {
-                    	    // InternalQualityBtCppParser.g:11674:4: ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) )
-                    	    // InternalQualityBtCppParser.g:11675:5: {...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) )
-                    	    {
-                    	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 5) ) {
-                    	        throw new FailedPredicateException(input, "ruleSetBlackboardNode", "getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 5)");
-                    	    }
-                    	    // InternalQualityBtCppParser.g:11675:114: ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) )
-                    	    // InternalQualityBtCppParser.g:11676:6: ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) )
-                    	    {
-
-                    	    						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 5);
-                    	    					
-                    	    // InternalQualityBtCppParser.g:11679:9: ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) )
-                    	    // InternalQualityBtCppParser.g:11679:10: {...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* )
-                    	    {
-                    	    if ( !((true)) ) {
-                    	        throw new FailedPredicateException(input, "ruleSetBlackboardNode", "true");
-                    	    }
-                    	    // InternalQualityBtCppParser.g:11679:19: (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* )
-                    	    // InternalQualityBtCppParser.g:11679:20: otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )*
-                    	    {
-                    	    otherlv_16=(Token)match(input,Parameters,FOLLOW_3); 
-
-                    	    									newLeafNode(otherlv_16, grammarAccess.getSetBlackboardNodeAccess().getParametersKeyword_2_5_0());
-                    	    								
-                    	    // InternalQualityBtCppParser.g:11683:9: ( (lv_parameters_17_0= ruleParameter ) )
-                    	    // InternalQualityBtCppParser.g:11684:10: (lv_parameters_17_0= ruleParameter )
-                    	    {
-                    	    // InternalQualityBtCppParser.g:11684:10: (lv_parameters_17_0= ruleParameter )
-                    	    // InternalQualityBtCppParser.g:11685:11: lv_parameters_17_0= ruleParameter
-                    	    {
-
-                    	    											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getParametersParameterParserRuleCall_2_5_1_0());
+                    	    											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getSatisficesQualityParserRuleCall_2_3_1_0());
                     	    										
                     	    pushFollow(FOLLOW_32);
-                    	    lv_parameters_17_0=ruleParameter();
+                    	    lv_satisfices_11_0=ruleQuality();
 
                     	    state._fsp--;
 
@@ -30204,9 +30042,9 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
                     	    											}
                     	    											add(
                     	    												current,
-                    	    												"parameters",
-                    	    												lv_parameters_17_0,
-                    	    												"org.xtext.btcpp.QualityBtCpp.Parameter");
+                    	    												"satisfices",
+                    	    												lv_satisfices_11_0,
+                    	    												"org.xtext.btcpp.QualityBtCpp.Quality");
                     	    											afterParserOrEnumRuleCall();
                     	    										
 
@@ -30215,7 +30053,7 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
 
                     	    }
 
-                    	    // InternalQualityBtCppParser.g:11702:9: (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )*
+                    	    // InternalQualityBtCppParser.g:11626:9: (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )*
                     	    loop171:
                     	    do {
                     	        int alt171=2;
@@ -30228,23 +30066,23 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
 
                     	        switch (alt171) {
                     	    	case 1 :
-                    	    	    // InternalQualityBtCppParser.g:11703:10: otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) )
+                    	    	    // InternalQualityBtCppParser.g:11627:10: otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) )
                     	    	    {
-                    	    	    otherlv_18=(Token)match(input,Comma,FOLLOW_3); 
+                    	    	    otherlv_12=(Token)match(input,Comma,FOLLOW_17); 
 
-                    	    	    										newLeafNode(otherlv_18, grammarAccess.getSetBlackboardNodeAccess().getCommaKeyword_2_5_2_0());
+                    	    	    										newLeafNode(otherlv_12, grammarAccess.getSetBlackboardNodeAccess().getCommaKeyword_2_3_2_0());
                     	    	    									
-                    	    	    // InternalQualityBtCppParser.g:11707:10: ( (lv_parameters_19_0= ruleParameter ) )
-                    	    	    // InternalQualityBtCppParser.g:11708:11: (lv_parameters_19_0= ruleParameter )
+                    	    	    // InternalQualityBtCppParser.g:11631:10: ( (lv_satisfices_13_0= ruleQuality ) )
+                    	    	    // InternalQualityBtCppParser.g:11632:11: (lv_satisfices_13_0= ruleQuality )
                     	    	    {
-                    	    	    // InternalQualityBtCppParser.g:11708:11: (lv_parameters_19_0= ruleParameter )
-                    	    	    // InternalQualityBtCppParser.g:11709:12: lv_parameters_19_0= ruleParameter
+                    	    	    // InternalQualityBtCppParser.g:11632:11: (lv_satisfices_13_0= ruleQuality )
+                    	    	    // InternalQualityBtCppParser.g:11633:12: lv_satisfices_13_0= ruleQuality
                     	    	    {
 
-                    	    	    												newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getParametersParameterParserRuleCall_2_5_2_1_0());
+                    	    	    												newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getSatisficesQualityParserRuleCall_2_3_2_1_0());
                     	    	    											
                     	    	    pushFollow(FOLLOW_32);
-                    	    	    lv_parameters_19_0=ruleParameter();
+                    	    	    lv_satisfices_13_0=ruleQuality();
 
                     	    	    state._fsp--;
 
@@ -30254,9 +30092,9 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
                     	    	    												}
                     	    	    												add(
                     	    	    													current,
-                    	    	    													"parameters",
-                    	    	    													lv_parameters_19_0,
-                    	    	    													"org.xtext.btcpp.QualityBtCpp.Parameter");
+                    	    	    													"satisfices",
+                    	    	    													lv_satisfices_13_0,
+                    	    	    													"org.xtext.btcpp.QualityBtCpp.Quality");
                     	    	    												afterParserOrEnumRuleCall();
                     	    	    											
 
@@ -30292,45 +30130,207 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
 
                     	    }
                     	    break;
-                    	case 7 :
-                    	    // InternalQualityBtCppParser.g:11733:4: ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) )
+                    	case 5 :
+                    	    // InternalQualityBtCppParser.g:11657:4: ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) )
                     	    {
-                    	    // InternalQualityBtCppParser.g:11733:4: ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) )
-                    	    // InternalQualityBtCppParser.g:11734:5: {...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) )
+                    	    // InternalQualityBtCppParser.g:11657:4: ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) )
+                    	    // InternalQualityBtCppParser.g:11658:5: {...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) )
                     	    {
-                    	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 6) ) {
-                    	        throw new FailedPredicateException(input, "ruleSetBlackboardNode", "getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 6)");
+                    	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 4) ) {
+                    	        throw new FailedPredicateException(input, "ruleSetBlackboardNode", "getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 4)");
                     	    }
-                    	    // InternalQualityBtCppParser.g:11734:114: ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) )
-                    	    // InternalQualityBtCppParser.g:11735:6: ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) )
+                    	    // InternalQualityBtCppParser.g:11658:114: ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) )
+                    	    // InternalQualityBtCppParser.g:11659:6: ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) )
                     	    {
 
-                    	    						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 6);
+                    	    						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 4);
                     	    					
-                    	    // InternalQualityBtCppParser.g:11738:9: ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) )
-                    	    // InternalQualityBtCppParser.g:11738:10: {...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* )
+                    	    // InternalQualityBtCppParser.g:11662:9: ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) )
+                    	    // InternalQualityBtCppParser.g:11662:10: {...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) )
                     	    {
                     	    if ( !((true)) ) {
                     	        throw new FailedPredicateException(input, "ruleSetBlackboardNode", "true");
                     	    }
-                    	    // InternalQualityBtCppParser.g:11738:19: (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* )
-                    	    // InternalQualityBtCppParser.g:11738:20: otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )*
+                    	    // InternalQualityBtCppParser.g:11662:19: (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) )
+                    	    // InternalQualityBtCppParser.g:11662:20: otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) )
                     	    {
-                    	    otherlv_20=(Token)match(input,Satisfices,FOLLOW_17); 
+                    	    otherlv_14=(Token)match(input,Value,FOLLOW_8); 
 
-                    	    									newLeafNode(otherlv_20, grammarAccess.getSetBlackboardNodeAccess().getSatisficesKeyword_2_6_0());
+                    	    									newLeafNode(otherlv_14, grammarAccess.getSetBlackboardNodeAccess().getValueKeyword_2_4_0());
                     	    								
-                    	    // InternalQualityBtCppParser.g:11742:9: ( (lv_satisfices_21_0= ruleQuality ) )
-                    	    // InternalQualityBtCppParser.g:11743:10: (lv_satisfices_21_0= ruleQuality )
+                    	    otherlv_15=(Token)match(input,EqualsSign,FOLLOW_3); 
+
+                    	    									newLeafNode(otherlv_15, grammarAccess.getSetBlackboardNodeAccess().getEqualsSignKeyword_2_4_1());
+                    	    								
+                    	    // InternalQualityBtCppParser.g:11670:9: ( (lv_value_16_0= ruleEString ) )
+                    	    // InternalQualityBtCppParser.g:11671:10: (lv_value_16_0= ruleEString )
                     	    {
-                    	    // InternalQualityBtCppParser.g:11743:10: (lv_satisfices_21_0= ruleQuality )
-                    	    // InternalQualityBtCppParser.g:11744:11: lv_satisfices_21_0= ruleQuality
+                    	    // InternalQualityBtCppParser.g:11671:10: (lv_value_16_0= ruleEString )
+                    	    // InternalQualityBtCppParser.g:11672:11: lv_value_16_0= ruleEString
                     	    {
 
-                    	    											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getSatisficesQualityParserRuleCall_2_6_1_0());
+                    	    											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getValueEStringParserRuleCall_2_4_2_0());
+                    	    										
+                    	    pushFollow(FOLLOW_31);
+                    	    lv_value_16_0=ruleEString();
+
+                    	    state._fsp--;
+
+
+                    	    											if (current==null) {
+                    	    												current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
+                    	    											}
+                    	    											set(
+                    	    												current,
+                    	    												"value",
+                    	    												lv_value_16_0,
+                    	    												"org.xtext.btcpp.QualityBtCpp.EString");
+                    	    											afterParserOrEnumRuleCall();
+                    	    										
+
+                    	    }
+
+
+                    	    }
+
+
+                    	    }
+
+
+                    	    }
+
+                    	     
+                    	    						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2());
+                    	    					
+
+                    	    }
+
+
+                    	    }
+
+
+                    	    }
+                    	    break;
+                    	case 6 :
+                    	    // InternalQualityBtCppParser.g:11695:4: ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) )
+                    	    {
+                    	    // InternalQualityBtCppParser.g:11695:4: ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) )
+                    	    // InternalQualityBtCppParser.g:11696:5: {...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) )
+                    	    {
+                    	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 5) ) {
+                    	        throw new FailedPredicateException(input, "ruleSetBlackboardNode", "getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 5)");
+                    	    }
+                    	    // InternalQualityBtCppParser.g:11696:114: ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) )
+                    	    // InternalQualityBtCppParser.g:11697:6: ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) )
+                    	    {
+
+                    	    						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 5);
+                    	    					
+                    	    // InternalQualityBtCppParser.g:11700:9: ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) )
+                    	    // InternalQualityBtCppParser.g:11700:10: {...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) )
+                    	    {
+                    	    if ( !((true)) ) {
+                    	        throw new FailedPredicateException(input, "ruleSetBlackboardNode", "true");
+                    	    }
+                    	    // InternalQualityBtCppParser.g:11700:19: (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) )
+                    	    // InternalQualityBtCppParser.g:11700:20: otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) )
+                    	    {
+                    	    otherlv_17=(Token)match(input,Output_key,FOLLOW_8); 
+
+                    	    									newLeafNode(otherlv_17, grammarAccess.getSetBlackboardNodeAccess().getOutput_keyKeyword_2_5_0());
+                    	    								
+                    	    otherlv_18=(Token)match(input,EqualsSign,FOLLOW_3); 
+
+                    	    									newLeafNode(otherlv_18, grammarAccess.getSetBlackboardNodeAccess().getEqualsSignKeyword_2_5_1());
+                    	    								
+                    	    // InternalQualityBtCppParser.g:11708:9: ( (lv_output_key_19_0= ruleEString ) )
+                    	    // InternalQualityBtCppParser.g:11709:10: (lv_output_key_19_0= ruleEString )
+                    	    {
+                    	    // InternalQualityBtCppParser.g:11709:10: (lv_output_key_19_0= ruleEString )
+                    	    // InternalQualityBtCppParser.g:11710:11: lv_output_key_19_0= ruleEString
+                    	    {
+
+                    	    											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getOutput_keyEStringParserRuleCall_2_5_2_0());
+                    	    										
+                    	    pushFollow(FOLLOW_31);
+                    	    lv_output_key_19_0=ruleEString();
+
+                    	    state._fsp--;
+
+
+                    	    											if (current==null) {
+                    	    												current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
+                    	    											}
+                    	    											set(
+                    	    												current,
+                    	    												"output_key",
+                    	    												lv_output_key_19_0,
+                    	    												"org.xtext.btcpp.QualityBtCpp.EString");
+                    	    											afterParserOrEnumRuleCall();
+                    	    										
+
+                    	    }
+
+
+                    	    }
+
+
+                    	    }
+
+
+                    	    }
+
+                    	     
+                    	    						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2());
+                    	    					
+
+                    	    }
+
+
+                    	    }
+
+
+                    	    }
+                    	    break;
+                    	case 7 :
+                    	    // InternalQualityBtCppParser.g:11733:4: ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) )
+                    	    {
+                    	    // InternalQualityBtCppParser.g:11733:4: ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) )
+                    	    // InternalQualityBtCppParser.g:11734:5: {...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) )
+                    	    {
+                    	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 6) ) {
+                    	        throw new FailedPredicateException(input, "ruleSetBlackboardNode", "getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 6)");
+                    	    }
+                    	    // InternalQualityBtCppParser.g:11734:114: ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) )
+                    	    // InternalQualityBtCppParser.g:11735:6: ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) )
+                    	    {
+
+                    	    						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 6);
+                    	    					
+                    	    // InternalQualityBtCppParser.g:11738:9: ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) )
+                    	    // InternalQualityBtCppParser.g:11738:10: {...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* )
+                    	    {
+                    	    if ( !((true)) ) {
+                    	        throw new FailedPredicateException(input, "ruleSetBlackboardNode", "true");
+                    	    }
+                    	    // InternalQualityBtCppParser.g:11738:19: (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* )
+                    	    // InternalQualityBtCppParser.g:11738:20: otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )*
+                    	    {
+                    	    otherlv_20=(Token)match(input,Parameters,FOLLOW_3); 
+
+                    	    									newLeafNode(otherlv_20, grammarAccess.getSetBlackboardNodeAccess().getParametersKeyword_2_6_0());
+                    	    								
+                    	    // InternalQualityBtCppParser.g:11742:9: ( (lv_parameters_21_0= ruleParameter ) )
+                    	    // InternalQualityBtCppParser.g:11743:10: (lv_parameters_21_0= ruleParameter )
+                    	    {
+                    	    // InternalQualityBtCppParser.g:11743:10: (lv_parameters_21_0= ruleParameter )
+                    	    // InternalQualityBtCppParser.g:11744:11: lv_parameters_21_0= ruleParameter
+                    	    {
+
+                    	    											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getParametersParameterParserRuleCall_2_6_1_0());
                     	    										
                     	    pushFollow(FOLLOW_32);
-                    	    lv_satisfices_21_0=ruleQuality();
+                    	    lv_parameters_21_0=ruleParameter();
 
                     	    state._fsp--;
 
@@ -30340,9 +30340,9 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
                     	    											}
                     	    											add(
                     	    												current,
-                    	    												"satisfices",
-                    	    												lv_satisfices_21_0,
-                    	    												"org.xtext.btcpp.QualityBtCpp.Quality");
+                    	    												"parameters",
+                    	    												lv_parameters_21_0,
+                    	    												"org.xtext.btcpp.QualityBtCpp.Parameter");
                     	    											afterParserOrEnumRuleCall();
                     	    										
 
@@ -30351,7 +30351,7 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
 
                     	    }
 
-                    	    // InternalQualityBtCppParser.g:11761:9: (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )*
+                    	    // InternalQualityBtCppParser.g:11761:9: (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )*
                     	    loop172:
                     	    do {
                     	        int alt172=2;
@@ -30364,23 +30364,23 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
 
                     	        switch (alt172) {
                     	    	case 1 :
-                    	    	    // InternalQualityBtCppParser.g:11762:10: otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) )
+                    	    	    // InternalQualityBtCppParser.g:11762:10: otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) )
                     	    	    {
-                    	    	    otherlv_22=(Token)match(input,Comma,FOLLOW_17); 
+                    	    	    otherlv_22=(Token)match(input,Comma,FOLLOW_3); 
 
                     	    	    										newLeafNode(otherlv_22, grammarAccess.getSetBlackboardNodeAccess().getCommaKeyword_2_6_2_0());
                     	    	    									
-                    	    	    // InternalQualityBtCppParser.g:11766:10: ( (lv_satisfices_23_0= ruleQuality ) )
-                    	    	    // InternalQualityBtCppParser.g:11767:11: (lv_satisfices_23_0= ruleQuality )
+                    	    	    // InternalQualityBtCppParser.g:11766:10: ( (lv_parameters_23_0= ruleParameter ) )
+                    	    	    // InternalQualityBtCppParser.g:11767:11: (lv_parameters_23_0= ruleParameter )
                     	    	    {
-                    	    	    // InternalQualityBtCppParser.g:11767:11: (lv_satisfices_23_0= ruleQuality )
-                    	    	    // InternalQualityBtCppParser.g:11768:12: lv_satisfices_23_0= ruleQuality
+                    	    	    // InternalQualityBtCppParser.g:11767:11: (lv_parameters_23_0= ruleParameter )
+                    	    	    // InternalQualityBtCppParser.g:11768:12: lv_parameters_23_0= ruleParameter
                     	    	    {
 
-                    	    	    												newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getSatisficesQualityParserRuleCall_2_6_2_1_0());
+                    	    	    												newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getParametersParameterParserRuleCall_2_6_2_1_0());
                     	    	    											
                     	    	    pushFollow(FOLLOW_32);
-                    	    	    lv_satisfices_23_0=ruleQuality();
+                    	    	    lv_parameters_23_0=ruleParameter();
 
                     	    	    state._fsp--;
 
@@ -30390,9 +30390,9 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
                     	    	    												}
                     	    	    												add(
                     	    	    													current,
-                    	    	    													"satisfices",
-                    	    	    													lv_satisfices_23_0,
-                    	    	    													"org.xtext.btcpp.QualityBtCpp.Quality");
+                    	    	    													"parameters",
+                    	    	    													lv_parameters_23_0,
+                    	    	    													"org.xtext.btcpp.QualityBtCpp.Parameter");
                     	    	    												afterParserOrEnumRuleCall();
                     	    	    											
 
@@ -36984,7 +36984,7 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
     static final String dfa_17s = "\1\uffff\1\12\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11";
     static final String dfa_18s = "\1\0\12\uffff}>";
     static final String[] dfa_19s = {
-            "\12\1\1\uffff\6\1\1\uffff\1\1\1\uffff\2\1\3\uffff\1\6\1\7\1\10\1\11\1\1\1\uffff\11\1\1\5\1\1\1\uffff\1\1\1\uffff\1\4\3\1\1\3\2\1\1\2\1\12\2\uffff\1\1\2\uffff\1\1",
+            "\12\1\1\uffff\6\1\1\uffff\1\1\1\uffff\2\1\3\uffff\1\7\1\10\1\5\1\11\1\1\1\uffff\11\1\1\6\1\1\1\uffff\1\1\1\uffff\1\4\3\1\1\3\2\1\1\2\1\12\2\uffff\1\1\2\uffff\1\1",
             "",
             "",
             "",
@@ -37019,7 +37019,7 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
             this.transition = dfa_19;
         }
         public String getDescription() {
-            return "()+ loopback of 11506:6: ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Value otherlv_11= EqualsSign ( (lv_value_12_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_13= Output_key otherlv_14= EqualsSign ( (lv_output_key_15_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_16= Parameters ( (lv_parameters_17_0= ruleParameter ) ) (otherlv_18= Comma ( (lv_parameters_19_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Satisfices ( (lv_satisfices_21_0= ruleQuality ) ) (otherlv_22= Comma ( (lv_satisfices_23_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+";
+            return "()+ loopback of 11506:6: ( ({...}? => ( ({...}? => (otherlv_3= LeftParenthesis ) ) ) ) | ({...}? => ( ({...}? => (otherlv_4= ID otherlv_5= EqualsSign ( (lv_ID_6_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_7= Name otherlv_8= EqualsSign ( (lv_name_9_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_10= Satisfices ( (lv_satisfices_11_0= ruleQuality ) ) (otherlv_12= Comma ( (lv_satisfices_13_0= ruleQuality ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_14= Value otherlv_15= EqualsSign ( (lv_value_16_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_17= Output_key otherlv_18= EqualsSign ( (lv_output_key_19_0= ruleEString ) ) ) ) ) ) | ({...}? => ( ({...}? => (otherlv_20= Parameters ( (lv_parameters_21_0= ruleParameter ) ) (otherlv_22= Comma ( (lv_parameters_23_0= ruleParameter ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_24= Satisfies ( (lv_satisfies_25_0= ruleQualityRequirement ) ) (otherlv_26= Comma ( (lv_satisfies_27_0= ruleQualityRequirement ) ) )* ) ) ) ) | ({...}? => ( ({...}? => (otherlv_28= RightParenthesis ) ) ) ) )+";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -37040,13 +37040,13 @@ public class InternalQualityBtCppParser extends AbstractInternalAntlrParser {
 
                         else if ( LA174_0 == Name && getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 2) ) {s = 4;}
 
-                        else if ( LA174_0 == Value && getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 3) ) {s = 5;}
+                        else if ( LA174_0 == Satisfices && getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 3) ) {s = 5;}
 
-                        else if ( LA174_0 == Output_key && getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 4) ) {s = 6;}
+                        else if ( LA174_0 == Value && getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 4) ) {s = 6;}
 
-                        else if ( LA174_0 == Parameters && getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 5) ) {s = 7;}
+                        else if ( LA174_0 == Output_key && getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 5) ) {s = 7;}
 
-                        else if ( LA174_0 == Satisfices && getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 6) ) {s = 8;}
+                        else if ( LA174_0 == Parameters && getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 6) ) {s = 8;}
 
                         else if ( LA174_0 == Satisfies && getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 7) ) {s = 9;}
 

@@ -39,7 +39,8 @@ class QualityBtCppGenerator extends AbstractGenerator {
 		
 		val template = 
 		'''«FOR root : resource.allContents.filter(Root).toIterable»
-			<root main_tree_to_execute="«root.getMain_tree_to_execute()»">
+		<root
+			 main_tree_to_execute="«root.getMain_tree_to_execute()»">
 			«FOR bt : root.getBehaviortrees()»
 				<BehaviorTree ID="«bt.getID()»"> «"\n"» «recursiveWriteNode(bt.getNode())»
 				</BehaviorTree>
@@ -51,7 +52,6 @@ class QualityBtCppGenerator extends AbstractGenerator {
 		fsa.generateFile('~tmp.txt', template)
 	}
 	override void afterGenerate(Resource input, IFileSystemAccess2 fsa, IGeneratorContext context) {
-		/* Run Statistical Analysis */
 		
 		/* Pretty print the XML */
 		val xml = fsa.readTextFile("~tmp.txt")
@@ -68,7 +68,7 @@ class QualityBtCppGenerator extends AbstractGenerator {
             val registry = DOMImplementationRegistry.newInstance();
             val impl = registry.getDOMImplementation("LS") as DOMImplementationLS;
             val writer = impl.createLSSerializer();
-            writer.getDomConfig().setParameter("format-pretty-print", Boolean.TRUE); // Set this to true if the output needs to be beautified.
+            writer.getDomConfig().setParameter("format-pretty-print", Boolean.TRUE);// Set this to true if the output needs to be beautified.
 		
 		return writer.writeToString(document)
 	}
@@ -84,8 +84,53 @@ class QualityBtCppGenerator extends AbstractGenerator {
 	def static String writeQuality(TreeNode node){
 		val s = new StringBuilder("")
 		for (quality : node.getSatisfices()){
-			s.append(" "+quality.ID)
+			
+			if (!quality.getQualityreq().isEmpty()){
+				s.append(" "+quality.ID+" ( QualityReq: ")
+				for (qualityRqs : quality.getQualityreq()){
+					s.append(" ID= "+qualityRqs.ID+" Description= "+qualityRqs.description+" ,")
+				}
+					
+				s.append(")")		
+			}
+			else {
+				s.append(" "+quality.ID+" ,")
+			}			
+			
 		}
+		return s.toString()
+	}
+	
+	def static String writeQualityReq(TreeNode node){
+		val FailuerIf = "FailuerIf"
+		val SuccessIf = "SuccessIf"
+		val s = new StringBuilder("")
+		val AllValue = new StringBuilder("")
+
+		for (QualityReq : node.getSatisfies()){
+			
+			AllValue.append(" ID= "+QualityReq.ID+" Description= "+QualityReq.description+" ,")
+			
+			if (QualityReq.description.contains(FailuerIf) )
+			{
+				val keywordIndex = QualityReq.description.indexOf(FailuerIf) + FailuerIf.length();
+            	val value = QualityReq.description.substring(keywordIndex).trim();
+            	s.append(" _failureIf=\" "+value+"\"")				
+			}
+			if (QualityReq.description.contains(SuccessIf) )
+			{
+				val keywordIndex = QualityReq.description.indexOf(SuccessIf) + SuccessIf.length();
+            	val value = QualityReq.description.substring(keywordIndex).trim();
+            	s.append(" _successIf=\" "+value+"\"")				
+			}		
+		}
+		if (!node.getSatisfices().isEmpty()){
+			s.append(" _description=\""+writeQuality(node)+" "+AllValue+"\"")
+		}
+		else {
+			s.append(" _description= \""+AllValue+"\"")
+		}
+		
 		return s.toString()
 	}
 	
@@ -140,9 +185,10 @@ class QualityBtCppGenerator extends AbstractGenerator {
 		if(node.getName() !== null){
 			s.append(" name=\""+node.getName()+"\"")
 		}
-		if(node.getSatisfices !== null){
-			s.append(" _description=\""+writeQuality(node)+"\"")
-		}
+		if(!node.getSatisfices().isEmpty()){
+					s.append(" _description=\""+ writeQuality(node) +"\"")
+		
+					}
 		s.append(writeParameters(node))
 		s.append(">\n")
 		s.append(recursiveWriteNode(node.getChild()))
@@ -159,9 +205,10 @@ class QualityBtCppGenerator extends AbstractGenerator {
 		if(node.getName() !== null){
 			s.append(" name=\""+node.getName()+"\"")
 		}
-		if(node.getSatisfices !== null){
-			s.append(" _description=\""+writeQuality(node)+"\"")
-		}
+		if(!node.getSatisfices().isEmpty()){
+			s.append(" _description=\""+ writeQuality(node) +"\"")
+
+			}
 		if (node instanceof RepeatNode){
 			s.append(" num_cycles=\""+node.getNum_cycles()+"\"")
 		}
@@ -192,9 +239,30 @@ class QualityBtCppGenerator extends AbstractGenerator {
 		if(node.getName() !== null){
 			s.append(" name=\""+node.getName()+"\"")
 		}
-		if(node.getSatisfices !== null){
-			s.append(" _description=\""+writeQuality(node)+"\"")
-		}
+
+		if(!node.getSatisfices().isEmpty()){
+			// if the user define QRs using Satisfies, then the writitng of the Quality and QRs are done within the writeQualityReq, otherwise done in the writeQuality
+			// be aware for this case the QRs defined under Satisfies are not associated to the Quality. One the ones defined using qualityreq
+			if(!node.getSatisfies().isEmpty()){
+				s.append(writeQualityReq(node))
+			}
+			else
+			{
+			s.append(" _description=\""+ writeQuality(node) +"\"")
+			}
+
+			}
+		if(!node.getSatisfies().isEmpty()){
+			// if the Quality is not empty, then the writing already happended in the previous call
+			if(!node.getSatisfices().isEmpty()){
+				
+			}
+			else {
+			s.append(writeQualityReq(node))
+			}
+
+			}
+			
 		if (node instanceof SetBlackboardNode) {
 			s.append(" value=\""+node.getValue()+"\"")
 			s.append(" output_key=\""+node.getOutput_key()+"\"")
@@ -212,9 +280,11 @@ class QualityBtCppGenerator extends AbstractGenerator {
 		if(node.getName() !== null){
 			s.append(" name=\""+node.getName()+"\"")
 		}
-		if(node.getSatisfices !== null){
-			s.append(" _description=\""+writeQuality(node)+"\"")
-		}
+		if(!node.getSatisfices().isEmpty()){
+			s.append(" _description=\""+ writeQuality(node) +"\"")
+
+			}
+		
 		s.append(writeParameters(node))
 		s.append("/>\n")
 		return s.toString()

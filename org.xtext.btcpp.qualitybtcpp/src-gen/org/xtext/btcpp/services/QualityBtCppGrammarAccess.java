@@ -6789,31 +6789,31 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 		private final Assignment cNameAssignment_2_2_2 = (Assignment)cGroup_2_2.eContents().get(2);
 		private final RuleCall cNameEStringParserRuleCall_2_2_2_0 = (RuleCall)cNameAssignment_2_2_2.eContents().get(0);
 		private final Group cGroup_2_3 = (Group)cUnorderedGroup_2.eContents().get(3);
-		private final Keyword cValueKeyword_2_3_0 = (Keyword)cGroup_2_3.eContents().get(0);
-		private final Keyword cEqualsSignKeyword_2_3_1 = (Keyword)cGroup_2_3.eContents().get(1);
-		private final Assignment cValueAssignment_2_3_2 = (Assignment)cGroup_2_3.eContents().get(2);
-		private final RuleCall cValueEStringParserRuleCall_2_3_2_0 = (RuleCall)cValueAssignment_2_3_2.eContents().get(0);
+		private final Keyword cSatisficesKeyword_2_3_0 = (Keyword)cGroup_2_3.eContents().get(0);
+		private final Assignment cSatisficesAssignment_2_3_1 = (Assignment)cGroup_2_3.eContents().get(1);
+		private final RuleCall cSatisficesQualityParserRuleCall_2_3_1_0 = (RuleCall)cSatisficesAssignment_2_3_1.eContents().get(0);
+		private final Group cGroup_2_3_2 = (Group)cGroup_2_3.eContents().get(2);
+		private final Keyword cCommaKeyword_2_3_2_0 = (Keyword)cGroup_2_3_2.eContents().get(0);
+		private final Assignment cSatisficesAssignment_2_3_2_1 = (Assignment)cGroup_2_3_2.eContents().get(1);
+		private final RuleCall cSatisficesQualityParserRuleCall_2_3_2_1_0 = (RuleCall)cSatisficesAssignment_2_3_2_1.eContents().get(0);
 		private final Group cGroup_2_4 = (Group)cUnorderedGroup_2.eContents().get(4);
-		private final Keyword cOutput_keyKeyword_2_4_0 = (Keyword)cGroup_2_4.eContents().get(0);
+		private final Keyword cValueKeyword_2_4_0 = (Keyword)cGroup_2_4.eContents().get(0);
 		private final Keyword cEqualsSignKeyword_2_4_1 = (Keyword)cGroup_2_4.eContents().get(1);
-		private final Assignment cOutput_keyAssignment_2_4_2 = (Assignment)cGroup_2_4.eContents().get(2);
-		private final RuleCall cOutput_keyEStringParserRuleCall_2_4_2_0 = (RuleCall)cOutput_keyAssignment_2_4_2.eContents().get(0);
+		private final Assignment cValueAssignment_2_4_2 = (Assignment)cGroup_2_4.eContents().get(2);
+		private final RuleCall cValueEStringParserRuleCall_2_4_2_0 = (RuleCall)cValueAssignment_2_4_2.eContents().get(0);
 		private final Group cGroup_2_5 = (Group)cUnorderedGroup_2.eContents().get(5);
-		private final Keyword cParametersKeyword_2_5_0 = (Keyword)cGroup_2_5.eContents().get(0);
-		private final Assignment cParametersAssignment_2_5_1 = (Assignment)cGroup_2_5.eContents().get(1);
-		private final RuleCall cParametersParameterParserRuleCall_2_5_1_0 = (RuleCall)cParametersAssignment_2_5_1.eContents().get(0);
-		private final Group cGroup_2_5_2 = (Group)cGroup_2_5.eContents().get(2);
-		private final Keyword cCommaKeyword_2_5_2_0 = (Keyword)cGroup_2_5_2.eContents().get(0);
-		private final Assignment cParametersAssignment_2_5_2_1 = (Assignment)cGroup_2_5_2.eContents().get(1);
-		private final RuleCall cParametersParameterParserRuleCall_2_5_2_1_0 = (RuleCall)cParametersAssignment_2_5_2_1.eContents().get(0);
+		private final Keyword cOutput_keyKeyword_2_5_0 = (Keyword)cGroup_2_5.eContents().get(0);
+		private final Keyword cEqualsSignKeyword_2_5_1 = (Keyword)cGroup_2_5.eContents().get(1);
+		private final Assignment cOutput_keyAssignment_2_5_2 = (Assignment)cGroup_2_5.eContents().get(2);
+		private final RuleCall cOutput_keyEStringParserRuleCall_2_5_2_0 = (RuleCall)cOutput_keyAssignment_2_5_2.eContents().get(0);
 		private final Group cGroup_2_6 = (Group)cUnorderedGroup_2.eContents().get(6);
-		private final Keyword cSatisficesKeyword_2_6_0 = (Keyword)cGroup_2_6.eContents().get(0);
-		private final Assignment cSatisficesAssignment_2_6_1 = (Assignment)cGroup_2_6.eContents().get(1);
-		private final RuleCall cSatisficesQualityParserRuleCall_2_6_1_0 = (RuleCall)cSatisficesAssignment_2_6_1.eContents().get(0);
+		private final Keyword cParametersKeyword_2_6_0 = (Keyword)cGroup_2_6.eContents().get(0);
+		private final Assignment cParametersAssignment_2_6_1 = (Assignment)cGroup_2_6.eContents().get(1);
+		private final RuleCall cParametersParameterParserRuleCall_2_6_1_0 = (RuleCall)cParametersAssignment_2_6_1.eContents().get(0);
 		private final Group cGroup_2_6_2 = (Group)cGroup_2_6.eContents().get(2);
 		private final Keyword cCommaKeyword_2_6_2_0 = (Keyword)cGroup_2_6_2.eContents().get(0);
-		private final Assignment cSatisficesAssignment_2_6_2_1 = (Assignment)cGroup_2_6_2.eContents().get(1);
-		private final RuleCall cSatisficesQualityParserRuleCall_2_6_2_1_0 = (RuleCall)cSatisficesAssignment_2_6_2_1.eContents().get(0);
+		private final Assignment cParametersAssignment_2_6_2_1 = (Assignment)cGroup_2_6_2.eContents().get(1);
+		private final RuleCall cParametersParameterParserRuleCall_2_6_2_1_0 = (RuleCall)cParametersAssignment_2_6_2_1.eContents().get(0);
 		private final Group cGroup_2_7 = (Group)cUnorderedGroup_2.eContents().get(7);
 		private final Keyword cSatisfiesKeyword_2_7_0 = (Keyword)cGroup_2_7.eContents().get(0);
 		private final Assignment cSatisfiesAssignment_2_7_1 = (Assignment)cGroup_2_7.eContents().get(1);
@@ -6831,10 +6831,10 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 		//        &
 		//        ('ID' "=" ID=EString)? &
 		//        ("name" "=" name=EString)? &
+		//        ('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
 		//        ('value' '=' value=EString) &
 		//        ('output_key' '=' output_key=EString) &
 		//        ('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
-		//        ('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
 		//        ('satisfies'satisfies+=QualityRequirement ( "," satisfies+=QualityRequirement)* )?
 		//        &
 		//    ")")?
@@ -6847,10 +6847,10 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 		//    &
 		//    ('ID' "=" ID=EString)? &
 		//    ("name" "=" name=EString)? &
+		//    ('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
 		//    ('value' '=' value=EString) &
 		//    ('output_key' '=' output_key=EString) &
 		//    ('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
-		//    ('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
 		//    ('satisfies'satisfies+=QualityRequirement ( "," satisfies+=QualityRequirement)* )?
 		//    &
 		//")")?
@@ -6866,10 +6866,10 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 		//    &
 		//    ('ID' "=" ID=EString)? &
 		//    ("name" "=" name=EString)? &
+		//    ('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
 		//    ('value' '=' value=EString) &
 		//    ('output_key' '=' output_key=EString) &
 		//    ('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
-		//    ('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
 		//    ('satisfies'satisfies+=QualityRequirement ( "," satisfies+=QualityRequirement)* )?
 		//    &
 		//")")?
@@ -6908,83 +6908,83 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 		//EString
 		public RuleCall getNameEStringParserRuleCall_2_2_2_0() { return cNameEStringParserRuleCall_2_2_2_0; }
 		
-		//('value' '=' value=EString)
+		//('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )?
 		public Group getGroup_2_3() { return cGroup_2_3; }
 		
-		//'value'
-		public Keyword getValueKeyword_2_3_0() { return cValueKeyword_2_3_0; }
+		//'satisfices'
+		public Keyword getSatisficesKeyword_2_3_0() { return cSatisficesKeyword_2_3_0; }
 		
-		//'='
-		public Keyword getEqualsSignKeyword_2_3_1() { return cEqualsSignKeyword_2_3_1; }
+		//satisfices+=Quality
+		public Assignment getSatisficesAssignment_2_3_1() { return cSatisficesAssignment_2_3_1; }
 		
-		//value=EString
-		public Assignment getValueAssignment_2_3_2() { return cValueAssignment_2_3_2; }
+		//Quality
+		public RuleCall getSatisficesQualityParserRuleCall_2_3_1_0() { return cSatisficesQualityParserRuleCall_2_3_1_0; }
 		
-		//EString
-		public RuleCall getValueEStringParserRuleCall_2_3_2_0() { return cValueEStringParserRuleCall_2_3_2_0; }
+		//( "," satisfices+=Quality)*
+		public Group getGroup_2_3_2() { return cGroup_2_3_2; }
 		
-		//('output_key' '=' output_key=EString)
+		//","
+		public Keyword getCommaKeyword_2_3_2_0() { return cCommaKeyword_2_3_2_0; }
+		
+		//satisfices+=Quality
+		public Assignment getSatisficesAssignment_2_3_2_1() { return cSatisficesAssignment_2_3_2_1; }
+		
+		//Quality
+		public RuleCall getSatisficesQualityParserRuleCall_2_3_2_1_0() { return cSatisficesQualityParserRuleCall_2_3_2_1_0; }
+		
+		//('value' '=' value=EString)
 		public Group getGroup_2_4() { return cGroup_2_4; }
 		
-		//'output_key'
-		public Keyword getOutput_keyKeyword_2_4_0() { return cOutput_keyKeyword_2_4_0; }
+		//'value'
+		public Keyword getValueKeyword_2_4_0() { return cValueKeyword_2_4_0; }
 		
 		//'='
 		public Keyword getEqualsSignKeyword_2_4_1() { return cEqualsSignKeyword_2_4_1; }
 		
-		//output_key=EString
-		public Assignment getOutput_keyAssignment_2_4_2() { return cOutput_keyAssignment_2_4_2; }
+		//value=EString
+		public Assignment getValueAssignment_2_4_2() { return cValueAssignment_2_4_2; }
 		
 		//EString
-		public RuleCall getOutput_keyEStringParserRuleCall_2_4_2_0() { return cOutput_keyEStringParserRuleCall_2_4_2_0; }
+		public RuleCall getValueEStringParserRuleCall_2_4_2_0() { return cValueEStringParserRuleCall_2_4_2_0; }
 		
-		//('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )?
+		//('output_key' '=' output_key=EString)
 		public Group getGroup_2_5() { return cGroup_2_5; }
 		
-		//'parameters'
-		public Keyword getParametersKeyword_2_5_0() { return cParametersKeyword_2_5_0; }
+		//'output_key'
+		public Keyword getOutput_keyKeyword_2_5_0() { return cOutput_keyKeyword_2_5_0; }
 		
-		//parameters+=Parameter
-		public Assignment getParametersAssignment_2_5_1() { return cParametersAssignment_2_5_1; }
+		//'='
+		public Keyword getEqualsSignKeyword_2_5_1() { return cEqualsSignKeyword_2_5_1; }
 		
-		//Parameter
-		public RuleCall getParametersParameterParserRuleCall_2_5_1_0() { return cParametersParameterParserRuleCall_2_5_1_0; }
+		//output_key=EString
+		public Assignment getOutput_keyAssignment_2_5_2() { return cOutput_keyAssignment_2_5_2; }
 		
-		//( "," parameters+=Parameter)*
-		public Group getGroup_2_5_2() { return cGroup_2_5_2; }
+		//EString
+		public RuleCall getOutput_keyEStringParserRuleCall_2_5_2_0() { return cOutput_keyEStringParserRuleCall_2_5_2_0; }
 		
-		//","
-		public Keyword getCommaKeyword_2_5_2_0() { return cCommaKeyword_2_5_2_0; }
-		
-		//parameters+=Parameter
-		public Assignment getParametersAssignment_2_5_2_1() { return cParametersAssignment_2_5_2_1; }
-		
-		//Parameter
-		public RuleCall getParametersParameterParserRuleCall_2_5_2_1_0() { return cParametersParameterParserRuleCall_2_5_2_1_0; }
-		
-		//('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )?
+		//('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )?
 		public Group getGroup_2_6() { return cGroup_2_6; }
 		
-		//'satisfices'
-		public Keyword getSatisficesKeyword_2_6_0() { return cSatisficesKeyword_2_6_0; }
+		//'parameters'
+		public Keyword getParametersKeyword_2_6_0() { return cParametersKeyword_2_6_0; }
 		
-		//satisfices+=Quality
-		public Assignment getSatisficesAssignment_2_6_1() { return cSatisficesAssignment_2_6_1; }
+		//parameters+=Parameter
+		public Assignment getParametersAssignment_2_6_1() { return cParametersAssignment_2_6_1; }
 		
-		//Quality
-		public RuleCall getSatisficesQualityParserRuleCall_2_6_1_0() { return cSatisficesQualityParserRuleCall_2_6_1_0; }
+		//Parameter
+		public RuleCall getParametersParameterParserRuleCall_2_6_1_0() { return cParametersParameterParserRuleCall_2_6_1_0; }
 		
-		//( "," satisfices+=Quality)*
+		//( "," parameters+=Parameter)*
 		public Group getGroup_2_6_2() { return cGroup_2_6_2; }
 		
 		//","
 		public Keyword getCommaKeyword_2_6_2_0() { return cCommaKeyword_2_6_2_0; }
 		
-		//satisfices+=Quality
-		public Assignment getSatisficesAssignment_2_6_2_1() { return cSatisficesAssignment_2_6_2_1; }
+		//parameters+=Parameter
+		public Assignment getParametersAssignment_2_6_2_1() { return cParametersAssignment_2_6_2_1; }
 		
-		//Quality
-		public RuleCall getSatisficesQualityParserRuleCall_2_6_2_1_0() { return cSatisficesQualityParserRuleCall_2_6_2_1_0; }
+		//Parameter
+		public RuleCall getParametersParameterParserRuleCall_2_6_2_1_0() { return cParametersParameterParserRuleCall_2_6_2_1_0; }
 		
 		//('satisfies'satisfies+=QualityRequirement ( "," satisfies+=QualityRequirement)* )?
 		public Group getGroup_2_7() { return cGroup_2_7; }
@@ -9327,10 +9327,10 @@ public class QualityBtCppGrammarAccess extends AbstractElementFinder.AbstractGra
 	//        &
 	//        ('ID' "=" ID=EString)? &
 	//        ("name" "=" name=EString)? &
+	//        ('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
 	//        ('value' '=' value=EString) &
 	//        ('output_key' '=' output_key=EString) &
 	//        ('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
-	//        ('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
 	//        ('satisfies'satisfies+=QualityRequirement ( "," satisfies+=QualityRequirement)* )?
 	//        &
 	//    ")")?

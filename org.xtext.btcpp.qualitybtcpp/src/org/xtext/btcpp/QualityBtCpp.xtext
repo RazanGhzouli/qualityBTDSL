@@ -494,10 +494,11 @@ SetBlackboardNode returns SetBlackboardNode:
 		&
 		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
+		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
 		('value' '=' value=EString) &
 		('output_key' '=' output_key=EString) &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
-		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
+		
 		('satisfies'satisfies+=QualityRequirement ( "," satisfies+=QualityRequirement)* )?
 		&
 	")")?
