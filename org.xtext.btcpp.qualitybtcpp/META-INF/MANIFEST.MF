@@ -24,3 +24,4 @@ Export-Package: org.xtext.btcpp,
  org.xtext.btcpp.generator,
  org.xtext.btcpp.scoping
 Import-Package: org.apache.log4j
+

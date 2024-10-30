@@ -39,8 +39,8 @@ class QualityBtCppGenerator extends AbstractGenerator {
 		
 		val template = 
 		'''«FOR root : resource.allContents.filter(Root).toIterable»
-		<root
-			 main_tree_to_execute="«root.getMain_tree_to_execute()»">
+		<root 
+			main_tree_to_execute="«root.getMain_tree_to_execute()»">
 			«FOR bt : root.getBehaviortrees()»
 				<BehaviorTree ID="«bt.getID()»"> «"\n"» «recursiveWriteNode(bt.getNode())»
 				</BehaviorTree>
@@ -69,6 +69,7 @@ class QualityBtCppGenerator extends AbstractGenerator {
             val impl = registry.getDOMImplementation("LS") as DOMImplementationLS;
             val writer = impl.createLSSerializer();
             writer.getDomConfig().setParameter("format-pretty-print", Boolean.TRUE);// Set this to true if the output needs to be beautified.
+            writer.getDomConfig().setParameter("xml-declaration", Boolean.FALSE);
 		
 		return writer.writeToString(document)
 	}
