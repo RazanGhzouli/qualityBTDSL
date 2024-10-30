@@ -76,7 +76,7 @@ FallbackNode returns FallbackNode:
 	'?'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -90,7 +90,7 @@ IfThenElseNode returns IfThenElseNode:
 	'IfThenElse'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -104,7 +104,7 @@ ManualSelectorNode returns ManualSelectorNode:
 	'ManualSelector'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -118,7 +118,7 @@ ParallelNode returns ParallelNode:
 	'||'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -132,7 +132,7 @@ SequenceWithMemoryNode returns SequenceWithMemoryNode:
 	'M->'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -146,7 +146,7 @@ SwitchNode returns SwitchNode:
 	'Switch'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -160,7 +160,7 @@ ReactiveFallbackNode returns ReactiveFallbackNode:
 	'R?'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -174,7 +174,7 @@ WhileDoElseNode returns WhileDoElseNode:
 	'WhileDoElse'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -188,7 +188,7 @@ ReactiveSequenceNode returns ReactiveSequenceNode:
 	'R->'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -202,7 +202,7 @@ SequenceNode returns SequenceNode:
 	'->'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -216,7 +216,7 @@ TimeoutNode returns TimeoutNode:
 	'Timeout'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -231,7 +231,7 @@ KeepRunningUntilFailureNode returns KeepRunningUntilFailureNode:
 	'KeepRunningUntilFailure'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -245,7 +245,7 @@ InverterNode returns InverterNode:
 	'Inverter'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -259,7 +259,7 @@ ForceSuccessNode returns ForceSuccessNode:
 	'ForceSuccess'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -273,7 +273,7 @@ ForceFailureNode returns ForceFailureNode:
 	'ForceFailure'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -287,7 +287,7 @@ RepeatNode returns RepeatNode:
 	'Repeat'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -319,7 +319,7 @@ RetryNode returns RetryNode:
 	'Retry'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -334,7 +334,7 @@ ParallelAllNode returns ParallelAllNode:
 	'All||'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -348,7 +348,7 @@ DelayNode returns DelayNode:
 	'Delay'
 		("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('delay_msec' '=' delay_msec=EString) &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
@@ -363,7 +363,7 @@ PreconditionNode returns PreconditionNode:
 	'Precondition'
 		("("
 			&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -377,7 +377,7 @@ EntryUpdatedDecoratorNode returns EntryUpdatedDecoratorNode:
 	'EntryUpdatedDecorator'
 		("("
 			&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -393,7 +393,7 @@ RunOnceNode returns RunOnceNode:
 	'RunOnce'
 		("("
 			&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -407,7 +407,7 @@ LoopNode returns LoopNode:
 	'Loop'
 		("("
 			&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -421,7 +421,7 @@ ConsumeQueueNode returns ConsumeQueueNode:
 	'ConsumeQueue'
 		("("
 			&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -436,7 +436,7 @@ ScriptNode returns ScriptNode:
 	'ScriptAction'
 	("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -450,7 +450,7 @@ ScriptConditionNode returns ScriptConditionNode:
 	'ScriptCondition'
 	("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -464,7 +464,7 @@ AlwaysFailureNode returns AlwaysFailureNode:
 	'AlwaysFailure'
 	("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -478,7 +478,7 @@ AlwaysSuccessNode returns AlwaysSuccessNode:
 	'AlwaysSuccess'
 	("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -492,7 +492,7 @@ SetBlackboardNode returns SetBlackboardNode:
 	'SetBlackboard'
 	("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
 		('value' '=' value=EString) &
@@ -509,7 +509,7 @@ TestNode returns TestNode:
 	'Test'
 	("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -523,7 +523,7 @@ EntryUpdatedActionNode returns EntryUpdatedActionNode:
 	'EntryUpdatedAction'
 	("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -537,7 +537,7 @@ UnsetBlackboardNode returns UnsetBlackboardNode:
 	'UnsetBlackboard'
 	("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -551,7 +551,7 @@ ThreadedActionNode returns ThreadedActionNode:
 	'ThreadedAction'
 	("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -565,7 +565,7 @@ CoroActionNode returns CoroActionNode:
 	'CoroAction'
 	("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -579,7 +579,7 @@ SleepNode returns SleepNode:
 	'Sleep'
 	("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &
@@ -593,7 +593,7 @@ PopFromQueueNode returns PopFromQueueNode:
 	'PopFromQueue'
 	("("
 		&
-		('ID' "=" ID=EString)? &
+//		('ID' "=" ID=EString)? &
 		("name" "=" name=EString)? &
 		('parameters' parameters+=Parameter ( "," parameters+=Parameter)* )? &
 		('satisfices' satisfices+=Quality ( "," satisfices+=Quality)* )? &

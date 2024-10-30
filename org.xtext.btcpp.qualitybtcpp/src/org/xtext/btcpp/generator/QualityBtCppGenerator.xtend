@@ -112,6 +112,7 @@ class QualityBtCppGenerator extends AbstractGenerator {
 			
 			AllValue.append(" ID= "+QualityReq.ID+" Description= "+QualityReq.description+" ,")
 			
+			//if the QRs are hard constraing, then translate them into fail and success			
 			if (QualityReq.description.contains(FailuerIf) )
 			{
 				val keywordIndex = QualityReq.description.indexOf(FailuerIf) + FailuerIf.length();
@@ -180,9 +181,9 @@ class QualityBtCppGenerator extends AbstractGenerator {
 	def static String writeControlNode(ControlNode node){
 		val s  = new StringBuilder("")
 		s.append("<"+writeType(node))
-		if(node.getID() !== null){
-			s.append(" ID=\""+node.getID()+"\"")
-		}
+//		if(node.getID() !== null){
+//			s.append(" ID=\""+node.getID()+"\"")
+//		}
 		if(node.getName() !== null){
 			s.append(" name=\""+node.getName()+"\"")
 		}
@@ -200,9 +201,9 @@ class QualityBtCppGenerator extends AbstractGenerator {
 	def static String writeDecoratorNode(DecoratorNode node){
 		val s  = new StringBuilder("")
 		s.append("<"+writeType(node))
-		if(node.getID() !== null){
-			s.append(" ID=\""+node.getID()+"\"")
-		}
+//		if(node.getID() !== null){
+//			s.append(" ID=\""+node.getID()+"\"")
+//		}
 		if(node.getName() !== null){
 			s.append(" name=\""+node.getName()+"\"")
 		}
@@ -234,9 +235,9 @@ class QualityBtCppGenerator extends AbstractGenerator {
 		val s  = new StringBuilder("")
 		s.append("<")
 		s.append(writeType(node))
-		if(node.getID() !== null){
-			s.append(" ID=\""+node.getID()+"\"")
-		}
+//		if(node.getID() !== null){
+//			s.append(" ID=\""+node.getID()+"\"")
+//		}
 		if(node.getName() !== null){
 			s.append(" name=\""+node.getName()+"\"")
 		}
