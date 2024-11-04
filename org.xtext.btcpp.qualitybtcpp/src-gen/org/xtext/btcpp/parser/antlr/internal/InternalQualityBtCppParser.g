@@ -1116,9 +1116,9 @@ ruleFallbackNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getFallbackNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getFallbackNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getFallbackNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -1127,17 +1127,17 @@ ruleFallbackNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getFallbackNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getFallbackNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getFallbackNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -1154,54 +1154,33 @@ ruleFallbackNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getFallbackNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getFallbackNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getFallbackNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getFallbackNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getFallbackNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getFallbackNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getFallbackNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getFallbackNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getFallbackNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getFallbackNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getFallbackNodeAccess().getUnorderedGroup_1());
@@ -1213,49 +1192,49 @@ ruleFallbackNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getFallbackNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getFallbackNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getFallbackNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getFallbackNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getFallbackNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getFallbackNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getFallbackNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getFallbackNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getFallbackNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getFallbackNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getFallbackNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -1272,49 +1251,49 @@ ruleFallbackNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getFallbackNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getFallbackNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getFallbackNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getFallbackNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getFallbackNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getFallbackNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getFallbackNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getFallbackNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getFallbackNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getFallbackNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getFallbackNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -1331,9 +1310,68 @@ ruleFallbackNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getFallbackNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getFallbackNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getFallbackNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getFallbackNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getFallbackNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getFallbackNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getFallbackNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getFallbackNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getFallbackNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getFallbackNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getFallbackNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getFallbackNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -1349,16 +1387,16 @@ ruleFallbackNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getFallbackNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getFallbackNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getFallbackNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getFallbackNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getFallbackNodeRule());
@@ -1366,7 +1404,7 @@ ruleFallbackNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
@@ -1377,7 +1415,7 @@ ruleFallbackNode returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getFallbackNodeAccess().getChildTreeNodeParserRuleCall_4_0());
 				}
-				lv_child_21_0=ruleTreeNode
+				lv_child_24_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getFallbackNodeRule());
@@ -1385,15 +1423,15 @@ ruleFallbackNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_21_0,
+						lv_child_24_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-		this_END_22=RULE_END
+		this_END_25=RULE_END
 		{
-			newLeafNode(this_END_22, grammarAccess.getFallbackNodeAccess().getENDTerminalRuleCall_5());
+			newLeafNode(this_END_25, grammarAccess.getFallbackNodeAccess().getENDTerminalRuleCall_5());
 		}
 	)
 ;
@@ -1445,9 +1483,9 @@ ruleIfThenElseNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getIfThenElseNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getIfThenElseNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getIfThenElseNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -1456,17 +1494,17 @@ ruleIfThenElseNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getIfThenElseNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -1483,54 +1521,33 @@ ruleIfThenElseNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getIfThenElseNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getIfThenElseNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getIfThenElseNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getIfThenElseNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getIfThenElseNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getIfThenElseNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getIfThenElseNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getIfThenElseNodeAccess().getUnorderedGroup_1());
@@ -1542,49 +1559,49 @@ ruleIfThenElseNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getIfThenElseNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getIfThenElseNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getIfThenElseNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getIfThenElseNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getIfThenElseNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getIfThenElseNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getIfThenElseNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -1601,49 +1618,49 @@ ruleIfThenElseNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getIfThenElseNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getIfThenElseNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getIfThenElseNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getIfThenElseNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getIfThenElseNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getIfThenElseNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getIfThenElseNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -1660,9 +1677,68 @@ ruleIfThenElseNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getIfThenElseNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getIfThenElseNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getIfThenElseNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getIfThenElseNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getIfThenElseNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getIfThenElseNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getIfThenElseNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getIfThenElseNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getIfThenElseNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getIfThenElseNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -1678,16 +1754,16 @@ ruleIfThenElseNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getIfThenElseNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getIfThenElseNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getIfThenElseNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getIfThenElseNodeRule());
@@ -1695,7 +1771,7 @@ ruleIfThenElseNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
@@ -1706,7 +1782,7 @@ ruleIfThenElseNode returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getIfThenElseNodeAccess().getChildTreeNodeParserRuleCall_4_0());
 				}
-				lv_child_21_0=ruleTreeNode
+				lv_child_24_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getIfThenElseNodeRule());
@@ -1714,15 +1790,15 @@ ruleIfThenElseNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_21_0,
+						lv_child_24_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-		this_END_22=RULE_END
+		this_END_25=RULE_END
 		{
-			newLeafNode(this_END_22, grammarAccess.getIfThenElseNodeAccess().getENDTerminalRuleCall_5());
+			newLeafNode(this_END_25, grammarAccess.getIfThenElseNodeAccess().getENDTerminalRuleCall_5());
 		}
 	)
 ;
@@ -1774,9 +1850,9 @@ ruleManualSelectorNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getManualSelectorNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getManualSelectorNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getManualSelectorNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -1785,17 +1861,17 @@ ruleManualSelectorNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getManualSelectorNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -1812,54 +1888,33 @@ ruleManualSelectorNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getManualSelectorNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getManualSelectorNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getManualSelectorNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getManualSelectorNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getManualSelectorNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getManualSelectorNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getManualSelectorNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getManualSelectorNodeAccess().getUnorderedGroup_1());
@@ -1871,49 +1926,49 @@ ruleManualSelectorNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getManualSelectorNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getManualSelectorNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getManualSelectorNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getManualSelectorNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getManualSelectorNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getManualSelectorNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getManualSelectorNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -1930,49 +1985,49 @@ ruleManualSelectorNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getManualSelectorNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getManualSelectorNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getManualSelectorNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getManualSelectorNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getManualSelectorNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getManualSelectorNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getManualSelectorNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -1989,9 +2044,68 @@ ruleManualSelectorNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getManualSelectorNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getManualSelectorNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getManualSelectorNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getManualSelectorNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getManualSelectorNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getManualSelectorNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getManualSelectorNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getManualSelectorNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getManualSelectorNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getManualSelectorNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -2007,16 +2121,16 @@ ruleManualSelectorNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getManualSelectorNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getManualSelectorNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getManualSelectorNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getManualSelectorNodeRule());
@@ -2024,7 +2138,7 @@ ruleManualSelectorNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
@@ -2035,7 +2149,7 @@ ruleManualSelectorNode returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getManualSelectorNodeAccess().getChildTreeNodeParserRuleCall_4_0());
 				}
-				lv_child_21_0=ruleTreeNode
+				lv_child_24_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getManualSelectorNodeRule());
@@ -2043,15 +2157,15 @@ ruleManualSelectorNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_21_0,
+						lv_child_24_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-		this_END_22=RULE_END
+		this_END_25=RULE_END
 		{
-			newLeafNode(this_END_22, grammarAccess.getManualSelectorNodeAccess().getENDTerminalRuleCall_5());
+			newLeafNode(this_END_25, grammarAccess.getManualSelectorNodeAccess().getENDTerminalRuleCall_5());
 		}
 	)
 ;
@@ -2103,9 +2217,9 @@ ruleParallelNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getParallelNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getParallelNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getParallelNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -2114,17 +2228,17 @@ ruleParallelNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getParallelNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getParallelNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getParallelNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -2141,54 +2255,33 @@ ruleParallelNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getParallelNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getParallelNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getParallelNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getParallelNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getParallelNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getParallelNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getParallelNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getParallelNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getParallelNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getParallelNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getParallelNodeAccess().getUnorderedGroup_1());
@@ -2200,49 +2293,49 @@ ruleParallelNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getParallelNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getParallelNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getParallelNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getParallelNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getParallelNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getParallelNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getParallelNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getParallelNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getParallelNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getParallelNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getParallelNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -2259,49 +2352,49 @@ ruleParallelNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getParallelNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getParallelNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getParallelNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getParallelNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getParallelNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getParallelNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getParallelNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getParallelNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getParallelNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getParallelNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getParallelNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -2318,9 +2411,68 @@ ruleParallelNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getParallelNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getParallelNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getParallelNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getParallelNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getParallelNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getParallelNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getParallelNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getParallelNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getParallelNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getParallelNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getParallelNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getParallelNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -2336,16 +2488,16 @@ ruleParallelNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getParallelNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getParallelNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getParallelNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getParallelNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getParallelNodeRule());
@@ -2353,7 +2505,7 @@ ruleParallelNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
@@ -2364,7 +2516,7 @@ ruleParallelNode returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getParallelNodeAccess().getChildTreeNodeParserRuleCall_4_0());
 				}
-				lv_child_21_0=ruleTreeNode
+				lv_child_24_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getParallelNodeRule());
@@ -2372,15 +2524,15 @@ ruleParallelNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_21_0,
+						lv_child_24_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-		this_END_22=RULE_END
+		this_END_25=RULE_END
 		{
-			newLeafNode(this_END_22, grammarAccess.getParallelNodeAccess().getENDTerminalRuleCall_5());
+			newLeafNode(this_END_25, grammarAccess.getParallelNodeAccess().getENDTerminalRuleCall_5());
 		}
 	)
 ;
@@ -2432,9 +2584,9 @@ ruleSequenceWithMemoryNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSequenceWithMemoryNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getSequenceWithMemoryNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getSequenceWithMemoryNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -2443,17 +2595,17 @@ ruleSequenceWithMemoryNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSequenceWithMemoryNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -2470,54 +2622,33 @@ ruleSequenceWithMemoryNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSequenceWithMemoryNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getSequenceWithMemoryNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getSequenceWithMemoryNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getSequenceWithMemoryNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSequenceWithMemoryNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getSequenceWithMemoryNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getSequenceWithMemoryNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSequenceWithMemoryNodeAccess().getUnorderedGroup_1());
@@ -2529,49 +2660,49 @@ ruleSequenceWithMemoryNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSequenceWithMemoryNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getSequenceWithMemoryNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getSequenceWithMemoryNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSequenceWithMemoryNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getSequenceWithMemoryNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getSequenceWithMemoryNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getSequenceWithMemoryNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -2588,49 +2719,49 @@ ruleSequenceWithMemoryNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSequenceWithMemoryNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getSequenceWithMemoryNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getSequenceWithMemoryNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSequenceWithMemoryNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getSequenceWithMemoryNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getSequenceWithMemoryNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getSequenceWithMemoryNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -2647,9 +2778,68 @@ ruleSequenceWithMemoryNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSequenceWithMemoryNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getSequenceWithMemoryNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getSequenceWithMemoryNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getSequenceWithMemoryNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getSequenceWithMemoryNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getSequenceWithMemoryNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSequenceWithMemoryNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getSequenceWithMemoryNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getSequenceWithMemoryNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getSequenceWithMemoryNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -2665,16 +2855,16 @@ ruleSequenceWithMemoryNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getSequenceWithMemoryNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getSequenceWithMemoryNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getSequenceWithMemoryNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getSequenceWithMemoryNodeRule());
@@ -2682,7 +2872,7 @@ ruleSequenceWithMemoryNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
@@ -2693,7 +2883,7 @@ ruleSequenceWithMemoryNode returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getSequenceWithMemoryNodeAccess().getChildTreeNodeParserRuleCall_4_0());
 				}
-				lv_child_21_0=ruleTreeNode
+				lv_child_24_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getSequenceWithMemoryNodeRule());
@@ -2701,15 +2891,15 @@ ruleSequenceWithMemoryNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_21_0,
+						lv_child_24_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-		this_END_22=RULE_END
+		this_END_25=RULE_END
 		{
-			newLeafNode(this_END_22, grammarAccess.getSequenceWithMemoryNodeAccess().getENDTerminalRuleCall_5());
+			newLeafNode(this_END_25, grammarAccess.getSequenceWithMemoryNodeAccess().getENDTerminalRuleCall_5());
 		}
 	)
 ;
@@ -2761,9 +2951,9 @@ ruleSwitchNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSwitchNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getSwitchNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getSwitchNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -2772,17 +2962,17 @@ ruleSwitchNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSwitchNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getSwitchNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSwitchNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -2799,54 +2989,33 @@ ruleSwitchNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSwitchNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getSwitchNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getSwitchNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getSwitchNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSwitchNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getSwitchNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSwitchNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getSwitchNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getSwitchNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getSwitchNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSwitchNodeAccess().getUnorderedGroup_1());
@@ -2858,49 +3027,49 @@ ruleSwitchNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSwitchNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getSwitchNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getSwitchNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSwitchNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getSwitchNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSwitchNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getSwitchNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getSwitchNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getSwitchNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getSwitchNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getSwitchNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -2917,49 +3086,49 @@ ruleSwitchNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSwitchNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getSwitchNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getSwitchNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSwitchNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getSwitchNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSwitchNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getSwitchNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getSwitchNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getSwitchNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getSwitchNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getSwitchNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -2976,9 +3145,68 @@ ruleSwitchNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSwitchNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getSwitchNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getSwitchNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getSwitchNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getSwitchNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getSwitchNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getSwitchNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getSwitchNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSwitchNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getSwitchNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getSwitchNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getSwitchNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -2994,16 +3222,16 @@ ruleSwitchNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getSwitchNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getSwitchNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getSwitchNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getSwitchNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getSwitchNodeRule());
@@ -3011,7 +3239,7 @@ ruleSwitchNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
@@ -3022,7 +3250,7 @@ ruleSwitchNode returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getSwitchNodeAccess().getChildTreeNodeParserRuleCall_4_0());
 				}
-				lv_child_21_0=ruleTreeNode
+				lv_child_24_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getSwitchNodeRule());
@@ -3030,15 +3258,15 @@ ruleSwitchNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_21_0,
+						lv_child_24_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-		this_END_22=RULE_END
+		this_END_25=RULE_END
 		{
-			newLeafNode(this_END_22, grammarAccess.getSwitchNodeAccess().getENDTerminalRuleCall_5());
+			newLeafNode(this_END_25, grammarAccess.getSwitchNodeAccess().getENDTerminalRuleCall_5());
 		}
 	)
 ;
@@ -3090,9 +3318,9 @@ ruleReactiveFallbackNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getReactiveFallbackNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getReactiveFallbackNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getReactiveFallbackNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -3101,17 +3329,17 @@ ruleReactiveFallbackNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getReactiveFallbackNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -3128,54 +3356,33 @@ ruleReactiveFallbackNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getReactiveFallbackNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getReactiveFallbackNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getReactiveFallbackNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getReactiveFallbackNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getReactiveFallbackNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getReactiveFallbackNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getReactiveFallbackNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getReactiveFallbackNodeAccess().getUnorderedGroup_1());
@@ -3187,49 +3394,49 @@ ruleReactiveFallbackNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getReactiveFallbackNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getReactiveFallbackNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getReactiveFallbackNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getReactiveFallbackNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getReactiveFallbackNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getReactiveFallbackNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getReactiveFallbackNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -3246,49 +3453,49 @@ ruleReactiveFallbackNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getReactiveFallbackNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getReactiveFallbackNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getReactiveFallbackNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getReactiveFallbackNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getReactiveFallbackNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getReactiveFallbackNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getReactiveFallbackNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -3305,9 +3512,68 @@ ruleReactiveFallbackNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getReactiveFallbackNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getReactiveFallbackNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getReactiveFallbackNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getReactiveFallbackNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getReactiveFallbackNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getReactiveFallbackNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getReactiveFallbackNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getReactiveFallbackNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getReactiveFallbackNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getReactiveFallbackNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -3323,16 +3589,16 @@ ruleReactiveFallbackNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getReactiveFallbackNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getReactiveFallbackNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getReactiveFallbackNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getReactiveFallbackNodeRule());
@@ -3340,7 +3606,7 @@ ruleReactiveFallbackNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
@@ -3351,7 +3617,7 @@ ruleReactiveFallbackNode returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getReactiveFallbackNodeAccess().getChildTreeNodeParserRuleCall_4_0());
 				}
-				lv_child_21_0=ruleTreeNode
+				lv_child_24_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getReactiveFallbackNodeRule());
@@ -3359,15 +3625,15 @@ ruleReactiveFallbackNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_21_0,
+						lv_child_24_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-		this_END_22=RULE_END
+		this_END_25=RULE_END
 		{
-			newLeafNode(this_END_22, grammarAccess.getReactiveFallbackNodeAccess().getENDTerminalRuleCall_5());
+			newLeafNode(this_END_25, grammarAccess.getReactiveFallbackNodeAccess().getENDTerminalRuleCall_5());
 		}
 	)
 ;
@@ -3419,9 +3685,9 @@ ruleWhileDoElseNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getWhileDoElseNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getWhileDoElseNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getWhileDoElseNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -3430,17 +3696,17 @@ ruleWhileDoElseNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getWhileDoElseNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -3457,54 +3723,33 @@ ruleWhileDoElseNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getWhileDoElseNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getWhileDoElseNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getWhileDoElseNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getWhileDoElseNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getWhileDoElseNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getWhileDoElseNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getWhileDoElseNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getWhileDoElseNodeAccess().getUnorderedGroup_1());
@@ -3516,49 +3761,49 @@ ruleWhileDoElseNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getWhileDoElseNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getWhileDoElseNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getWhileDoElseNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getWhileDoElseNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getWhileDoElseNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getWhileDoElseNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getWhileDoElseNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -3575,49 +3820,49 @@ ruleWhileDoElseNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getWhileDoElseNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getWhileDoElseNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getWhileDoElseNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getWhileDoElseNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getWhileDoElseNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getWhileDoElseNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getWhileDoElseNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -3634,9 +3879,68 @@ ruleWhileDoElseNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getWhileDoElseNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getWhileDoElseNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getWhileDoElseNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getWhileDoElseNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getWhileDoElseNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getWhileDoElseNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getWhileDoElseNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getWhileDoElseNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getWhileDoElseNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getWhileDoElseNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -3652,16 +3956,16 @@ ruleWhileDoElseNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getWhileDoElseNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getWhileDoElseNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getWhileDoElseNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getWhileDoElseNodeRule());
@@ -3669,7 +3973,7 @@ ruleWhileDoElseNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
@@ -3680,7 +3984,7 @@ ruleWhileDoElseNode returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getWhileDoElseNodeAccess().getChildTreeNodeParserRuleCall_4_0());
 				}
-				lv_child_21_0=ruleTreeNode
+				lv_child_24_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getWhileDoElseNodeRule());
@@ -3688,15 +3992,15 @@ ruleWhileDoElseNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_21_0,
+						lv_child_24_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-		this_END_22=RULE_END
+		this_END_25=RULE_END
 		{
-			newLeafNode(this_END_22, grammarAccess.getWhileDoElseNodeAccess().getENDTerminalRuleCall_5());
+			newLeafNode(this_END_25, grammarAccess.getWhileDoElseNodeAccess().getENDTerminalRuleCall_5());
 		}
 	)
 ;
@@ -3748,9 +4052,9 @@ ruleReactiveSequenceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getReactiveSequenceNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getReactiveSequenceNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getReactiveSequenceNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -3759,17 +4063,17 @@ ruleReactiveSequenceNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getReactiveSequenceNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -3786,54 +4090,33 @@ ruleReactiveSequenceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getReactiveSequenceNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getReactiveSequenceNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getReactiveSequenceNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getReactiveSequenceNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getReactiveSequenceNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getReactiveSequenceNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getReactiveSequenceNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getReactiveSequenceNodeAccess().getUnorderedGroup_1());
@@ -3845,49 +4128,49 @@ ruleReactiveSequenceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getReactiveSequenceNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getReactiveSequenceNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getReactiveSequenceNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getReactiveSequenceNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getReactiveSequenceNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getReactiveSequenceNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getReactiveSequenceNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -3904,49 +4187,49 @@ ruleReactiveSequenceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getReactiveSequenceNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getReactiveSequenceNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getReactiveSequenceNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getReactiveSequenceNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getReactiveSequenceNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getReactiveSequenceNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getReactiveSequenceNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -3963,9 +4246,68 @@ ruleReactiveSequenceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getReactiveSequenceNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getReactiveSequenceNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getReactiveSequenceNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getReactiveSequenceNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getReactiveSequenceNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getReactiveSequenceNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getReactiveSequenceNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getReactiveSequenceNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getReactiveSequenceNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getReactiveSequenceNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -3981,16 +4323,16 @@ ruleReactiveSequenceNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getReactiveSequenceNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getReactiveSequenceNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getReactiveSequenceNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getReactiveSequenceNodeRule());
@@ -3998,7 +4340,7 @@ ruleReactiveSequenceNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
@@ -4009,7 +4351,7 @@ ruleReactiveSequenceNode returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getReactiveSequenceNodeAccess().getChildTreeNodeParserRuleCall_4_0());
 				}
-				lv_child_21_0=ruleTreeNode
+				lv_child_24_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getReactiveSequenceNodeRule());
@@ -4017,15 +4359,15 @@ ruleReactiveSequenceNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_21_0,
+						lv_child_24_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-		this_END_22=RULE_END
+		this_END_25=RULE_END
 		{
-			newLeafNode(this_END_22, grammarAccess.getReactiveSequenceNodeAccess().getENDTerminalRuleCall_5());
+			newLeafNode(this_END_25, grammarAccess.getReactiveSequenceNodeAccess().getENDTerminalRuleCall_5());
 		}
 	)
 ;
@@ -4077,9 +4419,9 @@ ruleSequenceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSequenceNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getSequenceNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getSequenceNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -4088,17 +4430,17 @@ ruleSequenceNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSequenceNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getSequenceNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSequenceNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -4115,54 +4457,33 @@ ruleSequenceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSequenceNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getSequenceNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getSequenceNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getSequenceNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSequenceNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getSequenceNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSequenceNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getSequenceNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getSequenceNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getSequenceNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSequenceNodeAccess().getUnorderedGroup_1());
@@ -4174,49 +4495,49 @@ ruleSequenceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSequenceNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getSequenceNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getSequenceNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSequenceNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getSequenceNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSequenceNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getSequenceNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getSequenceNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getSequenceNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getSequenceNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getSequenceNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -4233,49 +4554,49 @@ ruleSequenceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSequenceNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getSequenceNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getSequenceNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSequenceNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getSequenceNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSequenceNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getSequenceNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getSequenceNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getSequenceNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getSequenceNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getSequenceNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -4292,9 +4613,68 @@ ruleSequenceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSequenceNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getSequenceNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getSequenceNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getSequenceNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getSequenceNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getSequenceNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getSequenceNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getSequenceNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSequenceNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getSequenceNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getSequenceNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getSequenceNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -4310,16 +4690,16 @@ ruleSequenceNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getSequenceNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getSequenceNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getSequenceNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getSequenceNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getSequenceNodeRule());
@@ -4327,7 +4707,7 @@ ruleSequenceNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
@@ -4338,7 +4718,7 @@ ruleSequenceNode returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getSequenceNodeAccess().getChildTreeNodeParserRuleCall_4_0());
 				}
-				lv_child_21_0=ruleTreeNode
+				lv_child_24_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getSequenceNodeRule());
@@ -4346,15 +4726,15 @@ ruleSequenceNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_21_0,
+						lv_child_24_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-		this_END_22=RULE_END
+		this_END_25=RULE_END
 		{
-			newLeafNode(this_END_22, grammarAccess.getSequenceNodeAccess().getENDTerminalRuleCall_5());
+			newLeafNode(this_END_25, grammarAccess.getSequenceNodeAccess().getENDTerminalRuleCall_5());
 		}
 	)
 ;
@@ -4406,9 +4786,9 @@ ruleTimeoutNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getTimeoutNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getTimeoutNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -4417,17 +4797,17 @@ ruleTimeoutNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getTimeoutNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getTimeoutNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getTimeoutNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -4444,54 +4824,33 @@ ruleTimeoutNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getTimeoutNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getTimeoutNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getTimeoutNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getTimeoutNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getTimeoutNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getTimeoutNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getTimeoutNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getTimeoutNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getTimeoutNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1());
@@ -4503,49 +4862,49 @@ ruleTimeoutNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getTimeoutNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getTimeoutNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getTimeoutNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getTimeoutNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getTimeoutNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getTimeoutNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getTimeoutNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getTimeoutNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getTimeoutNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getTimeoutNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -4562,49 +4921,49 @@ ruleTimeoutNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getTimeoutNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getTimeoutNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getTimeoutNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getTimeoutNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getTimeoutNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getTimeoutNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getTimeoutNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getTimeoutNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getTimeoutNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getTimeoutNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -4621,20 +4980,79 @@ ruleTimeoutNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=Msec
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getTimeoutNodeAccess().getMsecKeyword_1_5_0());
-								}
-								otherlv_19=EqualsSign
-								{
-									newLeafNode(otherlv_19, grammarAccess.getTimeoutNodeAccess().getEqualsSignKeyword_1_5_1());
+									newLeafNode(otherlv_17, grammarAccess.getTimeoutNodeAccess().getSatisfiesKeyword_1_5_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getTimeoutNodeAccess().getMsecEStringParserRuleCall_1_5_2_0());
+											newCompositeNode(grammarAccess.getTimeoutNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
 										}
-										lv_msec_20_0=ruleEString
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getTimeoutNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getTimeoutNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getTimeoutNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getTimeoutNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=Msec
+								{
+									newLeafNode(otherlv_21, grammarAccess.getTimeoutNodeAccess().getMsecKeyword_1_6_0());
+								}
+								otherlv_22=EqualsSign
+								{
+									newLeafNode(otherlv_22, grammarAccess.getTimeoutNodeAccess().getEqualsSignKeyword_1_6_1());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getTimeoutNodeAccess().getMsecEStringParserRuleCall_1_6_2_0());
+										}
+										lv_msec_23_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getTimeoutNodeRule());
@@ -4642,7 +5060,7 @@ ruleTimeoutNode returns [EObject current=null]
 											set(
 												$current,
 												"msec",
-												lv_msec_20_0,
+												lv_msec_23_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -4655,13 +5073,13 @@ ruleTimeoutNode returns [EObject current=null]
 				)
 			)|
 			(
-				{getUnorderedGroupHelper().canSelect(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1(), 7)}?=>(
 					{
-						getUnorderedGroupHelper().select(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1(), 6);
+						getUnorderedGroupHelper().select(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1(), 7);
 					}
-								({true}?=>(otherlv_21=RightParenthesis
+								({true}?=>(otherlv_24=RightParenthesis
 								{
-									newLeafNode(otherlv_21, grammarAccess.getTimeoutNodeAccess().getRightParenthesisKeyword_1_6());
+									newLeafNode(otherlv_24, grammarAccess.getTimeoutNodeAccess().getRightParenthesisKeyword_1_7());
 								}
 								))
 					{ 
@@ -4677,16 +5095,16 @@ ruleTimeoutNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getTimeoutNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_22=RULE_BEGIN
+		this_BEGIN_25=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_22, grammarAccess.getTimeoutNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_25, grammarAccess.getTimeoutNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getTimeoutNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_23_0=ruleTreeNode
+				lv_child_26_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getTimeoutNodeRule());
@@ -4694,15 +5112,15 @@ ruleTimeoutNode returns [EObject current=null]
 					set(
 						$current,
 						"child",
-						lv_child_23_0,
+						lv_child_26_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		this_END_24=RULE_END
+		this_END_27=RULE_END
 		{
-			newLeafNode(this_END_24, grammarAccess.getTimeoutNodeAccess().getENDTerminalRuleCall_4());
+			newLeafNode(this_END_27, grammarAccess.getTimeoutNodeAccess().getENDTerminalRuleCall_4());
 		}
 	)
 ;
@@ -4754,9 +5172,9 @@ ruleKeepRunningUntilFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getKeepRunningUntilFailureNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getKeepRunningUntilFailureNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getKeepRunningUntilFailureNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -4765,17 +5183,17 @@ ruleKeepRunningUntilFailureNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getKeepRunningUntilFailureNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -4792,54 +5210,33 @@ ruleKeepRunningUntilFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getKeepRunningUntilFailureNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getKeepRunningUntilFailureNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getKeepRunningUntilFailureNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getKeepRunningUntilFailureNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getKeepRunningUntilFailureNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getKeepRunningUntilFailureNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getKeepRunningUntilFailureNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getKeepRunningUntilFailureNodeAccess().getUnorderedGroup_1());
@@ -4851,49 +5248,49 @@ ruleKeepRunningUntilFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getKeepRunningUntilFailureNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getKeepRunningUntilFailureNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getKeepRunningUntilFailureNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getKeepRunningUntilFailureNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getKeepRunningUntilFailureNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getKeepRunningUntilFailureNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getKeepRunningUntilFailureNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -4910,49 +5307,49 @@ ruleKeepRunningUntilFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getKeepRunningUntilFailureNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getKeepRunningUntilFailureNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getKeepRunningUntilFailureNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getKeepRunningUntilFailureNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getKeepRunningUntilFailureNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getKeepRunningUntilFailureNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getKeepRunningUntilFailureNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -4969,9 +5366,68 @@ ruleKeepRunningUntilFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getKeepRunningUntilFailureNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getKeepRunningUntilFailureNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getKeepRunningUntilFailureNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getKeepRunningUntilFailureNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getKeepRunningUntilFailureNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getKeepRunningUntilFailureNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getKeepRunningUntilFailureNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getKeepRunningUntilFailureNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getKeepRunningUntilFailureNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getKeepRunningUntilFailureNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -4987,16 +5443,16 @@ ruleKeepRunningUntilFailureNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getKeepRunningUntilFailureNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getKeepRunningUntilFailureNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getKeepRunningUntilFailureNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getKeepRunningUntilFailureNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getKeepRunningUntilFailureNodeRule());
@@ -5004,15 +5460,15 @@ ruleKeepRunningUntilFailureNode returns [EObject current=null]
 					set(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		this_END_21=RULE_END
+		this_END_24=RULE_END
 		{
-			newLeafNode(this_END_21, grammarAccess.getKeepRunningUntilFailureNodeAccess().getENDTerminalRuleCall_4());
+			newLeafNode(this_END_24, grammarAccess.getKeepRunningUntilFailureNodeAccess().getENDTerminalRuleCall_4());
 		}
 	)
 ;
@@ -5064,9 +5520,9 @@ ruleInverterNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getInverterNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getInverterNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getInverterNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -5075,17 +5531,17 @@ ruleInverterNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getInverterNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getInverterNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getInverterNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -5102,54 +5558,33 @@ ruleInverterNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getInverterNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getInverterNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getInverterNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getInverterNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getInverterNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getInverterNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getInverterNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getInverterNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getInverterNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getInverterNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getInverterNodeAccess().getUnorderedGroup_1());
@@ -5161,49 +5596,49 @@ ruleInverterNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getInverterNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getInverterNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getInverterNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getInverterNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getInverterNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getInverterNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getInverterNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getInverterNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getInverterNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getInverterNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getInverterNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -5220,49 +5655,49 @@ ruleInverterNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getInverterNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getInverterNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getInverterNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getInverterNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getInverterNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getInverterNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getInverterNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getInverterNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getInverterNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getInverterNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getInverterNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -5279,9 +5714,68 @@ ruleInverterNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getInverterNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getInverterNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getInverterNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getInverterNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getInverterNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getInverterNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getInverterNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getInverterNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getInverterNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getInverterNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getInverterNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getInverterNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -5297,16 +5791,16 @@ ruleInverterNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getInverterNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getInverterNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getInverterNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getInverterNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getInverterNodeRule());
@@ -5314,15 +5808,15 @@ ruleInverterNode returns [EObject current=null]
 					set(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		this_END_21=RULE_END
+		this_END_24=RULE_END
 		{
-			newLeafNode(this_END_21, grammarAccess.getInverterNodeAccess().getENDTerminalRuleCall_4());
+			newLeafNode(this_END_24, grammarAccess.getInverterNodeAccess().getENDTerminalRuleCall_4());
 		}
 	)
 ;
@@ -5374,9 +5868,9 @@ ruleForceSuccessNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getForceSuccessNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getForceSuccessNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getForceSuccessNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -5385,17 +5879,17 @@ ruleForceSuccessNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getForceSuccessNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -5412,54 +5906,33 @@ ruleForceSuccessNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getForceSuccessNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getForceSuccessNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getForceSuccessNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getForceSuccessNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getForceSuccessNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getForceSuccessNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getForceSuccessNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getForceSuccessNodeAccess().getUnorderedGroup_1());
@@ -5471,49 +5944,49 @@ ruleForceSuccessNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getForceSuccessNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getForceSuccessNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getForceSuccessNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getForceSuccessNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getForceSuccessNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getForceSuccessNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getForceSuccessNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -5530,49 +6003,49 @@ ruleForceSuccessNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getForceSuccessNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getForceSuccessNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getForceSuccessNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getForceSuccessNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getForceSuccessNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getForceSuccessNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getForceSuccessNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -5589,9 +6062,68 @@ ruleForceSuccessNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getForceSuccessNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getForceSuccessNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getForceSuccessNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getForceSuccessNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getForceSuccessNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getForceSuccessNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getForceSuccessNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getForceSuccessNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getForceSuccessNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getForceSuccessNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -5607,16 +6139,16 @@ ruleForceSuccessNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getForceSuccessNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getForceSuccessNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getForceSuccessNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getForceSuccessNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getForceSuccessNodeRule());
@@ -5624,15 +6156,15 @@ ruleForceSuccessNode returns [EObject current=null]
 					set(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		this_END_21=RULE_END
+		this_END_24=RULE_END
 		{
-			newLeafNode(this_END_21, grammarAccess.getForceSuccessNodeAccess().getENDTerminalRuleCall_4());
+			newLeafNode(this_END_24, grammarAccess.getForceSuccessNodeAccess().getENDTerminalRuleCall_4());
 		}
 	)
 ;
@@ -5684,9 +6216,9 @@ ruleForceFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getForceFailureNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getForceFailureNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getForceFailureNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -5695,17 +6227,17 @@ ruleForceFailureNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getForceFailureNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getForceFailureNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getForceFailureNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -5722,54 +6254,33 @@ ruleForceFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getForceFailureNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getForceFailureNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getForceFailureNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getForceFailureNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getForceFailureNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getForceFailureNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getForceFailureNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getForceFailureNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getForceFailureNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getForceFailureNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getForceFailureNodeAccess().getUnorderedGroup_1());
@@ -5781,49 +6292,49 @@ ruleForceFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getForceFailureNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getForceFailureNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getForceFailureNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getForceFailureNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getForceFailureNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getForceFailureNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getForceFailureNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getForceFailureNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getForceFailureNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getForceFailureNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getForceFailureNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -5840,49 +6351,49 @@ ruleForceFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getForceFailureNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getForceFailureNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getForceFailureNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getForceFailureNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getForceFailureNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getForceFailureNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getForceFailureNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getForceFailureNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getForceFailureNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getForceFailureNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getForceFailureNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -5899,9 +6410,68 @@ ruleForceFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getForceFailureNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getForceFailureNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getForceFailureNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getForceFailureNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getForceFailureNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getForceFailureNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getForceFailureNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getForceFailureNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getForceFailureNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getForceFailureNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getForceFailureNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getForceFailureNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -5917,16 +6487,16 @@ ruleForceFailureNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getForceFailureNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getForceFailureNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getForceFailureNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getForceFailureNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getForceFailureNodeRule());
@@ -5934,15 +6504,15 @@ ruleForceFailureNode returns [EObject current=null]
 					set(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		this_END_21=RULE_END
+		this_END_24=RULE_END
 		{
-			newLeafNode(this_END_21, grammarAccess.getForceFailureNodeAccess().getENDTerminalRuleCall_4());
+			newLeafNode(this_END_24, grammarAccess.getForceFailureNodeAccess().getENDTerminalRuleCall_4());
 		}
 	)
 ;
@@ -5994,9 +6564,9 @@ ruleRepeatNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getRepeatNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getRepeatNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -6005,17 +6575,17 @@ ruleRepeatNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRepeatNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getRepeatNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRepeatNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -6032,54 +6602,33 @@ ruleRepeatNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getRepeatNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getRepeatNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getRepeatNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRepeatNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getRepeatNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRepeatNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getRepeatNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getRepeatNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getRepeatNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1());
@@ -6091,49 +6640,49 @@ ruleRepeatNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getRepeatNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getRepeatNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRepeatNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getRepeatNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRepeatNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getRepeatNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getRepeatNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getRepeatNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getRepeatNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getRepeatNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -6150,49 +6699,49 @@ ruleRepeatNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getRepeatNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getRepeatNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRepeatNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getRepeatNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRepeatNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getRepeatNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getRepeatNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getRepeatNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getRepeatNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getRepeatNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -6209,20 +6758,79 @@ ruleRepeatNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=Num_cycles
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getRepeatNodeAccess().getNum_cyclesKeyword_1_5_0());
-								}
-								otherlv_19=EqualsSign
-								{
-									newLeafNode(otherlv_19, grammarAccess.getRepeatNodeAccess().getEqualsSignKeyword_1_5_1());
+									newLeafNode(otherlv_17, grammarAccess.getRepeatNodeAccess().getSatisfiesKeyword_1_5_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRepeatNodeAccess().getNum_cyclesEStringParserRuleCall_1_5_2_0());
+											newCompositeNode(grammarAccess.getRepeatNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
 										}
-										lv_num_cycles_20_0=ruleEString
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getRepeatNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getRepeatNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getRepeatNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getRepeatNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=Num_cycles
+								{
+									newLeafNode(otherlv_21, grammarAccess.getRepeatNodeAccess().getNum_cyclesKeyword_1_6_0());
+								}
+								otherlv_22=EqualsSign
+								{
+									newLeafNode(otherlv_22, grammarAccess.getRepeatNodeAccess().getEqualsSignKeyword_1_6_1());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getRepeatNodeAccess().getNum_cyclesEStringParserRuleCall_1_6_2_0());
+										}
+										lv_num_cycles_23_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRepeatNodeRule());
@@ -6230,7 +6838,7 @@ ruleRepeatNode returns [EObject current=null]
 											set(
 												$current,
 												"num_cycles",
-												lv_num_cycles_20_0,
+												lv_num_cycles_23_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -6243,13 +6851,13 @@ ruleRepeatNode returns [EObject current=null]
 				)
 			)|
 			(
-				{getUnorderedGroupHelper().canSelect(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1(), 7)}?=>(
 					{
-						getUnorderedGroupHelper().select(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1(), 6);
+						getUnorderedGroupHelper().select(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1(), 7);
 					}
-								({true}?=>(otherlv_21=RightParenthesis
+								({true}?=>(otherlv_24=RightParenthesis
 								{
-									newLeafNode(otherlv_21, grammarAccess.getRepeatNodeAccess().getRightParenthesisKeyword_1_6());
+									newLeafNode(otherlv_24, grammarAccess.getRepeatNodeAccess().getRightParenthesisKeyword_1_7());
 								}
 								))
 					{ 
@@ -6265,16 +6873,16 @@ ruleRepeatNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getRepeatNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_22=RULE_BEGIN
+		this_BEGIN_25=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_22, grammarAccess.getRepeatNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_25, grammarAccess.getRepeatNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getRepeatNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_23_0=ruleTreeNode
+				lv_child_26_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getRepeatNodeRule());
@@ -6282,15 +6890,15 @@ ruleRepeatNode returns [EObject current=null]
 					set(
 						$current,
 						"child",
-						lv_child_23_0,
+						lv_child_26_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		this_END_24=RULE_END
+		this_END_27=RULE_END
 		{
-			newLeafNode(this_END_24, grammarAccess.getRepeatNodeAccess().getENDTerminalRuleCall_4());
+			newLeafNode(this_END_27, grammarAccess.getRepeatNodeAccess().getENDTerminalRuleCall_4());
 		}
 	)
 ;
@@ -6718,9 +7326,9 @@ ruleRetryNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getRetryNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getRetryNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -6729,17 +7337,17 @@ ruleRetryNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRetryNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getRetryNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRetryNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -6756,54 +7364,33 @@ ruleRetryNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getRetryNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getRetryNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getRetryNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRetryNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getRetryNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRetryNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getRetryNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getRetryNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getRetryNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1());
@@ -6815,49 +7402,49 @@ ruleRetryNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getRetryNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getRetryNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRetryNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getRetryNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRetryNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getRetryNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getRetryNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getRetryNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getRetryNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getRetryNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -6874,49 +7461,49 @@ ruleRetryNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getRetryNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getRetryNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRetryNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getRetryNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRetryNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getRetryNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getRetryNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getRetryNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getRetryNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getRetryNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -6933,20 +7520,79 @@ ruleRetryNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=Num_attempts
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getRetryNodeAccess().getNum_attemptsKeyword_1_5_0());
-								}
-								otherlv_19=EqualsSign
-								{
-									newLeafNode(otherlv_19, grammarAccess.getRetryNodeAccess().getEqualsSignKeyword_1_5_1());
+									newLeafNode(otherlv_17, grammarAccess.getRetryNodeAccess().getSatisfiesKeyword_1_5_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRetryNodeAccess().getNum_attemptsEStringParserRuleCall_1_5_2_0());
+											newCompositeNode(grammarAccess.getRetryNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
 										}
-										lv_num_attempts_20_0=ruleEString
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getRetryNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getRetryNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getRetryNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getRetryNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=Num_attempts
+								{
+									newLeafNode(otherlv_21, grammarAccess.getRetryNodeAccess().getNum_attemptsKeyword_1_6_0());
+								}
+								otherlv_22=EqualsSign
+								{
+									newLeafNode(otherlv_22, grammarAccess.getRetryNodeAccess().getEqualsSignKeyword_1_6_1());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getRetryNodeAccess().getNum_attemptsEStringParserRuleCall_1_6_2_0());
+										}
+										lv_num_attempts_23_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRetryNodeRule());
@@ -6954,7 +7600,7 @@ ruleRetryNode returns [EObject current=null]
 											set(
 												$current,
 												"num_attempts",
-												lv_num_attempts_20_0,
+												lv_num_attempts_23_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -6967,13 +7613,13 @@ ruleRetryNode returns [EObject current=null]
 				)
 			)|
 			(
-				{getUnorderedGroupHelper().canSelect(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1(), 7)}?=>(
 					{
-						getUnorderedGroupHelper().select(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1(), 6);
+						getUnorderedGroupHelper().select(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1(), 7);
 					}
-								({true}?=>(otherlv_21=RightParenthesis
+								({true}?=>(otherlv_24=RightParenthesis
 								{
-									newLeafNode(otherlv_21, grammarAccess.getRetryNodeAccess().getRightParenthesisKeyword_1_6());
+									newLeafNode(otherlv_24, grammarAccess.getRetryNodeAccess().getRightParenthesisKeyword_1_7());
 								}
 								))
 					{ 
@@ -6989,16 +7635,16 @@ ruleRetryNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getRetryNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_22=RULE_BEGIN
+		this_BEGIN_25=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_22, grammarAccess.getRetryNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_25, grammarAccess.getRetryNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getRetryNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_23_0=ruleTreeNode
+				lv_child_26_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getRetryNodeRule());
@@ -7006,15 +7652,15 @@ ruleRetryNode returns [EObject current=null]
 					set(
 						$current,
 						"child",
-						lv_child_23_0,
+						lv_child_26_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		this_END_24=RULE_END
+		this_END_27=RULE_END
 		{
-			newLeafNode(this_END_24, grammarAccess.getRetryNodeAccess().getENDTerminalRuleCall_4());
+			newLeafNode(this_END_27, grammarAccess.getRetryNodeAccess().getENDTerminalRuleCall_4());
 		}
 	)
 ;
@@ -7066,9 +7712,9 @@ ruleParallelAllNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getParallelAllNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getParallelAllNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getParallelAllNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -7077,17 +7723,17 @@ ruleParallelAllNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getParallelAllNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getParallelAllNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getParallelAllNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -7104,54 +7750,33 @@ ruleParallelAllNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getParallelAllNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getParallelAllNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getParallelAllNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getParallelAllNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getParallelAllNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getParallelAllNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getParallelAllNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getParallelAllNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getParallelAllNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getParallelAllNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getParallelAllNodeAccess().getUnorderedGroup_1());
@@ -7163,49 +7788,49 @@ ruleParallelAllNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getParallelAllNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getParallelAllNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getParallelAllNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getParallelAllNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getParallelAllNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getParallelAllNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getParallelAllNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getParallelAllNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getParallelAllNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getParallelAllNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getParallelAllNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -7222,49 +7847,49 @@ ruleParallelAllNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getParallelAllNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getParallelAllNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getParallelAllNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getParallelAllNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getParallelAllNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getParallelAllNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getParallelAllNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getParallelAllNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getParallelAllNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getParallelAllNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getParallelAllNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -7281,9 +7906,68 @@ ruleParallelAllNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getParallelAllNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getParallelAllNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getParallelAllNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getParallelAllNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getParallelAllNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getParallelAllNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getParallelAllNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getParallelAllNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getParallelAllNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getParallelAllNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getParallelAllNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getParallelAllNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -7299,16 +7983,16 @@ ruleParallelAllNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getParallelAllNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getParallelAllNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getParallelAllNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getParallelAllNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getParallelAllNodeRule());
@@ -7316,7 +8000,7 @@ ruleParallelAllNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
@@ -7327,7 +8011,7 @@ ruleParallelAllNode returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getParallelAllNodeAccess().getChildTreeNodeParserRuleCall_4_0());
 				}
-				lv_child_21_0=ruleTreeNode
+				lv_child_24_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getParallelAllNodeRule());
@@ -7335,15 +8019,15 @@ ruleParallelAllNode returns [EObject current=null]
 					add(
 						$current,
 						"child",
-						lv_child_21_0,
+						lv_child_24_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-		this_END_22=RULE_END
+		this_END_25=RULE_END
 		{
-			newLeafNode(this_END_22, grammarAccess.getParallelAllNodeAccess().getENDTerminalRuleCall_5());
+			newLeafNode(this_END_25, grammarAccess.getParallelAllNodeAccess().getENDTerminalRuleCall_5());
 		}
 	)
 ;
@@ -7395,9 +8079,9 @@ ruleDelayNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getDelayNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getDelayNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getDelayNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -7406,17 +8090,17 @@ ruleDelayNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getDelayNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getDelayNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getDelayNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -7433,9 +8117,9 @@ ruleDelayNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getDelayNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Delay_msec
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getDelayNodeAccess().getDelay_msecKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getDelayNodeAccess().getNameKeyword_1_2_0());
 								}
 								otherlv_7=EqualsSign
 								{
@@ -7444,17 +8128,17 @@ ruleDelayNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getDelayNodeAccess().getDelay_msecEStringParserRuleCall_1_2_2_0());
+											newCompositeNode(grammarAccess.getDelayNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_delay_msec_8_0=ruleEString
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getDelayNodeRule());
 											}
 											set(
 												$current,
-												"delay_msec",
-												lv_delay_msec_8_0,
+												"name",
+												lv_name_8_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -7471,54 +8155,33 @@ ruleDelayNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getDelayNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_9=Parameters
+								({true}?=>(otherlv_9=Delay_msec
 								{
-									newLeafNode(otherlv_9, grammarAccess.getDelayNodeAccess().getParametersKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getDelayNodeAccess().getDelay_msecKeyword_1_3_0());
+								}
+								otherlv_10=EqualsSign
+								{
+									newLeafNode(otherlv_10, grammarAccess.getDelayNodeAccess().getEqualsSignKeyword_1_3_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getDelayNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getDelayNodeAccess().getDelay_msecEStringParserRuleCall_1_3_2_0());
 										}
-										lv_parameters_10_0=ruleParameter
+										lv_delay_msec_11_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getDelayNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_10_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"delay_msec",
+												lv_delay_msec_11_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_11=Comma
-									{
-										newLeafNode(otherlv_11, grammarAccess.getDelayNodeAccess().getCommaKeyword_1_3_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getDelayNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
-											}
-											lv_parameters_12_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getDelayNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_12_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getDelayNodeAccess().getUnorderedGroup_1());
@@ -7530,49 +8193,49 @@ ruleDelayNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getDelayNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_13=Satisfices
+								({true}?=>(otherlv_12=Parameters
 								{
-									newLeafNode(otherlv_13, grammarAccess.getDelayNodeAccess().getSatisficesKeyword_1_4_0());
+									newLeafNode(otherlv_12, grammarAccess.getDelayNodeAccess().getParametersKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getDelayNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getDelayNodeAccess().getParametersParameterParserRuleCall_1_4_1_0());
 										}
-										lv_satisfices_14_0=ruleQuality
+										lv_parameters_13_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getDelayNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_14_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_13_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_15=Comma
+									otherlv_14=Comma
 									{
-										newLeafNode(otherlv_15, grammarAccess.getDelayNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_14, grammarAccess.getDelayNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getDelayNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getDelayNodeAccess().getParametersParameterParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfices_16_0=ruleQuality
+											lv_parameters_15_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getDelayNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_16_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_15_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -7589,49 +8252,49 @@ ruleDelayNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getDelayNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_17=Satisfies
+								({true}?=>(otherlv_16=Satisfices
 								{
-									newLeafNode(otherlv_17, grammarAccess.getDelayNodeAccess().getSatisfiesKeyword_1_5_0());
+									newLeafNode(otherlv_16, grammarAccess.getDelayNodeAccess().getSatisficesKeyword_1_5_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getDelayNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+											newCompositeNode(grammarAccess.getDelayNodeAccess().getSatisficesQualityParserRuleCall_1_5_1_0());
 										}
-										lv_satisfies_18_0=ruleQualityRequirement
+										lv_satisfices_17_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getDelayNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_18_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_17_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_19=Comma
+									otherlv_18=Comma
 									{
-										newLeafNode(otherlv_19, grammarAccess.getDelayNodeAccess().getCommaKeyword_1_5_2_0());
+										newLeafNode(otherlv_18, grammarAccess.getDelayNodeAccess().getCommaKeyword_1_5_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getDelayNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+												newCompositeNode(grammarAccess.getDelayNodeAccess().getSatisficesQualityParserRuleCall_1_5_2_1_0());
 											}
-											lv_satisfies_20_0=ruleQualityRequirement
+											lv_satisfices_19_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getDelayNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_20_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_19_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -7648,9 +8311,68 @@ ruleDelayNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getDelayNodeAccess().getUnorderedGroup_1(), 6);
 					}
-								({true}?=>(otherlv_21=RightParenthesis
+								({true}?=>(otherlv_20=Satisfies
 								{
-									newLeafNode(otherlv_21, grammarAccess.getDelayNodeAccess().getRightParenthesisKeyword_1_6());
+									newLeafNode(otherlv_20, grammarAccess.getDelayNodeAccess().getSatisfiesKeyword_1_6_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getDelayNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_6_1_0());
+										}
+										lv_satisfies_21_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getDelayNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_21_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_22=Comma
+									{
+										newLeafNode(otherlv_22, grammarAccess.getDelayNodeAccess().getCommaKeyword_1_6_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getDelayNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_6_2_1_0());
+											}
+											lv_satisfies_23_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getDelayNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_23_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getDelayNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getDelayNodeAccess().getUnorderedGroup_1(), 7)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getDelayNodeAccess().getUnorderedGroup_1(), 7);
+					}
+								({true}?=>(otherlv_24=RightParenthesis
+								{
+									newLeafNode(otherlv_24, grammarAccess.getDelayNodeAccess().getRightParenthesisKeyword_1_7());
 								}
 								))
 					{ 
@@ -7666,16 +8388,16 @@ ruleDelayNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getDelayNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_22=RULE_BEGIN
+		this_BEGIN_25=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_22, grammarAccess.getDelayNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_25, grammarAccess.getDelayNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getDelayNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_23_0=ruleTreeNode
+				lv_child_26_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getDelayNodeRule());
@@ -7683,15 +8405,15 @@ ruleDelayNode returns [EObject current=null]
 					set(
 						$current,
 						"child",
-						lv_child_23_0,
+						lv_child_26_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		this_END_24=RULE_END
+		this_END_27=RULE_END
 		{
-			newLeafNode(this_END_24, grammarAccess.getDelayNodeAccess().getENDTerminalRuleCall_4());
+			newLeafNode(this_END_27, grammarAccess.getDelayNodeAccess().getENDTerminalRuleCall_4());
 		}
 	)
 ;
@@ -7743,9 +8465,9 @@ rulePreconditionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getPreconditionNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getPreconditionNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getPreconditionNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -7754,17 +8476,17 @@ rulePreconditionNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getPreconditionNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getPreconditionNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getPreconditionNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -7781,54 +8503,33 @@ rulePreconditionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getPreconditionNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getPreconditionNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getPreconditionNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getPreconditionNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getPreconditionNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getPreconditionNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getPreconditionNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getPreconditionNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getPreconditionNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getPreconditionNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPreconditionNodeAccess().getUnorderedGroup_1());
@@ -7840,49 +8541,49 @@ rulePreconditionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getPreconditionNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getPreconditionNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getPreconditionNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getPreconditionNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getPreconditionNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getPreconditionNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getPreconditionNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getPreconditionNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getPreconditionNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getPreconditionNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getPreconditionNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -7899,49 +8600,49 @@ rulePreconditionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getPreconditionNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getPreconditionNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getPreconditionNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getPreconditionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getPreconditionNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getPreconditionNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getPreconditionNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getPreconditionNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getPreconditionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getPreconditionNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getPreconditionNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -7958,9 +8659,68 @@ rulePreconditionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getPreconditionNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getPreconditionNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getPreconditionNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getPreconditionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getPreconditionNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getPreconditionNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getPreconditionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getPreconditionNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPreconditionNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getPreconditionNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getPreconditionNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getPreconditionNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -7976,16 +8736,16 @@ rulePreconditionNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getPreconditionNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getPreconditionNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getPreconditionNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getPreconditionNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getPreconditionNodeRule());
@@ -7993,15 +8753,15 @@ rulePreconditionNode returns [EObject current=null]
 					set(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		this_END_21=RULE_END
+		this_END_24=RULE_END
 		{
-			newLeafNode(this_END_21, grammarAccess.getPreconditionNodeAccess().getENDTerminalRuleCall_4());
+			newLeafNode(this_END_24, grammarAccess.getPreconditionNodeAccess().getENDTerminalRuleCall_4());
 		}
 	)
 ;
@@ -8053,9 +8813,9 @@ ruleEntryUpdatedDecoratorNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -8064,17 +8824,17 @@ ruleEntryUpdatedDecoratorNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getEntryUpdatedDecoratorNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -8091,54 +8851,33 @@ ruleEntryUpdatedDecoratorNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getEntryUpdatedDecoratorNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getEntryUpdatedDecoratorNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getUnorderedGroup_1());
@@ -8150,49 +8889,49 @@ ruleEntryUpdatedDecoratorNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getEntryUpdatedDecoratorNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getEntryUpdatedDecoratorNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -8209,49 +8948,49 @@ ruleEntryUpdatedDecoratorNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getEntryUpdatedDecoratorNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getEntryUpdatedDecoratorNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -8268,9 +9007,68 @@ ruleEntryUpdatedDecoratorNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getEntryUpdatedDecoratorNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getEntryUpdatedDecoratorNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -8286,16 +9084,16 @@ ruleEntryUpdatedDecoratorNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getEntryUpdatedDecoratorNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getEntryUpdatedDecoratorNodeRule());
@@ -8303,15 +9101,15 @@ ruleEntryUpdatedDecoratorNode returns [EObject current=null]
 					set(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		this_END_21=RULE_END
+		this_END_24=RULE_END
 		{
-			newLeafNode(this_END_21, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getENDTerminalRuleCall_4());
+			newLeafNode(this_END_24, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getENDTerminalRuleCall_4());
 		}
 	)
 ;
@@ -8363,9 +9161,9 @@ ruleRunOnceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRunOnceNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getRunOnceNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getRunOnceNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -8374,17 +9172,17 @@ ruleRunOnceNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRunOnceNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getRunOnceNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRunOnceNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -8401,54 +9199,33 @@ ruleRunOnceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRunOnceNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getRunOnceNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getRunOnceNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getRunOnceNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRunOnceNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getRunOnceNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRunOnceNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getRunOnceNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getRunOnceNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getRunOnceNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getRunOnceNodeAccess().getUnorderedGroup_1());
@@ -8460,49 +9237,49 @@ ruleRunOnceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRunOnceNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getRunOnceNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getRunOnceNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRunOnceNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getRunOnceNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRunOnceNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getRunOnceNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getRunOnceNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getRunOnceNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getRunOnceNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getRunOnceNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -8519,49 +9296,49 @@ ruleRunOnceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRunOnceNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getRunOnceNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getRunOnceNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getRunOnceNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getRunOnceNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getRunOnceNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getRunOnceNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getRunOnceNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getRunOnceNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getRunOnceNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getRunOnceNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -8578,9 +9355,68 @@ ruleRunOnceNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getRunOnceNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getRunOnceNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getRunOnceNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getRunOnceNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getRunOnceNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getRunOnceNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getRunOnceNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getRunOnceNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getRunOnceNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getRunOnceNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getRunOnceNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getRunOnceNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -8596,16 +9432,16 @@ ruleRunOnceNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getRunOnceNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getRunOnceNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getRunOnceNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getRunOnceNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getRunOnceNodeRule());
@@ -8613,15 +9449,15 @@ ruleRunOnceNode returns [EObject current=null]
 					set(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		this_END_21=RULE_END
+		this_END_24=RULE_END
 		{
-			newLeafNode(this_END_21, grammarAccess.getRunOnceNodeAccess().getENDTerminalRuleCall_4());
+			newLeafNode(this_END_24, grammarAccess.getRunOnceNodeAccess().getENDTerminalRuleCall_4());
 		}
 	)
 ;
@@ -8673,9 +9509,9 @@ ruleLoopNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getLoopNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getLoopNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getLoopNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -8684,17 +9520,17 @@ ruleLoopNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getLoopNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getLoopNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getLoopNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -8711,54 +9547,33 @@ ruleLoopNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getLoopNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getLoopNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getLoopNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getLoopNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getLoopNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getLoopNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getLoopNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getLoopNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getLoopNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getLoopNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getLoopNodeAccess().getUnorderedGroup_1());
@@ -8770,49 +9585,49 @@ ruleLoopNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getLoopNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getLoopNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getLoopNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getLoopNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getLoopNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getLoopNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getLoopNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getLoopNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getLoopNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getLoopNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getLoopNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -8829,49 +9644,49 @@ ruleLoopNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getLoopNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getLoopNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getLoopNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getLoopNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getLoopNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getLoopNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getLoopNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getLoopNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getLoopNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getLoopNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getLoopNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -8888,9 +9703,68 @@ ruleLoopNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getLoopNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getLoopNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getLoopNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getLoopNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getLoopNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getLoopNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getLoopNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getLoopNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getLoopNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getLoopNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getLoopNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getLoopNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -8906,16 +9780,16 @@ ruleLoopNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getLoopNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getLoopNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getLoopNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getLoopNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getLoopNodeRule());
@@ -8923,15 +9797,15 @@ ruleLoopNode returns [EObject current=null]
 					set(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		this_END_21=RULE_END
+		this_END_24=RULE_END
 		{
-			newLeafNode(this_END_21, grammarAccess.getLoopNodeAccess().getENDTerminalRuleCall_4());
+			newLeafNode(this_END_24, grammarAccess.getLoopNodeAccess().getENDTerminalRuleCall_4());
 		}
 	)
 ;
@@ -8983,9 +9857,9 @@ ruleConsumeQueueNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getConsumeQueueNodeAccess().getUnorderedGroup_1(), 1);
 					}
-								({true}?=>(otherlv_3=Name
+								({true}?=>(otherlv_3=ID
 								{
-									newLeafNode(otherlv_3, grammarAccess.getConsumeQueueNodeAccess().getNameKeyword_1_1_0());
+									newLeafNode(otherlv_3, grammarAccess.getConsumeQueueNodeAccess().getIDKeyword_1_1_0());
 								}
 								otherlv_4=EqualsSign
 								{
@@ -8994,17 +9868,17 @@ ruleConsumeQueueNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getNameEStringParserRuleCall_1_1_2_0());
+											newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getIDEStringParserRuleCall_1_1_2_0());
 										}
-										lv_name_5_0=ruleEString
+										lv_ID_5_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getConsumeQueueNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_5_0,
+												"ID",
+												lv_ID_5_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -9021,54 +9895,33 @@ ruleConsumeQueueNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getConsumeQueueNodeAccess().getUnorderedGroup_1(), 2);
 					}
-								({true}?=>(otherlv_6=Parameters
+								({true}?=>(otherlv_6=Name
 								{
-									newLeafNode(otherlv_6, grammarAccess.getConsumeQueueNodeAccess().getParametersKeyword_1_2_0());
+									newLeafNode(otherlv_6, grammarAccess.getConsumeQueueNodeAccess().getNameKeyword_1_2_0());
+								}
+								otherlv_7=EqualsSign
+								{
+									newLeafNode(otherlv_7, grammarAccess.getConsumeQueueNodeAccess().getEqualsSignKeyword_1_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getParametersParameterParserRuleCall_1_2_1_0());
+											newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getNameEStringParserRuleCall_1_2_2_0());
 										}
-										lv_parameters_7_0=ruleParameter
+										lv_name_8_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getConsumeQueueNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_7_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_8_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_8=Comma
-									{
-										newLeafNode(otherlv_8, grammarAccess.getConsumeQueueNodeAccess().getCommaKeyword_1_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getParametersParameterParserRuleCall_1_2_2_1_0());
-											}
-											lv_parameters_9_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getConsumeQueueNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_9_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConsumeQueueNodeAccess().getUnorderedGroup_1());
@@ -9080,49 +9933,49 @@ ruleConsumeQueueNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getConsumeQueueNodeAccess().getUnorderedGroup_1(), 3);
 					}
-								({true}?=>(otherlv_10=Satisfices
+								({true}?=>(otherlv_9=Parameters
 								{
-									newLeafNode(otherlv_10, grammarAccess.getConsumeQueueNodeAccess().getSatisficesKeyword_1_3_0());
+									newLeafNode(otherlv_9, grammarAccess.getConsumeQueueNodeAccess().getParametersKeyword_1_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getSatisficesQualityParserRuleCall_1_3_1_0());
+											newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getParametersParameterParserRuleCall_1_3_1_0());
 										}
-										lv_satisfices_11_0=ruleQuality
+										lv_parameters_10_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getConsumeQueueNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_11_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_10_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_12=Comma
+									otherlv_11=Comma
 									{
-										newLeafNode(otherlv_12, grammarAccess.getConsumeQueueNodeAccess().getCommaKeyword_1_3_2_0());
+										newLeafNode(otherlv_11, grammarAccess.getConsumeQueueNodeAccess().getCommaKeyword_1_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getSatisficesQualityParserRuleCall_1_3_2_1_0());
+												newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getParametersParameterParserRuleCall_1_3_2_1_0());
 											}
-											lv_satisfices_13_0=ruleQuality
+											lv_parameters_12_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getConsumeQueueNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_13_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_12_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -9139,49 +9992,49 @@ ruleConsumeQueueNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getConsumeQueueNodeAccess().getUnorderedGroup_1(), 4);
 					}
-								({true}?=>(otherlv_14=Satisfies
+								({true}?=>(otherlv_13=Satisfices
 								{
-									newLeafNode(otherlv_14, grammarAccess.getConsumeQueueNodeAccess().getSatisfiesKeyword_1_4_0());
+									newLeafNode(otherlv_13, grammarAccess.getConsumeQueueNodeAccess().getSatisficesKeyword_1_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_1_0());
+											newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getSatisficesQualityParserRuleCall_1_4_1_0());
 										}
-										lv_satisfies_15_0=ruleQualityRequirement
+										lv_satisfices_14_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getConsumeQueueNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_15_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_14_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_16=Comma
+									otherlv_15=Comma
 									{
-										newLeafNode(otherlv_16, grammarAccess.getConsumeQueueNodeAccess().getCommaKeyword_1_4_2_0());
+										newLeafNode(otherlv_15, grammarAccess.getConsumeQueueNodeAccess().getCommaKeyword_1_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_4_2_1_0());
+												newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getSatisficesQualityParserRuleCall_1_4_2_1_0());
 											}
-											lv_satisfies_17_0=ruleQualityRequirement
+											lv_satisfices_16_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getConsumeQueueNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_17_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_16_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -9198,9 +10051,68 @@ ruleConsumeQueueNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getConsumeQueueNodeAccess().getUnorderedGroup_1(), 5);
 					}
-								({true}?=>(otherlv_18=RightParenthesis
+								({true}?=>(otherlv_17=Satisfies
 								{
-									newLeafNode(otherlv_18, grammarAccess.getConsumeQueueNodeAccess().getRightParenthesisKeyword_1_5());
+									newLeafNode(otherlv_17, grammarAccess.getConsumeQueueNodeAccess().getSatisfiesKeyword_1_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_1_0());
+										}
+										lv_satisfies_18_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getConsumeQueueNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_18_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_19=Comma
+									{
+										newLeafNode(otherlv_19, grammarAccess.getConsumeQueueNodeAccess().getCommaKeyword_1_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getSatisfiesQualityRequirementParserRuleCall_1_5_2_1_0());
+											}
+											lv_satisfies_20_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getConsumeQueueNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_20_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getConsumeQueueNodeAccess().getUnorderedGroup_1());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getConsumeQueueNodeAccess().getUnorderedGroup_1(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getConsumeQueueNodeAccess().getUnorderedGroup_1(), 6);
+					}
+								({true}?=>(otherlv_21=RightParenthesis
+								{
+									newLeafNode(otherlv_21, grammarAccess.getConsumeQueueNodeAccess().getRightParenthesisKeyword_1_6());
 								}
 								))
 					{ 
@@ -9216,16 +10128,16 @@ ruleConsumeQueueNode returns [EObject current=null]
 				  getUnorderedGroupHelper().leave(grammarAccess.getConsumeQueueNodeAccess().getUnorderedGroup_1());
 				}
 		)?
-		this_BEGIN_19=RULE_BEGIN
+		this_BEGIN_22=RULE_BEGIN
 		{
-			newLeafNode(this_BEGIN_19, grammarAccess.getConsumeQueueNodeAccess().getBEGINTerminalRuleCall_2());
+			newLeafNode(this_BEGIN_22, grammarAccess.getConsumeQueueNodeAccess().getBEGINTerminalRuleCall_2());
 		}
 		(
 			(
 				{
 					newCompositeNode(grammarAccess.getConsumeQueueNodeAccess().getChildTreeNodeParserRuleCall_3_0());
 				}
-				lv_child_20_0=ruleTreeNode
+				lv_child_23_0=ruleTreeNode
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getConsumeQueueNodeRule());
@@ -9233,15 +10145,15 @@ ruleConsumeQueueNode returns [EObject current=null]
 					set(
 						$current,
 						"child",
-						lv_child_20_0,
+						lv_child_23_0,
 						"org.xtext.btcpp.QualityBtCpp.TreeNode");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)
-		this_END_21=RULE_END
+		this_END_24=RULE_END
 		{
-			newLeafNode(this_END_21, grammarAccess.getConsumeQueueNodeAccess().getENDTerminalRuleCall_4());
+			newLeafNode(this_END_24, grammarAccess.getConsumeQueueNodeAccess().getENDTerminalRuleCall_4());
 		}
 	)
 ;
@@ -9300,9 +10212,9 @@ ruleScriptNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getScriptNodeAccess().getUnorderedGroup_2(), 1);
 					}
-								({true}?=>(otherlv_4=Name
+								({true}?=>(otherlv_4=ID
 								{
-									newLeafNode(otherlv_4, grammarAccess.getScriptNodeAccess().getNameKeyword_2_1_0());
+									newLeafNode(otherlv_4, grammarAccess.getScriptNodeAccess().getIDKeyword_2_1_0());
 								}
 								otherlv_5=EqualsSign
 								{
@@ -9311,17 +10223,17 @@ ruleScriptNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getScriptNodeAccess().getNameEStringParserRuleCall_2_1_2_0());
+											newCompositeNode(grammarAccess.getScriptNodeAccess().getIDEStringParserRuleCall_2_1_2_0());
 										}
-										lv_name_6_0=ruleEString
+										lv_ID_6_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getScriptNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_6_0,
+												"ID",
+												lv_ID_6_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -9338,54 +10250,33 @@ ruleScriptNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getScriptNodeAccess().getUnorderedGroup_2(), 2);
 					}
-								({true}?=>(otherlv_7=Parameters
+								({true}?=>(otherlv_7=Name
 								{
-									newLeafNode(otherlv_7, grammarAccess.getScriptNodeAccess().getParametersKeyword_2_2_0());
+									newLeafNode(otherlv_7, grammarAccess.getScriptNodeAccess().getNameKeyword_2_2_0());
+								}
+								otherlv_8=EqualsSign
+								{
+									newLeafNode(otherlv_8, grammarAccess.getScriptNodeAccess().getEqualsSignKeyword_2_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getScriptNodeAccess().getParametersParameterParserRuleCall_2_2_1_0());
+											newCompositeNode(grammarAccess.getScriptNodeAccess().getNameEStringParserRuleCall_2_2_2_0());
 										}
-										lv_parameters_8_0=ruleParameter
+										lv_name_9_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getScriptNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_8_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_9_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_9=Comma
-									{
-										newLeafNode(otherlv_9, grammarAccess.getScriptNodeAccess().getCommaKeyword_2_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getScriptNodeAccess().getParametersParameterParserRuleCall_2_2_2_1_0());
-											}
-											lv_parameters_10_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getScriptNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_10_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getScriptNodeAccess().getUnorderedGroup_2());
@@ -9397,49 +10288,49 @@ ruleScriptNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getScriptNodeAccess().getUnorderedGroup_2(), 3);
 					}
-								({true}?=>(otherlv_11=Satisfices
+								({true}?=>(otherlv_10=Parameters
 								{
-									newLeafNode(otherlv_11, grammarAccess.getScriptNodeAccess().getSatisficesKeyword_2_3_0());
+									newLeafNode(otherlv_10, grammarAccess.getScriptNodeAccess().getParametersKeyword_2_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getScriptNodeAccess().getSatisficesQualityParserRuleCall_2_3_1_0());
+											newCompositeNode(grammarAccess.getScriptNodeAccess().getParametersParameterParserRuleCall_2_3_1_0());
 										}
-										lv_satisfices_12_0=ruleQuality
+										lv_parameters_11_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getScriptNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_12_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_11_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_13=Comma
+									otherlv_12=Comma
 									{
-										newLeafNode(otherlv_13, grammarAccess.getScriptNodeAccess().getCommaKeyword_2_3_2_0());
+										newLeafNode(otherlv_12, grammarAccess.getScriptNodeAccess().getCommaKeyword_2_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getScriptNodeAccess().getSatisficesQualityParserRuleCall_2_3_2_1_0());
+												newCompositeNode(grammarAccess.getScriptNodeAccess().getParametersParameterParserRuleCall_2_3_2_1_0());
 											}
-											lv_satisfices_14_0=ruleQuality
+											lv_parameters_13_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getScriptNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_14_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_13_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -9456,49 +10347,49 @@ ruleScriptNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getScriptNodeAccess().getUnorderedGroup_2(), 4);
 					}
-								({true}?=>(otherlv_15=Satisfies
+								({true}?=>(otherlv_14=Satisfices
 								{
-									newLeafNode(otherlv_15, grammarAccess.getScriptNodeAccess().getSatisfiesKeyword_2_4_0());
+									newLeafNode(otherlv_14, grammarAccess.getScriptNodeAccess().getSatisficesKeyword_2_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getScriptNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_1_0());
+											newCompositeNode(grammarAccess.getScriptNodeAccess().getSatisficesQualityParserRuleCall_2_4_1_0());
 										}
-										lv_satisfies_16_0=ruleQualityRequirement
+										lv_satisfices_15_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getScriptNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_16_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_15_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_17=Comma
+									otherlv_16=Comma
 									{
-										newLeafNode(otherlv_17, grammarAccess.getScriptNodeAccess().getCommaKeyword_2_4_2_0());
+										newLeafNode(otherlv_16, grammarAccess.getScriptNodeAccess().getCommaKeyword_2_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getScriptNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_2_1_0());
+												newCompositeNode(grammarAccess.getScriptNodeAccess().getSatisficesQualityParserRuleCall_2_4_2_1_0());
 											}
-											lv_satisfies_18_0=ruleQualityRequirement
+											lv_satisfices_17_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getScriptNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_18_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_17_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -9515,9 +10406,68 @@ ruleScriptNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getScriptNodeAccess().getUnorderedGroup_2(), 5);
 					}
-								({true}?=>(otherlv_19=RightParenthesis
+								({true}?=>(otherlv_18=Satisfies
 								{
-									newLeafNode(otherlv_19, grammarAccess.getScriptNodeAccess().getRightParenthesisKeyword_2_5());
+									newLeafNode(otherlv_18, grammarAccess.getScriptNodeAccess().getSatisfiesKeyword_2_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getScriptNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_1_0());
+										}
+										lv_satisfies_19_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getScriptNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_19_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_20=Comma
+									{
+										newLeafNode(otherlv_20, grammarAccess.getScriptNodeAccess().getCommaKeyword_2_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getScriptNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_2_1_0());
+											}
+											lv_satisfies_21_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getScriptNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_21_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getScriptNodeAccess().getUnorderedGroup_2());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getScriptNodeAccess().getUnorderedGroup_2(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getScriptNodeAccess().getUnorderedGroup_2(), 6);
+					}
+								({true}?=>(otherlv_22=RightParenthesis
+								{
+									newLeafNode(otherlv_22, grammarAccess.getScriptNodeAccess().getRightParenthesisKeyword_2_6());
 								}
 								))
 					{ 
@@ -9590,9 +10540,9 @@ ruleScriptConditionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getScriptConditionNodeAccess().getUnorderedGroup_2(), 1);
 					}
-								({true}?=>(otherlv_4=Name
+								({true}?=>(otherlv_4=ID
 								{
-									newLeafNode(otherlv_4, grammarAccess.getScriptConditionNodeAccess().getNameKeyword_2_1_0());
+									newLeafNode(otherlv_4, grammarAccess.getScriptConditionNodeAccess().getIDKeyword_2_1_0());
 								}
 								otherlv_5=EqualsSign
 								{
@@ -9601,17 +10551,17 @@ ruleScriptConditionNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getNameEStringParserRuleCall_2_1_2_0());
+											newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getIDEStringParserRuleCall_2_1_2_0());
 										}
-										lv_name_6_0=ruleEString
+										lv_ID_6_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getScriptConditionNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_6_0,
+												"ID",
+												lv_ID_6_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -9628,54 +10578,33 @@ ruleScriptConditionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getScriptConditionNodeAccess().getUnorderedGroup_2(), 2);
 					}
-								({true}?=>(otherlv_7=Parameters
+								({true}?=>(otherlv_7=Name
 								{
-									newLeafNode(otherlv_7, grammarAccess.getScriptConditionNodeAccess().getParametersKeyword_2_2_0());
+									newLeafNode(otherlv_7, grammarAccess.getScriptConditionNodeAccess().getNameKeyword_2_2_0());
+								}
+								otherlv_8=EqualsSign
+								{
+									newLeafNode(otherlv_8, grammarAccess.getScriptConditionNodeAccess().getEqualsSignKeyword_2_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getParametersParameterParserRuleCall_2_2_1_0());
+											newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getNameEStringParserRuleCall_2_2_2_0());
 										}
-										lv_parameters_8_0=ruleParameter
+										lv_name_9_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getScriptConditionNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_8_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_9_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_9=Comma
-									{
-										newLeafNode(otherlv_9, grammarAccess.getScriptConditionNodeAccess().getCommaKeyword_2_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getParametersParameterParserRuleCall_2_2_2_1_0());
-											}
-											lv_parameters_10_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getScriptConditionNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_10_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getScriptConditionNodeAccess().getUnorderedGroup_2());
@@ -9687,49 +10616,49 @@ ruleScriptConditionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getScriptConditionNodeAccess().getUnorderedGroup_2(), 3);
 					}
-								({true}?=>(otherlv_11=Satisfices
+								({true}?=>(otherlv_10=Parameters
 								{
-									newLeafNode(otherlv_11, grammarAccess.getScriptConditionNodeAccess().getSatisficesKeyword_2_3_0());
+									newLeafNode(otherlv_10, grammarAccess.getScriptConditionNodeAccess().getParametersKeyword_2_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getSatisficesQualityParserRuleCall_2_3_1_0());
+											newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getParametersParameterParserRuleCall_2_3_1_0());
 										}
-										lv_satisfices_12_0=ruleQuality
+										lv_parameters_11_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getScriptConditionNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_12_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_11_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_13=Comma
+									otherlv_12=Comma
 									{
-										newLeafNode(otherlv_13, grammarAccess.getScriptConditionNodeAccess().getCommaKeyword_2_3_2_0());
+										newLeafNode(otherlv_12, grammarAccess.getScriptConditionNodeAccess().getCommaKeyword_2_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getSatisficesQualityParserRuleCall_2_3_2_1_0());
+												newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getParametersParameterParserRuleCall_2_3_2_1_0());
 											}
-											lv_satisfices_14_0=ruleQuality
+											lv_parameters_13_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getScriptConditionNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_14_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_13_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -9746,49 +10675,49 @@ ruleScriptConditionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getScriptConditionNodeAccess().getUnorderedGroup_2(), 4);
 					}
-								({true}?=>(otherlv_15=Satisfies
+								({true}?=>(otherlv_14=Satisfices
 								{
-									newLeafNode(otherlv_15, grammarAccess.getScriptConditionNodeAccess().getSatisfiesKeyword_2_4_0());
+									newLeafNode(otherlv_14, grammarAccess.getScriptConditionNodeAccess().getSatisficesKeyword_2_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_1_0());
+											newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getSatisficesQualityParserRuleCall_2_4_1_0());
 										}
-										lv_satisfies_16_0=ruleQualityRequirement
+										lv_satisfices_15_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getScriptConditionNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_16_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_15_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_17=Comma
+									otherlv_16=Comma
 									{
-										newLeafNode(otherlv_17, grammarAccess.getScriptConditionNodeAccess().getCommaKeyword_2_4_2_0());
+										newLeafNode(otherlv_16, grammarAccess.getScriptConditionNodeAccess().getCommaKeyword_2_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_2_1_0());
+												newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getSatisficesQualityParserRuleCall_2_4_2_1_0());
 											}
-											lv_satisfies_18_0=ruleQualityRequirement
+											lv_satisfices_17_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getScriptConditionNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_18_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_17_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -9805,9 +10734,68 @@ ruleScriptConditionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getScriptConditionNodeAccess().getUnorderedGroup_2(), 5);
 					}
-								({true}?=>(otherlv_19=RightParenthesis
+								({true}?=>(otherlv_18=Satisfies
 								{
-									newLeafNode(otherlv_19, grammarAccess.getScriptConditionNodeAccess().getRightParenthesisKeyword_2_5());
+									newLeafNode(otherlv_18, grammarAccess.getScriptConditionNodeAccess().getSatisfiesKeyword_2_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_1_0());
+										}
+										lv_satisfies_19_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getScriptConditionNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_19_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_20=Comma
+									{
+										newLeafNode(otherlv_20, grammarAccess.getScriptConditionNodeAccess().getCommaKeyword_2_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getScriptConditionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_2_1_0());
+											}
+											lv_satisfies_21_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getScriptConditionNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_21_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getScriptConditionNodeAccess().getUnorderedGroup_2());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getScriptConditionNodeAccess().getUnorderedGroup_2(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getScriptConditionNodeAccess().getUnorderedGroup_2(), 6);
+					}
+								({true}?=>(otherlv_22=RightParenthesis
+								{
+									newLeafNode(otherlv_22, grammarAccess.getScriptConditionNodeAccess().getRightParenthesisKeyword_2_6());
 								}
 								))
 					{ 
@@ -9880,9 +10868,9 @@ ruleAlwaysFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getAlwaysFailureNodeAccess().getUnorderedGroup_2(), 1);
 					}
-								({true}?=>(otherlv_4=Name
+								({true}?=>(otherlv_4=ID
 								{
-									newLeafNode(otherlv_4, grammarAccess.getAlwaysFailureNodeAccess().getNameKeyword_2_1_0());
+									newLeafNode(otherlv_4, grammarAccess.getAlwaysFailureNodeAccess().getIDKeyword_2_1_0());
 								}
 								otherlv_5=EqualsSign
 								{
@@ -9891,17 +10879,17 @@ ruleAlwaysFailureNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getNameEStringParserRuleCall_2_1_2_0());
+											newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getIDEStringParserRuleCall_2_1_2_0());
 										}
-										lv_name_6_0=ruleEString
+										lv_ID_6_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getAlwaysFailureNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_6_0,
+												"ID",
+												lv_ID_6_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -9918,54 +10906,33 @@ ruleAlwaysFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getAlwaysFailureNodeAccess().getUnorderedGroup_2(), 2);
 					}
-								({true}?=>(otherlv_7=Parameters
+								({true}?=>(otherlv_7=Name
 								{
-									newLeafNode(otherlv_7, grammarAccess.getAlwaysFailureNodeAccess().getParametersKeyword_2_2_0());
+									newLeafNode(otherlv_7, grammarAccess.getAlwaysFailureNodeAccess().getNameKeyword_2_2_0());
+								}
+								otherlv_8=EqualsSign
+								{
+									newLeafNode(otherlv_8, grammarAccess.getAlwaysFailureNodeAccess().getEqualsSignKeyword_2_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getParametersParameterParserRuleCall_2_2_1_0());
+											newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getNameEStringParserRuleCall_2_2_2_0());
 										}
-										lv_parameters_8_0=ruleParameter
+										lv_name_9_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getAlwaysFailureNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_8_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_9_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_9=Comma
-									{
-										newLeafNode(otherlv_9, grammarAccess.getAlwaysFailureNodeAccess().getCommaKeyword_2_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getParametersParameterParserRuleCall_2_2_2_1_0());
-											}
-											lv_parameters_10_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getAlwaysFailureNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_10_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getAlwaysFailureNodeAccess().getUnorderedGroup_2());
@@ -9977,49 +10944,49 @@ ruleAlwaysFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getAlwaysFailureNodeAccess().getUnorderedGroup_2(), 3);
 					}
-								({true}?=>(otherlv_11=Satisfices
+								({true}?=>(otherlv_10=Parameters
 								{
-									newLeafNode(otherlv_11, grammarAccess.getAlwaysFailureNodeAccess().getSatisficesKeyword_2_3_0());
+									newLeafNode(otherlv_10, grammarAccess.getAlwaysFailureNodeAccess().getParametersKeyword_2_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getSatisficesQualityParserRuleCall_2_3_1_0());
+											newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getParametersParameterParserRuleCall_2_3_1_0());
 										}
-										lv_satisfices_12_0=ruleQuality
+										lv_parameters_11_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getAlwaysFailureNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_12_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_11_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_13=Comma
+									otherlv_12=Comma
 									{
-										newLeafNode(otherlv_13, grammarAccess.getAlwaysFailureNodeAccess().getCommaKeyword_2_3_2_0());
+										newLeafNode(otherlv_12, grammarAccess.getAlwaysFailureNodeAccess().getCommaKeyword_2_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getSatisficesQualityParserRuleCall_2_3_2_1_0());
+												newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getParametersParameterParserRuleCall_2_3_2_1_0());
 											}
-											lv_satisfices_14_0=ruleQuality
+											lv_parameters_13_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getAlwaysFailureNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_14_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_13_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -10036,49 +11003,49 @@ ruleAlwaysFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getAlwaysFailureNodeAccess().getUnorderedGroup_2(), 4);
 					}
-								({true}?=>(otherlv_15=Satisfies
+								({true}?=>(otherlv_14=Satisfices
 								{
-									newLeafNode(otherlv_15, grammarAccess.getAlwaysFailureNodeAccess().getSatisfiesKeyword_2_4_0());
+									newLeafNode(otherlv_14, grammarAccess.getAlwaysFailureNodeAccess().getSatisficesKeyword_2_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_1_0());
+											newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getSatisficesQualityParserRuleCall_2_4_1_0());
 										}
-										lv_satisfies_16_0=ruleQualityRequirement
+										lv_satisfices_15_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getAlwaysFailureNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_16_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_15_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_17=Comma
+									otherlv_16=Comma
 									{
-										newLeafNode(otherlv_17, grammarAccess.getAlwaysFailureNodeAccess().getCommaKeyword_2_4_2_0());
+										newLeafNode(otherlv_16, grammarAccess.getAlwaysFailureNodeAccess().getCommaKeyword_2_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_2_1_0());
+												newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getSatisficesQualityParserRuleCall_2_4_2_1_0());
 											}
-											lv_satisfies_18_0=ruleQualityRequirement
+											lv_satisfices_17_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getAlwaysFailureNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_18_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_17_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -10095,9 +11062,68 @@ ruleAlwaysFailureNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getAlwaysFailureNodeAccess().getUnorderedGroup_2(), 5);
 					}
-								({true}?=>(otherlv_19=RightParenthesis
+								({true}?=>(otherlv_18=Satisfies
 								{
-									newLeafNode(otherlv_19, grammarAccess.getAlwaysFailureNodeAccess().getRightParenthesisKeyword_2_5());
+									newLeafNode(otherlv_18, grammarAccess.getAlwaysFailureNodeAccess().getSatisfiesKeyword_2_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_1_0());
+										}
+										lv_satisfies_19_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getAlwaysFailureNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_19_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_20=Comma
+									{
+										newLeafNode(otherlv_20, grammarAccess.getAlwaysFailureNodeAccess().getCommaKeyword_2_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getAlwaysFailureNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_2_1_0());
+											}
+											lv_satisfies_21_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getAlwaysFailureNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_21_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getAlwaysFailureNodeAccess().getUnorderedGroup_2());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getAlwaysFailureNodeAccess().getUnorderedGroup_2(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getAlwaysFailureNodeAccess().getUnorderedGroup_2(), 6);
+					}
+								({true}?=>(otherlv_22=RightParenthesis
+								{
+									newLeafNode(otherlv_22, grammarAccess.getAlwaysFailureNodeAccess().getRightParenthesisKeyword_2_6());
 								}
 								))
 					{ 
@@ -10170,9 +11196,9 @@ ruleAlwaysSuccessNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getAlwaysSuccessNodeAccess().getUnorderedGroup_2(), 1);
 					}
-								({true}?=>(otherlv_4=Name
+								({true}?=>(otherlv_4=ID
 								{
-									newLeafNode(otherlv_4, grammarAccess.getAlwaysSuccessNodeAccess().getNameKeyword_2_1_0());
+									newLeafNode(otherlv_4, grammarAccess.getAlwaysSuccessNodeAccess().getIDKeyword_2_1_0());
 								}
 								otherlv_5=EqualsSign
 								{
@@ -10181,17 +11207,17 @@ ruleAlwaysSuccessNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getNameEStringParserRuleCall_2_1_2_0());
+											newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getIDEStringParserRuleCall_2_1_2_0());
 										}
-										lv_name_6_0=ruleEString
+										lv_ID_6_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getAlwaysSuccessNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_6_0,
+												"ID",
+												lv_ID_6_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -10208,54 +11234,33 @@ ruleAlwaysSuccessNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getAlwaysSuccessNodeAccess().getUnorderedGroup_2(), 2);
 					}
-								({true}?=>(otherlv_7=Parameters
+								({true}?=>(otherlv_7=Name
 								{
-									newLeafNode(otherlv_7, grammarAccess.getAlwaysSuccessNodeAccess().getParametersKeyword_2_2_0());
+									newLeafNode(otherlv_7, grammarAccess.getAlwaysSuccessNodeAccess().getNameKeyword_2_2_0());
+								}
+								otherlv_8=EqualsSign
+								{
+									newLeafNode(otherlv_8, grammarAccess.getAlwaysSuccessNodeAccess().getEqualsSignKeyword_2_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getParametersParameterParserRuleCall_2_2_1_0());
+											newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getNameEStringParserRuleCall_2_2_2_0());
 										}
-										lv_parameters_8_0=ruleParameter
+										lv_name_9_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getAlwaysSuccessNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_8_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_9_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_9=Comma
-									{
-										newLeafNode(otherlv_9, grammarAccess.getAlwaysSuccessNodeAccess().getCommaKeyword_2_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getParametersParameterParserRuleCall_2_2_2_1_0());
-											}
-											lv_parameters_10_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getAlwaysSuccessNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_10_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getAlwaysSuccessNodeAccess().getUnorderedGroup_2());
@@ -10267,49 +11272,49 @@ ruleAlwaysSuccessNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getAlwaysSuccessNodeAccess().getUnorderedGroup_2(), 3);
 					}
-								({true}?=>(otherlv_11=Satisfices
+								({true}?=>(otherlv_10=Parameters
 								{
-									newLeafNode(otherlv_11, grammarAccess.getAlwaysSuccessNodeAccess().getSatisficesKeyword_2_3_0());
+									newLeafNode(otherlv_10, grammarAccess.getAlwaysSuccessNodeAccess().getParametersKeyword_2_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getSatisficesQualityParserRuleCall_2_3_1_0());
+											newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getParametersParameterParserRuleCall_2_3_1_0());
 										}
-										lv_satisfices_12_0=ruleQuality
+										lv_parameters_11_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getAlwaysSuccessNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_12_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_11_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_13=Comma
+									otherlv_12=Comma
 									{
-										newLeafNode(otherlv_13, grammarAccess.getAlwaysSuccessNodeAccess().getCommaKeyword_2_3_2_0());
+										newLeafNode(otherlv_12, grammarAccess.getAlwaysSuccessNodeAccess().getCommaKeyword_2_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getSatisficesQualityParserRuleCall_2_3_2_1_0());
+												newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getParametersParameterParserRuleCall_2_3_2_1_0());
 											}
-											lv_satisfices_14_0=ruleQuality
+											lv_parameters_13_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getAlwaysSuccessNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_14_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_13_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -10326,49 +11331,49 @@ ruleAlwaysSuccessNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getAlwaysSuccessNodeAccess().getUnorderedGroup_2(), 4);
 					}
-								({true}?=>(otherlv_15=Satisfies
+								({true}?=>(otherlv_14=Satisfices
 								{
-									newLeafNode(otherlv_15, grammarAccess.getAlwaysSuccessNodeAccess().getSatisfiesKeyword_2_4_0());
+									newLeafNode(otherlv_14, grammarAccess.getAlwaysSuccessNodeAccess().getSatisficesKeyword_2_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_1_0());
+											newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getSatisficesQualityParserRuleCall_2_4_1_0());
 										}
-										lv_satisfies_16_0=ruleQualityRequirement
+										lv_satisfices_15_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getAlwaysSuccessNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_16_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_15_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_17=Comma
+									otherlv_16=Comma
 									{
-										newLeafNode(otherlv_17, grammarAccess.getAlwaysSuccessNodeAccess().getCommaKeyword_2_4_2_0());
+										newLeafNode(otherlv_16, grammarAccess.getAlwaysSuccessNodeAccess().getCommaKeyword_2_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_2_1_0());
+												newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getSatisficesQualityParserRuleCall_2_4_2_1_0());
 											}
-											lv_satisfies_18_0=ruleQualityRequirement
+											lv_satisfices_17_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getAlwaysSuccessNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_18_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_17_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -10385,9 +11390,68 @@ ruleAlwaysSuccessNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getAlwaysSuccessNodeAccess().getUnorderedGroup_2(), 5);
 					}
-								({true}?=>(otherlv_19=RightParenthesis
+								({true}?=>(otherlv_18=Satisfies
 								{
-									newLeafNode(otherlv_19, grammarAccess.getAlwaysSuccessNodeAccess().getRightParenthesisKeyword_2_5());
+									newLeafNode(otherlv_18, grammarAccess.getAlwaysSuccessNodeAccess().getSatisfiesKeyword_2_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_1_0());
+										}
+										lv_satisfies_19_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getAlwaysSuccessNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_19_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_20=Comma
+									{
+										newLeafNode(otherlv_20, grammarAccess.getAlwaysSuccessNodeAccess().getCommaKeyword_2_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getAlwaysSuccessNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_2_1_0());
+											}
+											lv_satisfies_21_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getAlwaysSuccessNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_21_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getAlwaysSuccessNodeAccess().getUnorderedGroup_2());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getAlwaysSuccessNodeAccess().getUnorderedGroup_2(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getAlwaysSuccessNodeAccess().getUnorderedGroup_2(), 6);
+					}
+								({true}?=>(otherlv_22=RightParenthesis
+								{
+									newLeafNode(otherlv_22, grammarAccess.getAlwaysSuccessNodeAccess().getRightParenthesisKeyword_2_6());
 								}
 								))
 					{ 
@@ -10460,9 +11524,9 @@ ruleSetBlackboardNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 1);
 					}
-								({true}?=>(otherlv_4=Name
+								({true}?=>(otherlv_4=ID
 								{
-									newLeafNode(otherlv_4, grammarAccess.getSetBlackboardNodeAccess().getNameKeyword_2_1_0());
+									newLeafNode(otherlv_4, grammarAccess.getSetBlackboardNodeAccess().getIDKeyword_2_1_0());
 								}
 								otherlv_5=EqualsSign
 								{
@@ -10471,17 +11535,17 @@ ruleSetBlackboardNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getNameEStringParserRuleCall_2_1_2_0());
+											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getIDEStringParserRuleCall_2_1_2_0());
 										}
-										lv_name_6_0=ruleEString
+										lv_ID_6_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_6_0,
+												"ID",
+												lv_ID_6_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -10498,16 +11562,54 @@ ruleSetBlackboardNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 2);
 					}
-								({true}?=>(otherlv_7=Satisfices
+								({true}?=>(otherlv_7=Name
 								{
-									newLeafNode(otherlv_7, grammarAccess.getSetBlackboardNodeAccess().getSatisficesKeyword_2_2_0());
+									newLeafNode(otherlv_7, grammarAccess.getSetBlackboardNodeAccess().getNameKeyword_2_2_0());
+								}
+								otherlv_8=EqualsSign
+								{
+									newLeafNode(otherlv_8, grammarAccess.getSetBlackboardNodeAccess().getEqualsSignKeyword_2_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getSatisficesQualityParserRuleCall_2_2_1_0());
+											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getNameEStringParserRuleCall_2_2_2_0());
 										}
-										lv_satisfices_8_0=ruleQuality
+										lv_name_9_0=ruleEString
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
+											}
+											set(
+												$current,
+												"name",
+												lv_name_9_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 3)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 3);
+					}
+								({true}?=>(otherlv_10=Satisfices
+								{
+									newLeafNode(otherlv_10, grammarAccess.getSetBlackboardNodeAccess().getSatisficesKeyword_2_3_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getSatisficesQualityParserRuleCall_2_3_1_0());
+										}
+										lv_satisfices_11_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
@@ -10515,23 +11617,23 @@ ruleSetBlackboardNode returns [EObject current=null]
 											add(
 												$current,
 												"satisfices",
-												lv_satisfices_8_0,
+												lv_satisfices_11_0,
 												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_9=Comma
+									otherlv_12=Comma
 									{
-										newLeafNode(otherlv_9, grammarAccess.getSetBlackboardNodeAccess().getCommaKeyword_2_2_2_0());
+										newLeafNode(otherlv_12, grammarAccess.getSetBlackboardNodeAccess().getCommaKeyword_2_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getSatisficesQualityParserRuleCall_2_2_2_1_0());
+												newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getSatisficesQualityParserRuleCall_2_3_2_1_0());
 											}
-											lv_satisfices_10_0=ruleQuality
+											lv_satisfices_13_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
@@ -10539,7 +11641,7 @@ ruleSetBlackboardNode returns [EObject current=null]
 												add(
 													$current,
 													"satisfices",
-													lv_satisfices_10_0,
+													lv_satisfices_13_0,
 													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
@@ -10553,51 +11655,13 @@ ruleSetBlackboardNode returns [EObject current=null]
 				)
 			)|
 			(
-				{getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 3)}?=>(
-					{
-						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 3);
-					}
-								({true}?=>(otherlv_11=Value
-								{
-									newLeafNode(otherlv_11, grammarAccess.getSetBlackboardNodeAccess().getValueKeyword_2_3_0());
-								}
-								otherlv_12=EqualsSign
-								{
-									newLeafNode(otherlv_12, grammarAccess.getSetBlackboardNodeAccess().getEqualsSignKeyword_2_3_1());
-								}
-								(
-									(
-										{
-											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getValueEStringParserRuleCall_2_3_2_0());
-										}
-										lv_value_13_0=ruleEString
-										{
-											if ($current==null) {
-												$current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
-											}
-											set(
-												$current,
-												"value",
-												lv_value_13_0,
-												"org.xtext.btcpp.QualityBtCpp.EString");
-											afterParserOrEnumRuleCall();
-										}
-									)
-								)
-								))
-					{ 
-						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2());
-					}
-				)
-			)|
-			(
 				{getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 4)}?=>(
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 4);
 					}
-								({true}?=>(otherlv_14=Output_key
+								({true}?=>(otherlv_14=Value
 								{
-									newLeafNode(otherlv_14, grammarAccess.getSetBlackboardNodeAccess().getOutput_keyKeyword_2_4_0());
+									newLeafNode(otherlv_14, grammarAccess.getSetBlackboardNodeAccess().getValueKeyword_2_4_0());
 								}
 								otherlv_15=EqualsSign
 								{
@@ -10606,17 +11670,17 @@ ruleSetBlackboardNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getOutput_keyEStringParserRuleCall_2_4_2_0());
+											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getValueEStringParserRuleCall_2_4_2_0());
 										}
-										lv_output_key_16_0=ruleEString
+										lv_value_16_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
 											}
 											set(
 												$current,
-												"output_key",
-												lv_output_key_16_0,
+												"value",
+												lv_value_16_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -10633,54 +11697,33 @@ ruleSetBlackboardNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 5);
 					}
-								({true}?=>(otherlv_17=Parameters
+								({true}?=>(otherlv_17=Output_key
 								{
-									newLeafNode(otherlv_17, grammarAccess.getSetBlackboardNodeAccess().getParametersKeyword_2_5_0());
+									newLeafNode(otherlv_17, grammarAccess.getSetBlackboardNodeAccess().getOutput_keyKeyword_2_5_0());
+								}
+								otherlv_18=EqualsSign
+								{
+									newLeafNode(otherlv_18, grammarAccess.getSetBlackboardNodeAccess().getEqualsSignKeyword_2_5_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getParametersParameterParserRuleCall_2_5_1_0());
+											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getOutput_keyEStringParserRuleCall_2_5_2_0());
 										}
-										lv_parameters_18_0=ruleParameter
+										lv_output_key_19_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_18_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"output_key",
+												lv_output_key_19_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_19=Comma
-									{
-										newLeafNode(otherlv_19, grammarAccess.getSetBlackboardNodeAccess().getCommaKeyword_2_5_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getParametersParameterParserRuleCall_2_5_2_1_0());
-											}
-											lv_parameters_20_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_20_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2());
@@ -10692,49 +11735,49 @@ ruleSetBlackboardNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 6);
 					}
-								({true}?=>(otherlv_21=Satisfies
+								({true}?=>(otherlv_20=Parameters
 								{
-									newLeafNode(otherlv_21, grammarAccess.getSetBlackboardNodeAccess().getSatisfiesKeyword_2_6_0());
+									newLeafNode(otherlv_20, grammarAccess.getSetBlackboardNodeAccess().getParametersKeyword_2_6_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_6_1_0());
+											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getParametersParameterParserRuleCall_2_6_1_0());
 										}
-										lv_satisfies_22_0=ruleQualityRequirement
+										lv_parameters_21_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_22_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"parameters",
+												lv_parameters_21_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_23=Comma
+									otherlv_22=Comma
 									{
-										newLeafNode(otherlv_23, grammarAccess.getSetBlackboardNodeAccess().getCommaKeyword_2_6_2_0());
+										newLeafNode(otherlv_22, grammarAccess.getSetBlackboardNodeAccess().getCommaKeyword_2_6_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_6_2_1_0());
+												newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getParametersParameterParserRuleCall_2_6_2_1_0());
 											}
-											lv_satisfies_24_0=ruleQualityRequirement
+											lv_parameters_23_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_24_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"parameters",
+													lv_parameters_23_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -10751,9 +11794,68 @@ ruleSetBlackboardNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 7);
 					}
-								({true}?=>(otherlv_25=RightParenthesis
+								({true}?=>(otherlv_24=Satisfies
 								{
-									newLeafNode(otherlv_25, grammarAccess.getSetBlackboardNodeAccess().getRightParenthesisKeyword_2_7());
+									newLeafNode(otherlv_24, grammarAccess.getSetBlackboardNodeAccess().getSatisfiesKeyword_2_7_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_7_1_0());
+										}
+										lv_satisfies_25_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_25_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_26=Comma
+									{
+										newLeafNode(otherlv_26, grammarAccess.getSetBlackboardNodeAccess().getCommaKeyword_2_7_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getSetBlackboardNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_7_2_1_0());
+											}
+											lv_satisfies_27_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getSetBlackboardNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_27_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 8)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getSetBlackboardNodeAccess().getUnorderedGroup_2(), 8);
+					}
+								({true}?=>(otherlv_28=RightParenthesis
+								{
+									newLeafNode(otherlv_28, grammarAccess.getSetBlackboardNodeAccess().getRightParenthesisKeyword_2_8());
 								}
 								))
 					{ 
@@ -10826,9 +11928,9 @@ ruleTestNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getTestNodeAccess().getUnorderedGroup_2(), 1);
 					}
-								({true}?=>(otherlv_4=Name
+								({true}?=>(otherlv_4=ID
 								{
-									newLeafNode(otherlv_4, grammarAccess.getTestNodeAccess().getNameKeyword_2_1_0());
+									newLeafNode(otherlv_4, grammarAccess.getTestNodeAccess().getIDKeyword_2_1_0());
 								}
 								otherlv_5=EqualsSign
 								{
@@ -10837,17 +11939,17 @@ ruleTestNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getTestNodeAccess().getNameEStringParserRuleCall_2_1_2_0());
+											newCompositeNode(grammarAccess.getTestNodeAccess().getIDEStringParserRuleCall_2_1_2_0());
 										}
-										lv_name_6_0=ruleEString
+										lv_ID_6_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getTestNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_6_0,
+												"ID",
+												lv_ID_6_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -10864,54 +11966,33 @@ ruleTestNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getTestNodeAccess().getUnorderedGroup_2(), 2);
 					}
-								({true}?=>(otherlv_7=Parameters
+								({true}?=>(otherlv_7=Name
 								{
-									newLeafNode(otherlv_7, grammarAccess.getTestNodeAccess().getParametersKeyword_2_2_0());
+									newLeafNode(otherlv_7, grammarAccess.getTestNodeAccess().getNameKeyword_2_2_0());
+								}
+								otherlv_8=EqualsSign
+								{
+									newLeafNode(otherlv_8, grammarAccess.getTestNodeAccess().getEqualsSignKeyword_2_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getTestNodeAccess().getParametersParameterParserRuleCall_2_2_1_0());
+											newCompositeNode(grammarAccess.getTestNodeAccess().getNameEStringParserRuleCall_2_2_2_0());
 										}
-										lv_parameters_8_0=ruleParameter
+										lv_name_9_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getTestNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_8_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_9_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_9=Comma
-									{
-										newLeafNode(otherlv_9, grammarAccess.getTestNodeAccess().getCommaKeyword_2_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getTestNodeAccess().getParametersParameterParserRuleCall_2_2_2_1_0());
-											}
-											lv_parameters_10_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getTestNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_10_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getTestNodeAccess().getUnorderedGroup_2());
@@ -10923,49 +12004,49 @@ ruleTestNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getTestNodeAccess().getUnorderedGroup_2(), 3);
 					}
-								({true}?=>(otherlv_11=Satisfices
+								({true}?=>(otherlv_10=Parameters
 								{
-									newLeafNode(otherlv_11, grammarAccess.getTestNodeAccess().getSatisficesKeyword_2_3_0());
+									newLeafNode(otherlv_10, grammarAccess.getTestNodeAccess().getParametersKeyword_2_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getTestNodeAccess().getSatisficesQualityParserRuleCall_2_3_1_0());
+											newCompositeNode(grammarAccess.getTestNodeAccess().getParametersParameterParserRuleCall_2_3_1_0());
 										}
-										lv_satisfices_12_0=ruleQuality
+										lv_parameters_11_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getTestNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_12_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_11_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_13=Comma
+									otherlv_12=Comma
 									{
-										newLeafNode(otherlv_13, grammarAccess.getTestNodeAccess().getCommaKeyword_2_3_2_0());
+										newLeafNode(otherlv_12, grammarAccess.getTestNodeAccess().getCommaKeyword_2_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getTestNodeAccess().getSatisficesQualityParserRuleCall_2_3_2_1_0());
+												newCompositeNode(grammarAccess.getTestNodeAccess().getParametersParameterParserRuleCall_2_3_2_1_0());
 											}
-											lv_satisfices_14_0=ruleQuality
+											lv_parameters_13_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getTestNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_14_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_13_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -10982,49 +12063,49 @@ ruleTestNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getTestNodeAccess().getUnorderedGroup_2(), 4);
 					}
-								({true}?=>(otherlv_15=Satisfies
+								({true}?=>(otherlv_14=Satisfices
 								{
-									newLeafNode(otherlv_15, grammarAccess.getTestNodeAccess().getSatisfiesKeyword_2_4_0());
+									newLeafNode(otherlv_14, grammarAccess.getTestNodeAccess().getSatisficesKeyword_2_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getTestNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_1_0());
+											newCompositeNode(grammarAccess.getTestNodeAccess().getSatisficesQualityParserRuleCall_2_4_1_0());
 										}
-										lv_satisfies_16_0=ruleQualityRequirement
+										lv_satisfices_15_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getTestNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_16_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_15_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_17=Comma
+									otherlv_16=Comma
 									{
-										newLeafNode(otherlv_17, grammarAccess.getTestNodeAccess().getCommaKeyword_2_4_2_0());
+										newLeafNode(otherlv_16, grammarAccess.getTestNodeAccess().getCommaKeyword_2_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getTestNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_2_1_0());
+												newCompositeNode(grammarAccess.getTestNodeAccess().getSatisficesQualityParserRuleCall_2_4_2_1_0());
 											}
-											lv_satisfies_18_0=ruleQualityRequirement
+											lv_satisfices_17_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getTestNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_18_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_17_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -11041,9 +12122,68 @@ ruleTestNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getTestNodeAccess().getUnorderedGroup_2(), 5);
 					}
-								({true}?=>(otherlv_19=RightParenthesis
+								({true}?=>(otherlv_18=Satisfies
 								{
-									newLeafNode(otherlv_19, grammarAccess.getTestNodeAccess().getRightParenthesisKeyword_2_5());
+									newLeafNode(otherlv_18, grammarAccess.getTestNodeAccess().getSatisfiesKeyword_2_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getTestNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_1_0());
+										}
+										lv_satisfies_19_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getTestNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_19_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_20=Comma
+									{
+										newLeafNode(otherlv_20, grammarAccess.getTestNodeAccess().getCommaKeyword_2_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getTestNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_2_1_0());
+											}
+											lv_satisfies_21_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getTestNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_21_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getTestNodeAccess().getUnorderedGroup_2());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getTestNodeAccess().getUnorderedGroup_2(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getTestNodeAccess().getUnorderedGroup_2(), 6);
+					}
+								({true}?=>(otherlv_22=RightParenthesis
+								{
+									newLeafNode(otherlv_22, grammarAccess.getTestNodeAccess().getRightParenthesisKeyword_2_6());
 								}
 								))
 					{ 
@@ -11116,9 +12256,9 @@ ruleEntryUpdatedActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getEntryUpdatedActionNodeAccess().getUnorderedGroup_2(), 1);
 					}
-								({true}?=>(otherlv_4=Name
+								({true}?=>(otherlv_4=ID
 								{
-									newLeafNode(otherlv_4, grammarAccess.getEntryUpdatedActionNodeAccess().getNameKeyword_2_1_0());
+									newLeafNode(otherlv_4, grammarAccess.getEntryUpdatedActionNodeAccess().getIDKeyword_2_1_0());
 								}
 								otherlv_5=EqualsSign
 								{
@@ -11127,17 +12267,17 @@ ruleEntryUpdatedActionNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getNameEStringParserRuleCall_2_1_2_0());
+											newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getIDEStringParserRuleCall_2_1_2_0());
 										}
-										lv_name_6_0=ruleEString
+										lv_ID_6_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getEntryUpdatedActionNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_6_0,
+												"ID",
+												lv_ID_6_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -11154,54 +12294,33 @@ ruleEntryUpdatedActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getEntryUpdatedActionNodeAccess().getUnorderedGroup_2(), 2);
 					}
-								({true}?=>(otherlv_7=Parameters
+								({true}?=>(otherlv_7=Name
 								{
-									newLeafNode(otherlv_7, grammarAccess.getEntryUpdatedActionNodeAccess().getParametersKeyword_2_2_0());
+									newLeafNode(otherlv_7, grammarAccess.getEntryUpdatedActionNodeAccess().getNameKeyword_2_2_0());
+								}
+								otherlv_8=EqualsSign
+								{
+									newLeafNode(otherlv_8, grammarAccess.getEntryUpdatedActionNodeAccess().getEqualsSignKeyword_2_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getParametersParameterParserRuleCall_2_2_1_0());
+											newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getNameEStringParserRuleCall_2_2_2_0());
 										}
-										lv_parameters_8_0=ruleParameter
+										lv_name_9_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getEntryUpdatedActionNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_8_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_9_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_9=Comma
-									{
-										newLeafNode(otherlv_9, grammarAccess.getEntryUpdatedActionNodeAccess().getCommaKeyword_2_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getParametersParameterParserRuleCall_2_2_2_1_0());
-											}
-											lv_parameters_10_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getEntryUpdatedActionNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_10_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEntryUpdatedActionNodeAccess().getUnorderedGroup_2());
@@ -11213,49 +12332,49 @@ ruleEntryUpdatedActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getEntryUpdatedActionNodeAccess().getUnorderedGroup_2(), 3);
 					}
-								({true}?=>(otherlv_11=Satisfices
+								({true}?=>(otherlv_10=Parameters
 								{
-									newLeafNode(otherlv_11, grammarAccess.getEntryUpdatedActionNodeAccess().getSatisficesKeyword_2_3_0());
+									newLeafNode(otherlv_10, grammarAccess.getEntryUpdatedActionNodeAccess().getParametersKeyword_2_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getSatisficesQualityParserRuleCall_2_3_1_0());
+											newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getParametersParameterParserRuleCall_2_3_1_0());
 										}
-										lv_satisfices_12_0=ruleQuality
+										lv_parameters_11_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getEntryUpdatedActionNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_12_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_11_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_13=Comma
+									otherlv_12=Comma
 									{
-										newLeafNode(otherlv_13, grammarAccess.getEntryUpdatedActionNodeAccess().getCommaKeyword_2_3_2_0());
+										newLeafNode(otherlv_12, grammarAccess.getEntryUpdatedActionNodeAccess().getCommaKeyword_2_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getSatisficesQualityParserRuleCall_2_3_2_1_0());
+												newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getParametersParameterParserRuleCall_2_3_2_1_0());
 											}
-											lv_satisfices_14_0=ruleQuality
+											lv_parameters_13_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getEntryUpdatedActionNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_14_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_13_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -11272,49 +12391,49 @@ ruleEntryUpdatedActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getEntryUpdatedActionNodeAccess().getUnorderedGroup_2(), 4);
 					}
-								({true}?=>(otherlv_15=Satisfies
+								({true}?=>(otherlv_14=Satisfices
 								{
-									newLeafNode(otherlv_15, grammarAccess.getEntryUpdatedActionNodeAccess().getSatisfiesKeyword_2_4_0());
+									newLeafNode(otherlv_14, grammarAccess.getEntryUpdatedActionNodeAccess().getSatisficesKeyword_2_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_1_0());
+											newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getSatisficesQualityParserRuleCall_2_4_1_0());
 										}
-										lv_satisfies_16_0=ruleQualityRequirement
+										lv_satisfices_15_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getEntryUpdatedActionNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_16_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_15_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_17=Comma
+									otherlv_16=Comma
 									{
-										newLeafNode(otherlv_17, grammarAccess.getEntryUpdatedActionNodeAccess().getCommaKeyword_2_4_2_0());
+										newLeafNode(otherlv_16, grammarAccess.getEntryUpdatedActionNodeAccess().getCommaKeyword_2_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_2_1_0());
+												newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getSatisficesQualityParserRuleCall_2_4_2_1_0());
 											}
-											lv_satisfies_18_0=ruleQualityRequirement
+											lv_satisfices_17_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getEntryUpdatedActionNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_18_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_17_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -11331,9 +12450,68 @@ ruleEntryUpdatedActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getEntryUpdatedActionNodeAccess().getUnorderedGroup_2(), 5);
 					}
-								({true}?=>(otherlv_19=RightParenthesis
+								({true}?=>(otherlv_18=Satisfies
 								{
-									newLeafNode(otherlv_19, grammarAccess.getEntryUpdatedActionNodeAccess().getRightParenthesisKeyword_2_5());
+									newLeafNode(otherlv_18, grammarAccess.getEntryUpdatedActionNodeAccess().getSatisfiesKeyword_2_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_1_0());
+										}
+										lv_satisfies_19_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getEntryUpdatedActionNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_19_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_20=Comma
+									{
+										newLeafNode(otherlv_20, grammarAccess.getEntryUpdatedActionNodeAccess().getCommaKeyword_2_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getEntryUpdatedActionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_2_1_0());
+											}
+											lv_satisfies_21_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getEntryUpdatedActionNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_21_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getEntryUpdatedActionNodeAccess().getUnorderedGroup_2());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getEntryUpdatedActionNodeAccess().getUnorderedGroup_2(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getEntryUpdatedActionNodeAccess().getUnorderedGroup_2(), 6);
+					}
+								({true}?=>(otherlv_22=RightParenthesis
+								{
+									newLeafNode(otherlv_22, grammarAccess.getEntryUpdatedActionNodeAccess().getRightParenthesisKeyword_2_6());
 								}
 								))
 					{ 
@@ -11406,9 +12584,9 @@ ruleUnsetBlackboardNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getUnsetBlackboardNodeAccess().getUnorderedGroup_2(), 1);
 					}
-								({true}?=>(otherlv_4=Name
+								({true}?=>(otherlv_4=ID
 								{
-									newLeafNode(otherlv_4, grammarAccess.getUnsetBlackboardNodeAccess().getNameKeyword_2_1_0());
+									newLeafNode(otherlv_4, grammarAccess.getUnsetBlackboardNodeAccess().getIDKeyword_2_1_0());
 								}
 								otherlv_5=EqualsSign
 								{
@@ -11417,17 +12595,17 @@ ruleUnsetBlackboardNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getNameEStringParserRuleCall_2_1_2_0());
+											newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getIDEStringParserRuleCall_2_1_2_0());
 										}
-										lv_name_6_0=ruleEString
+										lv_ID_6_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getUnsetBlackboardNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_6_0,
+												"ID",
+												lv_ID_6_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -11444,54 +12622,33 @@ ruleUnsetBlackboardNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getUnsetBlackboardNodeAccess().getUnorderedGroup_2(), 2);
 					}
-								({true}?=>(otherlv_7=Parameters
+								({true}?=>(otherlv_7=Name
 								{
-									newLeafNode(otherlv_7, grammarAccess.getUnsetBlackboardNodeAccess().getParametersKeyword_2_2_0());
+									newLeafNode(otherlv_7, grammarAccess.getUnsetBlackboardNodeAccess().getNameKeyword_2_2_0());
+								}
+								otherlv_8=EqualsSign
+								{
+									newLeafNode(otherlv_8, grammarAccess.getUnsetBlackboardNodeAccess().getEqualsSignKeyword_2_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getParametersParameterParserRuleCall_2_2_1_0());
+											newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getNameEStringParserRuleCall_2_2_2_0());
 										}
-										lv_parameters_8_0=ruleParameter
+										lv_name_9_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getUnsetBlackboardNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_8_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_9_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_9=Comma
-									{
-										newLeafNode(otherlv_9, grammarAccess.getUnsetBlackboardNodeAccess().getCommaKeyword_2_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getParametersParameterParserRuleCall_2_2_2_1_0());
-											}
-											lv_parameters_10_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getUnsetBlackboardNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_10_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getUnsetBlackboardNodeAccess().getUnorderedGroup_2());
@@ -11503,49 +12660,49 @@ ruleUnsetBlackboardNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getUnsetBlackboardNodeAccess().getUnorderedGroup_2(), 3);
 					}
-								({true}?=>(otherlv_11=Satisfices
+								({true}?=>(otherlv_10=Parameters
 								{
-									newLeafNode(otherlv_11, grammarAccess.getUnsetBlackboardNodeAccess().getSatisficesKeyword_2_3_0());
+									newLeafNode(otherlv_10, grammarAccess.getUnsetBlackboardNodeAccess().getParametersKeyword_2_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getSatisficesQualityParserRuleCall_2_3_1_0());
+											newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getParametersParameterParserRuleCall_2_3_1_0());
 										}
-										lv_satisfices_12_0=ruleQuality
+										lv_parameters_11_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getUnsetBlackboardNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_12_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_11_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_13=Comma
+									otherlv_12=Comma
 									{
-										newLeafNode(otherlv_13, grammarAccess.getUnsetBlackboardNodeAccess().getCommaKeyword_2_3_2_0());
+										newLeafNode(otherlv_12, grammarAccess.getUnsetBlackboardNodeAccess().getCommaKeyword_2_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getSatisficesQualityParserRuleCall_2_3_2_1_0());
+												newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getParametersParameterParserRuleCall_2_3_2_1_0());
 											}
-											lv_satisfices_14_0=ruleQuality
+											lv_parameters_13_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getUnsetBlackboardNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_14_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_13_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -11562,49 +12719,49 @@ ruleUnsetBlackboardNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getUnsetBlackboardNodeAccess().getUnorderedGroup_2(), 4);
 					}
-								({true}?=>(otherlv_15=Satisfies
+								({true}?=>(otherlv_14=Satisfices
 								{
-									newLeafNode(otherlv_15, grammarAccess.getUnsetBlackboardNodeAccess().getSatisfiesKeyword_2_4_0());
+									newLeafNode(otherlv_14, grammarAccess.getUnsetBlackboardNodeAccess().getSatisficesKeyword_2_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_1_0());
+											newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getSatisficesQualityParserRuleCall_2_4_1_0());
 										}
-										lv_satisfies_16_0=ruleQualityRequirement
+										lv_satisfices_15_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getUnsetBlackboardNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_16_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_15_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_17=Comma
+									otherlv_16=Comma
 									{
-										newLeafNode(otherlv_17, grammarAccess.getUnsetBlackboardNodeAccess().getCommaKeyword_2_4_2_0());
+										newLeafNode(otherlv_16, grammarAccess.getUnsetBlackboardNodeAccess().getCommaKeyword_2_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_2_1_0());
+												newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getSatisficesQualityParserRuleCall_2_4_2_1_0());
 											}
-											lv_satisfies_18_0=ruleQualityRequirement
+											lv_satisfices_17_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getUnsetBlackboardNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_18_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_17_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -11621,9 +12778,68 @@ ruleUnsetBlackboardNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getUnsetBlackboardNodeAccess().getUnorderedGroup_2(), 5);
 					}
-								({true}?=>(otherlv_19=RightParenthesis
+								({true}?=>(otherlv_18=Satisfies
 								{
-									newLeafNode(otherlv_19, grammarAccess.getUnsetBlackboardNodeAccess().getRightParenthesisKeyword_2_5());
+									newLeafNode(otherlv_18, grammarAccess.getUnsetBlackboardNodeAccess().getSatisfiesKeyword_2_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_1_0());
+										}
+										lv_satisfies_19_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getUnsetBlackboardNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_19_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_20=Comma
+									{
+										newLeafNode(otherlv_20, grammarAccess.getUnsetBlackboardNodeAccess().getCommaKeyword_2_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getUnsetBlackboardNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_2_1_0());
+											}
+											lv_satisfies_21_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getUnsetBlackboardNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_21_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getUnsetBlackboardNodeAccess().getUnorderedGroup_2());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getUnsetBlackboardNodeAccess().getUnorderedGroup_2(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getUnsetBlackboardNodeAccess().getUnorderedGroup_2(), 6);
+					}
+								({true}?=>(otherlv_22=RightParenthesis
+								{
+									newLeafNode(otherlv_22, grammarAccess.getUnsetBlackboardNodeAccess().getRightParenthesisKeyword_2_6());
 								}
 								))
 					{ 
@@ -11696,9 +12912,9 @@ ruleThreadedActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getThreadedActionNodeAccess().getUnorderedGroup_2(), 1);
 					}
-								({true}?=>(otherlv_4=Name
+								({true}?=>(otherlv_4=ID
 								{
-									newLeafNode(otherlv_4, grammarAccess.getThreadedActionNodeAccess().getNameKeyword_2_1_0());
+									newLeafNode(otherlv_4, grammarAccess.getThreadedActionNodeAccess().getIDKeyword_2_1_0());
 								}
 								otherlv_5=EqualsSign
 								{
@@ -11707,17 +12923,17 @@ ruleThreadedActionNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getNameEStringParserRuleCall_2_1_2_0());
+											newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getIDEStringParserRuleCall_2_1_2_0());
 										}
-										lv_name_6_0=ruleEString
+										lv_ID_6_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getThreadedActionNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_6_0,
+												"ID",
+												lv_ID_6_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -11734,54 +12950,33 @@ ruleThreadedActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getThreadedActionNodeAccess().getUnorderedGroup_2(), 2);
 					}
-								({true}?=>(otherlv_7=Parameters
+								({true}?=>(otherlv_7=Name
 								{
-									newLeafNode(otherlv_7, grammarAccess.getThreadedActionNodeAccess().getParametersKeyword_2_2_0());
+									newLeafNode(otherlv_7, grammarAccess.getThreadedActionNodeAccess().getNameKeyword_2_2_0());
+								}
+								otherlv_8=EqualsSign
+								{
+									newLeafNode(otherlv_8, grammarAccess.getThreadedActionNodeAccess().getEqualsSignKeyword_2_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getParametersParameterParserRuleCall_2_2_1_0());
+											newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getNameEStringParserRuleCall_2_2_2_0());
 										}
-										lv_parameters_8_0=ruleParameter
+										lv_name_9_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getThreadedActionNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_8_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_9_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_9=Comma
-									{
-										newLeafNode(otherlv_9, grammarAccess.getThreadedActionNodeAccess().getCommaKeyword_2_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getParametersParameterParserRuleCall_2_2_2_1_0());
-											}
-											lv_parameters_10_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getThreadedActionNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_10_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getThreadedActionNodeAccess().getUnorderedGroup_2());
@@ -11793,49 +12988,49 @@ ruleThreadedActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getThreadedActionNodeAccess().getUnorderedGroup_2(), 3);
 					}
-								({true}?=>(otherlv_11=Satisfices
+								({true}?=>(otherlv_10=Parameters
 								{
-									newLeafNode(otherlv_11, grammarAccess.getThreadedActionNodeAccess().getSatisficesKeyword_2_3_0());
+									newLeafNode(otherlv_10, grammarAccess.getThreadedActionNodeAccess().getParametersKeyword_2_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getSatisficesQualityParserRuleCall_2_3_1_0());
+											newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getParametersParameterParserRuleCall_2_3_1_0());
 										}
-										lv_satisfices_12_0=ruleQuality
+										lv_parameters_11_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getThreadedActionNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_12_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_11_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_13=Comma
+									otherlv_12=Comma
 									{
-										newLeafNode(otherlv_13, grammarAccess.getThreadedActionNodeAccess().getCommaKeyword_2_3_2_0());
+										newLeafNode(otherlv_12, grammarAccess.getThreadedActionNodeAccess().getCommaKeyword_2_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getSatisficesQualityParserRuleCall_2_3_2_1_0());
+												newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getParametersParameterParserRuleCall_2_3_2_1_0());
 											}
-											lv_satisfices_14_0=ruleQuality
+											lv_parameters_13_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getThreadedActionNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_14_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_13_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -11852,49 +13047,49 @@ ruleThreadedActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getThreadedActionNodeAccess().getUnorderedGroup_2(), 4);
 					}
-								({true}?=>(otherlv_15=Satisfies
+								({true}?=>(otherlv_14=Satisfices
 								{
-									newLeafNode(otherlv_15, grammarAccess.getThreadedActionNodeAccess().getSatisfiesKeyword_2_4_0());
+									newLeafNode(otherlv_14, grammarAccess.getThreadedActionNodeAccess().getSatisficesKeyword_2_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_1_0());
+											newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getSatisficesQualityParserRuleCall_2_4_1_0());
 										}
-										lv_satisfies_16_0=ruleQualityRequirement
+										lv_satisfices_15_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getThreadedActionNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_16_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_15_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_17=Comma
+									otherlv_16=Comma
 									{
-										newLeafNode(otherlv_17, grammarAccess.getThreadedActionNodeAccess().getCommaKeyword_2_4_2_0());
+										newLeafNode(otherlv_16, grammarAccess.getThreadedActionNodeAccess().getCommaKeyword_2_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_2_1_0());
+												newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getSatisficesQualityParserRuleCall_2_4_2_1_0());
 											}
-											lv_satisfies_18_0=ruleQualityRequirement
+											lv_satisfices_17_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getThreadedActionNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_18_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_17_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -11911,9 +13106,68 @@ ruleThreadedActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getThreadedActionNodeAccess().getUnorderedGroup_2(), 5);
 					}
-								({true}?=>(otherlv_19=RightParenthesis
+								({true}?=>(otherlv_18=Satisfies
 								{
-									newLeafNode(otherlv_19, grammarAccess.getThreadedActionNodeAccess().getRightParenthesisKeyword_2_5());
+									newLeafNode(otherlv_18, grammarAccess.getThreadedActionNodeAccess().getSatisfiesKeyword_2_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_1_0());
+										}
+										lv_satisfies_19_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getThreadedActionNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_19_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_20=Comma
+									{
+										newLeafNode(otherlv_20, grammarAccess.getThreadedActionNodeAccess().getCommaKeyword_2_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getThreadedActionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_2_1_0());
+											}
+											lv_satisfies_21_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getThreadedActionNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_21_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getThreadedActionNodeAccess().getUnorderedGroup_2());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getThreadedActionNodeAccess().getUnorderedGroup_2(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getThreadedActionNodeAccess().getUnorderedGroup_2(), 6);
+					}
+								({true}?=>(otherlv_22=RightParenthesis
+								{
+									newLeafNode(otherlv_22, grammarAccess.getThreadedActionNodeAccess().getRightParenthesisKeyword_2_6());
 								}
 								))
 					{ 
@@ -11986,9 +13240,9 @@ ruleCoroActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getCoroActionNodeAccess().getUnorderedGroup_2(), 1);
 					}
-								({true}?=>(otherlv_4=Name
+								({true}?=>(otherlv_4=ID
 								{
-									newLeafNode(otherlv_4, grammarAccess.getCoroActionNodeAccess().getNameKeyword_2_1_0());
+									newLeafNode(otherlv_4, grammarAccess.getCoroActionNodeAccess().getIDKeyword_2_1_0());
 								}
 								otherlv_5=EqualsSign
 								{
@@ -11997,17 +13251,17 @@ ruleCoroActionNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getCoroActionNodeAccess().getNameEStringParserRuleCall_2_1_2_0());
+											newCompositeNode(grammarAccess.getCoroActionNodeAccess().getIDEStringParserRuleCall_2_1_2_0());
 										}
-										lv_name_6_0=ruleEString
+										lv_ID_6_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getCoroActionNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_6_0,
+												"ID",
+												lv_ID_6_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -12024,54 +13278,33 @@ ruleCoroActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getCoroActionNodeAccess().getUnorderedGroup_2(), 2);
 					}
-								({true}?=>(otherlv_7=Parameters
+								({true}?=>(otherlv_7=Name
 								{
-									newLeafNode(otherlv_7, grammarAccess.getCoroActionNodeAccess().getParametersKeyword_2_2_0());
+									newLeafNode(otherlv_7, grammarAccess.getCoroActionNodeAccess().getNameKeyword_2_2_0());
+								}
+								otherlv_8=EqualsSign
+								{
+									newLeafNode(otherlv_8, grammarAccess.getCoroActionNodeAccess().getEqualsSignKeyword_2_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getCoroActionNodeAccess().getParametersParameterParserRuleCall_2_2_1_0());
+											newCompositeNode(grammarAccess.getCoroActionNodeAccess().getNameEStringParserRuleCall_2_2_2_0());
 										}
-										lv_parameters_8_0=ruleParameter
+										lv_name_9_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getCoroActionNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_8_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_9_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_9=Comma
-									{
-										newLeafNode(otherlv_9, grammarAccess.getCoroActionNodeAccess().getCommaKeyword_2_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getCoroActionNodeAccess().getParametersParameterParserRuleCall_2_2_2_1_0());
-											}
-											lv_parameters_10_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getCoroActionNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_10_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getCoroActionNodeAccess().getUnorderedGroup_2());
@@ -12083,49 +13316,49 @@ ruleCoroActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getCoroActionNodeAccess().getUnorderedGroup_2(), 3);
 					}
-								({true}?=>(otherlv_11=Satisfices
+								({true}?=>(otherlv_10=Parameters
 								{
-									newLeafNode(otherlv_11, grammarAccess.getCoroActionNodeAccess().getSatisficesKeyword_2_3_0());
+									newLeafNode(otherlv_10, grammarAccess.getCoroActionNodeAccess().getParametersKeyword_2_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getCoroActionNodeAccess().getSatisficesQualityParserRuleCall_2_3_1_0());
+											newCompositeNode(grammarAccess.getCoroActionNodeAccess().getParametersParameterParserRuleCall_2_3_1_0());
 										}
-										lv_satisfices_12_0=ruleQuality
+										lv_parameters_11_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getCoroActionNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_12_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_11_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_13=Comma
+									otherlv_12=Comma
 									{
-										newLeafNode(otherlv_13, grammarAccess.getCoroActionNodeAccess().getCommaKeyword_2_3_2_0());
+										newLeafNode(otherlv_12, grammarAccess.getCoroActionNodeAccess().getCommaKeyword_2_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getCoroActionNodeAccess().getSatisficesQualityParserRuleCall_2_3_2_1_0());
+												newCompositeNode(grammarAccess.getCoroActionNodeAccess().getParametersParameterParserRuleCall_2_3_2_1_0());
 											}
-											lv_satisfices_14_0=ruleQuality
+											lv_parameters_13_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getCoroActionNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_14_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_13_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -12142,49 +13375,49 @@ ruleCoroActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getCoroActionNodeAccess().getUnorderedGroup_2(), 4);
 					}
-								({true}?=>(otherlv_15=Satisfies
+								({true}?=>(otherlv_14=Satisfices
 								{
-									newLeafNode(otherlv_15, grammarAccess.getCoroActionNodeAccess().getSatisfiesKeyword_2_4_0());
+									newLeafNode(otherlv_14, grammarAccess.getCoroActionNodeAccess().getSatisficesKeyword_2_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getCoroActionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_1_0());
+											newCompositeNode(grammarAccess.getCoroActionNodeAccess().getSatisficesQualityParserRuleCall_2_4_1_0());
 										}
-										lv_satisfies_16_0=ruleQualityRequirement
+										lv_satisfices_15_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getCoroActionNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_16_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_15_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_17=Comma
+									otherlv_16=Comma
 									{
-										newLeafNode(otherlv_17, grammarAccess.getCoroActionNodeAccess().getCommaKeyword_2_4_2_0());
+										newLeafNode(otherlv_16, grammarAccess.getCoroActionNodeAccess().getCommaKeyword_2_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getCoroActionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_2_1_0());
+												newCompositeNode(grammarAccess.getCoroActionNodeAccess().getSatisficesQualityParserRuleCall_2_4_2_1_0());
 											}
-											lv_satisfies_18_0=ruleQualityRequirement
+											lv_satisfices_17_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getCoroActionNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_18_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_17_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -12201,9 +13434,68 @@ ruleCoroActionNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getCoroActionNodeAccess().getUnorderedGroup_2(), 5);
 					}
-								({true}?=>(otherlv_19=RightParenthesis
+								({true}?=>(otherlv_18=Satisfies
 								{
-									newLeafNode(otherlv_19, grammarAccess.getCoroActionNodeAccess().getRightParenthesisKeyword_2_5());
+									newLeafNode(otherlv_18, grammarAccess.getCoroActionNodeAccess().getSatisfiesKeyword_2_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getCoroActionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_1_0());
+										}
+										lv_satisfies_19_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getCoroActionNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_19_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_20=Comma
+									{
+										newLeafNode(otherlv_20, grammarAccess.getCoroActionNodeAccess().getCommaKeyword_2_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getCoroActionNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_2_1_0());
+											}
+											lv_satisfies_21_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getCoroActionNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_21_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getCoroActionNodeAccess().getUnorderedGroup_2());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getCoroActionNodeAccess().getUnorderedGroup_2(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getCoroActionNodeAccess().getUnorderedGroup_2(), 6);
+					}
+								({true}?=>(otherlv_22=RightParenthesis
+								{
+									newLeafNode(otherlv_22, grammarAccess.getCoroActionNodeAccess().getRightParenthesisKeyword_2_6());
 								}
 								))
 					{ 
@@ -12276,9 +13568,9 @@ ruleSleepNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSleepNodeAccess().getUnorderedGroup_2(), 1);
 					}
-								({true}?=>(otherlv_4=Name
+								({true}?=>(otherlv_4=ID
 								{
-									newLeafNode(otherlv_4, grammarAccess.getSleepNodeAccess().getNameKeyword_2_1_0());
+									newLeafNode(otherlv_4, grammarAccess.getSleepNodeAccess().getIDKeyword_2_1_0());
 								}
 								otherlv_5=EqualsSign
 								{
@@ -12287,17 +13579,17 @@ ruleSleepNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSleepNodeAccess().getNameEStringParserRuleCall_2_1_2_0());
+											newCompositeNode(grammarAccess.getSleepNodeAccess().getIDEStringParserRuleCall_2_1_2_0());
 										}
-										lv_name_6_0=ruleEString
+										lv_ID_6_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSleepNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_6_0,
+												"ID",
+												lv_ID_6_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -12314,54 +13606,33 @@ ruleSleepNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSleepNodeAccess().getUnorderedGroup_2(), 2);
 					}
-								({true}?=>(otherlv_7=Parameters
+								({true}?=>(otherlv_7=Name
 								{
-									newLeafNode(otherlv_7, grammarAccess.getSleepNodeAccess().getParametersKeyword_2_2_0());
+									newLeafNode(otherlv_7, grammarAccess.getSleepNodeAccess().getNameKeyword_2_2_0());
+								}
+								otherlv_8=EqualsSign
+								{
+									newLeafNode(otherlv_8, grammarAccess.getSleepNodeAccess().getEqualsSignKeyword_2_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSleepNodeAccess().getParametersParameterParserRuleCall_2_2_1_0());
+											newCompositeNode(grammarAccess.getSleepNodeAccess().getNameEStringParserRuleCall_2_2_2_0());
 										}
-										lv_parameters_8_0=ruleParameter
+										lv_name_9_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSleepNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_8_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_9_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_9=Comma
-									{
-										newLeafNode(otherlv_9, grammarAccess.getSleepNodeAccess().getCommaKeyword_2_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getSleepNodeAccess().getParametersParameterParserRuleCall_2_2_2_1_0());
-											}
-											lv_parameters_10_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getSleepNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_10_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSleepNodeAccess().getUnorderedGroup_2());
@@ -12373,49 +13644,49 @@ ruleSleepNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSleepNodeAccess().getUnorderedGroup_2(), 3);
 					}
-								({true}?=>(otherlv_11=Satisfices
+								({true}?=>(otherlv_10=Parameters
 								{
-									newLeafNode(otherlv_11, grammarAccess.getSleepNodeAccess().getSatisficesKeyword_2_3_0());
+									newLeafNode(otherlv_10, grammarAccess.getSleepNodeAccess().getParametersKeyword_2_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSleepNodeAccess().getSatisficesQualityParserRuleCall_2_3_1_0());
+											newCompositeNode(grammarAccess.getSleepNodeAccess().getParametersParameterParserRuleCall_2_3_1_0());
 										}
-										lv_satisfices_12_0=ruleQuality
+										lv_parameters_11_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSleepNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_12_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_11_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_13=Comma
+									otherlv_12=Comma
 									{
-										newLeafNode(otherlv_13, grammarAccess.getSleepNodeAccess().getCommaKeyword_2_3_2_0());
+										newLeafNode(otherlv_12, grammarAccess.getSleepNodeAccess().getCommaKeyword_2_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getSleepNodeAccess().getSatisficesQualityParserRuleCall_2_3_2_1_0());
+												newCompositeNode(grammarAccess.getSleepNodeAccess().getParametersParameterParserRuleCall_2_3_2_1_0());
 											}
-											lv_satisfices_14_0=ruleQuality
+											lv_parameters_13_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getSleepNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_14_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_13_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -12432,49 +13703,49 @@ ruleSleepNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSleepNodeAccess().getUnorderedGroup_2(), 4);
 					}
-								({true}?=>(otherlv_15=Satisfies
+								({true}?=>(otherlv_14=Satisfices
 								{
-									newLeafNode(otherlv_15, grammarAccess.getSleepNodeAccess().getSatisfiesKeyword_2_4_0());
+									newLeafNode(otherlv_14, grammarAccess.getSleepNodeAccess().getSatisficesKeyword_2_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getSleepNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_1_0());
+											newCompositeNode(grammarAccess.getSleepNodeAccess().getSatisficesQualityParserRuleCall_2_4_1_0());
 										}
-										lv_satisfies_16_0=ruleQualityRequirement
+										lv_satisfices_15_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getSleepNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_16_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_15_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_17=Comma
+									otherlv_16=Comma
 									{
-										newLeafNode(otherlv_17, grammarAccess.getSleepNodeAccess().getCommaKeyword_2_4_2_0());
+										newLeafNode(otherlv_16, grammarAccess.getSleepNodeAccess().getCommaKeyword_2_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getSleepNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_2_1_0());
+												newCompositeNode(grammarAccess.getSleepNodeAccess().getSatisficesQualityParserRuleCall_2_4_2_1_0());
 											}
-											lv_satisfies_18_0=ruleQualityRequirement
+											lv_satisfices_17_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getSleepNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_18_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_17_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -12491,9 +13762,68 @@ ruleSleepNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getSleepNodeAccess().getUnorderedGroup_2(), 5);
 					}
-								({true}?=>(otherlv_19=RightParenthesis
+								({true}?=>(otherlv_18=Satisfies
 								{
-									newLeafNode(otherlv_19, grammarAccess.getSleepNodeAccess().getRightParenthesisKeyword_2_5());
+									newLeafNode(otherlv_18, grammarAccess.getSleepNodeAccess().getSatisfiesKeyword_2_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getSleepNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_1_0());
+										}
+										lv_satisfies_19_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getSleepNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_19_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_20=Comma
+									{
+										newLeafNode(otherlv_20, grammarAccess.getSleepNodeAccess().getCommaKeyword_2_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getSleepNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_2_1_0());
+											}
+											lv_satisfies_21_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getSleepNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_21_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getSleepNodeAccess().getUnorderedGroup_2());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getSleepNodeAccess().getUnorderedGroup_2(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getSleepNodeAccess().getUnorderedGroup_2(), 6);
+					}
+								({true}?=>(otherlv_22=RightParenthesis
+								{
+									newLeafNode(otherlv_22, grammarAccess.getSleepNodeAccess().getRightParenthesisKeyword_2_6());
 								}
 								))
 					{ 
@@ -12566,9 +13896,9 @@ rulePopFromQueueNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getPopFromQueueNodeAccess().getUnorderedGroup_2(), 1);
 					}
-								({true}?=>(otherlv_4=Name
+								({true}?=>(otherlv_4=ID
 								{
-									newLeafNode(otherlv_4, grammarAccess.getPopFromQueueNodeAccess().getNameKeyword_2_1_0());
+									newLeafNode(otherlv_4, grammarAccess.getPopFromQueueNodeAccess().getIDKeyword_2_1_0());
 								}
 								otherlv_5=EqualsSign
 								{
@@ -12577,17 +13907,17 @@ rulePopFromQueueNode returns [EObject current=null]
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getNameEStringParserRuleCall_2_1_2_0());
+											newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getIDEStringParserRuleCall_2_1_2_0());
 										}
-										lv_name_6_0=ruleEString
+										lv_ID_6_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getPopFromQueueNodeRule());
 											}
 											set(
 												$current,
-												"name",
-												lv_name_6_0,
+												"ID",
+												lv_ID_6_0,
 												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
@@ -12604,54 +13934,33 @@ rulePopFromQueueNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getPopFromQueueNodeAccess().getUnorderedGroup_2(), 2);
 					}
-								({true}?=>(otherlv_7=Parameters
+								({true}?=>(otherlv_7=Name
 								{
-									newLeafNode(otherlv_7, grammarAccess.getPopFromQueueNodeAccess().getParametersKeyword_2_2_0());
+									newLeafNode(otherlv_7, grammarAccess.getPopFromQueueNodeAccess().getNameKeyword_2_2_0());
+								}
+								otherlv_8=EqualsSign
+								{
+									newLeafNode(otherlv_8, grammarAccess.getPopFromQueueNodeAccess().getEqualsSignKeyword_2_2_1());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getParametersParameterParserRuleCall_2_2_1_0());
+											newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getNameEStringParserRuleCall_2_2_2_0());
 										}
-										lv_parameters_8_0=ruleParameter
+										lv_name_9_0=ruleEString
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getPopFromQueueNodeRule());
 											}
-											add(
+											set(
 												$current,
-												"parameters",
-												lv_parameters_8_0,
-												"org.xtext.btcpp.QualityBtCpp.Parameter");
+												"name",
+												lv_name_9_0,
+												"org.xtext.btcpp.QualityBtCpp.EString");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
-								(
-									otherlv_9=Comma
-									{
-										newLeafNode(otherlv_9, grammarAccess.getPopFromQueueNodeAccess().getCommaKeyword_2_2_2_0());
-									}
-									(
-										(
-											{
-												newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getParametersParameterParserRuleCall_2_2_2_1_0());
-											}
-											lv_parameters_10_0=ruleParameter
-											{
-												if ($current==null) {
-													$current = createModelElementForParent(grammarAccess.getPopFromQueueNodeRule());
-												}
-												add(
-													$current,
-													"parameters",
-													lv_parameters_10_0,
-													"org.xtext.btcpp.QualityBtCpp.Parameter");
-												afterParserOrEnumRuleCall();
-											}
-										)
-									)
-								)*
 								))
 					{ 
 						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPopFromQueueNodeAccess().getUnorderedGroup_2());
@@ -12663,49 +13972,49 @@ rulePopFromQueueNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getPopFromQueueNodeAccess().getUnorderedGroup_2(), 3);
 					}
-								({true}?=>(otherlv_11=Satisfices
+								({true}?=>(otherlv_10=Parameters
 								{
-									newLeafNode(otherlv_11, grammarAccess.getPopFromQueueNodeAccess().getSatisficesKeyword_2_3_0());
+									newLeafNode(otherlv_10, grammarAccess.getPopFromQueueNodeAccess().getParametersKeyword_2_3_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getSatisficesQualityParserRuleCall_2_3_1_0());
+											newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getParametersParameterParserRuleCall_2_3_1_0());
 										}
-										lv_satisfices_12_0=ruleQuality
+										lv_parameters_11_0=ruleParameter
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getPopFromQueueNodeRule());
 											}
 											add(
 												$current,
-												"satisfices",
-												lv_satisfices_12_0,
-												"org.xtext.btcpp.QualityBtCpp.Quality");
+												"parameters",
+												lv_parameters_11_0,
+												"org.xtext.btcpp.QualityBtCpp.Parameter");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_13=Comma
+									otherlv_12=Comma
 									{
-										newLeafNode(otherlv_13, grammarAccess.getPopFromQueueNodeAccess().getCommaKeyword_2_3_2_0());
+										newLeafNode(otherlv_12, grammarAccess.getPopFromQueueNodeAccess().getCommaKeyword_2_3_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getSatisficesQualityParserRuleCall_2_3_2_1_0());
+												newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getParametersParameterParserRuleCall_2_3_2_1_0());
 											}
-											lv_satisfices_14_0=ruleQuality
+											lv_parameters_13_0=ruleParameter
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getPopFromQueueNodeRule());
 												}
 												add(
 													$current,
-													"satisfices",
-													lv_satisfices_14_0,
-													"org.xtext.btcpp.QualityBtCpp.Quality");
+													"parameters",
+													lv_parameters_13_0,
+													"org.xtext.btcpp.QualityBtCpp.Parameter");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -12722,49 +14031,49 @@ rulePopFromQueueNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getPopFromQueueNodeAccess().getUnorderedGroup_2(), 4);
 					}
-								({true}?=>(otherlv_15=Satisfies
+								({true}?=>(otherlv_14=Satisfices
 								{
-									newLeafNode(otherlv_15, grammarAccess.getPopFromQueueNodeAccess().getSatisfiesKeyword_2_4_0());
+									newLeafNode(otherlv_14, grammarAccess.getPopFromQueueNodeAccess().getSatisficesKeyword_2_4_0());
 								}
 								(
 									(
 										{
-											newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_1_0());
+											newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getSatisficesQualityParserRuleCall_2_4_1_0());
 										}
-										lv_satisfies_16_0=ruleQualityRequirement
+										lv_satisfices_15_0=ruleQuality
 										{
 											if ($current==null) {
 												$current = createModelElementForParent(grammarAccess.getPopFromQueueNodeRule());
 											}
 											add(
 												$current,
-												"satisfies",
-												lv_satisfies_16_0,
-												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												"satisfices",
+												lv_satisfices_15_0,
+												"org.xtext.btcpp.QualityBtCpp.Quality");
 											afterParserOrEnumRuleCall();
 										}
 									)
 								)
 								(
-									otherlv_17=Comma
+									otherlv_16=Comma
 									{
-										newLeafNode(otherlv_17, grammarAccess.getPopFromQueueNodeAccess().getCommaKeyword_2_4_2_0());
+										newLeafNode(otherlv_16, grammarAccess.getPopFromQueueNodeAccess().getCommaKeyword_2_4_2_0());
 									}
 									(
 										(
 											{
-												newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_4_2_1_0());
+												newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getSatisficesQualityParserRuleCall_2_4_2_1_0());
 											}
-											lv_satisfies_18_0=ruleQualityRequirement
+											lv_satisfices_17_0=ruleQuality
 											{
 												if ($current==null) {
 													$current = createModelElementForParent(grammarAccess.getPopFromQueueNodeRule());
 												}
 												add(
 													$current,
-													"satisfies",
-													lv_satisfies_18_0,
-													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+													"satisfices",
+													lv_satisfices_17_0,
+													"org.xtext.btcpp.QualityBtCpp.Quality");
 												afterParserOrEnumRuleCall();
 											}
 										)
@@ -12781,9 +14090,68 @@ rulePopFromQueueNode returns [EObject current=null]
 					{
 						getUnorderedGroupHelper().select(grammarAccess.getPopFromQueueNodeAccess().getUnorderedGroup_2(), 5);
 					}
-								({true}?=>(otherlv_19=RightParenthesis
+								({true}?=>(otherlv_18=Satisfies
 								{
-									newLeafNode(otherlv_19, grammarAccess.getPopFromQueueNodeAccess().getRightParenthesisKeyword_2_5());
+									newLeafNode(otherlv_18, grammarAccess.getPopFromQueueNodeAccess().getSatisfiesKeyword_2_5_0());
+								}
+								(
+									(
+										{
+											newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_1_0());
+										}
+										lv_satisfies_19_0=ruleQualityRequirement
+										{
+											if ($current==null) {
+												$current = createModelElementForParent(grammarAccess.getPopFromQueueNodeRule());
+											}
+											add(
+												$current,
+												"satisfies",
+												lv_satisfies_19_0,
+												"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+											afterParserOrEnumRuleCall();
+										}
+									)
+								)
+								(
+									otherlv_20=Comma
+									{
+										newLeafNode(otherlv_20, grammarAccess.getPopFromQueueNodeAccess().getCommaKeyword_2_5_2_0());
+									}
+									(
+										(
+											{
+												newCompositeNode(grammarAccess.getPopFromQueueNodeAccess().getSatisfiesQualityRequirementParserRuleCall_2_5_2_1_0());
+											}
+											lv_satisfies_21_0=ruleQualityRequirement
+											{
+												if ($current==null) {
+													$current = createModelElementForParent(grammarAccess.getPopFromQueueNodeRule());
+												}
+												add(
+													$current,
+													"satisfies",
+													lv_satisfies_21_0,
+													"org.xtext.btcpp.QualityBtCpp.QualityRequirement");
+												afterParserOrEnumRuleCall();
+											}
+										)
+									)
+								)*
+								))
+					{ 
+						getUnorderedGroupHelper().returnFromSelection(grammarAccess.getPopFromQueueNodeAccess().getUnorderedGroup_2());
+					}
+				)
+			)|
+			(
+				{getUnorderedGroupHelper().canSelect(grammarAccess.getPopFromQueueNodeAccess().getUnorderedGroup_2(), 6)}?=>(
+					{
+						getUnorderedGroupHelper().select(grammarAccess.getPopFromQueueNodeAccess().getUnorderedGroup_2(), 6);
+					}
+								({true}?=>(otherlv_22=RightParenthesis
+								{
+									newLeafNode(otherlv_22, grammarAccess.getPopFromQueueNodeAccess().getRightParenthesisKeyword_2_6());
 								}
 								))
 					{ 

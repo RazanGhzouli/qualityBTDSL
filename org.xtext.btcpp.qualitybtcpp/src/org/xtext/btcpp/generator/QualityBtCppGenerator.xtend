@@ -83,22 +83,51 @@ class QualityBtCppGenerator extends AbstractGenerator {
 	}
 	
 	def static String writeQuality(TreeNode node){
+		val FailuerIf = "FailuerIf"
+		val SuccessIf = "SuccessIf"
 		val s = new StringBuilder("")
-		for (quality : node.getSatisfices()){
-			
+		val allValues = new StringBuilder("")
+		//to write the FailuerIf and SucessIf
+		for (quality : node.getSatisfices()){			
 			if (!quality.getQualityreq().isEmpty()){
-				s.append(" "+quality.ID+" ( QualityReq: ")
+				
 				for (qualityRqs : quality.getQualityreq()){
-					s.append(" ID= "+qualityRqs.ID+" Description= "+qualityRqs.description+" ,")
+					//if the QRs are hard constraing, then translate them into fail and success			
+					if (qualityRqs.description.contains(FailuerIf) )
+					{
+						val keywordIndex = qualityRqs.description.indexOf(FailuerIf) + FailuerIf.length();
+		            	val FailuerIfvalue = qualityRqs.description.substring(keywordIndex).trim();
+		            	s.append(" _failureIf=\" "+FailuerIfvalue+"\"");
+		            					
+					}
+					if (qualityRqs.description.contains(SuccessIf) )
+					{
+						val keywordIndex = qualityRqs.description.indexOf(SuccessIf) + SuccessIf.length();
+		            	val SuccessIfvalue = qualityRqs.description.substring(keywordIndex).trim();
+		            	s.append(" _successIf=\" "+SuccessIfvalue+"\"");
+		            				
+					}
+				}						
+			}
+		}
+		for (quality : node.getSatisfices()){			
+			if (!quality.getQualityreq().isEmpty()){
+							
+				allValues.append(" "+quality.ID+" ( QualityReq: ")
+				for (qualityRqs : quality.getQualityreq()){
+					allValues.append(" ID= "+qualityRqs.ID+" Description= "+qualityRqs.description+" ,")
+					//if the QRs are hard constraing, then translate them into fail and success			
 				}
 					
-				s.append(")")		
+				allValues.append(")")
+						
 			}
 			else {
-				s.append(" "+quality.ID+" ,")
+				allValues.append(" "+quality.ID+" ,")
 			}			
 			
 		}
+		s.append(" _description=\""+ allValues +"\"")
 		return s.toString()
 	}
 	
@@ -181,16 +210,34 @@ class QualityBtCppGenerator extends AbstractGenerator {
 	def static String writeControlNode(ControlNode node){
 		val s  = new StringBuilder("")
 		s.append("<"+writeType(node))
-//		if(node.getID() !== null){
-//			s.append(" ID=\""+node.getID()+"\"")
-//		}
+		if(node.getID() !== null){
+			s.append(" ID=\""+node.getID()+"\"")
+		}
 		if(node.getName() !== null){
 			s.append(" name=\""+node.getName()+"\"")
 		}
 		if(!node.getSatisfices().isEmpty()){
-					s.append(" _description=\""+ writeQuality(node) +"\"")
-		
-					}
+			// if the user define QRs using Satisfies, then the writitng of the Quality and QRs are done within the writeQualityReq, otherwise done in the writeQuality
+			// be aware for this case the QRs defined under Satisfies are not associated to the Quality. One the ones defined using qualityreq
+			if(!node.getSatisfies().isEmpty()){
+				s.append(writeQualityReq(node))
+			}
+			else
+			{
+			s.append(writeQuality(node))
+			}
+
+			}
+		if(!node.getSatisfies().isEmpty()){
+			// if the Quality is not empty, then the writing already happended in the previous call
+			if(!node.getSatisfices().isEmpty()){
+				
+			}
+			else {
+			s.append(writeQualityReq(node))
+			}
+
+			}
 		s.append(writeParameters(node))
 		s.append(">\n")
 		s.append(recursiveWriteNode(node.getChild()))
@@ -201,14 +248,32 @@ class QualityBtCppGenerator extends AbstractGenerator {
 	def static String writeDecoratorNode(DecoratorNode node){
 		val s  = new StringBuilder("")
 		s.append("<"+writeType(node))
-//		if(node.getID() !== null){
-//			s.append(" ID=\""+node.getID()+"\"")
-//		}
+		if(node.getID() !== null){
+			s.append(" ID=\""+node.getID()+"\"")
+		}
 		if(node.getName() !== null){
 			s.append(" name=\""+node.getName()+"\"")
 		}
 		if(!node.getSatisfices().isEmpty()){
-			s.append(" _description=\""+ writeQuality(node) +"\"")
+			// if the user define QRs using Satisfies, then the writitng of the Quality and QRs are done within the writeQualityReq, otherwise done in the writeQuality
+			// be aware for this case the QRs defined under Satisfies are not associated to the Quality. One the ones defined using qualityreq
+			if(!node.getSatisfies().isEmpty()){
+				s.append(writeQualityReq(node))
+			}
+			else
+			{
+			s.append(writeQuality(node))
+			}
+
+			}
+		if(!node.getSatisfies().isEmpty()){
+			// if the Quality is not empty, then the writing already happended in the previous call
+			if(!node.getSatisfices().isEmpty()){
+				
+			}
+			else {
+			s.append(writeQualityReq(node))
+			}
 
 			}
 		if (node instanceof RepeatNode){
@@ -235,9 +300,9 @@ class QualityBtCppGenerator extends AbstractGenerator {
 		val s  = new StringBuilder("")
 		s.append("<")
 		s.append(writeType(node))
-//		if(node.getID() !== null){
-//			s.append(" ID=\""+node.getID()+"\"")
-//		}
+		if(node.getID() !== null){
+			s.append(" ID=\""+node.getID()+"\"")
+		}
 		if(node.getName() !== null){
 			s.append(" name=\""+node.getName()+"\"")
 		}
@@ -250,7 +315,7 @@ class QualityBtCppGenerator extends AbstractGenerator {
 			}
 			else
 			{
-			s.append(" _description=\""+ writeQuality(node) +"\"")
+			s.append(writeQuality(node))
 			}
 
 			}
@@ -283,7 +348,25 @@ class QualityBtCppGenerator extends AbstractGenerator {
 			s.append(" name=\""+node.getName()+"\"")
 		}
 		if(!node.getSatisfices().isEmpty()){
-			s.append(" _description=\""+ writeQuality(node) +"\"")
+			// if the user define QRs using Satisfies, then the writitng of the Quality and QRs are done within the writeQualityReq, otherwise done in the writeQuality
+			// be aware for this case the QRs defined under Satisfies are not associated to the Quality. One the ones defined using qualityreq
+			if(!node.getSatisfies().isEmpty()){
+				s.append(writeQualityReq(node))
+			}
+			else
+			{
+			s.append(writeQuality(node))
+			}
+
+			}
+		if(!node.getSatisfies().isEmpty()){
+			// if the Quality is not empty, then the writing already happended in the previous call
+			if(!node.getSatisfices().isEmpty()){
+				
+			}
+			else {
+			s.append(writeQualityReq(node))
+			}
 
 			}
 		

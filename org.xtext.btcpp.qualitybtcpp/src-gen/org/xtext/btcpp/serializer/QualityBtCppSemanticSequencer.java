@@ -214,7 +214,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 *
 	 * Constraint:
 	 *     (
-	 *         name=EString? 
+	 *         (ID=EString | name=EString)? 
 	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfices+=Quality satisfices+=Quality*)? 
 	 *         (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -237,7 +237,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 *
 	 * Constraint:
 	 *     (
-	 *         name=EString? 
+	 *         (ID=EString | name=EString)? 
 	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfices+=Quality satisfices+=Quality*)? 
 	 *         (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -282,7 +282,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -307,7 +307,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 *
 	 * Constraint:
 	 *     (
-	 *         name=EString? 
+	 *         (ID=EString | name=EString)? 
 	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfices+=Quality satisfices+=Quality*)? 
 	 *         (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -329,7 +329,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             (name=EString | delay_msec=EString)? 
+	 *             (ID=EString | name=EString | delay_msec=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -354,7 +354,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 *
 	 * Constraint:
 	 *     (
-	 *         name=EString? 
+	 *         (ID=EString | name=EString)? 
 	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfices+=Quality satisfices+=Quality*)? 
 	 *         (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -376,7 +376,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -400,7 +400,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -425,7 +425,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -449,7 +449,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -473,7 +473,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -498,7 +498,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -522,7 +522,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -546,7 +546,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -570,7 +570,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -595,7 +595,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -620,7 +620,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -669,7 +669,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 *
 	 * Constraint:
 	 *     (
-	 *         name=EString? 
+	 *         (ID=EString | name=EString)? 
 	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfices+=Quality satisfices+=Quality*)? 
 	 *         (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -691,7 +691,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -752,7 +752,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -777,7 +777,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -802,7 +802,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             (name=EString | num_cycles=EString)? 
+	 *             (ID=EString | name=EString | num_cycles=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -826,7 +826,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             (name=EString | num_attempts=EString)? 
+	 *             (ID=EString | name=EString | num_attempts=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -864,7 +864,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -888,7 +888,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 *
 	 * Constraint:
 	 *     (
-	 *         name=EString? 
+	 *         (ID=EString | name=EString)? 
 	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfices+=Quality satisfices+=Quality*)? 
 	 *         (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -911,7 +911,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 *
 	 * Constraint:
 	 *     (
-	 *         name=EString? 
+	 *         (ID=EString | name=EString)? 
 	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfices+=Quality satisfices+=Quality*)? 
 	 *         (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -933,7 +933,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -958,7 +958,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -984,7 +984,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 *
 	 * Constraint:
 	 *     (
-	 *         (name=EString | value=EString | output_key=EString)? 
+	 *         (ID=EString | name=EString | value=EString | output_key=EString)? 
 	 *         (satisfices+=Quality satisfices+=Quality*)? 
 	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -1008,7 +1008,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 *
 	 * Constraint:
 	 *     (
-	 *         name=EString? 
+	 *         (ID=EString | name=EString)? 
 	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfices+=Quality satisfices+=Quality*)? 
 	 *         (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -1053,7 +1053,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -1080,7 +1080,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 *
 	 * Constraint:
 	 *     (
-	 *         name=EString? 
+	 *         (ID=EString | name=EString)? 
 	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfices+=Quality satisfices+=Quality*)? 
 	 *         (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -1102,7 +1102,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 *
 	 * Constraint:
 	 *     (
-	 *         name=EString? 
+	 *         (ID=EString | name=EString)? 
 	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfices+=Quality satisfices+=Quality*)? 
 	 *         (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -1124,7 +1124,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             (name=EString | msec=EString)? 
+	 *             (ID=EString | name=EString | msec=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -1149,7 +1149,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 *
 	 * Constraint:
 	 *     (
-	 *         name=EString? 
+	 *         (ID=EString | name=EString)? 
 	 *         (parameters+=Parameter parameters+=Parameter*)? 
 	 *         (satisfices+=Quality satisfices+=Quality*)? 
 	 *         (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?
@@ -1171,7 +1171,7 @@ public class QualityBtCppSemanticSequencer extends AbstractDelegatingSemanticSeq
 	 * Constraint:
 	 *     (
 	 *         (
-	 *             name=EString? 
+	 *             (ID=EString | name=EString)? 
 	 *             (parameters+=Parameter parameters+=Parameter*)? 
 	 *             (satisfices+=Quality satisfices+=Quality*)? 
 	 *             (satisfies+=QualityRequirement satisfies+=QualityRequirement*)?

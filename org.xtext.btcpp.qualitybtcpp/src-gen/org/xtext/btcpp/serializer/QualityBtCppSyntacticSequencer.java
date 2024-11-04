@@ -21,84 +21,84 @@ import org.xtext.btcpp.services.QualityBtCppGrammarAccess;
 public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected QualityBtCppGrammarAccess grammarAccess;
-	protected AbstractElementAlias match_AlwaysFailureNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a;
-	protected AbstractElementAlias match_AlwaysSuccessNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a;
-	protected AbstractElementAlias match_ConsumeQueueNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_CoroActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a;
-	protected AbstractElementAlias match_DelayNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
-	protected AbstractElementAlias match_EntryUpdatedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a;
-	protected AbstractElementAlias match_EntryUpdatedDecoratorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_FallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_ForceFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_ForceSuccessNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_IfThenElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_InverterNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_KeepRunningUntilFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_LoopNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_ManualSelectorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_ParallelAllNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_ParallelNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_PopFromQueueNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a;
-	protected AbstractElementAlias match_PreconditionNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_ReactiveFallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_ReactiveSequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_RepeatNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
-	protected AbstractElementAlias match_RetryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
-	protected AbstractElementAlias match_RunOnceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_ScriptConditionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a;
-	protected AbstractElementAlias match_ScriptNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a;
-	protected AbstractElementAlias match_SequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_SequenceWithMemoryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_SetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_7__a;
-	protected AbstractElementAlias match_SleepNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a;
+	protected AbstractElementAlias match_AlwaysFailureNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a;
+	protected AbstractElementAlias match_AlwaysSuccessNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a;
+	protected AbstractElementAlias match_ConsumeQueueNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_CoroActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a;
+	protected AbstractElementAlias match_DelayNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a;
+	protected AbstractElementAlias match_EntryUpdatedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a;
+	protected AbstractElementAlias match_EntryUpdatedDecoratorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_FallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_ForceFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_ForceSuccessNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_IfThenElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_InverterNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_KeepRunningUntilFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_LoopNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_ManualSelectorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_ParallelAllNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_ParallelNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_PopFromQueueNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a;
+	protected AbstractElementAlias match_PreconditionNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_ReactiveFallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_ReactiveSequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_RepeatNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a;
+	protected AbstractElementAlias match_RetryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a;
+	protected AbstractElementAlias match_RunOnceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_ScriptConditionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a;
+	protected AbstractElementAlias match_ScriptNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a;
+	protected AbstractElementAlias match_SequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_SequenceWithMemoryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_SetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_8__a;
+	protected AbstractElementAlias match_SleepNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a;
 	protected AbstractElementAlias match_SubTree___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a;
-	protected AbstractElementAlias match_SwitchNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
-	protected AbstractElementAlias match_TestNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a;
-	protected AbstractElementAlias match_ThreadedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a;
-	protected AbstractElementAlias match_TimeoutNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
-	protected AbstractElementAlias match_UnsetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a;
-	protected AbstractElementAlias match_WhileDoElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a;
+	protected AbstractElementAlias match_SwitchNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
+	protected AbstractElementAlias match_TestNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a;
+	protected AbstractElementAlias match_ThreadedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a;
+	protected AbstractElementAlias match_TimeoutNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a;
+	protected AbstractElementAlias match_UnsetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a;
+	protected AbstractElementAlias match_WhileDoElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a;
 	
 	@Inject
 	protected void init(IGrammarAccess access) {
 		grammarAccess = (QualityBtCppGrammarAccess) access;
-		match_AlwaysFailureNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getAlwaysFailureNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getAlwaysFailureNodeAccess().getRightParenthesisKeyword_2_5()));
-		match_AlwaysSuccessNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getAlwaysSuccessNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getAlwaysSuccessNodeAccess().getRightParenthesisKeyword_2_5()));
-		match_ConsumeQueueNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getConsumeQueueNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getConsumeQueueNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_CoroActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getCoroActionNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getCoroActionNodeAccess().getRightParenthesisKeyword_2_5()));
-		match_DelayNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getDelayNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getDelayNodeAccess().getRightParenthesisKeyword_1_6()));
-		match_EntryUpdatedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getEntryUpdatedActionNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getEntryUpdatedActionNodeAccess().getRightParenthesisKeyword_2_5()));
-		match_EntryUpdatedDecoratorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_FallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getFallbackNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getFallbackNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_ForceFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getForceFailureNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getForceFailureNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_ForceSuccessNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getForceSuccessNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getForceSuccessNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_IfThenElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getIfThenElseNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getIfThenElseNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_InverterNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getInverterNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getInverterNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_KeepRunningUntilFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getKeepRunningUntilFailureNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getKeepRunningUntilFailureNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_LoopNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getLoopNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getLoopNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_ManualSelectorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getManualSelectorNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getManualSelectorNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_ParallelAllNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getParallelAllNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getParallelAllNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_ParallelNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getParallelNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getParallelNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_PopFromQueueNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getPopFromQueueNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getPopFromQueueNodeAccess().getRightParenthesisKeyword_2_5()));
-		match_PreconditionNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getPreconditionNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getPreconditionNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_ReactiveFallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getReactiveFallbackNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getReactiveFallbackNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_ReactiveSequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getReactiveSequenceNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getReactiveSequenceNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_RepeatNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getRepeatNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getRepeatNodeAccess().getRightParenthesisKeyword_1_6()));
-		match_RetryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getRetryNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getRetryNodeAccess().getRightParenthesisKeyword_1_6()));
-		match_RunOnceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getRunOnceNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getRunOnceNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_ScriptConditionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getScriptConditionNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getScriptConditionNodeAccess().getRightParenthesisKeyword_2_5()));
-		match_ScriptNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getScriptNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getScriptNodeAccess().getRightParenthesisKeyword_2_5()));
-		match_SequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getSequenceNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getSequenceNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_SequenceWithMemoryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getSequenceWithMemoryNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getSequenceWithMemoryNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_SetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_7__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getSetBlackboardNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getSetBlackboardNodeAccess().getRightParenthesisKeyword_2_7()));
-		match_SleepNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getSleepNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getSleepNodeAccess().getRightParenthesisKeyword_2_5()));
+		match_AlwaysFailureNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getAlwaysFailureNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getAlwaysFailureNodeAccess().getRightParenthesisKeyword_2_6()));
+		match_AlwaysSuccessNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getAlwaysSuccessNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getAlwaysSuccessNodeAccess().getRightParenthesisKeyword_2_6()));
+		match_ConsumeQueueNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getConsumeQueueNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getConsumeQueueNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_CoroActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getCoroActionNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getCoroActionNodeAccess().getRightParenthesisKeyword_2_6()));
+		match_DelayNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getDelayNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getDelayNodeAccess().getRightParenthesisKeyword_1_7()));
+		match_EntryUpdatedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getEntryUpdatedActionNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getEntryUpdatedActionNodeAccess().getRightParenthesisKeyword_2_6()));
+		match_EntryUpdatedDecoratorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getEntryUpdatedDecoratorNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_FallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getFallbackNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getFallbackNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_ForceFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getForceFailureNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getForceFailureNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_ForceSuccessNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getForceSuccessNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getForceSuccessNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_IfThenElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getIfThenElseNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getIfThenElseNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_InverterNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getInverterNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getInverterNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_KeepRunningUntilFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getKeepRunningUntilFailureNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getKeepRunningUntilFailureNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_LoopNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getLoopNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getLoopNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_ManualSelectorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getManualSelectorNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getManualSelectorNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_ParallelAllNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getParallelAllNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getParallelAllNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_ParallelNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getParallelNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getParallelNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_PopFromQueueNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getPopFromQueueNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getPopFromQueueNodeAccess().getRightParenthesisKeyword_2_6()));
+		match_PreconditionNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getPreconditionNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getPreconditionNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_ReactiveFallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getReactiveFallbackNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getReactiveFallbackNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_ReactiveSequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getReactiveSequenceNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getReactiveSequenceNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_RepeatNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getRepeatNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getRepeatNodeAccess().getRightParenthesisKeyword_1_7()));
+		match_RetryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getRetryNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getRetryNodeAccess().getRightParenthesisKeyword_1_7()));
+		match_RunOnceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getRunOnceNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getRunOnceNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_ScriptConditionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getScriptConditionNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getScriptConditionNodeAccess().getRightParenthesisKeyword_2_6()));
+		match_ScriptNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getScriptNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getScriptNodeAccess().getRightParenthesisKeyword_2_6()));
+		match_SequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getSequenceNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getSequenceNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_SequenceWithMemoryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getSequenceWithMemoryNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getSequenceWithMemoryNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_SetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_8__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getSetBlackboardNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getSetBlackboardNodeAccess().getRightParenthesisKeyword_2_8()));
+		match_SleepNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getSleepNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getSleepNodeAccess().getRightParenthesisKeyword_2_6()));
 		match_SubTree___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getSubTreeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getSubTreeAccess().getRightParenthesisKeyword_2_6()));
-		match_SwitchNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getSwitchNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getSwitchNodeAccess().getRightParenthesisKeyword_1_5()));
-		match_TestNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getTestNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getTestNodeAccess().getRightParenthesisKeyword_2_5()));
-		match_ThreadedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getThreadedActionNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getThreadedActionNodeAccess().getRightParenthesisKeyword_2_5()));
-		match_TimeoutNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getTimeoutNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getTimeoutNodeAccess().getRightParenthesisKeyword_1_6()));
-		match_UnsetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getUnsetBlackboardNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getUnsetBlackboardNodeAccess().getRightParenthesisKeyword_2_5()));
-		match_WhileDoElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getWhileDoElseNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getWhileDoElseNodeAccess().getRightParenthesisKeyword_1_5()));
+		match_SwitchNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getSwitchNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getSwitchNodeAccess().getRightParenthesisKeyword_1_6()));
+		match_TestNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getTestNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getTestNodeAccess().getRightParenthesisKeyword_2_6()));
+		match_ThreadedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getThreadedActionNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getThreadedActionNodeAccess().getRightParenthesisKeyword_2_6()));
+		match_TimeoutNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getTimeoutNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getTimeoutNodeAccess().getRightParenthesisKeyword_1_7()));
+		match_UnsetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getUnsetBlackboardNodeAccess().getLeftParenthesisKeyword_2_0()), new TokenAlias(false, false, grammarAccess.getUnsetBlackboardNodeAccess().getRightParenthesisKeyword_2_6()));
+		match_WhileDoElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a = new AlternativeAlias(true, true, new TokenAlias(false, false, grammarAccess.getWhileDoElseNodeAccess().getLeftParenthesisKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getWhileDoElseNodeAccess().getRightParenthesisKeyword_1_6()));
 	}
 	
 	@Override
@@ -128,80 +128,80 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 		List<INode> transitionNodes = collectNodes(fromNode, toNode);
 		for (AbstractElementAlias syntax : transition.getAmbiguousSyntaxes()) {
 			List<INode> syntaxNodes = getNodesFor(transitionNodes, syntax);
-			if (match_AlwaysFailureNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a.equals(syntax))
-				emit_AlwaysFailureNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_AlwaysSuccessNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a.equals(syntax))
-				emit_AlwaysSuccessNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_ConsumeQueueNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_ConsumeQueueNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_CoroActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a.equals(syntax))
-				emit_CoroActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_DelayNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
-				emit_DelayNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_EntryUpdatedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a.equals(syntax))
-				emit_EntryUpdatedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_EntryUpdatedDecoratorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_EntryUpdatedDecoratorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_FallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_FallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_ForceFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_ForceFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_ForceSuccessNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_ForceSuccessNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_IfThenElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_IfThenElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_InverterNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_InverterNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_KeepRunningUntilFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_KeepRunningUntilFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_LoopNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_LoopNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_ManualSelectorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_ManualSelectorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_ParallelAllNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_ParallelAllNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_ParallelNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_ParallelNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_PopFromQueueNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a.equals(syntax))
-				emit_PopFromQueueNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_PreconditionNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_PreconditionNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_ReactiveFallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_ReactiveFallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_ReactiveSequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_ReactiveSequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_RepeatNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
-				emit_RepeatNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_RetryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
-				emit_RetryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_RunOnceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_RunOnceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_ScriptConditionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a.equals(syntax))
-				emit_ScriptConditionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_ScriptNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a.equals(syntax))
-				emit_ScriptNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_SequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_SequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_SequenceWithMemoryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_SequenceWithMemoryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_SetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_7__a.equals(syntax))
-				emit_SetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_7__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_SleepNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a.equals(syntax))
-				emit_SleepNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			if (match_AlwaysFailureNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a.equals(syntax))
+				emit_AlwaysFailureNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_AlwaysSuccessNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a.equals(syntax))
+				emit_AlwaysSuccessNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_ConsumeQueueNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_ConsumeQueueNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_CoroActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a.equals(syntax))
+				emit_CoroActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_DelayNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a.equals(syntax))
+				emit_DelayNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_EntryUpdatedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a.equals(syntax))
+				emit_EntryUpdatedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_EntryUpdatedDecoratorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_EntryUpdatedDecoratorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_FallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_FallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_ForceFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_ForceFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_ForceSuccessNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_ForceSuccessNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_IfThenElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_IfThenElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_InverterNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_InverterNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_KeepRunningUntilFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_KeepRunningUntilFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_LoopNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_LoopNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_ManualSelectorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_ManualSelectorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_ParallelAllNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_ParallelAllNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_ParallelNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_ParallelNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_PopFromQueueNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a.equals(syntax))
+				emit_PopFromQueueNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_PreconditionNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_PreconditionNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_ReactiveFallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_ReactiveFallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_ReactiveSequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_ReactiveSequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_RepeatNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a.equals(syntax))
+				emit_RepeatNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_RetryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a.equals(syntax))
+				emit_RetryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_RunOnceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_RunOnceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_ScriptConditionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a.equals(syntax))
+				emit_ScriptConditionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_ScriptNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a.equals(syntax))
+				emit_ScriptNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_SequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_SequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_SequenceWithMemoryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_SequenceWithMemoryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_SetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_8__a.equals(syntax))
+				emit_SetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_8__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_SleepNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a.equals(syntax))
+				emit_SleepNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_SubTree___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a.equals(syntax))
 				emit_SubTree___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_SwitchNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_SwitchNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_TestNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a.equals(syntax))
-				emit_TestNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_ThreadedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a.equals(syntax))
-				emit_ThreadedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_TimeoutNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
-				emit_TimeoutNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_UnsetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a.equals(syntax))
-				emit_UnsetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_WhileDoElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a.equals(syntax))
-				emit_WhileDoElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_SwitchNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_SwitchNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_TestNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a.equals(syntax))
+				emit_TestNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_ThreadedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a.equals(syntax))
+				emit_ThreadedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_TimeoutNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a.equals(syntax))
+				emit_TimeoutNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_UnsetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a.equals(syntax))
+				emit_UnsetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_WhileDoElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a.equals(syntax))
+				emit_WhileDoElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(semanticObject, getLastNavigableState(), syntaxNodes);
 			else acceptNodes(getLastNavigableState(), syntaxNodes);
 		}
 	}
@@ -212,26 +212,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'AlwaysFailure' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'AlwaysFailure' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'AlwaysFailure' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'AlwaysFailure' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'AlwaysFailure' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'AlwaysFailure' (ambiguity) (rule start)
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) (rule end)
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) (rule end)
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) (rule end)
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) (rule end)
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -240,7 +251,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_AlwaysFailureNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_AlwaysFailureNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -250,26 +261,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'AlwaysSuccess' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'AlwaysSuccess' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'AlwaysSuccess' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'AlwaysSuccess' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'AlwaysSuccess' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'AlwaysSuccess' (ambiguity) (rule start)
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) (rule end)
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) (rule end)
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) (rule end)
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) (rule end)
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -278,7 +300,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_AlwaysSuccessNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_AlwaysSuccessNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -288,26 +310,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'ConsumeQueue' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'ConsumeQueue' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'ConsumeQueue' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'ConsumeQueue' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'ConsumeQueue' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'ConsumeQueue' (ambiguity) BEGIN child=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -316,7 +349,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_ConsumeQueueNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_ConsumeQueueNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -326,26 +359,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'CoroAction' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'CoroAction' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'CoroAction' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'CoroAction' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'CoroAction' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'CoroAction' (ambiguity) (rule start)
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) (rule end)
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) (rule end)
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) (rule end)
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) (rule end)
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -354,7 +398,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_CoroActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_CoroActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -364,36 +408,49 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'Delay' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'Delay' (ambiguity) 'delay_msec' '=' delay_msec=EString
 	 *     (rule start) 'Delay' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'Delay' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'Delay' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'Delay' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'Delay' (ambiguity) BEGIN child=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'delay_msec' '=' delay_msec=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child=TreeNode
+	 *     delay_msec=EString (ambiguity) 'ID' '=' ID=EString
 	 *     delay_msec=EString (ambiguity) 'delay_msec' '=' delay_msec=EString
 	 *     delay_msec=EString (ambiguity) 'name' '=' name=EString
 	 *     delay_msec=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     delay_msec=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     delay_msec=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     delay_msec=EString (ambiguity) BEGIN child=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'delay_msec' '=' delay_msec=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'delay_msec' '=' delay_msec=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'delay_msec' '=' delay_msec=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'delay_msec' '=' delay_msec=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
@@ -403,7 +460,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_DelayNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_DelayNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -413,26 +470,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'EntryUpdatedAction' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'EntryUpdatedAction' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'EntryUpdatedAction' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'EntryUpdatedAction' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'EntryUpdatedAction' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'EntryUpdatedAction' (ambiguity) (rule start)
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) (rule end)
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) (rule end)
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) (rule end)
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) (rule end)
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -441,7 +509,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_EntryUpdatedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_EntryUpdatedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -451,26 +519,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'EntryUpdatedDecorator' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'EntryUpdatedDecorator' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'EntryUpdatedDecorator' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'EntryUpdatedDecorator' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'EntryUpdatedDecorator' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'EntryUpdatedDecorator' (ambiguity) BEGIN child=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -479,7 +558,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_EntryUpdatedDecoratorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_EntryUpdatedDecoratorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -489,26 +568,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) '?' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) '?' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) '?' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) '?' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) '?' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) '?' (ambiguity) BEGIN child+=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child+=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child+=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child+=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child+=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -517,7 +607,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_FallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_FallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -527,26 +617,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'ForceFailure' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'ForceFailure' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'ForceFailure' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'ForceFailure' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'ForceFailure' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'ForceFailure' (ambiguity) BEGIN child=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -555,7 +656,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_ForceFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_ForceFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -565,26 +666,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'ForceSuccess' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'ForceSuccess' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'ForceSuccess' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'ForceSuccess' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'ForceSuccess' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'ForceSuccess' (ambiguity) BEGIN child=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -593,7 +705,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_ForceSuccessNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_ForceSuccessNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -603,26 +715,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'IfThenElse' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'IfThenElse' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'IfThenElse' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'IfThenElse' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'IfThenElse' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'IfThenElse' (ambiguity) BEGIN child+=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child+=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child+=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child+=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child+=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -631,7 +754,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_IfThenElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_IfThenElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -641,26 +764,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'Inverter' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'Inverter' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'Inverter' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'Inverter' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'Inverter' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'Inverter' (ambiguity) BEGIN child=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -669,7 +803,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_InverterNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_InverterNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -679,26 +813,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'KeepRunningUntilFailure' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'KeepRunningUntilFailure' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'KeepRunningUntilFailure' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'KeepRunningUntilFailure' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'KeepRunningUntilFailure' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'KeepRunningUntilFailure' (ambiguity) BEGIN child=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -707,7 +852,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_KeepRunningUntilFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_KeepRunningUntilFailureNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -717,26 +862,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'Loop' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'Loop' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'Loop' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'Loop' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'Loop' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'Loop' (ambiguity) BEGIN child=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -745,7 +901,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_LoopNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_LoopNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -755,26 +911,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'ManualSelector' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'ManualSelector' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'ManualSelector' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'ManualSelector' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'ManualSelector' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'ManualSelector' (ambiguity) BEGIN child+=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child+=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child+=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child+=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child+=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -783,7 +950,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_ManualSelectorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_ManualSelectorNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -793,26 +960,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'All||' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'All||' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'All||' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'All||' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'All||' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'All||' (ambiguity) BEGIN child+=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child+=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child+=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child+=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child+=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -821,7 +999,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_ParallelAllNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_ParallelAllNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -831,26 +1009,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) '||' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) '||' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) '||' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) '||' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) '||' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) '||' (ambiguity) BEGIN child+=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child+=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child+=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child+=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child+=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -859,7 +1048,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_ParallelNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_ParallelNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -869,26 +1058,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'PopFromQueue' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'PopFromQueue' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'PopFromQueue' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'PopFromQueue' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'PopFromQueue' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'PopFromQueue' (ambiguity) (rule start)
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) (rule end)
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) (rule end)
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) (rule end)
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) (rule end)
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -897,7 +1097,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_PopFromQueueNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_PopFromQueueNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -907,26 +1107,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'Precondition' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'Precondition' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'Precondition' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'Precondition' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'Precondition' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'Precondition' (ambiguity) BEGIN child=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -935,7 +1146,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_PreconditionNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_PreconditionNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -945,26 +1156,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'R?' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'R?' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'R?' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'R?' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'R?' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'R?' (ambiguity) BEGIN child+=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child+=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child+=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child+=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child+=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -973,7 +1195,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_ReactiveFallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_ReactiveFallbackNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -983,26 +1205,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'R-&gt;' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'R-&gt;' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'R-&gt;' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'R-&gt;' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'R-&gt;' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'R-&gt;' (ambiguity) BEGIN child+=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child+=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child+=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child+=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child+=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -1011,7 +1244,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_ReactiveSequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_ReactiveSequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1021,36 +1254,49 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'Repeat' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'Repeat' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'Repeat' (ambiguity) 'num_cycles' '=' num_cycles=EString
 	 *     (rule start) 'Repeat' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'Repeat' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'Repeat' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'Repeat' (ambiguity) BEGIN child=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'num_cycles' '=' num_cycles=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'num_cycles' '=' num_cycles=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child=TreeNode
+	 *     num_cycles=EString (ambiguity) 'ID' '=' ID=EString
 	 *     num_cycles=EString (ambiguity) 'name' '=' name=EString
 	 *     num_cycles=EString (ambiguity) 'num_cycles' '=' num_cycles=EString
 	 *     num_cycles=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     num_cycles=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     num_cycles=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     num_cycles=EString (ambiguity) BEGIN child=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'num_cycles' '=' num_cycles=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'num_cycles' '=' num_cycles=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'num_cycles' '=' num_cycles=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
@@ -1060,7 +1306,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_RepeatNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_RepeatNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1070,36 +1316,49 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'Retry' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'Retry' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'Retry' (ambiguity) 'num_attempts' '=' num_attempts=EString
 	 *     (rule start) 'Retry' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'Retry' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'Retry' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'Retry' (ambiguity) BEGIN child=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'num_attempts' '=' num_attempts=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'num_attempts' '=' num_attempts=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child=TreeNode
+	 *     num_attempts=EString (ambiguity) 'ID' '=' ID=EString
 	 *     num_attempts=EString (ambiguity) 'name' '=' name=EString
 	 *     num_attempts=EString (ambiguity) 'num_attempts' '=' num_attempts=EString
 	 *     num_attempts=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     num_attempts=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     num_attempts=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     num_attempts=EString (ambiguity) BEGIN child=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'num_attempts' '=' num_attempts=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'num_attempts' '=' num_attempts=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'num_attempts' '=' num_attempts=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
@@ -1109,7 +1368,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_RetryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_RetryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1119,26 +1378,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'RunOnce' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'RunOnce' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'RunOnce' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'RunOnce' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'RunOnce' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'RunOnce' (ambiguity) BEGIN child=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -1147,7 +1417,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_RunOnceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_RunOnceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1157,26 +1427,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'ScriptCondition' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'ScriptCondition' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'ScriptCondition' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'ScriptCondition' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'ScriptCondition' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'ScriptCondition' (ambiguity) (rule start)
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) (rule end)
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) (rule end)
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) (rule end)
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) (rule end)
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -1185,7 +1466,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_ScriptConditionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_ScriptConditionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1195,26 +1476,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'ScriptAction' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'ScriptAction' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'ScriptAction' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'ScriptAction' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'ScriptAction' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'ScriptAction' (ambiguity) (rule start)
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) (rule end)
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) (rule end)
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) (rule end)
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) (rule end)
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -1223,7 +1515,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_ScriptNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_ScriptNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1233,26 +1525,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) '-&gt;' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) '-&gt;' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) '-&gt;' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) '-&gt;' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) '-&gt;' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) '-&gt;' (ambiguity) BEGIN child+=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child+=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child+=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child+=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child+=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -1261,7 +1564,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_SequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_SequenceNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1271,26 +1574,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'M-&gt;' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'M-&gt;' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'M-&gt;' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'M-&gt;' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'M-&gt;' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'M-&gt;' (ambiguity) BEGIN child+=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child+=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child+=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child+=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child+=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -1299,7 +1613,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_SequenceWithMemoryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_SequenceWithMemoryNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1309,6 +1623,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'SetBlackboard' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'SetBlackboard' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'SetBlackboard' (ambiguity) 'output_key' '=' output_key=EString
 	 *     (rule start) 'SetBlackboard' (ambiguity) 'parameters' parameters+=Parameter
@@ -1316,6 +1631,15 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     (rule start) 'SetBlackboard' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'SetBlackboard' (ambiguity) 'value' '=' value=EString
 	 *     (rule start) 'SetBlackboard' (ambiguity) (rule start)
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'output_key' '=' output_key=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) 'value' '=' value=EString
+	 *     ID=EString (ambiguity) (rule end)
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'output_key' '=' output_key=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
@@ -1323,6 +1647,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) 'value' '=' value=EString
 	 *     name=EString (ambiguity) (rule end)
+	 *     output_key=EString (ambiguity) 'ID' '=' ID=EString
 	 *     output_key=EString (ambiguity) 'name' '=' name=EString
 	 *     output_key=EString (ambiguity) 'output_key' '=' output_key=EString
 	 *     output_key=EString (ambiguity) 'parameters' parameters+=Parameter
@@ -1330,6 +1655,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     output_key=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     output_key=EString (ambiguity) 'value' '=' value=EString
 	 *     output_key=EString (ambiguity) (rule end)
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'output_key' '=' output_key=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
@@ -1337,6 +1663,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) 'value' '=' value=EString
 	 *     parameters+=Parameter (ambiguity) (rule end)
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'output_key' '=' output_key=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
@@ -1344,6 +1671,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) 'value' '=' value=EString
 	 *     satisfices+=Quality (ambiguity) (rule end)
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'output_key' '=' output_key=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
@@ -1351,6 +1679,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfies+=QualityRequirement (ambiguity) 'value' '=' value=EString
 	 *     satisfies+=QualityRequirement (ambiguity) (rule end)
+	 *     value=EString (ambiguity) 'ID' '=' ID=EString
 	 *     value=EString (ambiguity) 'name' '=' name=EString
 	 *     value=EString (ambiguity) 'output_key' '=' output_key=EString
 	 *     value=EString (ambiguity) 'parameters' parameters+=Parameter
@@ -1361,7 +1690,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_SetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_7__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_SetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_8__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1371,26 +1700,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'Sleep' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'Sleep' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'Sleep' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'Sleep' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'Sleep' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'Sleep' (ambiguity) (rule start)
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) (rule end)
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) (rule end)
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) (rule end)
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) (rule end)
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -1399,7 +1739,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_SleepNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_SleepNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1464,26 +1804,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'Switch' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'Switch' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'Switch' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'Switch' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'Switch' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'Switch' (ambiguity) BEGIN child+=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child+=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child+=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child+=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child+=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -1492,7 +1843,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_SwitchNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_SwitchNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1502,26 +1853,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'Test' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'Test' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'Test' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'Test' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'Test' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'Test' (ambiguity) (rule start)
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) (rule end)
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) (rule end)
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) (rule end)
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) (rule end)
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -1530,7 +1892,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_TestNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_TestNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1540,26 +1902,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'ThreadedAction' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'ThreadedAction' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'ThreadedAction' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'ThreadedAction' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'ThreadedAction' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'ThreadedAction' (ambiguity) (rule start)
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) (rule end)
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) (rule end)
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) (rule end)
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) (rule end)
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -1568,7 +1941,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_ThreadedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_ThreadedActionNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1578,36 +1951,49 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'Timeout' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'Timeout' (ambiguity) 'msec' '=' msec=EString
 	 *     (rule start) 'Timeout' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'Timeout' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'Timeout' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'Timeout' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'Timeout' (ambiguity) BEGIN child=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'msec' '=' msec=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child=TreeNode
+	 *     msec=EString (ambiguity) 'ID' '=' ID=EString
 	 *     msec=EString (ambiguity) 'msec' '=' msec=EString
 	 *     msec=EString (ambiguity) 'name' '=' name=EString
 	 *     msec=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     msec=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     msec=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     msec=EString (ambiguity) BEGIN child=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'msec' '=' msec=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'msec' '=' msec=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'msec' '=' msec=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'msec' '=' msec=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
@@ -1617,7 +2003,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_TimeoutNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_TimeoutNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_7__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1627,26 +2013,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'UnsetBlackboard' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'UnsetBlackboard' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'UnsetBlackboard' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'UnsetBlackboard' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'UnsetBlackboard' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'UnsetBlackboard' (ambiguity) (rule start)
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) (rule end)
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) (rule end)
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) (rule end)
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) (rule end)
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -1655,7 +2052,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_UnsetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_UnsetBlackboardNode___LeftParenthesisKeyword_2_0_or_RightParenthesisKeyword_2_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
@@ -1665,26 +2062,37 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 *     ('(' | ')')*
 	 *
 	 * This ambiguous syntax occurs at:
+	 *     (rule start) 'WhileDoElse' (ambiguity) 'ID' '=' ID=EString
 	 *     (rule start) 'WhileDoElse' (ambiguity) 'name' '=' name=EString
 	 *     (rule start) 'WhileDoElse' (ambiguity) 'parameters' parameters+=Parameter
 	 *     (rule start) 'WhileDoElse' (ambiguity) 'satisfices' satisfices+=Quality
 	 *     (rule start) 'WhileDoElse' (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     (rule start) 'WhileDoElse' (ambiguity) BEGIN child+=TreeNode
+	 *     ID=EString (ambiguity) 'ID' '=' ID=EString
+	 *     ID=EString (ambiguity) 'name' '=' name=EString
+	 *     ID=EString (ambiguity) 'parameters' parameters+=Parameter
+	 *     ID=EString (ambiguity) 'satisfices' satisfices+=Quality
+	 *     ID=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
+	 *     ID=EString (ambiguity) BEGIN child+=TreeNode
+	 *     name=EString (ambiguity) 'ID' '=' ID=EString
 	 *     name=EString (ambiguity) 'name' '=' name=EString
 	 *     name=EString (ambiguity) 'parameters' parameters+=Parameter
 	 *     name=EString (ambiguity) 'satisfices' satisfices+=Quality
 	 *     name=EString (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     name=EString (ambiguity) BEGIN child+=TreeNode
+	 *     parameters+=Parameter (ambiguity) 'ID' '=' ID=EString
 	 *     parameters+=Parameter (ambiguity) 'name' '=' name=EString
 	 *     parameters+=Parameter (ambiguity) 'parameters' parameters+=Parameter
 	 *     parameters+=Parameter (ambiguity) 'satisfices' satisfices+=Quality
 	 *     parameters+=Parameter (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     parameters+=Parameter (ambiguity) BEGIN child+=TreeNode
+	 *     satisfices+=Quality (ambiguity) 'ID' '=' ID=EString
 	 *     satisfices+=Quality (ambiguity) 'name' '=' name=EString
 	 *     satisfices+=Quality (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfices+=Quality (ambiguity) 'satisfices' satisfices+=Quality
 	 *     satisfices+=Quality (ambiguity) 'satisfies' satisfies+=QualityRequirement
 	 *     satisfices+=Quality (ambiguity) BEGIN child+=TreeNode
+	 *     satisfies+=QualityRequirement (ambiguity) 'ID' '=' ID=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'name' '=' name=EString
 	 *     satisfies+=QualityRequirement (ambiguity) 'parameters' parameters+=Parameter
 	 *     satisfies+=QualityRequirement (ambiguity) 'satisfices' satisfices+=Quality
@@ -1693,7 +2101,7 @@ public class QualityBtCppSyntacticSequencer extends AbstractSyntacticSequencer {
 	 
 	 * </pre>
 	 */
-	protected void emit_WhileDoElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_5__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_WhileDoElseNode___LeftParenthesisKeyword_1_0_or_RightParenthesisKeyword_1_6__a(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	
