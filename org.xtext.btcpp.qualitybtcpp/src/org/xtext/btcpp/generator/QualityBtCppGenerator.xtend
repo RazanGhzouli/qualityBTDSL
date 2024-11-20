@@ -83,7 +83,7 @@ class QualityBtCppGenerator extends AbstractGenerator {
 	}
 	
 	def static String writeQuality(TreeNode node){
-		val FailuerIf = "FailuerIf"
+		val FailuerIf = "FailureIf"
 		val SuccessIf = "SuccessIf"
 		val s = new StringBuilder("")
 		val allValues = new StringBuilder("")
