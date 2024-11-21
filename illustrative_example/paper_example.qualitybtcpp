@@ -1,0 +1,37 @@
+Root mainTree
+	BehaviorTree ID  = mainTree
+		?
+			-> (name = "BatteryCheck" satisfices Quality = security )
+				ScriptCondition (name = "CheckBattery?")								
+				ScriptAction (
+				name = "MoveBase" 
+				satisfices Quality = performance 
+				(QualityReq ID = "rq1"
+				description = "SuccessIf the moving to charging station shall take at most 30 sec. 
+								FailureIf the charging took longer than 30 sec")
+				)				
+				ScriptAction (name = "Charge")
+			-> (name = "SolidStation")		
+				ScriptAction (
+				name = "MoveBase" 
+				satisfies QualityReq ID = "rq2"
+				description = "The robot should have at least a battery capacity of 3% left."
+				)
+				SubTree (ID = PickPlace )
+				Retry (num_attempts = "6")
+					Inverter
+						-> (name = "MoveTubes" )
+							ScriptCondition (name = "MicroplateNotEmpty?")
+							SubTree (
+							ID = PickPlace 
+							satisfies QualityReq 
+							ID = "rq3" 
+							description = "The information on the tube label shall be processed locally on the robot.")
+	BehaviorTree ID  = PickPlace
+		->
+			ScriptAction (name = "Pick" )
+			ScriptAction (name = "Place" )
+			
+			
+			
+			

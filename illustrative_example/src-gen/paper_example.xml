@@ -1,0 +1,32 @@
+<root main_tree_to_execute="mainTree">
+    <BehaviorTree ID="mainTree">
+        <Fallback>
+            <Sequence _description=" security ," name="BatteryCheck">
+                <ScriptCondition name="CheckBattery?"/>
+                <Script _description=" performance ( QualityReq:  ID= rq1 Description= SuccessIf the moving to charging station shall take at most 30 sec.           
+				FailureIf the charging took longer than 30 sec ,)" 
+				_successIf=" the moving to charging station shall take at most 30 sec."           
+				_failureIf= "FailureIf the charging took longer than 30 sec" name="MoveBase"/>
+                <Script name="Charge"/>
+            </Sequence>
+            <Sequence name="SolidStation">
+                <Script _description=" ID= rq2 Description= The robot should have at least a battery capacity of 3% left. ," name="MoveBase"/>
+                <SubTree ID="PickPlace"/>
+                <Retry num_attempts="6">
+                    <Inverter>
+                        <Sequence name="MoveTubes">
+                            <ScriptCondition name="MicroplateNotEmpty?"/>
+                            <SubTree ID="PickPlace" _description=" ID= rq3 Description= The information on the tube label shall be processed locally on the robot. ,"/>
+                        </Sequence>
+                    </Inverter>
+                </Retry>
+            </Sequence>
+        </Fallback>
+    </BehaviorTree>
+    <BehaviorTree ID="PickPlace">
+        <Sequence>
+            <Script name="Pick"/>
+            <Script name="Place"/>
+        </Sequence>
+    </BehaviorTree>
+</root>
