@@ -17,7 +17,7 @@ In the following, we provide links to important files in the DSL that was mentio
 - The meta-model of the DSL [btcpp.aird](btcpp/model)
 - The grammar of the DSL, where the syntax and supported types of behavior-tree nodes are provided [QualityBtCpp.xtext](/org.xtext.btcpp.qualitybtcpp/src/org/xtext/btcpp/QualityBtCpp.xtext).
 - The model-to-text transformer that auto-generates from our DSL model to BehaviorTree.CPP XML-like language [QualityBtCppGenerator.xtend](/org.xtext.btcpp.qualitybtcpp/src/org/xtext/btcpp/generator/QualityBtCppGenerator.xtend).
-- Our DSL code for the illustrative example in the paper of the laboratory mobile robot [paper_example.qualitybtcpp]().
+- Our DSL code for the illustrative example in the paper of the laboratory mobile robot [paper_example.qualitybtcpp](/illustrative_example/paper_example.qualitybtcpp).
 ### Who do I talk to? ###
 * Razan Ghzouli razan.ghzouli@chalmers.se
 
