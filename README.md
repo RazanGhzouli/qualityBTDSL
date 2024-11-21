@@ -10,7 +10,8 @@ Requirements: to develop the DSL we used the following tools:
 - Eclipse Modeling Tools (version 2024-09 (4.33.0)).
 - Xtext (version Xtext Complete SDK	2.36.0.v20240825-0714). Note that, in our experience, different versions of Xtext might cause errors, so it might be better to have the same version.
 - The execution environment in Eclipse is Java-SE 21. Note that, in our experience, different versions of Java might cause errors, so it might be better to have the same version, or change in the "MANIFEST.MF" files, "Bundle-RequiredExecutionEnvironment" field, the Java to your own version.
-We will add soon a demo video to show how to run the DSL.
+
+We will soon add a demo video to show how to run the DSL.
 
 ### Importnat files in the DSL: ###
 In the following, we provide links to important files in the DSL that was mentioned in our paper:
