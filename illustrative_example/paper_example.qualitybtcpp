@@ -1,8 +1,8 @@
 Root mainTree
 	BehaviorTree ID  = mainTree
 		?
-			-> (name = "BatteryCheck" satisfices Quality = security )
-				ScriptCondition (name = "CheckBattery?")								
+			-> (name = "BatteryCheck")
+				ScriptCondition (name = "BatteryLow?")								
 				ScriptAction (
 				name = "MoveBase" 
 				satisfices Quality = performance 
