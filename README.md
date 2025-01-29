@@ -14,7 +14,7 @@ Requirements: to develop the DSL we used the following tools:
 
 We will soon add a demo video to show how to run the DSL.
 
-### Importnat files in the DSL: ###
+### Important files in the DSL: ###
 In the following, we provide links to important files in the DSL that was mentioned in our paper:
 - The meta-model of the DSL [btcpp.aird](btcpp/model)
 - The grammar of the DSL, where the syntax and supported types of behavior-tree nodes are provided [QualityBtCpp.xtext](/org.xtext.btcpp.qualitybtcpp/src/org/xtext/btcpp/QualityBtCpp.xtext).
